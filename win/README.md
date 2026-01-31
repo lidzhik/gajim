@@ -6,6 +6,8 @@ We use [msys2](https://www.msys2.org/) for creating the Windows installer and de
 
 Download [msys2](https://www.msys2.org/) (`msys2-x86_64-xxx.exe`) and follow the install instructions on the [msys2](https://www.msys2.org/) startpage (**Important!**)
 
+Download [Windows SDK](https://learn.microsoft.com/ru-ru/windows/apps/windows-sdk/downloads)
+
 ********************************
 * Change Servers to worked at C:\msys64\etc\pacman.d\
 ********************************
@@ -42,6 +44,15 @@ Afterwards press CTRL + SHIFT + I to  activate GTK Inspector
 Follow the steps in the Development section, but instead of `cd ~/gajim/win && ./dev_env.sh` execute `cd ~/gajim/win && ./build.sh`.
 
 Both the installer and the portable installer should appear in `C:\msys64\home\USER\gajim\win\_build_root`.
+
+********************************
+Add file for Auth: C:\Users\Lidzhik\AppData\Roaming\Gajim\auth_gajim_dgkb.conf
+********************************
+
+********************************
+Start Installer Silient Mode:
+Gajim.exe /S
+********************************
 
 ## Register Development App from msixbundle
 
