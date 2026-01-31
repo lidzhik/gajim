@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ShortcutRow" parent="AdwActionRow">
+    <child type="suffix">
+      <object class="GtkBox">
+        <property name="spacing">12</property>
+        <property name="valign">center</property>
+        <child>
+          <object class="GtkLabel" id="_accelerator_badge">
+            <property name="visible">false</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Custom</property>
+            <style>
+              <class name="badge"/>
+              <class name="badge-accent"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="_accelerator_label">
+            <style>
+              <class name="dimmed"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage">
+            <property name="icon-name">lucide-square-pen-symbolic</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

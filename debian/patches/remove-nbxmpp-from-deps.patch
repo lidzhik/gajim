@@ -1,0 +1,24 @@
+From d58d393e526b9922fa2285afee860026d4f4677e Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philipp=20H=C3=B6rist?= <philipp@hoerist.com>
+Date: Thu, 27 Nov 2025 22:04:33 +0100
+Subject: [PATCH] Remove nbxmpp from deps
+
+---
+ pyproject.toml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 24ae76d42..b9f4d8d0e 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -29,7 +29,6 @@ dependencies = [
+   "emoji>=2.6.0",
+   "httpx[http2,socks]",
+   "keyring",
+-  "nbxmpp>=7.0.0,<8.0.0",
+   "omemo-dr>=1.2.0,<2.0.0",
+   "packaging",
+   "pillow>=9.1.0",
+-- 
+2.48.1
+

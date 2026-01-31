@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ArchivingPreferences" parent="GtkBox">
+    <property name="width-request">400</property>
+    <property name="height-request">300</property>
+    <property name="orientation">vertical</property>
+    <property name="spacing">12</property>
+    <child>
+      <object class="GajimDropDown" id="_default_dropdown">
+        <property name="halign">start</property>
+        <property name="fixed-width">15</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="label" translatable="yes">Exceptions from the above setting</property>
+        <property name="xalign">0</property>
+        <style>
+          <class name="dimmed"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkOverlay">
+        <property name="vexpand">1</property>
+        <property name="margin-top">6</property>
+        <property name="child">
+          <object class="GtkScrolledWindow">
+            <property name="height-request">150</property>
+            <property name="focusable">1</property>
+            <property name="child">
+              <object class="GtkTreeView" id="_pref_view">
+                <property name="focusable">1</property>
+                <property name="search-column">0</property>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection"/>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn">
+                    <property name="title" translatable="yes">XMPP Address</property>
+                    <property name="expand">1</property>
+                    <property name="clickable">1</property>
+                    <property name="sort-indicator">1</property>
+                    <property name="sort-column-id">0</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="_jid_cell_renderer">
+                        <property name="editable">1</property>
+                        <property name="placeholder-text">user@example.org</property>
+                      </object>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn">
+                    <property name="title" translatable="yes">Archive</property>
+                    <property name="clickable">1</property>
+                    <property name="sort-indicator">1</property>
+                    <property name="sort-column-id">1</property>
+                    <child>
+                      <object class="GtkCellRendererToggle" id="_pref_toggle_cell_renderer">
+                      </object>
+                      <attributes>
+                        <attribute name="active">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              <style>
+                <class name="frame"/>
+              </style>
+              </object>
+            </property>
+          </object>
+        </property>
+        <child type="overlay">
+          <object class="AdwSpinner" id="_spinner">
+            <property name="valign">center</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="spacing">12</property>
+        <child>
+          <object class="GtkBox">
+            <property name="css-classes">toolbar</property>
+            <property name="can-focus">0</property>
+            <child>
+              <object class="GtkButton" id="_add">
+                <property name="can-focus">0</property>
+                <property name="use-underline">1</property>
+                <property name="icon-name">lucide-plus-symbolic</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="_remove">
+                <property name="can-focus">0</property>
+                <property name="use-underline">1</property>
+                <property name="icon-name">lucide-trash-symbolic</property>
+              </object>
+            </child>
+            <style>
+              <class name="inline-toolbar"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="hexpand">1</property>
+            <property name="halign">end</property>
+            <child>
+              <object class="GtkButton" id="_save_button">
+                <property name="label">_Save</property>
+                <property name="focusable">1</property>
+                <property name="receives-default">1</property>
+                <property name="valign">end</property>
+                <property name="use-underline">1</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

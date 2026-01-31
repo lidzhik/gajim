@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0" />
+  <template class="AccountPage" parent="GtkBox">
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="focusable">true</property>
+        <property name="child">
+          <object class="GtkViewport">
+            <property name="child">
+              <object class="AdwClamp">
+                <child>
+                  <object class="GtkBox">
+                    <property name="hexpand">true</property>
+                    <property name="orientation">1</property>
+                    <property name="spacing">36</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">1</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage" id="_avatar_image">
+                            <property name="pixel-size">150</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="_name_label">
+                            <property name="focusable">true</property>
+                            <property name="selectable">true</property>
+                            <style>
+                              <class name="title-1" />
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="_account_label">
+                            <property name="focusable">true</property>
+                            <property name="selectable">true</property>
+                            <style>
+                              <class name="title-4" />
+                              <class name="dimmed" />
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwPreferencesGroup">
+                        <property name="title" translatable="yes">Account</property>
+                        <child type="header-suffix">
+                          <object class="GtkBox">
+                            <property name="spacing">12</property>
+                            <child>
+                              <object class="GtkButton" id="_settings_button">
+                                <property name="action-name">app.accounts</property>
+                                <property name="action-target">&apos;&apos;</property>
+                                <property name="label" translatable="yes">Settings</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuButton" id="_menu_button">
+                                <property name="focusable">true</property>
+                                <property name="focus-on-click">false</property>
+                                <property name="sensitive">false</property>
+                                <property name="valign">3</property>
+                                <child>
+                                  <object class="GtkImage">
+                                    <property name="icon-name">lucide-ellipsis-vertical-symbolic</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkListBox">
+                            <property name="selection-mode">none</property>
+                            <style>
+                              <class name="boxed-list" />
+                            </style>
+                            <child>
+                              <object class="AdwActionRow" id="_our_jid_row">
+                                <property name="title" translatable="yes">XMPP Address</property>
+                                <property name="subtitle-selectable">true</property>
+                                <style>
+                                  <class name="property" />
+                                </style>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow">
+                                <property name="title" translatable="yes">Status</property>
+                                <child>
+                                  <object class="StatusSelector" id="_status_selector">
+                                    <property name="valign">center</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="StatusMessageSelectorRow" id="_status_message_row"/>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwPreferencesGroup">
+                        <property name="title" translatable="yes">Profile</property>
+                        <child type="header-suffix">
+                          <object class="GtkButton" id="_profile_button">
+                            <property name="label" translatable="yes">Edit</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkListBox">
+                            <property name="selection-mode">none</property>
+                            <style>
+                              <class name="boxed-list" />
+                            </style>
+                            <child>
+                              <object class="AdwActionRow" id="_profile_name_row">
+                                <property name="subtitle-selectable">true</property>
+                                <property name="title" translatable="yes">Name</property>
+                                <style>
+                                  <class name="property" />
+                                </style>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow" id="_profile_org_row">
+                                <property name="visible">false</property>
+                                <property name="subtitle-selectable">true</property>
+                                <property name="title" translatable="yes">Organization</property>
+                                <style>
+                                  <class name="property" />
+                                </style>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow" id="_profile_role_row">
+                                <property name="visible">false</property>
+                                <property name="subtitle-selectable">true</property>
+                                <property name="title" translatable="yes">Role</property>
+                                <style>
+                                  <class name="property" />
+                                </style>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow" id="_profile_email_row">
+                                <property name="visible">false</property>
+                                <property name="title" translatable="yes">Email</property>
+                                <property name="activatable">true</property>
+                                <property name="action-name">app.open-link</property>
+                                <property name="action-target">''</property>
+                                <style>
+                                  <class name="property" />
+                                </style>
+                                <child>
+                                  <object class="CopyButton" id="_profile_email_clipboard_button"/>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow" id="_profile_tel_row">
+                                <property name="visible">false</property>
+                                <property name="title" translatable="yes">Telephone</property>
+                                <property name="activatable">true</property>
+                                <property name="action-name">app.open-link</property>
+                                <property name="action-target">''</property>
+                                <style>
+                                  <class name="property" />
+                                </style>
+                                <child>
+                                  <object class="CopyButton" id="_profile_tel_clipboard_button"/>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow" id="_profile_timezone_row">
+                                <property name="visible">false</property>
+                                <property name="subtitle-selectable">true</property>
+                                <property name="title" translatable="yes">Time Zone</property>
+                                <style>
+                                  <class name="property" />
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <style>
+                      <class name="account-page-box" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </property>
+          </object>
+        </property>
+      </object>
+    </child>
+  </template>
+</interface>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="CreateGroupchatWindow" parent="GajimAppWindow">
+    <property name="content">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="AdwHeaderBar" />
+        </child>
+        <property name="content">
+          <object class="GtkStack" id="_stack">
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">create</property>
+                <property name="child">
+                  <object class="AdwClamp">
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">18</property>
+                        <child>
+                        <object class="AdwPreferencesGroup" id="_account_group">
+                            <property name="title" translatable="yes">Account</property>
+                            <property name="description" translatable="yes">Select the account you want to use to create a new group chat</property>
+                            <property name="visible">0</property>
+                            <child>
+                              <object class="GtkListBox">
+                                <property name="selection-mode">none</property>
+                                <style>
+                                  <class name="boxed-list"/>
+                                </style>
+                                <child>
+                                  <object class="AdwActionRow">
+                                    <property name="title" translatable="yes">Account</property>
+                                    <child type="suffix">
+                                      <object class="GajimDropDown" id="_account_dropdown">
+                                        <property name="valign">center</property>
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwPreferencesGroup">
+                            <property name="title" translatable="yes">Group Chat Settings</property>
+                            <property name="description" translatable="yes">All of these settings are optional and can be changed later</property>
+                            <child>
+                              <object class="GtkListBox" id="_settings_listbox">
+                                <property name="selection-mode">none</property>
+                                <style>
+                                  <class name="boxed-list"/>
+                                </style>
+                                <child>
+                                  <object class="AdwEntryRow" id="_name_entry_row">
+                                    <property name="title" translatable="yes">Name</property>
+                                    <property name="enable-emoji-completion">1</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwEntryRow" id="_description_entry_row">
+                                    <property name="title" translatable="yes">Description</property>
+                                    <property name="enable-emoji-completion">1</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwExpanderRow" id="_advanced_expander_row">
+                                    <property name="title" translatable="yes">Advanced Settings</property>
+                                    <child>
+                                      <object class="AdwActionRow">
+                                        <property name="title" translatable="yes">Private</property>
+                                        <property name="subtitle" translatable="yes">You have to invite people so they can join</property>
+                                        <property name="activatable-widget">_private_radio</property>
+                                        <child type="prefix">
+                                          <object class="GtkCheckButton" id="_private_radio">
+                                            <property name="active">true</property>
+                                            <property name="group">_public_radio</property>
+                                          </object>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="AdwActionRow">
+                                        <property name="title" translatable="yes">Public</property>
+                                        <property name="subtitle" translatable="yes">Anyone can join</property>
+                                        <property name="activatable-widget">_public_radio</property>
+                                        <child type="prefix">
+                                          <object class="GtkCheckButton" id="_public_radio"/>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="AdwEntryRow" id="_address_entry_row">
+                                        <property name="title" translatable="yes">Chat Address</property>
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">no-connection</property>
+                <property name="child">
+                  <object class="GtkBox">
+                    <property name="opacity">0.9</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="hexpand">1</property>
+                        <property name="label" translatable="yes">You are offline</property>
+                        <property name="justify">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <style>
+              <class name="window-padding"/>
+            </style>
+          </object>
+        </property>
+        <child type="bottom">
+          <object class="GtkActionBar">
+            <child type="start">
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="valign">center</property>
+                <property name="spacing">6</property>
+                <style>
+                  <class name="ps-12"/>
+                  <class name="pb-12"/>
+                </style>
+                <child>
+                  <object class="GtkLabel" id="_error_label">
+                    <property name="visible">0</property>
+                    <property name="wrap">1</property>
+                    <property name="max-width-chars">38</property>
+                    <style>
+                      <class name="error"/>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="_info_label">
+                    <property name="visible">0</property>
+                    <property name="wrap">1</property>
+                    <property name="max-width-chars">38</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <style>
+                  <class name="pe-12"/>
+                  <class name="pb-12"/>
+                </style>
+                <child>
+                  <object class="AdwSpinner" id="_spinner">
+                    <property name="visible">0</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="_create_button">
+                    <property name="label" translatable="yes">_Create</property>
+                    <property name="focusable">1</property>
+                    <property name="use-underline">1</property>
+                    <style>
+                      <class name="suggested-action"/>
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+  </template>
+</interface>

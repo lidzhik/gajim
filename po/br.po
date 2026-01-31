@@ -1,0 +1,7908 @@
+# Copyright (C) Gajim Team
+# This file is distributed under the same license as the Gajim package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gajim\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"PO-Revision-Date: 2006-06-05 19:14+0100\n"
+"Last-Translator: Giulia Fraboulet <djoulia_at_gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+
+#, fuzzy
+msgid " (Video Call)"
+msgstr "Flap prevez"
+
+#, fuzzy
+msgid " (Voice Call)"
+msgstr "Goulenn treuzkas"
+
+#, python-format
+msgid "%(contact)s declined your invitation to %(chat)s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%(contact)s invited you to %(chat)s"
+msgstr "Pedet oc'h bet gant %(contact_jid)s er sal-flapiñ %(room_jid)s"
+
+#, fuzzy, python-format
+msgid "%(count)s Participant"
+msgid_plural "%(count)s Participants"
+msgstr[0] "Perzhiad-ez"
+msgstr[1] "Perzhiad-ez"
+
+#, python-format
+msgid ""
+"%(count)s messages from %(participant)s will be moderated.\n"
+"Why do you want to moderate these messages?"
+msgstr ""
+
+#, python-format
+msgid "%(days)s days, %(hours)s hours"
+msgstr ""
+
+#, python-format
+msgid "%(minutes)s min %(seconds)s s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%(name)s %(jid)s suggested me to add you to my contact list."
+msgstr "Laouen 'vefen d'ho ouzhpennañ em roll-darempredoù."
+
+#, fuzzy, python-format
+msgid ""
+"%(name)s (%(jid)s) would like to add some contacts to your contact list."
+msgstr "Me blijfe din ouzhpennañ ac'hanoc'h em roll-darempredoù."
+
+#, fuzzy, python-format
+msgid ""
+"%(name)s (%(jid)s) would like to delete some contacts from your contact list."
+msgstr "Me blijfe din ouzhpennañ ac'hanoc'h em roll-darempredoù."
+
+#, fuzzy, python-format
+msgid ""
+"%(name)s (%(jid)s) would like to modify some contacts in your contact list."
+msgstr "Me blijfe din ouzhpennañ ac'hanoc'h em roll-darempredoù."
+
+#, python-format
+msgid "%(name)s cancelled the transfer (%(reason)s)"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%(nick)s has been banned by %(actor)s"
+msgstr "%(nick)s a zo argaset : %(reason)s"
+
+#, fuzzy, python-format
+msgid "%(nick)s has been kicked by %(actor)s"
+msgstr "%(nick)s a zo bet skarzhet : %(reason)s"
+
+#, fuzzy, python-format
+msgid "%(nick)s is now %(affiliation)s of this group chat"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-format
+msgid "%(nickname)s:"
+msgstr "Lesanv:"
+
+#, python-format
+msgid "%(number)s min ago"
+msgid_plural "%(number)s mins ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#, python-format
+msgid "%(owner_or_admin_or_member)s of this group chat"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%(progress)s %% (%(time)s remaining)"
+msgstr "Arsavet eo an treuskas eus %(filename)s digant %(name)s."
+
+#, fuzzy, python-format
+msgid "%(received)s of %(max)s"
+msgstr "Arsavet eo an treuskas eus %(filename)s digant %(name)s."
+
+#, python-format
+msgid "%(type)s encryption is active %(authenticated)s."
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%(user)s is now %(role)s of this group chat"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, python-format
+msgid "%(user)s now has the following hats: %(hats)s"
+msgstr ""
+
+#, python-format
+msgctxt "own nickname in group chat"
+msgid "%s (You)"
+msgstr ""
+
+#, python-format
+msgid "%s and %s are typing…"
+msgstr ""
+
+#, python-format
+msgid "%s can be joined by invite only."
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%s has been banned"
+msgstr "Aet eo kuit %s"
+
+#, fuzzy, python-format
+msgid "%s has been invited to this group chat"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-format
+msgid "%s has been kicked"
+msgstr "Aet eo kuit %s"
+
+#, fuzzy, python-format
+msgid "%s has been removed from this group chat"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-format
+msgid "%s has joined"
+msgstr "Aet eo kuit %s"
+
+#, fuzzy, python-format
+msgid "%s is a file but it should be a directory"
+msgstr "ur restr eo %s met rankout a rafe bezañ ur renkell"
+
+#, fuzzy, python-format
+msgid "%s is already in your contact list"
+msgstr "Emañ an darempred en ho roll-darempredoù dija."
+
+#, python-format
+msgid "%s is calling"
+msgstr ""
+
+#, python-format
+msgid "%s is not a valid loglevel"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%s is typing…"
+msgstr "O labourat"
+
+#, python-format
+msgid "%s of %s"
+msgstr ""
+
+#, python-format
+msgid "%s participants are typing…"
+msgstr ""
+
+#, python-format
+msgid "%s s"
+msgstr ""
+
+#, python-format
+msgid "%s stopped sharing their status"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%s stopped the transfer"
+msgstr "Dilemel an darempred diouzh ar roll"
+
+#, fuzzy, python-format
+msgid "%s wants to add you."
+msgstr "Fellout a ra da %s kas deoc'h ur restr."
+
+#, python-format
+msgctxt "positive longitude"
+msgid "%sE"
+msgstr ""
+
+#, python-format
+msgctxt "positive latitude"
+msgid "%sN"
+msgstr ""
+
+#, python-format
+msgctxt "negative latitude"
+msgid "%sS"
+msgstr ""
+
+#, python-format
+msgctxt "negative longitude"
+msgid "%sW"
+msgstr ""
+
+msgid "'@' is missing in address. Are you sure this is correct?"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "(changed by %s)"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy
+msgid "(inactive)"
+msgstr "Oberiant"
+
+#, fuzzy, python-format
+msgid "(reason: %s)"
+msgstr "Abeg"
+
+#, fuzzy
+msgid "(reason: affiliation changed)"
+msgstr "<b>Poelladoù</b>"
+
+msgid "(reason: group chat configuration changed to members-only)"
+msgstr ""
+
+msgid "(reason: system shutdown)"
+msgstr ""
+
+msgid "1 Day"
+msgstr ""
+
+msgid "1 Month"
+msgstr ""
+
+msgid "1 Week"
+msgstr ""
+
+msgid "1 Year"
+msgstr ""
+
+msgid "1 hour"
+msgstr ""
+
+msgid "2 Days"
+msgstr ""
+
+msgid "2 hours"
+msgstr ""
+
+msgid "3 Months"
+msgstr ""
+
+msgid "30 minutes"
+msgstr ""
+
+msgid "6 Months"
+msgstr ""
+
+msgid "8 hours"
+msgstr ""
+
+#, python-format
+msgid ""
+"<b>\"%(title)s\"</b> by <i>%(artist)s</i>\n"
+"from <i>%(source)s</i>"
+msgstr ""
+
+#, fuzzy
+msgid "<b>#</b>"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>*</b>"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>0</b>"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>1</b>"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>2</b> abc"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>3</b> def"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>4</b> ghi"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>5</b> jkl"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>6</b> mno"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>7</b> pqrs"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>8</b> tuv"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid "<b>9</b> wxyz"
+msgstr "<b>Sonioù</b>"
+
+#, fuzzy
+msgid ""
+"<b>XMPP Address</b>\n"
+"&lt;user@domain/resource&gt; (only that resource matches)\n"
+"&lt;user@domain&gt; (any resource matches)\n"
+"&lt;domain/resource&gt; (only that resource matches)\n"
+"&lt;domain&gt; (the domain itself matches, as does any user@domain or domain/"
+"resource)\n"
+msgstr ""
+"A c'hell bezañ unan eus ar stummoù da heul :\n"
+"1. lesanv@domani/resource(seulement cette ressource correspond).\n"
+"2. pseudo@domaine (toutes les ressources correspondent).\n"
+"3. domaine/ressources (seulement cette ressource correspond).\n"
+"4. domaine (le domaine complet correspond, incluant tous les "
+"pseudo@domaine,\n"
+"domaine/ressource, ou les adresses comprenant un sous-domaine)."
+
+#, fuzzy
+msgid "<error>"
+msgstr "Fazi en ur lenn ar restr:"
+
+msgid "@APP_NAME@"
+msgstr ""
+
+#, fuzzy
+msgid "A Group Chat needs at least one Owner"
+msgstr "Hini ebet"
+
+msgid "A feature comparison of various providers"
+msgstr ""
+
+msgid "A fully-featured XMPP chat client"
+msgstr ""
+
+msgid ""
+"A list of words (semicolon separated) that will be highlighted in group "
+"chats."
+msgstr ""
+
+#, fuzzy
+msgid "A new group chat has been created"
+msgstr "Gant berzh eo bet krouet ho kont nevez!"
+
+#, fuzzy
+msgid "A restart may be required for some settings to take effect"
+msgstr ""
+"<b>NOTENN :</b> Dav eo deoc'h adloc'hañ Gajim evit ma vo efedus kemmoù 'zo"
+
+msgid "A setting not related to privacy has been changed"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "ALSA: %s"
+msgstr "Ment: %s"
+
+msgid "API Preferences. Possible values: \"http\", \"iq\""
+msgstr ""
+
+#, fuzzy
+msgctxt "User status"
+msgid "A_way"
+msgstr "E_zvezant"
+
+msgid "Abort"
+msgstr ""
+
+msgid "Abuse"
+msgstr ""
+
+#, fuzzy
+msgid "Accept"
+msgstr "Asantiñ"
+
+#, fuzzy
+msgid "Accept all Contact Requests"
+msgstr "Goulenn treuzkas"
+
+msgid "Account"
+msgstr "Kont"
+
+#, python-format
+msgid ""
+"Account %(name)s is still connected\n"
+"All chat and group chat windows will be closed."
+msgstr ""
+
+#, fuzzy
+msgid "Account Added"
+msgstr "Kont"
+
+#, fuzzy
+msgid "Account Address"
+msgstr "Kont"
+
+#, fuzzy
+msgid "Account Label"
+msgstr "Lazhet eo ar sifrañ"
+
+#, fuzzy
+msgid "Account Name..."
+msgstr "Kont"
+
+#, fuzzy
+msgid "Account Removal Failed"
+msgstr "Kont ebet hegerz"
+
+#, fuzzy
+msgid "Account Removed"
+msgstr "Kont"
+
+#, fuzzy
+msgid "Account Wizard"
+msgstr "Lazhet eo ar sifrañ"
+
+#, fuzzy
+msgid "Account address: "
+msgstr "Kont"
+
+#, fuzzy
+msgid "Account disabled"
+msgstr "Lazhet eo ar sifrañ"
+
+#, fuzzy
+msgid "Account exists already"
+msgstr "Lazhet eo ar sifrañ"
+
+msgid "Account has been added successfully"
+msgstr "Gant berzh eo bet ouzhpennet ar gont!"
+
+#, fuzzy
+msgid "Account has to be connected"
+msgstr "Luget eo ar gont \"%s\" d'ar servijer"
+
+#, fuzzy
+msgid "Account is being created"
+msgstr "Luget eo ar gont \"%s\" d'ar servijer"
+
+#, fuzzy
+msgid "Account name: "
+msgstr "Kont"
+
+#, fuzzy, python-format
+msgid "Account: %s"
+msgstr "Kontoù"
+
+msgid "Accounts"
+msgstr "Kontoù"
+
+#, fuzzy
+msgid "Action on Close"
+msgstr "Gajim"
+
+msgid "Action when closing Gajim’s window"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Actions for \"%s\""
+msgstr "Oberoù evit \"%s\""
+
+#, fuzzy
+msgid "Activate"
+msgstr "Oberiant"
+
+#, fuzzy
+msgid "Activated"
+msgstr "Oberiant"
+
+msgid "Active"
+msgstr "Oberiant"
+
+#, fuzzy
+msgid "Activity Feed"
+msgstr "Oberiant"
+
+#, fuzzy
+msgid "Add"
+msgstr "Chomlec'h"
+
+#, fuzzy
+msgid "Add Account"
+msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+msgid "Add Account…"
+msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+msgid "Add Contact"
+msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+msgid "Add Contact to New Group?"
+msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+msgid "Add Contact…"
+msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+msgid "Add Entry"
+msgstr "Bro:"
+
+#, fuzzy
+msgid "Add Files…"
+msgstr "Restr:"
+
+#, fuzzy
+msgid "Add Group…"
+msgstr "Kemmañ ar _strolladoù"
+
+#, fuzzy
+msgid "Add Proxy"
+msgstr "Proksi:"
+
+#, fuzzy
+msgid "Add Reaction…"
+msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+msgid "Add Setting"
+msgstr "échec lors de la publication de votre vCard"
+
+msgid "Add Workspace"
+msgstr ""
+
+msgid "Add a checkmark to received messages"
+msgstr ""
+
+msgid "Add a label to distinguish accounts in Gajim"
+msgstr ""
+
+msgid "Add a name and color for your account"
+msgstr ""
+
+msgid "Add a setting you would like to change"
+msgstr ""
+
+#, fuzzy
+msgid "Add new Theme"
+msgstr "Oberiant"
+
+msgid "Add this certificate to the list of _trusted certificates"
+msgstr ""
+
+#, fuzzy
+msgid "Add to Group"
+msgstr "Kemmañ ar _strolladoù"
+
+#, fuzzy, python-format
+msgid "Added %(count)s contact"
+msgid_plural "Added %(count)s contacts"
+msgstr[0] "Ouzhpennañ un _darempred"
+msgstr[1] "Ouzhpennañ un _darempred"
+
+msgid "Additionally, you will lose your administrator affiliation."
+msgstr ""
+
+msgid "Additionally, you will lose your owner affiliation."
+msgstr ""
+
+msgid "Address"
+msgstr "Chomlec'h"
+
+#, fuzzy
+msgctxt "Profile"
+msgid "Address"
+msgstr "Chomlec'h"
+
+#, fuzzy
+msgid "Address does not belong to a group chat server"
+msgstr "A guzha an nozelennoù er prenestr flapiñ"
+
+#, fuzzy
+msgid "Admin"
+msgstr "_Merour-ez"
+
+#, fuzzy
+msgid "Administration"
+msgstr "_Merour-ez"
+
+#, fuzzy
+msgctxt "Group chat contact affiliation"
+msgid "Administrator"
+msgstr "_Merour-ez"
+
+#, fuzzy
+msgctxt "Group chat contact affiliation"
+msgid "Administrators"
+msgstr "_Merour-ez"
+
+msgid "Advanced"
+msgstr "Dre ar munut"
+
+#, fuzzy
+msgid "Advanced Configuration Editor"
+msgstr "Aozer kefluniañ dre ar munut"
+
+#, fuzzy
+msgid "Advanced Configuration Editor (ACE)"
+msgstr "Aozer kefluniañ dre ar munut"
+
+#, fuzzy
+msgid "Advanced Settings"
+msgstr "Actions a_vancées"
+
+#, fuzzy
+msgid "Advanced settings"
+msgstr "Actions a_vancées"
+
+#, python-format
+msgid "Advanced – %(account)s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Adw Version: %s"
+msgstr "Taolennadur: %s"
+
+#, fuzzy
+msgid "Affiliation"
+msgstr "<b>Poelladoù</b>"
+
+#, fuzzy
+msgid "Affiliations"
+msgstr "<b>Poelladoù</b>"
+
+#, python-format
+msgid "Affiliations of %(nick)s to this group chat have been removed"
+msgstr ""
+
+msgid "After"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+#, fuzzy
+msgid "All Accounts"
+msgstr "Kontoù"
+
+#, fuzzy
+msgid "All Chat States"
+msgstr "Stad:"
+
+#, fuzzy
+msgid "All Chats"
+msgstr "Stad:"
+
+#, fuzzy
+msgid "All Messages"
+msgstr "Kemennadenn"
+
+msgid "All files"
+msgstr "An holl restroù"
+
+#, python-format
+msgid "All hats of %s have been removed"
+msgstr ""
+
+msgid "All of these settings are optional and can be changed later"
+msgstr ""
+
+#, fuzzy
+msgid "All of your hats have been removed"
+msgstr "Gant berzh eo bet krouet ho kont nevez!"
+
+msgid "All other group chat participants can see your XMPP address"
+msgstr ""
+
+msgid ""
+"Allow Gajim to broadcast useful information via D-Bus. It also allows other "
+"applications to control Gajim remotely."
+msgstr ""
+
+#, fuzzy
+msgid "Alternate venue (optional)..."
+msgstr "Abeg"
+
+#, fuzzy
+msgid "Always"
+msgstr "Ezvezant"
+
+#, fuzzy
+msgid "An Error Occurred"
+msgstr "Une erreur de protocole s'est produite :"
+
+msgid "An entry with this XMPP Address already exists"
+msgstr ""
+
+#, fuzzy
+msgid "An error occurred"
+msgstr "Une erreur de protocole s'est produite :"
+
+#, fuzzy
+msgid "An error occurred during account creation"
+msgstr "Bez ez eus bet ur fazi en ur grouiñ ar gont"
+
+#, fuzzy
+msgid "An error occurred while exporting your messages"
+msgstr "Bez ez eus bet ur fazi en ur grouiñ ar gont"
+
+#, fuzzy
+msgid "An error occurred while trying to change your password."
+msgstr "Bez ez eus bet ur fazi en ur grouiñ ar gont"
+
+#, fuzzy, python-format
+msgid "An error occurred while trying to create a file at %(path)s: %(error)s"
+msgstr "Bez ez eus bet ur fazi en ur grouiñ ar gont"
+
+#, python-brace-format
+msgid ""
+"An error occurred while trying to make {occupant_jid} {affiliation_or_role} "
+"in group \"{group}\""
+msgstr ""
+
+#, fuzzy, python-brace-format
+msgid ""
+"An error occurred while trying to make {occupant_jid} {affiliation_or_role}: "
+"{error}"
+msgstr "Bez ez eus bet ur fazi en ur grouiñ ar gont"
+
+#, fuzzy
+msgid "And more..."
+msgstr "Kont"
+
+msgid "Anonymous login not supported"
+msgstr ""
+
+msgid "Any participant is allowed to see your full XMPP Address"
+msgstr ""
+
+#, fuzzy
+msgid "Anyone can join"
+msgstr "Er strollad"
+
+#, fuzzy
+msgid "Anyone can join this group chat"
+msgstr "Er strollad"
+
+msgid "Application verification failure"
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "Approve"
+msgstr ""
+
+#, fuzzy
+msgid "Archive"
+msgstr "Treug ar restr"
+
+#, fuzzy
+msgid "Archive Malformed"
+msgstr "Treug ar restr"
+
+msgid "Archive corrupted"
+msgstr ""
+
+#, fuzzy
+msgid "Archive empty"
+msgstr "Treug ar restr"
+
+msgid "Archive is malformed"
+msgstr ""
+
+#, fuzzy
+msgid "Archiving"
+msgstr "Treug ar restr"
+
+#, fuzzy
+msgctxt "Group chat feature"
+msgid "Archiving"
+msgstr "Treug ar restr"
+
+#, python-format
+msgid "Archiving – %(account)s"
+msgstr ""
+
+#, fuzzy
+msgid "Ask For Status Message on…"
+msgstr "Goulenn an titour-stad pa:"
+
+msgid "Ask before closing a group chat tab/window."
+msgstr "Goulenn a-raok serriñ un ivinell pe ur prenestr."
+
+msgid "Ask before connecting unencrypted"
+msgstr ""
+
+msgid "Ask before quitting when Gajim’s window is closed"
+msgstr ""
+
+msgid "Assign groups to this contact. You can filter chats by group."
+msgstr ""
+
+#, fuzzy
+msgid "Attention Message Received"
+msgstr "Kemennadenn gentañ"
+
+#, fuzzy
+msgid "Audio"
+msgstr "Restr:"
+
+#, fuzzy
+msgid "Audio File"
+msgstr "Restr:"
+
+#, fuzzy
+msgid "Audio Input Device"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Audio Preview"
+msgstr "Restr:"
+
+msgid "Audio test"
+msgstr ""
+
+#, fuzzy
+msgid "Authentication aborted"
+msgstr "Aotre degmeret"
+
+msgid "Authentication currently not possible"
+msgstr ""
+
+#, fuzzy
+msgid "Authentication failed"
+msgstr "C'hwitet an diskleriadenn gant \"%s\""
+
+#, fuzzy
+msgid "Authentication mechanism not supported"
+msgstr "C'hwitet an diskleriadenn gant \"%s\""
+
+#, fuzzy
+msgid "Authentication mechanism too weak"
+msgstr "C'hwitet an diskleriadenn gant \"%s\""
+
+msgid "Authority and issuer serial number mismatch"
+msgstr ""
+
+msgid "Authority and subject key identifier mismatch"
+msgstr ""
+
+#, fuzzy
+msgid "Authors"
+msgstr "_Aotren"
+
+#, fuzzy
+msgid "Auto Away"
+msgstr "Ezvezant"
+
+#, fuzzy
+msgid "Auto Not Available"
+msgstr "Dihegerz"
+
+msgid "Autodetect"
+msgstr ""
+
+#, fuzzy
+msgid "Automatic Status"
+msgstr "Goulenn evit gwelet e/he stad"
+
+#, fuzzy
+msgid "Automatic Status Change"
+msgstr "Goulenn evit gwelet e/he stad"
+
+msgid "Automatic preview disabled"
+msgstr ""
+
+msgid "Automatic preview disabled (file too big)"
+msgstr ""
+
+#, fuzzy
+msgid "Automatically accept all contact requests"
+msgstr "Aotren war-eeun an darempred"
+
+#, fuzzy
+msgid "Available"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgctxt "User status"
+msgid "Available"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgid "Available Features"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgid "Avatar file size too big"
+msgstr "L'image est trop grande"
+
+#, fuzzy
+msgctxt "User status"
+msgid "Away"
+msgstr "Ezvezant"
+
+#, fuzzy
+msgid "Back"
+msgstr "Distro 'benn nebeut"
+
+msgid "Back in some minutes."
+msgstr "Distro 'vin a-benn un nebeut munutennoù.."
+
+msgid "Back soon"
+msgstr "Distro 'benn nebeut"
+
+#, fuzzy
+msgid "Ban"
+msgstr "_Argas"
+
+#, fuzzy, python-format
+msgid "Ban %s"
+msgstr "Roll argas"
+
+msgid "Ban…"
+msgstr ""
+
+msgid "Before"
+msgstr ""
+
+msgid "Behaviour of Application Window"
+msgstr ""
+
+#, fuzzy
+msgid "Birthday"
+msgstr "Deiz-ha-bloaz:"
+
+msgid "Blind Trust"
+msgstr ""
+
+msgid "Blindly trust new devices until you verify them"
+msgstr ""
+
+msgid "Block"
+msgstr ""
+
+#, fuzzy
+msgid "Block Contact?"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Block Contact…"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Block Participant?"
+msgstr "Perzhiad-ez"
+
+#, fuzzy
+msgid "Blocked Contacts"
+msgstr "Darempredoù"
+
+#, fuzzy, python-format
+msgid "Blocked Contacts – %(account)s"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Blocked Participants"
+msgstr "Perzhidi"
+
+#, fuzzy
+msgid "Block…"
+msgstr "Darempredoù"
+
+msgctxt "Configuration type"
+msgid "Boolean"
+msgstr ""
+
+#, fuzzy
+msgctxt "Contact subscription"
+msgid "Both"
+msgstr "An daou"
+
+#, fuzzy
+msgid "Browse"
+msgstr "_Furchal"
+
+msgid "Browse history by date"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Browsing %(address)s using account %(account)s"
+msgstr "O furchal e-barzh %s oc'h implij ar gont %s"
+
+msgctxt "User status"
+msgid "Busy"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "By closing this chat, you will leave \"%s\"."
+msgstr "Si vous fermer cette fenêtre, vous serez déconnecté de ces salons."
+
+msgid "CRL has expired"
+msgstr ""
+
+msgid "CRL is not yet valid"
+msgstr ""
+
+msgid "CRL signature failure"
+msgstr ""
+
+msgid "C_opy"
+msgstr ""
+
+msgid "Call"
+msgstr ""
+
+msgid "Call Incoming"
+msgstr ""
+
+msgid "Call Outgoing"
+msgstr ""
+
+msgid "Call ended"
+msgstr ""
+
+#, python-format
+msgid "Call with %s"
+msgstr ""
+
+msgid "Calling (Video)…"
+msgstr ""
+
+#, fuzzy
+msgid "Calling…"
+msgstr "Oc'h argas..."
+
+#, fuzzy
+msgid "Cancel"
+msgstr "_Nullañ"
+
+#, fuzzy
+msgid "Cancel Download"
+msgstr "Pellgargañ"
+
+#, fuzzy
+msgid "Certificate"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy, python-format
+msgid "Certificate - %(account)s"
+msgstr "evit ar gont %s"
+
+#, fuzzy
+msgid "Certificate Verification Failed"
+msgstr "Oc'h ouzhpennañ ur gelaouenn nevez evit %s"
+
+msgid "Certificate chain too long"
+msgstr ""
+
+msgid "Certificate has expired"
+msgstr ""
+
+msgid "Certificate is not yet valid"
+msgstr ""
+
+msgid "Certificate not trusted"
+msgstr ""
+
+msgid "Certificate rejected"
+msgstr ""
+
+msgid "Certificate revoked"
+msgstr ""
+
+msgid "Certificate signature failure"
+msgstr ""
+
+#, fuzzy
+msgid "Change"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy
+msgid "Change Nickname"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy
+msgid "Change Nickname…"
+msgstr "Cheñch _lesanv"
+
+msgid "Change Password"
+msgstr "Cheñch ar ger-kuzh"
+
+#, fuzzy
+msgid "Change Subject"
+msgstr "Kemmañ ar _sujed"
+
+msgid "Change your account’s password, etc."
+msgstr ""
+
+#, fuzzy
+msgid "Change your profile picture"
+msgstr "Cheñch _lesanv"
+
+msgid "Change your status to \"Away\" after a certain amount of time"
+msgstr ""
+
+msgid "Change your status to \"Not Available\" after a certain amount of time"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Changed by %s"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy
+msgid "Changing Password..."
+msgstr "Cheñch ar ger-kuzh"
+
+msgid ""
+"Character to add after nickname when using nickname completion (tab) in "
+"group chat."
+msgstr ""
+
+#, fuzzy
+msgid "Chat"
+msgstr "Flapoù"
+
+#, fuzzy
+msgid "Chat Address"
+msgstr "_Titour-stad:"
+
+#, fuzzy
+msgid "Chat Banner: Background Color"
+msgstr "Darempred luget"
+
+msgid "Chat Banner: Foreground Color"
+msgstr ""
+
+msgid "Chat Banner: Text Font"
+msgstr ""
+
+#, fuzzy
+msgid "Chat Details and Settings"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Chat Type"
+msgstr "Doare"
+
+msgid ""
+"Chat freely: Take your chats where you want. Use a provider of your choice "
+"and synchronize chats between all your devices. Gajim is interoperable with "
+"many other chat apps – and it's free."
+msgstr ""
+
+#, fuzzy
+msgid "Chat window"
+msgstr "Nevez 'zo:"
+
+msgid "Chats"
+msgstr "Flapoù"
+
+msgid "Chats from this account will use this workspace by default"
+msgstr ""
+
+msgid "Check For Updates"
+msgstr ""
+
+msgid "Check for Gajim updates periodically"
+msgstr ""
+
+msgid "Check for updates"
+msgstr ""
+
+msgid "Check for updates periodically"
+msgstr ""
+
+#, fuzzy
+msgid "Check which features are available"
+msgstr "N'eus ket tu en em lugañ"
+
+#, fuzzy
+msgid "Choose Device"
+msgstr "Dibabit ur skeudenn"
+
+msgid "Choose History Export Directory"
+msgstr ""
+
+msgid "Choose Sound"
+msgstr "Dibabit ur son"
+
+msgid "Choose a color or select an image"
+msgstr ""
+
+#, fuzzy
+msgid "Choose a group…"
+msgstr "Dibabit ur skeudenn"
+
+#, fuzzy
+msgid "Choose encryption"
+msgstr "Dibabit ur restr da gas..."
+
+#, fuzzy
+msgid "City"
+msgstr "Kêr:"
+
+#, fuzzy
+msgid "Clear"
+msgstr "Darvoud"
+
+#, fuzzy
+msgid "Clear Devices?"
+msgstr "Servijer"
+
+#, fuzzy
+msgid "Clear Devices…"
+msgstr "_Dizoleiñ ar servijoù"
+
+#, fuzzy
+msgid "Clear File"
+msgstr "Darvoud"
+
+#, fuzzy
+msgid "Clear Input"
+msgstr "Dibabit ur son"
+
+#, fuzzy
+msgid "Clear Sound"
+msgstr "Dibabit ur son"
+
+msgid ""
+"Click messages to select them\n"
+"(Ctrl + Double Click to deselect)"
+msgstr ""
+
+#, fuzzy
+msgid "Click on contacts you would like to invite to this group chat."
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy
+msgid "Click to view location"
+msgstr "_Kopiañ chomlec'h an ere"
+
+msgid ""
+"Clickable schemes in addition to the hard-coded list of IANA-registered "
+"ones. Space-separated, lower-case, no colons."
+msgstr ""
+
+#, fuzzy
+msgid "Close"
+msgstr "_Kas & Serriñ"
+
+#, fuzzy
+msgid "Close Chat"
+msgstr "Klask"
+
+msgid "Close a chat by pressing the Escape key"
+msgstr ""
+
+msgid "Close this preview"
+msgstr ""
+
+msgid "Close with Escape"
+msgstr ""
+
+msgid "Code snippet"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "Comma-separated list of emojis for quick reaction buttons"
+msgstr ""
+
+#, fuzzy
+msgid "Command List"
+msgstr "Urzhioù: %s"
+
+#, fuzzy
+msgid "Command executed successfully"
+msgstr "Gant berzh eo bet ouzhpennet ar gont!"
+
+#, fuzzy
+msgid "Commands"
+msgstr "Urzhioù: %s"
+
+msgid "Common Name (CN): "
+msgstr ""
+
+#, python-format
+msgid ""
+"Compare this code with the one shown on your contact’s screen to ensure the "
+"safety of your end-to-end encrypted chat with %s."
+msgstr ""
+
+msgid ""
+"Compare this code with the one shown on your contact’s screen to ensure the "
+"safety of your end-to-end encrypted chat."
+msgstr ""
+
+#, fuzzy
+msgid "Complete"
+msgstr "Echu"
+
+msgid "Completed"
+msgstr "Echu"
+
+#, fuzzy
+msgid "Composing Only"
+msgstr "O skrivañ"
+
+#, fuzzy
+msgid "Computer"
+msgstr "Echu"
+
+#, fuzzy
+msgid "Configuration"
+msgstr "Kefluniañ ar webgaoz"
+
+#, fuzzy
+msgid "Configure"
+msgstr "_Kenderc'hel"
+
+msgid "Configure logging system"
+msgstr ""
+
+msgid ""
+"Configure which messages will be archived on the server. Not archiving "
+"messages on the server may prevent them from synchronizing between your "
+"devices."
+msgstr ""
+
+#, fuzzy
+msgid "Confirm Unencrypted Connection"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Confirm new password..."
+msgstr "Cheñch ar ger-kuzh"
+
+#, fuzzy
+msgid "Connect"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Connect on startup"
+msgstr "K_evreañ en ur loc'hañ Gajim"
+
+msgid "Connecting"
+msgstr "O lugañ"
+
+#, fuzzy
+msgid "Connecting to server..."
+msgstr "O lugañ"
+
+#, fuzzy
+msgid "Connecting..."
+msgstr "O lugañ"
+
+msgid "Connection"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Connection Error"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Connection failed"
+msgstr "Kevreadenn"
+
+#, fuzzy, python-format
+msgid "Connection with %s could not be established."
+msgstr "N'eus ket tu seveniñ al lugadenn gant an darempred."
+
+#, python-format
+msgid "Connection – %(account)s"
+msgstr ""
+
+#, fuzzy
+msgid "Contact"
+msgstr "Darempredoù"
+
+msgid "Contact Connected"
+msgstr "Darempred luget"
+
+#, fuzzy
+msgid "Contact Details"
+msgstr "Darempredoù"
+
+msgid "Contact Disconnected"
+msgstr "Darempred diluget"
+
+msgid "Contact Information"
+msgstr "Titouroù"
+
+#, fuzzy
+msgid "Contact Infos"
+msgstr "_Titouroù"
+
+#, fuzzy
+msgid "Contact List"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Contact List Exchange"
+msgstr "Darempred diluget"
+
+#, fuzzy, python-format
+msgid "Contact List – %(account)s"
+msgstr "Darempred diluget"
+
+#, fuzzy
+msgid "Contact Removed"
+msgstr "Kont"
+
+#, fuzzy
+msgid "Contact Request"
+msgstr "Darempredoù"
+
+msgid "Contacts"
+msgstr "Darempredoù"
+
+msgid "Conversation: Nickname Color (Incoming)"
+msgstr ""
+
+msgid "Conversation: Nickname Color (Outgoing)"
+msgstr ""
+
+#, fuzzy
+msgid "Conversation: Text Color"
+msgstr "Istoradur ar gaoz"
+
+#, fuzzy
+msgid "Conversation: Text Font"
+msgstr "Istoradur ar gaoz"
+
+#, fuzzy
+msgid "Conversations"
+msgstr "Istoradur ar gaoz"
+
+#, fuzzy
+msgid "Conversations are not stored on the server"
+msgstr "Titouroù diwar ho penn, miret war ar servijer"
+
+#, fuzzy
+msgid "Conversations are stored on the server"
+msgstr "N'oc'h ket luget d'ar servijer"
+
+#, fuzzy
+msgid "Copy"
+msgstr "Webgaoz:"
+
+#, fuzzy
+msgctxt "Message row action"
+msgid "Copy"
+msgstr "Webgaoz:"
+
+#, fuzzy
+msgid "Copy Address"
+msgstr "_Kopiañ ar JID/Chomlec'h postel"
+
+#, fuzzy
+msgid "Copy Text"
+msgstr "Webgaoz:"
+
+#, fuzzy
+msgid "Copy XMPP Address"
+msgstr "_Kopiañ ar JID/Chomlec'h postel"
+
+#, fuzzy
+msgid "Copy XMPP Address/Email"
+msgstr "_Kopiañ ar JID/Chomlec'h postel"
+
+msgid "Copy code snippet"
+msgstr ""
+
+#, fuzzy
+msgid "Copy to Clipboard"
+msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+msgid "Copy to clipboard"
+msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+msgid "Correct Message"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Could Not Save File"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, fuzzy
+msgid "Could not access file"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+msgid "Could not find any messages for this participant."
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Could not open file (%s)"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, python-format
+msgid "Could not read content of %s. Only CSV files can be imported."
+msgstr ""
+
+msgid "Could not save file to selected directory."
+msgstr ""
+
+#, fuzzy
+msgid "Could not select file or folder"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, fuzzy
+msgid "Could not update providers list"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, fuzzy
+msgid "Country"
+msgstr "Bro:"
+
+#, fuzzy
+msgid "Create Account"
+msgstr "Lemel ar gont %s"
+
+#, fuzzy
+msgid "Create Group Chat"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Create Group Chat…"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Create New Account"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Create New Group Chat"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Creating Account..."
+msgstr "Lemel ar gont %s"
+
+#, fuzzy
+msgid "Credentials expired"
+msgstr "Ger-kuzh ret"
+
+msgid "Custom"
+msgstr ""
+
+msgid "D-Bus Interface"
+msgstr ""
+
+msgid "Danger Zone"
+msgstr ""
+
+#, fuzzy
+msgid "Dark Theme"
+msgstr "Gajim - %s"
+
+msgid "Database Migration"
+msgstr ""
+
+#, fuzzy
+msgid "Database migration failed"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Deactivated"
+msgstr "Dizoberiant"
+
+#, fuzzy
+msgid "Debug Console"
+msgstr "Diskouez ar gonsol _XML"
+
+#, fuzzy
+msgid "Debug Logging"
+msgstr "E_barzhiñ"
+
+#, fuzzy
+msgid "Decline"
+msgstr "_Ezlinenn"
+
+#, fuzzy
+msgid "Decrease Font Size"
+msgstr "_Anv:"
+
+msgid "Decrease playback speed"
+msgstr ""
+
+#, fuzzy
+msgid "Default Encryption"
+msgstr "War enaou emañ ar sifrañ"
+
+msgid "Default Sync Threshold"
+msgstr ""
+
+#, fuzzy
+msgid "Default Workspace"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Default device"
+msgstr "Titour-stad"
+
+msgid "Default for chats (e.g. Contact is typing)"
+msgstr ""
+
+#, fuzzy
+msgid "Default for chats and private group chats"
+msgstr "Er strollad"
+
+#, fuzzy
+msgid "Default for group chats (e.g. Contact is typing)"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Default for new chats"
+msgstr "Prest da flapiñ"
+
+#, fuzzy
+msgid "Default for new group chats"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Default for new public group chats"
+msgstr "Flap a-stroll"
+
+msgid "Delete"
+msgstr "Dilemel"
+
+msgid "Delete Fingerprint?"
+msgstr ""
+
+#, fuzzy
+msgid "Delete Message Locally?"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgctxt "Message row action"
+msgid "Delete Message Locally…"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Delete Node?"
+msgstr "Oberiant"
+
+#, fuzzy
+msgid "Delete Theme?"
+msgstr "Oberiant"
+
+msgid "Deny"
+msgstr "Nac'hañ"
+
+#, fuzzy
+msgid "Deny all contact requests"
+msgstr "Goulenn treuzkas"
+
+msgid "Description"
+msgstr "Taolennadur"
+
+#, fuzzy
+msgid "Destroy Group Chat"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Destroy This Chat"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Destroy…"
+msgstr "Taolennadur: %s"
+
+msgid "Details"
+msgstr "Munudoù"
+
+#, python-format
+msgid "Details - %(account)s"
+msgstr ""
+
+msgid "Details about the certificate used by this connection"
+msgstr ""
+
+#, python-format
+msgid "Device \"%s\""
+msgstr ""
+
+#, fuzzy
+msgid "Devices"
+msgstr "Servijer"
+
+#, fuzzy, python-format
+msgid "Dictionary URL is missing a \"%s\""
+msgstr "Mankout a ra un \"%s\" e-barzh URL ar webklask"
+
+#, fuzzy
+msgid "Direct Messages"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Direct Message…"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Directory"
+msgstr "_Istoradur"
+
+#, python-format
+msgid ""
+"Directory \"%s\" is not writable. You do not have the proper permissions to "
+"create files in this directory."
+msgstr ""
+
+#, fuzzy
+msgid "Directory Not Writable"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgid "Disable Account?"
+msgstr "Anv-kont direizh"
+
+msgid "Disabled"
+msgstr "Dizoberiant"
+
+#, fuzzy
+msgid "Disabled in Preferences"
+msgstr "_Penndibaboù"
+
+#, fuzzy
+msgid ""
+"Disclose information about media that is currently being played on your "
+"system."
+msgstr "Si cette case est cochée, Gajim se connectera à ce salon au démarrage"
+
+#, fuzzy
+msgid "Disclose information about the operating system you currently use"
+msgstr "Si cette case est cochée, Gajim se connectera à ce salon au démarrage"
+
+msgid "Disclose the time of your last activity"
+msgstr ""
+
+#, fuzzy
+msgid "Discover Services…"
+msgstr "_Dizoleiñ ar servijoù"
+
+#, fuzzy, python-format
+msgid "Do you accept this request (account: %s)?"
+msgstr "Degemer a rit ar goulenn-mañ?"
+
+msgid "Do you accept this request?"
+msgstr "Degemer a rit ar goulenn-mañ?"
+
+msgid ""
+"Do you really want to remove all chat messages from Gajim?\n"
+"Warning: This can’t be undone!\n"
+"Gajim will quit afterwards."
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Do you want to block %(name)s?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, fuzzy
+msgid "Do you want to delete this PEP node?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, fuzzy
+msgid "Do you want to delete this theme?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, fuzzy
+msgid "Do you want to overwrite the currently installed version?"
+msgstr "Fellout a ra din emezelañ evit krouiñ ur gont"
+
+#, fuzzy, python-format
+msgid "Do you want to remove \"%(group)s\"?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, fuzzy
+msgid "Do you want to remove all chat history for this chat?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, fuzzy
+msgid "Do you want to remove this chat including its chat history?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, fuzzy
+msgid "Do you want to remove this proxy?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+msgid ""
+"Do you want to retract this message?\n"
+"Please note that retracting a message does not guarantee that your provider "
+"or your contact’s device will remove it."
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Do you want to unblock %(name)s?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, python-format
+msgid "Do you want to unregister your account on <b>%s</b> as well?"
+msgstr ""
+
+msgid "Doing so will permanently delete this Fingerprint"
+msgstr ""
+
+#, fuzzy
+msgid "Download"
+msgstr "Pellgargañ"
+
+#, fuzzy, python-format
+msgid "Downloaded %s messages"
+msgstr "Gajim - %d gemennadenn nevez"
+
+#, fuzzy, python-format
+msgid "Draft: %s"
+msgstr "Stad:"
+
+#, fuzzy
+msgid "Drop files here"
+msgstr "Kas ur restr d'un darempred"
+
+msgid "Eating"
+msgstr "O tebriñ"
+
+#, fuzzy
+msgid "Edit"
+msgstr "_Aozañ"
+
+msgid "Edit Shortcut"
+msgstr ""
+
+#, fuzzy
+msgid "Edit display name…"
+msgstr "Anv:"
+
+msgid "Edit your message (Esc to cancel)…"
+msgstr ""
+
+#, fuzzy
+msgid "Edit…"
+msgstr "_Aozañ"
+
+#, fuzzy
+msgctxt "Message row action"
+msgid "Edit…"
+msgstr "_Aozañ"
+
+#, fuzzy, python-format
+msgid ""
+"Either a custom URL with %%s in it (where %%s is the word/phrase) or "
+"\"WIKTIONARY\" (which means use Wikitionary)."
+msgstr ""
+"Pe un url personelaet gant %s ennañ, %s o vezañ ar ger-kuzh pe 'WIKTIONARY' "
+"hag a dalvez implij wiktionary."
+
+#, fuzzy
+msgid "Email"
+msgstr "Postel nevez"
+
+msgid "Emoji Shortcodes"
+msgstr ""
+
+msgid "Emojis"
+msgstr ""
+
+msgid "Enable"
+msgstr "Enaouiñ"
+
+#, fuzzy
+msgid "Enable Account"
+msgstr "Anv-kont direizh"
+
+msgid "Enable KeepassXC Integration"
+msgstr ""
+
+#, fuzzy
+msgid "Enabled"
+msgstr "Enaouiñ"
+
+msgid ""
+"Enables Gajim to measure your computer’s idle time in order to set your "
+"Status automatically"
+msgstr ""
+
+msgid "Enables Gajim to play sounds for various notifications"
+msgstr ""
+
+msgid "Enables Gajim to provide a Audio preview"
+msgstr ""
+
+msgid "Enables Gajim to spell check your messages while composing"
+msgstr ""
+
+msgid ""
+"Enables Gajim to store Passwords securely instead of storing them in "
+"plaintext"
+msgstr ""
+
+#, python-format
+msgid "Encrypted (%s)"
+msgstr ""
+
+#, fuzzy
+msgid "Encrypting file…"
+msgstr "Lazhet eo ar sifrañ"
+
+#, fuzzy
+msgid "Encryption (OMEMO)"
+msgstr "War enaou emañ ar sifrañ"
+
+#, fuzzy, python-format
+msgid "Encryption (OMEMO) – %(account)s"
+msgstr "War enaou emañ ar sifrañ"
+
+#, fuzzy
+msgid "Encryption Error"
+msgstr "War enaou emañ ar sifrañ"
+
+#, fuzzy
+msgid "Encryption error"
+msgstr "War enaou emañ ar sifrañ"
+
+msgid "Encryption is not available in private chats"
+msgstr ""
+
+msgid "Encryption method to use unless overridden on a per-contact basis"
+msgstr ""
+
+#, fuzzy
+msgid "Encryption required"
+msgstr "War enaou emañ ar sifrañ"
+
+msgid "End call"
+msgstr ""
+
+msgid "Endpoint for retrieving a list of providers for sign up"
+msgstr ""
+
+msgid "Enter a password to join this chat"
+msgstr ""
+
+#, fuzzy
+msgid "Enter group name"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy
+msgid "Enter new contact name"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy
+msgid "Enter new password..."
+msgstr "Roit ur ger-kuzh nevez:"
+
+#, fuzzy
+msgid "Enter your new nickname"
+msgstr "Cheñch _lesanv"
+
+msgid ""
+"Enter your nickname. This is how your name is displayed to your contacts."
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+#, fuzzy
+msgid "Error Loading Image"
+msgstr "Pegañ ar skeudenn"
+
+msgid "Error in audio data stream."
+msgstr ""
+
+#, fuzzy
+msgid "Error opening file"
+msgstr "Fazi en ur lenn ar restr:"
+
+#, fuzzy
+msgid "Error while Exporting"
+msgstr "fazi en ur gas %s ( %s )"
+
+#, fuzzy
+msgid "Error while processing image"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, fuzzy
+msgid "Error while receiving search results."
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, fuzzy
+msgid "Error while retrieving search form."
+msgstr "fazi en ur gas %s ( %s )"
+
+#, fuzzy
+msgid "Error while uploading avatar"
+msgstr "fazi en ur gas %s ( %s )"
+
+#, fuzzy, python-format
+msgid "Error: %s"
+msgstr "Fazi en ur lenn ar restr:"
+
+#, fuzzy, python-format
+msgid "Error: %s (mime types: %s)"
+msgstr "Fazi en ur lenn ar restr:"
+
+msgid "Event"
+msgstr "Darvoud"
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Everything"
+msgstr ""
+
+msgid "Exceptions from the above setting"
+msgstr ""
+
+#, fuzzy
+msgid "Execute"
+msgstr "urzhiad"
+
+#, fuzzy
+msgid "Execute Command…"
+msgstr "urzhiad"
+
+#, fuzzy
+msgid "Executing…"
+msgstr "urzhiad"
+
+msgid "Expires on: "
+msgstr ""
+
+msgid "Expiry date"
+msgstr ""
+
+#, fuzzy
+msgid "Export"
+msgstr "Ezporzhiañ"
+
+#, fuzzy
+msgid "Export CSV"
+msgstr "Ezporzhiañ"
+
+#, fuzzy
+msgid "Export Chat History"
+msgstr "Nevez 'zo:"
+
+#, fuzzy
+msgid "Export Contacts"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Export Error"
+msgstr "Ezporzhiañ"
+
+#, fuzzy
+msgid "Export Finished"
+msgstr "_Echuiñ"
+
+#, fuzzy
+msgid "Export History…"
+msgstr "Nevez 'zo:"
+
+msgid "Export your chat history from Gajim"
+msgstr ""
+
+#, fuzzy
+msgid "Exporting History..."
+msgstr "Oc'h ezporzhiañ an istoradur..."
+
+#, fuzzy
+msgid "Exporting your messages..."
+msgstr "Kemennadenn o _tegouezhout:"
+
+#, fuzzy
+msgid "Export…"
+msgstr "Ezporzhiañ"
+
+msgid ""
+"Express yourself: Sometimes words are not enough. Use reactions, replies, "
+"record voice messages, and send status updates to fully express yourself."
+msgstr ""
+
+#, fuzzy
+msgid "Extended Address"
+msgstr "Chomlec'h 2:"
+
+#, fuzzy
+msgid "FA_Q (Online)"
+msgstr "_Kenderc'hel"
+
+#, fuzzy
+msgid "Failed to Configure Group Chat"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Failed to Create Group Chat"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Failed to Join Group Chat"
+msgstr "Impossible de rejoindre le salon"
+
+#, fuzzy
+msgid "Failed to generate avatar."
+msgstr "Flap a-stroll"
+
+msgid "Fake audio output"
+msgstr ""
+
+#, fuzzy
+msgid "Features"
+msgstr "Perzhioù ar servijerien"
+
+msgid "Feedback"
+msgstr ""
+
+msgid "Female"
+msgstr ""
+
+#, fuzzy
+msgid "Fetching messages…"
+msgstr "a skriv ur gemennadenn..."
+
+msgid "File"
+msgstr "Restr"
+
+msgid "File Offered…"
+msgstr ""
+
+msgid "File Preview"
+msgstr ""
+
+#, fuzzy
+msgid "File Size Limit"
+msgstr "Treug ar restr"
+
+#, fuzzy
+msgid "File Transfer"
+msgstr "Treuzkasoù"
+
+#, fuzzy
+msgid "File Transfer Cancelled"
+msgstr "Nullet eo bet an treuzkas"
+
+msgid "File Transfer Completed"
+msgstr "Echu an treuzkasadenn"
+
+msgid "File Transfer Stopped"
+msgstr "Sac'het an treuzkas"
+
+#, fuzzy
+msgid "File Verification Failed"
+msgstr "Oc'h ouzhpennañ ur gelaouenn nevez evit %s"
+
+#, fuzzy
+msgid "File corrupted during transfer"
+msgstr "Nullañ an treuzkas"
+
+#, fuzzy
+msgid "File does not exist"
+msgstr "Ce salon n'existe pas."
+
+#, fuzzy
+msgid "File is empty"
+msgstr "Treug ar restr"
+
+#, python-format
+msgid "File is too large, maximum allowed file size is: %s"
+msgstr ""
+
+#, fuzzy
+msgid "File saved"
+msgstr "Anv ar restr: %s"
+
+#, fuzzy
+msgid "File too big"
+msgstr "L'image est trop grande"
+
+#, python-format
+msgid "File: %s"
+msgstr "Restr: %s"
+
+#, fuzzy
+msgid "Filter"
+msgstr "Sil:"
+
+#, fuzzy
+msgid "Filter Chats"
+msgstr "Flapoù prevez"
+
+#, fuzzy
+msgid "Filters"
+msgstr "Sil:"
+
+#, fuzzy
+msgid "Filters (active)"
+msgstr "Kemennadenn gentañ"
+
+msgid "Fingerprint for this Device"
+msgstr ""
+
+msgid "Fingerprints"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Fingerprints of devices connected with \"%s\""
+msgstr "Gwiriekait oc'h luget gant \"%s\"."
+
+#, fuzzy
+msgid "Finished"
+msgstr "_Echuiñ"
+
+#, python-format
+msgid ""
+"Finished synchronising chat history:\n"
+"%s messages downloaded"
+msgstr ""
+
+msgid "Focus Input"
+msgstr ""
+
+#, fuzzy
+msgid "Focus Search"
+msgstr "Klask"
+
+#, fuzzy, python-format
+msgid "Folder: %s"
+msgstr "Restr: %s"
+
+msgid "For example: \"Julia is now online\""
+msgstr ""
+
+#, fuzzy
+msgid "Force Bookmark 2 usage"
+msgstr "_Ouzhpennañ ar webgaoz d'ar sinedoù"
+
+#, fuzzy
+msgid "Forever"
+msgstr "_Morse"
+
+#, fuzzy
+msgid "Forget Group Chat"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Forget this Group Chat?"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Forget this Group Chat…"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Format Text Bold"
+msgstr "Istoradur ar gaoz"
+
+msgid "Format Text Italic"
+msgstr ""
+
+msgid "Format Text Strikethrough"
+msgstr ""
+
+msgid "Format error in CRL's lastUpdate field"
+msgstr ""
+
+msgid "Format error in CRL's nextUpdate field"
+msgstr ""
+
+msgid "Format error in certificate's notAfter field"
+msgstr ""
+
+msgid "Format error in certificate's notBefore field"
+msgstr ""
+
+#, fuzzy
+msgid "Format your message"
+msgstr "Gajim - %d gemennadenn nevez"
+
+msgid "Forward 10 seconds"
+msgstr ""
+
+#, python-format
+msgid "Found %s contacts to import"
+msgstr ""
+
+#, fuzzy
+msgctxt "User status"
+msgid "Free for Chat"
+msgstr "Prest da flapiñ"
+
+msgid "From"
+msgstr "Digant"
+
+#, fuzzy
+msgctxt "Contact subscription"
+msgid "From"
+msgstr "Digant"
+
+#, fuzzy
+msgid "Full Name"
+msgstr "<b>Personelaet</b>"
+
+#, fuzzy
+msgctxt "Profile"
+msgid "Full Name"
+msgstr "<b>Personelaet</b>"
+
+msgid "Fully-featured XMPP chat client"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "GLib Version: %s"
+msgstr "Taolennadur: %s"
+
+#, fuzzy, python-format
+msgid "GTK Version: %s"
+msgstr "Taolennadur: %s"
+
+#, fuzzy, python-format
+msgid "Gajim %s is available"
+msgstr "N'eus ket tu da gevreañ"
+
+#, fuzzy
+msgid "Gajim - Error"
+msgstr "Gajim - %s"
+
+#, fuzzy
+msgid "Gajim Themes"
+msgstr "Gajim - %s"
+
+#, fuzzy
+msgid "Gajim Update"
+msgstr "Hizivaat MOTD"
+
+#, fuzzy
+msgid "Gajim Update Check"
+msgstr "Hizivaat MOTD"
+
+msgid ""
+"Gajim aims to be an easy to use and fully-featured XMPP client. Just chat "
+"with your friends or family, easily share pictures and thoughts or discuss "
+"the news with your groups."
+msgstr ""
+
+msgid ""
+"Gajim encountered an error.\n"
+"Please help us fixing this issue by sending this report."
+msgstr ""
+
+msgid "Gajim is fully synchronized with the archive."
+msgstr ""
+
+#, fuzzy
+msgid "Gajim is quitting…"
+msgstr "O labourat"
+
+msgid ""
+"Gajim was not able to reach the server. Make sure your XMPP address is "
+"correct."
+msgstr ""
+
+msgid "Gajim will now exit"
+msgstr "Emañ Gajim o vont da guitaat diouzhtu"
+
+#, fuzzy
+msgid "Gathering information…"
+msgstr "Titouroù"
+
+#, fuzzy
+msgid "Gender"
+msgstr "Kaser:"
+
+#, fuzzy
+msgctxt "Profile"
+msgid "Gender"
+msgstr "Kaser:"
+
+msgid "General"
+msgstr "Hollek"
+
+#, python-format
+msgid "General – %(account)s"
+msgstr ""
+
+#, fuzzy
+msgid "Global Group Chat Search"
+msgstr "Ebarzhiñ ur sal-flapiñ"
+
+#, fuzzy
+msgid "Global Proxy"
+msgstr "Proksi:"
+
+#, fuzzy
+msgid "Global Status"
+msgstr "Stad:"
+
+#, fuzzy
+msgid "Go"
+msgstr "_Mont"
+
+msgid "Grant Voice"
+msgstr ""
+
+msgid "Group"
+msgstr "Strollad"
+
+#, fuzzy
+msgid "Group Chat"
+msgstr "_Webkaozioù"
+
+#, fuzzy
+msgid "Group Chat Details"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Group Chat Language"
+msgstr "Pedadenn evit ur sal-flapiñ"
+
+msgid "Group Chat Message Highlight"
+msgstr "Message d'un Salon mis en Sur-brillance"
+
+msgid "Group Chat Message Received"
+msgstr "Kemennadenn digant ur sal-flapiñ"
+
+#, fuzzy
+msgid "Group Chat Settings"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Group Chats"
+msgstr "_Webkaozioù"
+
+#, fuzzy
+msgid "Group chat already exists"
+msgstr "Anv-kont implijet dija"
+
+msgid "Group chat can be found via search"
+msgstr ""
+
+#, fuzzy
+msgid "Group chat does not exist"
+msgstr "Ce salon n'existe pas."
+
+#, fuzzy
+msgid "Group chat has been destroyed"
+msgstr "Dilamet eo bet an aotre"
+
+#, fuzzy
+msgid "Group chat is closed"
+msgstr "Flapoù a-stroll"
+
+#, fuzzy
+msgid "Group chat is now fully anonymous"
+msgstr "Flapoù a-stroll"
+
+#, fuzzy
+msgid "Group chat is now non-anonymous"
+msgstr "Flapoù a-stroll"
+
+#, fuzzy
+msgid "Group chat is now semi-anonymous"
+msgstr "Message d'un Salon mis en Sur-brillance"
+
+#, fuzzy
+msgid "Group chat now does not show unavailable members"
+msgstr "Ce salon n'existe pas."
+
+msgid "Group chat now shows unavailable members"
+msgstr ""
+
+#, fuzzy
+msgid "Groups"
+msgstr "Strollad"
+
+#, fuzzy, python-format
+msgid "HTTP (%(method)s) Authorization for %(url)s (ID: %(id)s)"
+msgstr "Aotre HTTP (%s) evit %s (id : %s)"
+
+#, fuzzy
+msgid "HTTP Authorization Request"
+msgstr "Kaset eo bet an aotre"
+
+#, fuzzy
+msgid "HTTPS Verification"
+msgstr "Kemmañ ar gont"
+
+#, python-format
+msgid "Hello, I am $name. %s"
+msgstr ""
+
+msgid "Here you can add some feedback which helps reproducing this problem."
+msgstr ""
+
+msgctxt "Group chat feature"
+msgid "Hidden"
+msgstr ""
+
+msgid "Hide"
+msgstr ""
+
+#, fuzzy
+msgid "Hide Chat List"
+msgstr "Perzhiad-ez"
+
+#, fuzzy
+msgid "Home"
+msgstr "Lec'hienn hiniennel:"
+
+#, fuzzy
+msgid "Hostname"
+msgstr "Servijer:"
+
+#, python-format
+msgid "Hostname – %(account)s"
+msgstr ""
+
+#, python-format
+msgid ""
+"Hostname: %(hostname)s\n"
+"Software: %(software)s\n"
+"Uptime: %(uptime)s\n"
+msgstr ""
+
+#, fuzzy
+msgid "How far back should the chat history be synchronized?"
+msgstr "Petra a fell deoc'h ober?"
+
+msgid "How long Gajim should keep your chat history"
+msgstr ""
+
+msgid "How to install plugins with Flatpak"
+msgstr ""
+
+#, fuzzy
+msgid "I can see contact's online status"
+msgstr "Goulenn evit gwelet e/he stad"
+
+msgid "I would like to add you to my contact list."
+msgstr "Me blijfe din ouzhpennañ ac'hanoc'h em roll-darempredoù."
+
+msgid "I would like to add you to my roster."
+msgstr "Laouen 'vefen d'ho ouzhpennañ em roll-darempredoù."
+
+#, fuzzy
+msgid "ID"
+msgstr "JID"
+
+msgid "IEC standard says KiB = 1024 bytes, KB = 1000 bytes."
+msgstr "Hervez ar standard IEC, KiB = 1024 byte, KB = 1000 byte."
+
+#, fuzzy
+msgctxt "Profile"
+msgid "IM Address"
+msgstr "Chomlec'h"
+
+msgid "Id"
+msgstr ""
+
+#, fuzzy
+msgid "Identified Error"
+msgstr "Anv-arveriad-ez direizh"
+
+msgid ""
+"Identifier for this device. Don’t change this unless you know what you are "
+"doing."
+msgstr ""
+
+#, fuzzy
+msgid "Idle Time"
+msgstr "dibaoe %s"
+
+msgid ""
+"If enabled, Gajim makes the window flash (the default behaviour in most "
+"Window Managers) when holding pending events."
+msgstr ""
+
+msgid "If enabled, Gajim offers to download plugins hosted on gajim.org"
+msgstr ""
+
+msgid "If enabled, Gajim will ignore incoming attention requests (\"wizz\")."
+msgstr ""
+
+msgid ""
+"If enabled, Gajim will try to use a STUN server when using Jingle. The one "
+"in \"stun_server\" option, or the one given by the XMPP server."
+msgstr ""
+
+#, fuzzy
+msgid "Ignore Unknown Contacts"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Ignore everything from contacts not in your contact list"
+msgstr "_Chom hep teurel pled eus ar c'hemennadennoù kaset gant tud dianav"
+
+msgid "Image"
+msgstr "Image"
+
+#, fuzzy
+msgid "Import"
+msgstr "Ezporzhiañ"
+
+#, fuzzy
+msgid "Import Contacts"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Import Contacts?"
+msgstr "Darempredoù"
+
+msgid "Import Error"
+msgstr ""
+
+#, fuzzy
+msgid "Import from Account"
+msgstr "Lemel ar gont %s"
+
+msgid "Import from File"
+msgstr ""
+
+msgid "Import…"
+msgstr ""
+
+msgid ""
+"In order to write messages in this chat, you need to request voice first.\n"
+"A moderator will process your request."
+msgstr ""
+
+#, fuzzy
+msgid "In this group chat"
+msgstr "Emaoc'h er webgaoz %s dija"
+
+#, fuzzy
+msgid "Incoming Call"
+msgstr "Anv-arveriad-ez direizh"
+
+msgid "Incoming Call (Video)"
+msgstr ""
+
+#, fuzzy
+msgid "Increase Font Size"
+msgstr "_Anv:"
+
+msgid "Increase playback speed"
+msgstr ""
+
+#, fuzzy
+msgid "Information"
+msgstr "Titouroù"
+
+#, fuzzy
+msgid "Insecure Connection"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Install"
+msgstr "échec lors de la publication de votre vCard"
+
+msgid "Install <tt>sentry-sdk</tt> to make reporting issues easier."
+msgstr ""
+
+msgid "Install Plugin from ZIP-File"
+msgstr ""
+
+msgid "Install a keyring to store passwords on your system."
+msgstr ""
+
+msgid "Install from Archive"
+msgstr ""
+
+#, fuzzy
+msgid "Installation failed"
+msgstr "échec lors de la publication de votre vCard"
+
+msgctxt "Configuration type"
+msgid "Integer"
+msgstr ""
+
+#, fuzzy
+msgid "Invalid Address"
+msgstr "Restr direizh"
+
+#, fuzzy
+msgid "Invalid CA certificate"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "Invalid Name"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "Invalid Node"
+msgstr "Restr direizh"
+
+#, fuzzy
+msgid "Invalid Server Name"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "Invalid Stanza"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "Invalid XMPP Address"
+msgstr "Restr direizh"
+
+#, fuzzy, python-format
+msgid "Invalid address: %s"
+msgstr "Restr direizh"
+
+#, fuzzy
+msgid "Invalid domain name"
+msgstr "Anv-kont direizh"
+
+#, fuzzy
+msgid "Invalid server response"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "Invitation"
+msgstr "Kemmañ ar gont"
+
+#, fuzzy
+msgid "Invitation Declined"
+msgstr "Pedadenn evit ur sal-flapiñ"
+
+#, fuzzy
+msgid "Invite"
+msgstr "Diwelus"
+
+#, fuzzy
+msgid "Invite Contacts"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Invite to this chat…"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Invitees"
+msgstr "Diwelus"
+
+msgid "Is a microphone plugged in and accessible?"
+msgstr ""
+
+msgid "Issue date"
+msgstr ""
+
+msgid "Issued by"
+msgstr ""
+
+msgid "Issued by\n"
+msgstr ""
+
+msgid "Issued on: "
+msgstr ""
+
+msgid "Issued to"
+msgstr ""
+
+msgid "Issued to\n"
+msgstr ""
+
+msgid "Issues detected"
+msgstr ""
+
+#, fuzzy
+msgid "I’m eating."
+msgstr "O labourat 'maon."
+
+#, fuzzy
+msgid "I’m out enjoying life."
+msgstr "Er-maez emaon o profitañ eus ar vuhez"
+
+#, fuzzy
+msgid "I’m watching a movie."
+msgstr "O sellout ouzh ur film 'maon."
+
+#, fuzzy
+msgid "I’m working."
+msgstr "O labourat 'maon."
+
+msgid "JID"
+msgstr "JID"
+
+#, fuzzy
+msgid "JPEG files"
+msgstr "An holl restroù"
+
+#, fuzzy
+msgid "Join"
+msgstr "E_barzhiñ"
+
+msgid "Join Group Chat"
+msgstr "Ebarzhiñ ur sal-flapiñ"
+
+#, fuzzy
+msgid "Join Group Chat as…"
+msgstr "Ebarzhiñ ur sal-flapiñ"
+
+#, fuzzy
+msgid "Join Group Chat?"
+msgstr "Ebarzhiñ ur sal-flapiñ"
+
+#, fuzzy
+msgid "Join Groupchat…"
+msgstr "Ebarzhiñ ur sal-flapiñ"
+
+#, fuzzy
+msgid "Joining Group Chat…"
+msgstr "Ebarzhiñ ur sal-flapiñ"
+
+#, fuzzy
+msgid "Joining…"
+msgstr "Oc'h argas..."
+
+#, fuzzy
+msgid "Join…"
+msgstr "Oc'h argas..."
+
+msgid "Just now"
+msgstr ""
+
+#, fuzzy
+msgid "Keep Chat History"
+msgstr "Nevez 'zo:"
+
+msgid "Key usage does not include certificate signing"
+msgstr ""
+
+#, fuzzy
+msgid "Kick"
+msgstr "_Ermaeziañ"
+
+#, fuzzy, python-format
+msgid "Kick %s"
+msgstr "Skarzhañ %s"
+
+#, fuzzy
+msgid "Kick…"
+msgstr "_Ermaeziañ"
+
+msgid "Label"
+msgstr ""
+
+#, python-format
+msgid "Language: %s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Last seen: %s"
+msgstr "Abeg"
+
+#, fuzzy
+msgid "Leave Group Chat?"
+msgstr "Flap a-stroll"
+
+msgid "Leave _Permanently"
+msgstr ""
+
+msgid ""
+"List of send hosts (comma separated) in addition to local interfaces for "
+"file transfers (in case of address translation/port forwarding)."
+msgstr ""
+
+msgid "Listing of providers"
+msgstr ""
+
+msgid "Live Preview"
+msgstr ""
+
+#, fuzzy
+msgid "Load Image"
+msgstr "Pegañ ar skeudenn"
+
+#, fuzzy
+msgid "Loading Avatar Failed"
+msgstr "C'hwitet eo embannadur ar vCard"
+
+#, fuzzy
+msgid "Loading Preview…"
+msgstr "O skrivañ"
+
+#, fuzzy
+msgid "Loading avatar image failed"
+msgstr "Kas ar gemennadenn brevez c'hwitet"
+
+#, fuzzy
+msgid "Loading…"
+msgstr "O skrivañ"
+
+#, fuzzy
+msgid "Local Time"
+msgstr "dibaoe %s"
+
+#, fuzzy, python-format
+msgid "Location at %s"
+msgstr "Kemmañ ar gont"
+
+#, fuzzy
+msgid "Log"
+msgstr "_Lugañ"
+
+#, fuzzy
+msgid "Log In"
+msgstr "_Lugañ"
+
+msgid "Log in with your credentials"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+#, python-format
+msgid "Login – %(account)s"
+msgstr ""
+
+msgid "Look it up in _Dictionary"
+msgstr "Klask er _geriadur"
+
+#, fuzzy
+msgid "Make Admin"
+msgstr "_Merour-ez"
+
+#, fuzzy
+msgid "Make Member"
+msgstr "_Ezel"
+
+#, fuzzy
+msgid "Make Owner"
+msgstr "_Perc'hener-ez"
+
+msgid "Make your profile visible for everyone or just for your contacts."
+msgstr ""
+
+msgid "Male"
+msgstr ""
+
+#, fuzzy
+msgid "Manage"
+msgstr "Kemmañ..."
+
+#, fuzzy
+msgid "Manage Proxies"
+msgstr "Merañ an aeladoù proksi"
+
+#, fuzzy
+msgid "Manage Proxies..."
+msgstr "Merañ an aeladoù proksi"
+
+#, fuzzy
+msgid "Manage Shortcuts"
+msgstr "Merañ ar c'hontoù"
+
+#, fuzzy
+msgid "Manage Sounds"
+msgstr "Merañ ar c'hontoù"
+
+#, fuzzy
+msgid "Manage Trust"
+msgstr "Merañ ar c'hontoù"
+
+msgid "Manage and configure Gajim plugins"
+msgstr ""
+
+#, fuzzy
+msgid "Manage your Devices…"
+msgstr "Merañ an aeladoù proksi"
+
+msgid "Manually set the hostname for the server"
+msgstr ""
+
+msgid "Mark as Read"
+msgstr ""
+
+msgid "Mark as read"
+msgstr ""
+
+msgid "Maximum file size for preview downloads"
+msgstr ""
+
+#, fuzzy
+msgid "Me"
+msgstr "Hollek"
+
+msgid "Media Playback"
+msgstr ""
+
+#, fuzzy
+msgid "Member"
+msgstr "_Ezel"
+
+#, fuzzy
+msgctxt "Group chat contact affiliation"
+msgid "Member"
+msgstr "_Ezel"
+
+#, fuzzy
+msgctxt "Group chat contact affiliation"
+msgid "Members"
+msgstr "_Ezel"
+
+#, fuzzy
+msgctxt "Group chat feature"
+msgid "Members Only"
+msgstr "_Ezel"
+
+#, fuzzy
+msgid "Mention: Message Background Color"
+msgstr "_Distreiñ gant al livioù dre-ziouer"
+
+msgid "Message"
+msgstr "Kemennadenn"
+
+#, fuzzy
+msgid "Message History"
+msgstr "Kemennadenn gaset"
+
+#, fuzzy
+msgid "Message Receipts (✔)"
+msgstr "korf ar gemennadenn"
+
+#, fuzzy
+msgid "Message Received"
+msgstr "Kemennadenn gentañ"
+
+msgid "Message Sent"
+msgstr "Kemennadenn gaset"
+
+#, fuzzy
+msgid "Message content unknown"
+msgstr "Kemennadenn gaset"
+
+#, python-format
+msgid ""
+"Message corrected. Original message:\n"
+"%s"
+msgstr ""
+
+#, fuzzy
+msgid "Messages"
+msgstr "Kemennadenn"
+
+#, fuzzy
+msgid "Messages are archived on the server"
+msgstr "N'oc'h ket luget d'ar servijer"
+
+#, fuzzy
+msgid "Messages from Contacts"
+msgstr "Kemennadenn gentañ"
+
+msgid "Messages from this users are blocked"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Migration to version %s"
+msgstr "Taolennadur: %s"
+
+#, fuzzy
+msgid "Minimize"
+msgstr "Gajim"
+
+#, fuzzy
+msgid "Minutes until your status gets changed"
+msgstr "_Menegiñ kemmoù stad an darempredoù e-barzh an istoradur"
+
+#, fuzzy
+msgid "Miscellaneous"
+msgstr "<b>A bep seurt</b>"
+
+msgid "Missing dependencies for audio support"
+msgstr ""
+
+msgid "Missing necessary encryption plugin"
+msgstr ""
+
+#, fuzzy
+msgid "Moderate Message?"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Moderate Messages?"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgctxt "Message row action"
+msgid "Moderate all messages…"
+msgstr "titour stad"
+
+#, fuzzy
+msgctxt "Group chat feature"
+msgid "Moderated"
+msgstr "Kasour-ez"
+
+#, fuzzy
+msgctxt "Message row action"
+msgid "Moderate…"
+msgstr "Kasour-ez"
+
+#, fuzzy
+msgid "Moderation"
+msgstr "Kasour-ez"
+
+#, fuzzy
+msgctxt "Group chat contact role"
+msgid "Moderator"
+msgstr "Kasour-ez"
+
+#, fuzzy
+msgctxt "Group chat contact role"
+msgid "Moderators"
+msgstr "Kasourien"
+
+#, fuzzy
+msgid "Modify"
+msgstr "_Kemmañ"
+
+msgid "More infos at providers.xmpp.net"
+msgstr ""
+
+#, fuzzy
+msgid "Move"
+msgstr "Goulenn treuzkas"
+
+#, fuzzy
+msgid "Move Chat"
+msgstr "Goulenn treuzkas"
+
+#, fuzzy
+msgid "Move Contact to New Group?"
+msgstr "Diskouez er _roll hepken"
+
+#, fuzzy
+msgid "Move to Group"
+msgstr "_Dilemel"
+
+msgid "Movie"
+msgstr "Film"
+
+#, fuzzy
+msgid "Must be a port number"
+msgstr "Ar porzh personelaet a rank bezañ un niverenn borzh"
+
+#, fuzzy
+msgid "Mute Chat"
+msgstr "Goulenn treuzkas"
+
+#, fuzzy
+msgid "Mute Sounds"
+msgstr "Sonioù wav"
+
+msgid "My Workspace"
+msgstr ""
+
+msgid "Name"
+msgstr "Anv"
+
+msgid "Name <b>default</b> is not allowed"
+msgstr ""
+
+msgid "Needs libspelling to be installed"
+msgstr ""
+
+#, fuzzy
+msgid "Never"
+msgstr "_Morse"
+
+#, fuzzy
+msgid "New Contact"
+msgstr "Ouzhpennañ un darempred nevez"
+
+#, fuzzy
+msgid "New Group"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "New Group…"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "New Search"
+msgstr "Klask"
+
+#, fuzzy
+msgid "New Workspace"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "New message from"
+msgstr "Kemennadenn nevez digant %(nickname)s"
+
+msgid "Next"
+msgstr ""
+
+msgid "Nickname"
+msgstr "Lesanv"
+
+msgid "Nickname contains invalid characters"
+msgstr ""
+
+#, fuzzy
+msgid "Nickname…"
+msgstr "Lesanv"
+
+#, fuzzy
+msgid "No"
+msgstr "Hini ebet"
+
+#, fuzzy
+msgid "No File Transfer available"
+msgstr "Treuzkasoù"
+
+#, fuzzy
+msgid "No Messages"
+msgstr "Kemennadenn"
+
+#, fuzzy
+msgid "No Messages Found"
+msgstr "N'eo ket bet kavet %s"
+
+#, fuzzy
+msgctxt "Group chat feature"
+msgid "No Password Required"
+msgstr "Ger-kuzh ret"
+
+#, fuzzy
+msgid "No Proxy"
+msgstr "Proksi:"
+
+#, fuzzy
+msgid "No Results Found"
+msgstr "N'eo ket bet kavet %s"
+
+msgid "No Sync"
+msgstr ""
+
+msgid "No Threshold"
+msgstr ""
+
+msgid "No additional requirements"
+msgstr ""
+
+msgid "No automatic preview"
+msgstr ""
+
+#, fuzzy
+msgid "No certificate available"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "No commands available"
+msgstr "Kont ebet hegerz"
+
+msgid "No contact addresses published for this server."
+msgstr ""
+
+msgid ""
+"No contacts found\n"
+"You can also type an XMPP address"
+msgstr ""
+
+msgid "No contacts found to import"
+msgstr ""
+
+msgid ""
+"No contacts left.\n"
+"You can also type an XMPP address."
+msgstr ""
+
+msgid "No devices found to encrypt this message to. Querying for devices now…"
+msgstr ""
+
+msgid "No devices online"
+msgstr ""
+
+msgid "No group assigned"
+msgstr ""
+
+#, fuzzy
+msgid "No info available"
+msgstr "Kont ebet hegerz"
+
+msgid "No keys pressed"
+msgstr ""
+
+#, python-format
+msgid "No permission to export file to %s"
+msgstr ""
+
+#, fuzzy
+msgid "No results"
+msgstr "N'eo ket bet kavet %s"
+
+#, fuzzy
+msgid "No results found"
+msgstr "N'eo ket bet kavet %s"
+
+msgid "No undecided fingerprints"
+msgstr ""
+
+#, fuzzy
+msgid "Node"
+msgstr "Hini ebet"
+
+msgctxt "Configuration description"
+msgid "None"
+msgstr ""
+
+msgctxt "Contact subscription"
+msgid "None"
+msgstr ""
+
+msgctxt "Gender"
+msgid "None"
+msgstr ""
+
+msgctxt "Group chat contact affiliation"
+msgid "None"
+msgstr ""
+
+msgctxt "Group chat contact role"
+msgid "None"
+msgstr ""
+
+msgctxt "Group chat feature"
+msgid "Not Anonymous"
+msgstr ""
+
+msgid "Not Available"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgctxt "User status"
+msgid "Not Available"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgid "Not Decided"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Not Joined"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgctxt "Group chat feature"
+msgid "Not Moderated"
+msgstr "N'eo ket kroget"
+
+#, fuzzy
+msgid "Not accelerated"
+msgstr "N'eo ket kroget"
+
+#, fuzzy
+msgid "Not available"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgid "Not connected"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "Not encrypted"
+msgstr "N'eo ket kroget"
+
+msgctxt "Profile"
+msgid "Note"
+msgstr ""
+
+msgid "Note to myself"
+msgstr ""
+
+msgid "Note: Anonymous accounts are not possible with all providers"
+msgstr ""
+
+msgid "Notes"
+msgstr ""
+
+#, fuzzy
+msgid "Notification Sounds"
+msgstr "Kemmañ ar gont"
+
+#, fuzzy
+msgid "Notifications"
+msgstr "Kemmañ ar gont"
+
+msgid "Notify after update"
+msgstr ""
+
+msgid "Notify me when the automatic update was successful"
+msgstr ""
+
+#, fuzzy
+msgid "Notify on all Messages"
+msgstr "Kemennadennoù raklakaet:"
+
+#, fuzzy
+msgid "OK"
+msgstr "_Mat eo"
+
+#, fuzzy
+msgctxt "Switch"
+msgid "Off"
+msgstr "Ezlinenn"
+
+msgid "Offline"
+msgstr "Ezlinenn"
+
+#, fuzzy
+msgctxt "Switch"
+msgid "On"
+msgstr "OpenPGP : "
+
+msgid "One Month"
+msgstr ""
+
+msgid "One Year"
+msgstr ""
+
+msgid "Only Admins and Owners can modify the affiliation"
+msgstr ""
+
+msgid "Only moderators can see your XMPP address"
+msgstr ""
+
+#, fuzzy
+msgid "Open"
+msgstr "OpenPGP : "
+
+#, fuzzy
+msgctxt "Group chat feature"
+msgid "Open"
+msgstr "OpenPGP : "
+
+#, fuzzy, python-format
+msgid "Open %s"
+msgstr "OpenPGP : "
+
+#, fuzzy
+msgid "Open Email Composer"
+msgstr "_Digeriñ ar bostelerez"
+
+#, fuzzy
+msgid "Open Emoji Chooser"
+msgstr "_Digeriñ ar bostelerez"
+
+#, fuzzy
+msgid "Open Folder"
+msgstr "_Digeriñ ar renkell pal"
+
+#, fuzzy
+msgid "Open Link in _Browser"
+msgstr "_Digerién an ere er furcher web"
+
+msgid "Open as _Link"
+msgstr ""
+
+#, fuzzy
+msgid "Open folder"
+msgstr "_Digeriñ ar renkell pal"
+
+msgid "OpenGL accelerated"
+msgstr ""
+
+#, fuzzy
+msgid "Operating System"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgctxt "Profile"
+msgid "Organisation"
+msgstr "_Merour-ez"
+
+#, fuzzy
+msgid "Organization"
+msgstr "_Merour-ez"
+
+msgid "Organization (O): "
+msgstr ""
+
+#, fuzzy
+msgctxt "Gender"
+msgid "Other"
+msgstr "Traoù all"
+
+msgid "Other devices connected with your account"
+msgstr ""
+
+msgid "Others"
+msgstr "Traoù all"
+
+msgid "Out"
+msgstr "Er-maez"
+
+msgid "Out of memory"
+msgstr ""
+
+msgid "Outcasts"
+msgstr ""
+
+#, fuzzy
+msgid "Overwrite Plugin?"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Owner"
+msgstr "_Perc'hener-ez"
+
+#, fuzzy
+msgctxt "Group chat contact affiliation"
+msgid "Owner"
+msgstr "_Perc'hener-ez"
+
+#, fuzzy
+msgctxt "Group chat contact affiliation"
+msgid "Owners"
+msgstr "_Perc'hener-ez"
+
+#, fuzzy
+msgid "PEP Configuration"
+msgstr "Kefluniañ ar webgaoz"
+
+msgid "PEP Node Not Removed"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "PEP Service Configuration (%s)"
+msgstr "Kefluniañ ar webgaoz"
+
+#, python-format
+msgid ""
+"PEP node %(node)s was not removed:\n"
+"%(message)s"
+msgstr ""
+
+#, fuzzy
+msgid "PNG files"
+msgstr "An holl restroù"
+
+msgid "Packages"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Pango Version: %s"
+msgstr "Taolennadur: %s"
+
+#, fuzzy
+msgctxt "Group chat contact role"
+msgid "Participant"
+msgstr "Perzhiad-ez"
+
+msgid "Participants"
+msgstr "Perzhidi"
+
+#, fuzzy
+msgctxt "Group chat contact role"
+msgid "Participants"
+msgstr "Perzhidi"
+
+#, fuzzy
+msgid "Participants Count"
+msgstr "Perzhidi"
+
+msgid "Participants asking for voice:"
+msgstr ""
+
+msgid "Participants entering this group chat are allowed to send messages"
+msgstr ""
+
+msgid ""
+"Participants entering this group chat need to request permission to send "
+"messages"
+msgstr ""
+
+#, fuzzy
+msgid "Pass_word"
+msgstr "_Ger-kuzh:"
+
+#, fuzzy
+msgid "Password"
+msgstr "Ger-kuzh:"
+
+#, fuzzy
+msgid "Password Change Failed"
+msgstr "Ger-kuzh ret"
+
+#, fuzzy
+msgid "Password Changed"
+msgstr "Ger-kuzh ret"
+
+msgid "Password Required"
+msgstr "Ger-kuzh ret"
+
+#, fuzzy
+msgctxt "Group chat feature"
+msgid "Password Required"
+msgstr "Ger-kuzh ret"
+
+msgid "Passwords do not match"
+msgstr "Ne glot ket ar gerioù-kuzh"
+
+#, fuzzy
+msgid "Paste Last Input"
+msgstr "Pegañ ar skeudenn"
+
+#, fuzzy
+msgid "Paste as Code Block"
+msgstr "Kod postel:"
+
+#, fuzzy
+msgid "Paste as Quote"
+msgstr "Pegañ ar skeudenn"
+
+#, fuzzy
+msgid "Pasting Content Failed"
+msgstr "Ger-kuzh ret"
+
+msgid "Path length constraint exceeded"
+msgstr ""
+
+#, fuzzy
+msgid "Pending"
+msgstr "Diskouez an holl _zarvoudoù o c'hortoz"
+
+#, fuzzy
+msgid "Pending Voice Requests"
+msgstr "Goulenn treuzkas"
+
+msgid "Permanently"
+msgstr ""
+
+msgid "Permanently remove this group chat from the server"
+msgstr ""
+
+msgctxt "Group chat feature"
+msgid "Persistent"
+msgstr ""
+
+#, fuzzy
+msgid "Personal notes about this contact"
+msgstr "N'eus ket tu da implij OpenPGP war an urzhiataer-mañ"
+
+msgid "Phone"
+msgstr "Pellgomz"
+
+#, fuzzy
+msgid "Phone No."
+msgstr "Pellgomz"
+
+#, fuzzy
+msgid "Picture and Name"
+msgstr "N'eus ket bet kavet al lesanv : %s"
+
+#, fuzzy
+msgid "Pin Chat"
+msgstr "Goulenn treuzkas"
+
+msgid "Pinned"
+msgstr ""
+
+msgid "Pipewire"
+msgstr ""
+
+#, fuzzy
+msgid "Play Sound"
+msgstr "_Seniñ"
+
+#, fuzzy
+msgid "Play Sounds"
+msgstr "_Seniñ"
+
+msgid "Play sounds even when you are Away, Busy, etc."
+msgstr ""
+
+msgid "Play sounds to notify about events"
+msgstr ""
+
+#, fuzzy
+msgid "Please choose an account"
+msgstr "Ebarzhiñ ur _webgaoz"
+
+#, fuzzy
+msgid "Please enter an XMPP address"
+msgstr "Da _heul al lesanv:"
+
+#, fuzzy
+msgid "Please enter your credentials or Sign Up"
+msgstr "Da _heul al lesanv:"
+
+#, fuzzy
+msgid "Please enter your new password."
+msgstr "Da _heul al lesanv:"
+
+#, fuzzy, python-format
+msgid ""
+"Please enter your password for\n"
+"%(jid)s\n"
+"(Account: %(account)s)"
+msgstr "Roit ho ker-kuzh evit ar gont %s"
+
+#, fuzzy, python-format
+msgid "Please make sure you are connected with \"%s\"."
+msgstr "Gwiriekait oc'h luget gant \"%s\"."
+
+msgid ""
+"Please select one of your accounts.\n"
+"Gajim will export all messages from the selected account and chats to a "
+"directory of your choice."
+msgstr ""
+
+msgid "Please use these settings with caution!"
+msgstr ""
+
+#, fuzzy
+msgid "Plugin Failed"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Plugin Settings"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Plugin Update"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Plugin already exists"
+msgstr "Bez ez eus eus ar restr-mañ dija"
+
+#, fuzzy
+msgid "Plugin could not be loaded"
+msgstr "N'eo ket bet kavet ar servij"
+
+msgid "Plugins"
+msgstr ""
+
+#, fuzzy
+msgid "Plugins Updated Successfully"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Port"
+msgstr "_Porzh:"
+
+msgid "Port must be a number between 0 and 65535"
+msgstr ""
+
+msgid "Post Office Box"
+msgstr ""
+
+#, fuzzy
+msgid "Postal Code"
+msgstr "Kod postel:"
+
+#, fuzzy
+msgid "Prefer direct messages in private group chats "
+msgstr "Diskouez titouroù-stad an darempredoù e-barzh ar roll"
+
+#, fuzzy
+msgctxt "Configuration"
+msgid "Preference Name"
+msgstr "Dibab"
+
+msgid "Preferences"
+msgstr "Penndibaboù"
+
+#, fuzzy
+msgid "Presets"
+msgstr "_Bezañs"
+
+msgid ""
+"Press the keys you want to associate with this action. To disable this "
+"shortcut, click apply."
+msgstr ""
+
+msgid "Preview Size"
+msgstr ""
+
+msgid "Preview all Image URLs"
+msgstr ""
+
+#, fuzzy
+msgid "Preview in Public Group Chats"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Preview new messages in notification popup?"
+msgstr "Noti_fications d'état de discussion"
+
+msgid "Previous"
+msgstr ""
+
+msgid "Print XML stanzas and other debug information"
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+#, fuzzy
+msgid "Privacy"
+msgstr "Roll argas"
+
+#, python-format
+msgid "Privacy – %(account)s"
+msgstr ""
+
+#, fuzzy
+msgid "Private"
+msgstr "Roll argas"
+
+#, fuzzy
+msgid "Processing image…"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, fuzzy
+msgid "Profile"
+msgstr "restr"
+
+msgid "Profile application with cprofile"
+msgstr ""
+
+msgid "Pronouns"
+msgstr ""
+
+msgid "Protocol"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Provider - %(account)s"
+msgstr "Servijer"
+
+#, python-format
+msgid "Provider Category: %s"
+msgstr ""
+
+#, python-format
+msgid "Provider Contacts - %(account)s"
+msgstr ""
+
+#, fuzzy
+msgid "Provider Infos"
+msgstr "Servijer"
+
+msgid "Providers list is up to date"
+msgstr ""
+
+#, fuzzy
+msgid "Prox_y"
+msgstr "Proksi:"
+
+#, fuzzy
+msgid "Proxies"
+msgstr "Merañ an aeladoù proksi"
+
+#, fuzzy
+msgid "Proxy"
+msgstr "Proksi:"
+
+#, fuzzy
+msgid "Proxy, custom hostname and port"
+msgstr "Implij un anv ostiz/porzh personelaet"
+
+#, fuzzy
+msgid "Public"
+msgstr "War enaou emañ ar sifrañ"
+
+msgctxt "Group chat feature"
+msgid "Public"
+msgstr ""
+
+#, fuzzy
+msgctxt "Profile"
+msgid "Public Encryption Key"
+msgstr "War enaou emañ ar sifrañ"
+
+#, fuzzy
+msgid "Public Information"
+msgstr "Titouroù"
+
+#, fuzzy
+msgid "Public Key Information"
+msgstr "Titouroù"
+
+#, fuzzy
+msgid "Public Key: "
+msgstr "War enaou emañ ar sifrañ"
+
+#, fuzzy, python-format
+msgid "Pulse: %s"
+msgstr "Restr: %s"
+
+msgid "Purge"
+msgstr ""
+
+#, fuzzy
+msgid "Purge Chat History"
+msgstr "Nevez 'zo:"
+
+#, fuzzy
+msgid "Purge all Chat History?"
+msgstr "Stad:"
+
+#, python-format
+msgid "PyGObject Version: %s"
+msgstr ""
+
+#, fuzzy
+msgid "Quit"
+msgstr "_Kuitaat"
+
+#, fuzzy
+msgid "Quit Gajim"
+msgstr "Gajim"
+
+#, fuzzy
+msgid "Quitting…"
+msgstr "O labourat"
+
+#, fuzzy
+msgid "Quote Next Message"
+msgstr "Kas ur gemennadenn"
+
+#, fuzzy
+msgid "Quote Previous Message"
+msgstr "Gajim - %d gemennadenn nevez"
+
+#, fuzzy
+msgid "Re-Login Now?"
+msgstr "Adlugañ bremañ?"
+
+msgid "Re_gister"
+msgstr "_Emezelañ"
+
+#, python-format
+msgid "React with %s"
+msgstr ""
+
+#, fuzzy
+msgid "Read Receipts"
+msgstr "Kemennadenn gentañ"
+
+msgid "Read _Wikipedia Article"
+msgstr "Lenn pennad _Wikipedia"
+
+msgid "Read more about blind trust"
+msgstr ""
+
+msgid "Reason"
+msgstr "Abeg"
+
+msgid "Reason (optional)"
+msgstr ""
+
+#, fuzzy
+msgid "Reason (optional)..."
+msgstr "Abeg"
+
+msgid "Reason for destruction"
+msgstr ""
+
+#, fuzzy
+msgid "Received"
+msgstr "Kemennadenn gentañ"
+
+#, fuzzy
+msgctxt "Message state"
+msgid "Received"
+msgstr "Kemennadenn gentañ"
+
+msgid "Recognize your account by color"
+msgstr ""
+
+msgid "Record"
+msgstr ""
+
+msgid "Record Voice Message… (hold button to record directly)"
+msgstr ""
+
+msgid "Redirect"
+msgstr ""
+
+#, fuzzy
+msgid "Register"
+msgstr "_Emezelañ"
+
+#, fuzzy
+msgid "Register on the Website"
+msgstr "Emezelañ war %s"
+
+#, fuzzy
+msgid "Registering…"
+msgstr "_Emezelañ"
+
+#, fuzzy
+msgid "Registration failed"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Registration successful"
+msgstr "Gant berzh eo bet embannet ar vCard"
+
+#, fuzzy
+msgid "Reject file transfer"
+msgstr "Supprime le transfert du fichier sélectionné"
+
+#, fuzzy
+msgid "Reload"
+msgstr "Enrollañ ar restr dindan..."
+
+msgid "Remember Last Status"
+msgstr ""
+
+#, fuzzy
+msgid "Remote server not found"
+msgstr "N'eo ket bet kavet ar servij"
+
+msgid "Remote server timeout"
+msgstr ""
+
+#, fuzzy
+msgid "Remove"
+msgstr "_Dilemel"
+
+#, fuzzy, python-format
+msgid "Remove %s contacts from your contact list?"
+msgstr "Dilemel an darempred diouzh ar roll"
+
+#, fuzzy
+msgid "Remove Account"
+msgstr "Lemel ar gont %s"
+
+#, fuzzy
+msgid "Remove Chat History?"
+msgstr "Nevez 'zo:"
+
+#, fuzzy
+msgid "Remove Contact"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Remove Contacts?"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Remove Contact…"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Remove From Contact List?"
+msgstr "Dilemel an darempred diouzh ar roll"
+
+#, fuzzy
+msgid "Remove Group?"
+msgstr "_Dilemel"
+
+#, fuzzy
+msgid "Remove Group…"
+msgstr "_Dilemel"
+
+#, fuzzy
+msgid "Remove History…"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+msgid "Remove Proxy"
+msgstr "_Dilemel"
+
+#, fuzzy
+msgid "Remove Proxy?"
+msgstr "_Dilemel"
+
+#, fuzzy
+msgid "Remove Setting"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Remove Theme"
+msgstr "Oberiant"
+
+#, fuzzy
+msgid "Remove Workspace?"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Remove from Contact List…"
+msgstr "Dilemel an darempred diouzh ar roll"
+
+#, fuzzy
+msgid "Remove from Group"
+msgstr "_Dilemel"
+
+#, fuzzy
+msgid "Remove this workspace"
+msgstr "Darempredoù"
+
+msgid "Remove your group chat avatar"
+msgstr ""
+
+#, fuzzy
+msgid "Remove your profile picture"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy, python-format
+msgid "Removed %(count)s contact"
+msgid_plural "Removed %(count)s contacts"
+msgstr[0] "Dilemel an darempred diouzh ar roll"
+msgstr[1] "Dilemel an darempred diouzh ar roll"
+
+#, fuzzy
+msgid "Remove…"
+msgstr "_Dilemel"
+
+#, fuzzy
+msgid "Removing Account..."
+msgstr "Lemel ar gont %s"
+
+msgid ""
+"Removing the account will delete most related data. If you want to "
+"disconnect the account for a short time, use the status selector."
+msgstr ""
+
+#, fuzzy
+msgid "Rename"
+msgstr "_Anv:"
+
+#, fuzzy
+msgid "Rename Contact?"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Rename…"
+msgstr "_Anv:"
+
+msgid "Reply…"
+msgstr ""
+
+#, fuzzy
+msgid "Request"
+msgstr "Goulenn treuzkas"
+
+msgid "Request Search Form"
+msgstr ""
+
+msgid "Request Voice"
+msgstr ""
+
+#, fuzzy
+msgid "Request contact information (Tune, Location)"
+msgstr "a zo aketus d'ar gaozeadenn"
+
+#, fuzzy
+msgid "Request pending"
+msgstr "Ger-kuzh ret"
+
+#, fuzzy
+msgid "Request to see this contact's online status"
+msgstr "Goulenn evit gwelet e/he stad"
+
+#, fuzzy
+msgid "Requesting Command List"
+msgstr "urzhiad"
+
+msgid "Requesting HTTP File Upload Slot…"
+msgstr ""
+
+msgid "Requesting Register Form"
+msgstr ""
+
+msgid "Requesting register form from server…"
+msgstr ""
+
+msgid "Requesting search form from server"
+msgstr ""
+
+#, fuzzy
+msgid "Required"
+msgstr "Ger-kuzh ret"
+
+msgid ""
+"Requires:\n"
+"org.freedesktop.ScreenSaver or\n"
+"org.gnome.Mutter.IdleMonitor or\n"
+"libxss"
+msgstr ""
+
+#, fuzzy
+msgid "Requires: gnome-keyring or kwallet"
+msgstr "Merour an istoradur"
+
+#, fuzzy
+msgid "Requires: gsound"
+msgstr "Ger-kuzh ret"
+
+msgid "Requires: gstreamer-1.0, gst-plugins-base-1.0"
+msgstr ""
+
+#, fuzzy
+msgid "Requires: libspelling"
+msgstr "Ger-kuzh ret"
+
+#, fuzzy
+msgid "Reserved Name"
+msgstr "Dibab"
+
+#, fuzzy
+msgid "Reset"
+msgstr "_Bezañs"
+
+#, fuzzy
+msgid "Reset Filters"
+msgstr "Kemennadenn gaset"
+
+#, fuzzy
+msgid "Reset Font Size"
+msgstr "_Anv:"
+
+#, fuzzy
+msgid "Reset Hints"
+msgstr "Kemennadenn gaset"
+
+msgid "Reset all chats to the current default value"
+msgstr ""
+
+msgid "Reset all group chats to the current default value"
+msgstr ""
+
+msgid "Reset to original name"
+msgstr ""
+
+#, fuzzy
+msgid "Resets value to default"
+msgstr "_Distreiñ gant al livioù dre-ziouer"
+
+#, fuzzy
+msgid "Resource"
+msgstr "Une erreur de protocole s'est produite :"
+
+#, fuzzy
+msgid "Restart Gajim to finish this update"
+msgstr ""
+"<b>NOTENN :</b> Dav eo deoc'h adloc'hañ Gajim evit ma vo efedus kemmoù 'zo"
+
+#, fuzzy
+msgid "Restart Gajim to start debug logging"
+msgstr ""
+"<b>NOTENN :</b> Dav eo deoc'h adloc'hañ Gajim evit ma vo efedus kemmoù 'zo"
+
+#, fuzzy
+msgid "Restart Pending"
+msgstr "Ger-kuzh ret"
+
+#, fuzzy
+msgid "Restore Closed Chat"
+msgstr "Stad diwezhañ: %s"
+
+#, fuzzy
+msgid "Restore last state"
+msgstr "Stad diwezhañ: %s"
+
+msgid "Restore status and status message of your last session"
+msgstr ""
+
+#, fuzzy
+msgid "Retract Message?"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgctxt "Message row action"
+msgid "Retract…"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Revoke Member"
+msgstr "_Ezel"
+
+msgid "Revoke Voice"
+msgstr ""
+
+msgid "Rewind 10 seconds"
+msgstr ""
+
+msgid "Role"
+msgstr "Perzh"
+
+#, fuzzy
+msgctxt "Profile"
+msgid "Role"
+msgstr "Perzh"
+
+#, fuzzy, python-format
+msgid "Roles of %s have been removed in this group chat"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+msgid "SHA-1:"
+msgstr ""
+
+msgid "SHA-256:"
+msgstr ""
+
+#, fuzzy
+msgid "SSL Certificate Verification Error"
+msgstr "Oc'h ouzhpennañ ur gelaouenn nevez evit %s"
+
+#, fuzzy
+msgid "SSL certificate error"
+msgstr "Anv-arveriad-ez direizh"
+
+msgid "STUN server to use when using Jingle"
+msgstr ""
+
+#, fuzzy
+msgid "SVG files"
+msgstr "Kas ur restr"
+
+msgid "Sales"
+msgstr ""
+
+#, fuzzy
+msgid "Save"
+msgstr "Enrollet e-barzh: %s"
+
+#, fuzzy
+msgid "Save Password"
+msgstr "Enrollañ ar ger-kuzh"
+
+#, fuzzy
+msgid "Save as..."
+msgstr "Enrollet e-barzh: %s"
+
+msgid "Save display name"
+msgstr ""
+
+#, fuzzy
+msgid "Saving Avatar Failed"
+msgstr "C'hwitet eo embannadur ar vCard"
+
+#, fuzzy
+msgid "Saving avatar image failed"
+msgstr "Kas ar gemennadenn brevez c'hwitet"
+
+#, fuzzy
+msgid "Say hi to your new contact…"
+msgstr "Usage : /%s, passe la fenêtre de salon de discussion en vue compacte."
+
+msgid "Scan QR Code"
+msgstr ""
+
+#, python-format
+msgid "Scan this QR code to join %s."
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Scan this QR code to start a chat with %s."
+msgstr "Laouen 'vefen d'ho ouzhpennañ em roll-darempredoù."
+
+#, python-format
+msgid "Scanning %(current)d / %(total)d ..."
+msgstr ""
+
+msgid "Scroll Down"
+msgstr ""
+
+msgid "Scroll Up"
+msgstr ""
+
+#, fuzzy
+msgid "Scroll to this message"
+msgstr "titour stad"
+
+msgid "Scroll up to load more chat history…"
+msgstr ""
+
+msgid "Search"
+msgstr "Klask"
+
+#, fuzzy
+msgid "Search Chat History"
+msgstr "Nevez 'zo:"
+
+#, fuzzy
+msgid "Search Filters"
+msgstr "Kemennadenn gaset"
+
+#, fuzzy
+msgid "Search Filters (Active)"
+msgstr "Kemennadenn gentañ"
+
+#, fuzzy
+msgid "Search Participants…"
+msgstr "Perzhidi"
+
+#, fuzzy
+msgid "Search Result"
+msgstr "Klask"
+
+#, fuzzy
+msgid "Search all Chats"
+msgstr "_Klask en titourva"
+
+#, fuzzy
+msgid "Search contacts..."
+msgstr "_Klask en titourva"
+
+msgid "Search for Gajim updates periodically?"
+msgstr ""
+
+msgid ""
+"Search for group chats globally\n"
+"(press Return to start search)"
+msgstr ""
+
+#, fuzzy
+msgid "Search in chats…"
+msgstr "Perzhidi"
+
+#, fuzzy
+msgid "Searching"
+msgstr "Klask"
+
+#, fuzzy
+msgid "Searching…"
+msgstr "Klask"
+
+#, fuzzy, python-format
+msgid ""
+"Searching…\n"
+"%s results"
+msgstr "Klask"
+
+#, fuzzy
+msgid "Search…"
+msgstr "Klask"
+
+#, fuzzy
+msgid "Secure Password Storage"
+msgstr "Enrollañ ar ger-kuzh"
+
+msgid ""
+"Secured conversations: State of the art end-to-end encryption for your "
+"conversations. Share messages, pictures, and files with your contacts – and "
+"only with them."
+msgstr ""
+
+msgid "Security"
+msgstr ""
+
+#, fuzzy
+msgid "Security Labels"
+msgstr "Argas %s"
+
+#, fuzzy
+msgid "Security Warning"
+msgstr "Argas %s"
+
+#, fuzzy, python-format
+msgid "Seen by %s"
+msgstr "Cheñch _lesanv"
+
+#, fuzzy, python-format
+msgid "Seen by %s participants"
+msgstr "Perzhidi"
+
+#, fuzzy
+msgid "Select Account"
+msgstr "Lemel ar gont %s"
+
+#, fuzzy
+msgctxt "Message row action"
+msgid "Select Messages…"
+msgstr "Titour-stad"
+
+msgid "Select a security label for your message…"
+msgstr ""
+
+msgid "Select an activity to see details."
+msgstr ""
+
+msgid "Select playback speed"
+msgstr ""
+
+#, fuzzy
+msgid "Select the account you want to use to create a new group chat"
+msgstr "JID an darempred ho peus c'hoant flapiñ gantañ"
+
+msgid "Select your audio input (e.g. microphone)"
+msgstr ""
+
+#, fuzzy
+msgid "Selected image could not be loaded."
+msgstr "N'eo ket bet kavet ar servij"
+
+msgid "Self signed certificate"
+msgstr ""
+
+msgid "Self signed certificate in certificate chain"
+msgstr ""
+
+msgctxt "Group chat feature"
+msgid "Semi-Anonymous"
+msgstr ""
+
+#, fuzzy
+msgid "Send Chat Indicators"
+msgstr "Stad diwezhañ: %s"
+
+#, fuzzy
+msgid "Send Chat Indicators in Group Chats"
+msgstr "Impossible de rejoindre le salon"
+
+#, fuzzy
+msgid "Send Chat State"
+msgstr "Stad diwezhañ: %s"
+
+#, fuzzy
+msgid "Send File"
+msgstr "Kas ur _restr"
+
+#, fuzzy, python-format
+msgid "Send File (max. %s)…"
+msgstr "Enrollañ ar restr dindan..."
+
+#, fuzzy
+msgid "Send Files"
+msgstr "Kas ur _restr"
+
+#, fuzzy
+msgid "Send File…"
+msgstr "Kas ur _restr"
+
+#, fuzzy
+msgid "Send Message"
+msgstr "Kas ur gemennadenn"
+
+#, fuzzy
+msgid "Send Message Receipts"
+msgstr "Kemennadenn gentañ"
+
+#, fuzzy
+msgid "Send Messages with Control+Enter"
+msgstr "Usage: /%s, cache les boutons de discussion."
+
+#, fuzzy
+msgid "Send _Report"
+msgstr "_Diskleriañ ar Bug"
+
+msgid "Send and receive read receipts"
+msgstr ""
+
+#, python-format
+msgid "Sent contact: \"%(jid)s\" (%(name)s)"
+msgstr ""
+
+#, fuzzy
+msgid "Sent contacts:"
+msgstr "Darempredoù"
+
+msgid "Separate profile files completely (even history database and plugins)"
+msgstr ""
+
+msgid "Serial Number: "
+msgstr ""
+
+#, fuzzy
+msgid "Server Shutdown"
+msgstr "Perzhioù ar servijerien"
+
+#, fuzzy
+msgid "Service"
+msgstr "Servijer"
+
+msgid "Service Discovery"
+msgstr "Merañ ar servijoù"
+
+#, python-format
+msgid "Service Discovery using account %s"
+msgstr "Merañ servijoù ar gont %s"
+
+#, fuzzy
+msgid "Service Gateway"
+msgstr "Servijer"
+
+#, fuzzy
+msgid "Service Not Browsable"
+msgstr "N'eus ket tu furchal er servij"
+
+#, fuzzy
+msgid "Service Not Found"
+msgstr "N'eo ket bet kavet ar servij"
+
+#, fuzzy
+msgid "Service Provider"
+msgstr "Merañ ar servijoù"
+
+#, fuzzy
+msgid "Set Trust"
+msgstr "Merañ ar c'hontoù"
+
+#, fuzzy
+msgid "Set a subject for this chat"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Set configuration directory"
+msgstr "Kefluniañ ar webgaoz"
+
+#, fuzzy
+msgid "Set date…"
+msgstr "Kasour-ez"
+
+msgid "Sets an environment variable so GLib debug messages are printed"
+msgstr ""
+
+msgid "Setting is locked by the system"
+msgstr ""
+
+#, fuzzy
+msgid "Settings"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Share Contact…"
+msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+msgid "Share Group Chat…"
+msgstr "Flap a-stroll"
+
+#, fuzzy
+msgid "Share Status"
+msgstr "Stad"
+
+#, fuzzy
+msgid "Share Video"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Share my online status"
+msgstr "Darempred diluget"
+
+msgid "Shortcuts"
+msgstr ""
+
+#, fuzzy
+msgid "Show Chat List"
+msgstr "Kemmañ ar gont"
+
+#, fuzzy
+msgid "Show Commands"
+msgstr "Urzhioù: %s"
+
+#, fuzzy
+msgid "Show Contact Infos"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+msgid "Show Content"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+msgid "Show Details"
+msgstr "Munudoù"
+
+#, fuzzy
+msgid "Show Inactive Devices"
+msgstr "Titour-stad"
+
+msgid "Show Join/Leave"
+msgstr ""
+
+msgid "Show Joined / Left"
+msgstr ""
+
+#, fuzzy
+msgid "Show Link Preview"
+msgstr "O skrivañ"
+
+#, fuzzy
+msgid "Show Plugins"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Show Send Message Button"
+msgstr "Kas ur gemennadenn"
+
+#, fuzzy
+msgid "Show Status Changes"
+msgstr "_Menegiñ kemmoù stad an darempredoù e-barzh an istoradur"
+
+#, fuzzy
+msgid "Show Subject on Join"
+msgstr "Titl"
+
+#, fuzzy
+msgid "Show Title Bar"
+msgstr "Dorioù"
+
+#, fuzzy
+msgid "Show Transfers"
+msgstr "Dorioù"
+
+#, fuzzy
+msgid "Show Voice Message Button"
+msgstr "Kas ur gemennadenn"
+
+msgid ""
+"Show a confirmation dialog to block a contact? Empty string means never show "
+"the dialog."
+msgstr ""
+
+#, fuzzy
+msgid "Show a list of emojis"
+msgstr "Klikit evit enlakaat ur boulomell (Alt+M)"
+
+#, fuzzy
+msgid "Show all reactions"
+msgstr "Diskouez an holl _zarvoudoù o c'hortoz"
+
+#, fuzzy
+msgid "Show all warnings"
+msgstr "Diskouez an holl _zarvoudoù o c'hortoz"
+
+#, fuzzy
+msgid "Show in Taskbar"
+msgstr "Dorioù"
+
+msgid ""
+"Show labels describing confidentiality of messages, if the server supports "
+"XEP-0258"
+msgstr ""
+
+msgid ""
+"Show message meta data (avatar, nickname, timestamp) only once, if there are "
+"multiple messages from the same sender within a specific timespan."
+msgstr ""
+
+#, fuzzy
+msgid "Show notifications even if you are Away, Busy, etc."
+msgstr "_Implij an arlun-gelaouiñ (trayicon)"
+
+#, fuzzy
+msgid "Show notifications on the system tray icon"
+msgstr "_Kelaouiñ ac'hanon p'eo echu un treuzkas"
+
+#, fuzzy
+msgid "Show on Startup"
+msgstr "Diskouez ar _roll-darempredoù"
+
+#, fuzzy
+msgid "Show only critical errors"
+msgstr "Diskouez er _roll hepken"
+
+msgid ""
+"Show previews automatically in public group chats (may disclose your data)"
+msgstr ""
+
+msgid "Show previews for any URLs containing images (may be unsafe)"
+msgstr ""
+
+msgid "Show suggestions for shortcodes, e.g. :+1:"
+msgstr ""
+
+#, fuzzy
+msgid "Show the application's version"
+msgstr "_Implij an arlun-gelaouiñ (trayicon)"
+
+msgid "Show the window’s title bar"
+msgstr ""
+
+msgid "Show window in the taskbar"
+msgstr ""
+
+msgid "Show window when starting Gajim"
+msgstr ""
+
+#, fuzzy
+msgid "Show/Hide Window"
+msgstr "A guzha ar prenestr"
+
+#, fuzzy
+msgid "Sign In"
+msgstr "_Lugañ"
+
+#, fuzzy
+msgid "Sign Up"
+msgstr "_Lugañ"
+
+msgid "Sign up Anonymously"
+msgstr ""
+
+msgid "Sign up for a new account with a provider of your choice"
+msgstr ""
+
+#, fuzzy
+msgid "Signup not allowed"
+msgstr "N'eus ket bet kavet al lesanv : %s"
+
+msgid "Size of preview images in pixels"
+msgstr ""
+
+msgid "Sleeping"
+msgstr "O kousket"
+
+#, fuzzy
+msgid "Software"
+msgstr "Perzhioù ar servijerien"
+
+msgid "Something went wrong. Video feature disabled."
+msgstr ""
+
+msgid "Sorry, that should not have happened"
+msgstr ""
+
+#, fuzzy
+msgid "Sort Participant List by Status"
+msgstr "_Urzhiañ an darempredoù hervez o stad"
+
+#, fuzzy
+msgid "Sort by Status"
+msgstr "_Urzhiañ an darempredoù hervez o stad"
+
+#, fuzzy
+msgid "Sounds"
+msgstr "Son"
+
+msgid "Sounds When Away"
+msgstr ""
+
+#, fuzzy
+msgid "Spaces are not allowed"
+msgstr "N'eus ket bet kavet al lesanv : %s"
+
+msgid "Spam"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Speed: %s"
+msgstr "Kaser: %s"
+
+msgid "Spell Checker"
+msgstr ""
+
+msgid "Spell Checking"
+msgstr ""
+
+msgid "Stage"
+msgstr ""
+
+#, fuzzy
+msgid "Start / Join Chat"
+msgstr "Kregiñ da flapiñ"
+
+msgid "Start Chat"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Start Chatting…"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Start Chat…"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Start Search..."
+msgstr "_Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Start a new chat"
+msgstr "Kregiñ da flapiñ"
+
+msgid ""
+"Start a new chat, join a group chat or search for new group chats globally. "
+"You can also enter an XMPP address."
+msgstr ""
+
+msgid "Start/Stop recording"
+msgstr ""
+
+msgid "Start/stop playback"
+msgstr ""
+
+#, fuzzy
+msgid "State"
+msgstr "Stad:"
+
+msgid "Status"
+msgstr "Stad"
+
+msgid "Status Message"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status Message: Text Color"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status Message: Text Font"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status Messages in Participants List"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status is not shared"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status is shared"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status: Away Color"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status: DND Color"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status: Offline Color"
+msgstr "Titour-stad"
+
+#, fuzzy
+msgid "Status: Online Color"
+msgstr "Titour-stad"
+
+msgid ""
+"Stay in contact: Chats and groups help you keep in touch with your friends "
+"and family. Build communities by connecting to people with the same "
+"interests. Use groups to organize the little things or the next big event."
+msgstr ""
+
+msgid "Steps to reproduce the problem…"
+msgstr ""
+
+#, fuzzy
+msgid "Stop Sharing Online Status?"
+msgstr "Goulenn evit gwelet e/he stad"
+
+#, fuzzy
+msgid "Street"
+msgstr "Straed:"
+
+msgid "Style"
+msgstr ""
+
+msgid "Subject"
+msgstr "Titl"
+
+msgid "Subject Alt Names: "
+msgstr ""
+
+msgid "Subject issuer mismatch"
+msgstr ""
+
+msgid "Subject last changed by"
+msgstr ""
+
+#, fuzzy
+msgctxt "Contact subscription"
+msgid "Subscribe"
+msgstr "Emezelañ"
+
+#, fuzzy
+msgid "Subscribed"
+msgstr "Emezelañ"
+
+#, fuzzy
+msgid "Subscription"
+msgstr "Koumanant:"
+
+#, fuzzy
+msgid "Successfully Added Contacts"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Successfully Removed Contacts"
+msgstr "Darempredoù"
+
+#, python-brace-format
+msgid "Successfully build new session with {device_id}."
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid ""
+"Sure you want to quit Gajim?\n"
+"You won’t be able to send and receive messages if you do.\n"
+"\n"
+"Alternatively, you can either minimize Gajim’s window, or hide it "
+"completely. Use Gajim’s system tray icon to restore the window."
+msgstr ""
+
+#, fuzzy
+msgid "Switch to Chat 1"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 2"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 3"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 4"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 5"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 6"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 7"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 8"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Chat 9"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Next Chat"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Next Unread Chat"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Previous Chat"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Previous Unread Chat"
+msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+msgid "Switch to Workspace 1"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 2"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 3"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 4"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 5"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 6"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 7"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 8"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Switch to Workspace 9"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "Sync Group Chat Block List"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+msgid "Sync Threshold"
+msgstr ""
+
+#, fuzzy
+msgid "Synchronize"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+msgid "Synchronize Chat History"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+msgid "Synchronize History…"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+msgid "Synchronize group chat block list with other devices"
+msgstr ""
+
+#, fuzzy
+msgid "Synchronize joined group chats"
+msgstr "Er strollad"
+
+msgid "Synchronize joined group chats with other devices."
+msgstr ""
+
+#, fuzzy
+msgid "Synchronize the status of all accounts"
+msgstr "A cheñch stad ar gont pe ar c'hontoù"
+
+#, fuzzy
+msgid "Synchronizing Chat History…"
+msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+msgid "System"
+msgstr "<b>Personelaet</b>"
+
+#, fuzzy
+msgid "System Notifications"
+msgstr "Kemmañ ar gont"
+
+#, fuzzy
+msgid "System Notifications When Away"
+msgstr "Kemmañ ar gont"
+
+msgid "System Tray Icon"
+msgstr ""
+
+#, fuzzy
+msgid "System Tray Notifications"
+msgstr "<b>Kelaouennoù dre welet</b>"
+
+msgid "Telephone"
+msgstr ""
+
+msgid "Tell your contacts if you received a message"
+msgstr ""
+
+msgctxt "Group chat feature"
+msgid "Temporary"
+msgstr ""
+
+#, fuzzy
+msgctxt "Configuration type"
+msgid "Text"
+msgstr "Webgaoz:"
+
+#, fuzzy
+msgid "Text File"
+msgstr "Kas ur _restr"
+
+msgid "Thanks"
+msgstr ""
+
+#, fuzzy
+msgid "Thanks to all the package maintainers."
+msgstr "Evit echuiñ, e fell deomp trugarekaat holl gempennerien ar pakad."
+
+msgid "The certificate does not match the expected identity of the site"
+msgstr ""
+
+#, fuzzy
+msgid "The certificate has been revoked"
+msgstr "[Sifret eo ar gemennadenn-mañ]"
+
+#, fuzzy
+msgid "The certificate has expired"
+msgstr "Ger-kuzh ret"
+
+msgid "The certificate’s activation time is in the future"
+msgstr ""
+
+msgid "The certificate’s algorithm is insecure"
+msgstr ""
+
+msgid ""
+"The contact will be informed that you stopped sharing your status. Please "
+"note that this can have other side effects."
+msgstr ""
+
+msgid ""
+"The following warnings came up while trying to verify the provider's "
+"certificate"
+msgstr ""
+
+msgid "The last message was written on a mobile client"
+msgstr ""
+
+#, fuzzy
+msgid "The referenced message is not available."
+msgstr "N'eus ket tu en em lugañ"
+
+#, fuzzy
+msgid "The server has assigned or modified your nickname in this group chat"
+msgstr "Cheñch _lesanv"
+
+msgid "The server rejected the registration without an error message"
+msgstr ""
+
+msgid "The server returned an insecure transport (HTTP)."
+msgstr ""
+
+#, fuzzy
+msgid "The server was shut down."
+msgstr "N'eus ket tu furchal er servij"
+
+msgid "The signing certificate authority is not known"
+msgstr ""
+
+#, fuzzy
+msgid "Theme"
+msgstr "Gwiskadur"
+
+#, fuzzy
+msgid "Themes"
+msgstr "Gwiskadur"
+
+msgid "There are connectivity issues"
+msgstr ""
+
+msgid "There are devices for which you have not made a trust decision yet."
+msgstr ""
+
+msgid ""
+"There are plenty of providers to choose from.\n"
+"Creating an account with one provider allows you to communicate with "
+"contacts from other providers as well."
+msgstr ""
+
+msgid "There are updates for Gajim’s plugins"
+msgstr ""
+
+#, python-format
+msgid "There has been an error while trying to fetch messages: %s"
+msgstr ""
+
+msgid "There is an update available for this plugin"
+msgstr ""
+
+msgid "There is no encryption method available for the chosen encryption."
+msgstr ""
+
+msgid "There is no more history"
+msgstr ""
+
+msgid ""
+"There is no service at the address you entered, or it is not responding. "
+"Check the address and try again."
+msgstr ""
+"N'eus servij ebet er chomlec'h roet, pe ne respont ket. Gwiriekait ar "
+"chomlec'h ha klaskit en-dro."
+
+#, python-format
+msgid ""
+"There was an error while attempting to verify the SSL certificate of your "
+"XMPP server (%s)."
+msgstr ""
+
+#, python-format
+msgid ""
+"There was an error while trying to save the file.\n"
+"Error: %s."
+msgstr ""
+
+#, fuzzy
+msgid "This Device"
+msgstr "Dibabit ur skeudenn"
+
+#, fuzzy
+msgid "This account has already been added"
+msgstr "Gant berzh eo bet ouzhpennet ar gont!"
+
+#, fuzzy
+msgid "This address does not seem to offer any gateway service."
+msgstr "A guzha an nozelennoù er prenestr flapiñ"
+
+#, fuzzy
+msgid "This address is not reachable."
+msgstr "N'eus ket tu furchal er servij"
+
+msgid ""
+"This chat’s configuration is unsuitable for encryption with OMEMO. To use "
+"OMEMO in this chat, it should be non-anonymous and members-only."
+msgstr ""
+
+msgid "This contact does not share their status with you"
+msgstr ""
+
+#, fuzzy
+msgid "This contact is a bot"
+msgstr "Darempredoù"
+
+#, fuzzy
+msgid "This device is not compatible."
+msgstr "N'eus ket tu furchal er servij"
+
+#, fuzzy
+msgid "This gateway does not support Ad-Hoc Commands."
+msgstr "Ur roll eus an treuzkasoù oberiant, echu pe arsavet"
+
+#, fuzzy
+msgid "This gateway does not support direct registering."
+msgstr "Ur roll eus an treuzkasoù oberiant, echu pe arsavet"
+
+#, fuzzy
+msgid "This group chat can not be found via search"
+msgstr "N'eus sujed ebet gant ar webgaoz-mañ"
+
+msgid "This group chat does not require a password upon entry"
+msgstr ""
+
+msgid "This group chat does require a password upon entry"
+msgstr ""
+
+msgid ""
+"This group chat is members-only, but you are not on the members list. An "
+"authorized person needs to invite you."
+msgstr ""
+
+msgid "This group chat is restricted to members only"
+msgstr ""
+
+msgid "This group chat persists even if there are no participants"
+msgstr ""
+
+msgid "This group chat will be destroyed once the last participant left"
+msgstr ""
+
+msgid "This information will be publicly visible."
+msgstr ""
+
+msgid "This is a public group chat. Encryption is not available."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This is the theme you are currently using.\n"
+"Do you want to delete this theme?"
+msgstr ""
+"Implijet e vez an anv-mañ gant unan eus ho kontoù dija. Dibabit un anv all "
+"marplij."
+
+#, fuzzy
+msgid "This message has been moderated"
+msgstr "[Sifret eo ar gemennadenn-mañ]"
+
+#, python-format
+msgid "This message has been moderated by %s"
+msgstr ""
+
+#, fuzzy, python-brace-format
+msgid "This message has been retracted on {date}"
+msgstr "[Sifret eo ar gemennadenn-mañ]"
+
+#, python-format
+msgid "This message was encrypted with %s and could not be decrypted."
+msgstr ""
+
+msgid ""
+"This message was encrypted with Legacy OpenPGP and could not be decrypted. "
+"You can install the PGP plugin to handle those messages."
+msgstr ""
+
+msgid "This message was encrypted with OMEMO, but not for your device."
+msgstr ""
+
+msgid "This message was encrypted with OTR and could not be decrypted."
+msgstr ""
+
+msgid ""
+"This message was encrypted with OpenPGP for XMPP and could not be decrypted. "
+"You can install the OpenPGP plugin to handle those messages."
+msgstr ""
+
+msgid "This message will be deleted from your local chat history"
+msgstr ""
+
+msgid "This plugin is managed by your operating system"
+msgstr ""
+
+msgid "This server does not allow signup."
+msgstr ""
+
+#, fuzzy
+msgid "This server does not support anonymous login."
+msgstr "N'eus elfenn ebet da furchal er servij-mañ."
+
+#, fuzzy
+msgid ""
+"This service could not respond with detailed information.\n"
+"It is most likely a legacy service or broken."
+msgstr ""
+"N'eus ket bet kaset titouroù munut gant ar servij-mañ.\n"
+"Sur 'walc'h eo torr pe kamm"
+
+msgid "This service does not contain any items to browse."
+msgstr "N'eus elfenn ebet da furchal er servij-mañ."
+
+msgid "This service has not yet responded with detailed information"
+msgstr "N'eus ket bet kaset titouroù munut gant ar servij-mañ c'hoazh"
+
+msgid "This type of service does not contain any items to browse."
+msgstr "N'eus elfenn ebet da furchal e seurt servijoù."
+
+#, fuzzy
+msgid "This will clear the devices store for your account."
+msgstr "Dilemel ar gont diwar Gajim _hepken"
+
+msgid "This will purge all locally stored chat history"
+msgstr ""
+
+#, fuzzy
+msgid "This will remove the account and delete all data"
+msgstr "Dilemel ar gont diwar Gajim _hepken"
+
+#, fuzzy
+msgid "This will remove your account from Gajim."
+msgstr "Dilemel ar gont diwar Gajim _hepken"
+
+msgid "This will reset all introduction hints"
+msgstr ""
+
+msgid ""
+"This workspace contains chats. All chats will be moved to the next "
+"workspace. Remove anyway?"
+msgstr ""
+
+msgid "Three Months"
+msgstr ""
+
+msgid "Time Until Away"
+msgstr ""
+
+#, fuzzy
+msgid "Time Until Not Available"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgid "Time Zone"
+msgstr "Mare"
+
+#, fuzzy
+msgctxt "Profile"
+msgid "Timezone"
+msgstr "Mare"
+
+msgctxt "Profile"
+msgid "Title"
+msgstr ""
+
+#, fuzzy
+msgctxt "Contact subscription"
+msgid "To"
+msgstr "Da"
+
+#, fuzzy
+msgid "To apply all changes instantly, you have to re-login."
+msgstr "Ret eo deoc'h adlugañ evit ma vo sevenet an holl gemmoù diouzhtu."
+
+msgid ""
+"To send an encrypted message, you have to decide whether to trust the device "
+"of your contact."
+msgstr ""
+
+#, fuzzy
+msgid "Toggle Chat List"
+msgstr "Perzhiad-ez"
+
+#, fuzzy
+msgid "Toggle participants list"
+msgstr "Perzhiad-ez"
+
+#, fuzzy
+msgid "Transferring File…"
+msgstr "O treuzkas"
+
+msgid "Transports"
+msgstr "Dorioù"
+
+msgid "Trust Management"
+msgstr ""
+
+msgid "Trust Not Decided"
+msgstr ""
+
+msgid "Try Again"
+msgstr ""
+
+msgid "Try a different search"
+msgstr ""
+
+#, fuzzy
+msgid "Trying to change password..."
+msgstr "Klikit evit cheñch ger-kuzh ar gont"
+
+#, fuzzy
+msgid "Trying to create account..."
+msgstr "Klikit evit cheñch ger-kuzh ar gont"
+
+msgid "Trying to gather information on this address…"
+msgstr ""
+
+msgid "Trying to remove account..."
+msgstr ""
+
+msgid "Turn Camera off"
+msgstr ""
+
+msgid "Turn Camera on"
+msgstr ""
+
+msgid "Type"
+msgstr "Doare"
+
+#, fuzzy
+msgctxt "Configuration"
+msgid "Type"
+msgstr "Doare"
+
+msgid "Type to search for values..."
+msgstr ""
+
+#, fuzzy
+msgid "Typing Only"
+msgstr "O skrivañ"
+
+msgid "URI"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+#, fuzzy
+msgid "Unable to decode issuer public key"
+msgstr "Impossible de rejoindre le salon"
+
+msgid "Unable to decrypt CRL's signature"
+msgstr ""
+
+msgid "Unable to decrypt certificate's signature"
+msgstr ""
+
+msgid "Unable to get certificate CRL"
+msgstr ""
+
+msgid "Unable to get issuer certificate"
+msgstr ""
+
+msgid "Unable to get local issuer certificate"
+msgstr ""
+
+msgid "Unable to properly remove the plugin"
+msgstr ""
+
+#, fuzzy
+msgid "Unable to save profile"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+msgid "Unable to verify the first certificate"
+msgstr ""
+
+msgid "Unblock"
+msgstr ""
+
+#, fuzzy
+msgid "Unblock Participant?"
+msgstr "Perzhiad-ez"
+
+#, fuzzy, python-format
+msgid "Undecided fingerprints of devices connected with \"%s\""
+msgstr "Gwiriekait oc'h luget gant \"%s\"."
+
+#, fuzzy
+msgid "Unencrypted"
+msgstr "N'eo ket kroget"
+
+#, fuzzy
+msgid "Uninstall"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Unknown"
+msgstr "Dianav"
+
+#, fuzzy
+msgctxt "Contact subscription"
+msgid "Unknown"
+msgstr "Dianav"
+
+msgid "Unknown Artist"
+msgstr ""
+
+#, fuzzy
+msgid "Unknown Error"
+msgstr "Aozadur D-Bus dianav: %s"
+
+#, fuzzy, python-format
+msgid "Unknown SSL error \"%s\""
+msgstr "Aozadur D-Bus dianav: %s"
+
+msgid "Unknown Source"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Unknown TLS error \"%s\""
+msgstr "Aozadur D-Bus dianav: %s"
+
+msgid "Unknown Title"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Unknown command: %s"
+msgstr "Urzhioù: %s"
+
+#, fuzzy
+msgid "Unknown error."
+msgstr "Aozadur D-Bus dianav: %s"
+
+#, fuzzy
+msgid "Unknown language"
+msgstr "Da _heul al lesanv:"
+
+#, fuzzy
+msgid "Unknown validation error"
+msgstr "Aozadur D-Bus dianav: %s"
+
+#, fuzzy
+msgid "Unmute Chat"
+msgstr "Goulenn treuzkas"
+
+#, fuzzy
+msgid "Unpin Chat"
+msgstr "Goulenn treuzkas"
+
+msgid "Unsupported certificate purpose"
+msgstr ""
+
+#, fuzzy
+msgid "Until Gajim is Closed"
+msgstr "Gajim"
+
+#, fuzzy
+msgid "Untrusted"
+msgstr "Dibabit hoc'h alc'hwezh OpenPGP"
+
+#, fuzzy
+msgid "Update"
+msgstr "Hizivaat MOTD"
+
+#, fuzzy
+msgid "Update Avatar"
+msgstr "Dibabit ur skeudenn"
+
+#, fuzzy
+msgid "Update automatically"
+msgstr "Dibabit ur skeudenn"
+
+#, fuzzy, python-format
+msgid "Update available: Version %s"
+msgstr "Kont ebet hegerz"
+
+msgid "Update plugins automatically"
+msgstr ""
+
+msgid "Updates"
+msgstr ""
+
+msgid "Updates will be installed next time Gajim is started"
+msgstr ""
+
+#, fuzzy
+msgid "Updating Plugin…"
+msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+msgid "Updating provider list…"
+msgstr "Dibosupl eo kargañ ar skeudenn"
+
+#, fuzzy
+msgid "Upload File…"
+msgstr "Enrollañ ar restr dindan..."
+
+#, fuzzy
+msgid "Uploading Avatar Failed"
+msgstr "Dibabit ur skeudenn"
+
+#, fuzzy, python-format
+msgid "Uploading avatar image failed: %s"
+msgstr "Kas ar gemennadenn brevez c'hwitet"
+
+msgid "Uploading via HTTP File Upload…"
+msgstr ""
+
+msgid "Use \"//\" to start a message with a slash \"/\"."
+msgstr ""
+
+msgid "Use GSSAPI"
+msgstr ""
+
+#, fuzzy
+msgid "Use Image"
+msgstr "Pegañ ar skeudenn"
+
+msgid "Use System Keyring"
+msgstr ""
+
+#, fuzzy
+msgid "Use Unencrypted Connection"
+msgstr "Kevreadenn"
+
+msgid "Use a profile to run multiple Gajim instances"
+msgstr ""
+
+#, fuzzy
+msgid "Use an unencrypted connection to the server"
+msgstr "N'oc'h ket luget d'ar servijer"
+
+#, fuzzy
+msgid "Use defined profile in configuration directory"
+msgstr "Aozer kefluniañ dre ar munut"
+
+#, fuzzy
+msgid "Use proxy auth_entication"
+msgstr "Implij an diskleriañ"
+
+msgid "Use your system’s keyring to store passwords"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "User %s not found"
+msgstr "N'eo ket bet kavet %s"
+
+msgid "User Interface Font Size"
+msgstr ""
+
+msgid "Users"
+msgstr "Arveridi"
+
+#, python-format
+msgid "V4L2: %s"
+msgstr ""
+
+msgid "Validity"
+msgstr ""
+
+msgid "Validity\n"
+msgstr ""
+
+msgctxt "Configuration"
+msgid "Value"
+msgstr ""
+
+msgid "Verified"
+msgstr ""
+
+#, fuzzy
+msgid "Version"
+msgstr "Taolennadur: %s"
+
+msgid "Video"
+msgstr ""
+
+msgid "Video test"
+msgstr ""
+
+msgid "Visit Provider's Website"
+msgstr ""
+
+#, fuzzy
+msgid "Visit Website"
+msgstr "Emezelañ war %s"
+
+#, fuzzy
+msgctxt "Group chat contact role"
+msgid "Visitor"
+msgstr "Gweladenner-ez"
+
+#, fuzzy
+msgctxt "Group chat contact role"
+msgid "Visitors"
+msgstr "Gweladennerien"
+
+#, fuzzy
+msgid "Visual Notifications"
+msgstr "<b>Kelaouennoù dre welet</b>"
+
+#, fuzzy
+msgid "Voice Message"
+msgstr "Kas ur gemennadenn"
+
+#, fuzzy
+msgid "Voice Messages are not available"
+msgstr "N'eus ket tu en em lugañ"
+
+msgid "Voice message could not be saved. Please try again."
+msgstr ""
+
+#, fuzzy
+msgid "WAV Sounds"
+msgstr "Sonioù wav"
+
+#, fuzzy
+msgid "Waiting…"
+msgstr "O labourat"
+
+#, fuzzy
+msgid "Warning"
+msgstr "Argas %s"
+
+#, fuzzy, python-format
+msgid "Web Search URL is missing a \"%s\""
+msgstr "Mankout a ra un \"%s\" e-barzh URL ar webklask"
+
+msgid "Web _Search for it"
+msgstr "Web_klask"
+
+msgid "Website"
+msgstr ""
+
+msgid "Welcome"
+msgstr ""
+
+#, fuzzy
+msgid "What does this mean?"
+msgstr "Kuzhat ar meuziad-mañ"
+
+#, fuzzy
+msgid "Where participants should go"
+msgstr "Perzhiad-ez"
+
+msgid ""
+"Whether to check for a valid certificate before downloading (not safe to "
+"disable)"
+msgstr ""
+
+msgid "Which provider should I choose?"
+msgstr ""
+
+#, fuzzy
+msgid "Why do you want to moderate this message?"
+msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+msgid "Width of group chat roster in pixel"
+msgstr ""
+
+msgid "Windows"
+msgstr ""
+
+msgid "Work"
+msgstr "Labour"
+
+msgid "Working"
+msgstr "O labourat"
+
+#, fuzzy
+msgid "Workspace Settings"
+msgstr "Actions a_vancées"
+
+#, fuzzy
+msgid "Workspace settings…"
+msgstr "Actions a_vancées"
+
+msgid "X11"
+msgstr ""
+
+#, fuzzy
+msgid "XMPP Address"
+msgstr "_Chomlec'h:"
+
+#, fuzzy
+msgid "XMPP Address…"
+msgstr "_Chomlec'h:"
+
+#, fuzzy
+msgid "XMPP Chat Client"
+msgstr "Flaperez Jabber"
+
+#, fuzzy
+msgid "YYYY-MM-DD"
+msgstr "Stumm : BBBB-MM-DD"
+
+msgid "Yes"
+msgstr ""
+
+#, fuzzy
+msgid "Yesterday"
+msgstr "Dec'h"
+
+#, fuzzy, python-format
+msgid "Yesterday (%s)"
+msgstr "Dec'h"
+
+msgid "You"
+msgstr "C'hwi"
+
+#, fuzzy, python-format
+msgid "You (%s) joined the group chat"
+msgstr "Er strollad"
+
+msgid "You are a visitor"
+msgstr ""
+
+msgid "You are a visitor."
+msgstr ""
+
+#, fuzzy, python-format
+msgid ""
+"You are about to connect to the account %(account)s (%(server)s) using an "
+"insecure connection method. This means conversations will not be encrypted. "
+"Connecting PLAIN is strongly discouraged."
+msgstr "Rankout a rit krouiñ ur gont a-raok gellout flapiñ gant tud all."
+
+#, fuzzy, python-format
+msgid "You are about to remove %(name)s (%(jid)s) from your contact list."
+msgstr "Fellout a ra din emezelañ evit krouiñ ur gont"
+
+#, fuzzy
+msgid "You are currently not joined this group chat"
+msgstr "Er strollad"
+
+msgid "You are not allowed to modify the affiliation of Admins and Owners"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You are not connected to the server. Without a connection, you can not "
+"browse available services"
+msgstr "Rankout a rit bezañ luget evit gellout furchal er servijoù hegerz"
+
+#, fuzzy, python-format
+msgid "You are now %(affiliation)s of this group chat"
+msgstr "Emaoc'h er webgaoz %s dija"
+
+#, fuzzy, python-format
+msgid "You are now %(role)s of this group chat"
+msgstr "Emaoc'h er webgaoz %s dija"
+
+#, python-format
+msgid "You are now known as %s"
+msgstr "Anavezet oc'h bremañ gant an anv %s"
+
+#, fuzzy, python-brace-format
+msgid "You are now {show}{status}"
+msgstr "Anavezet oc'h bremañ gant an anv %s"
+
+#, fuzzy
+msgid "You are offline"
+msgstr "Ezlinenn"
+
+msgid "You are offline. Go online to send messages…"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "You can join this group chat instead: %s"
+msgstr "Er strollad"
+
+msgid "You can not join a group chat unless you are connected."
+msgstr "N'hellit ket ebarzhiñ ur sal-flapiñ keit ha ma n'oc'h ket luget."
+
+#, fuzzy
+msgid "You can see the contact's online status"
+msgstr "Goulenn evit gwelet e/he stad"
+
+#, fuzzy
+msgid "You cancelled the transfer"
+msgstr "A nulla an treuzkas dibabet"
+
+#, fuzzy
+msgid "You cannot add yourself to your contact list."
+msgstr "Laouen 'vefen d'ho ouzhpennañ em roll-darempredoù."
+
+#, fuzzy
+msgid "You cannot see this contact's online status"
+msgstr "Laouen 'vefen d'ho ouzhpennañ em roll-darempredoù."
+
+msgid "You can’t send private messages to contacts if they are offline."
+msgstr ""
+
+msgid "You don't share your status with this contact"
+msgstr ""
+
+#, fuzzy
+msgid "You have been banned"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-format
+msgid "You have been banned by %s"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-format
+msgid "You have been invited to %s"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy
+msgid "You have been kicked"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-format
+msgid "You have been kicked by %s"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy
+msgid "You have been removed from this group chat"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-format
+msgid "You have been removed from this group chat by %s"
+msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+msgid "You have insufficient permissions"
+msgstr ""
+
+msgid "You have left due to an error"
+msgstr ""
+
+#, fuzzy
+msgid "You have to be connected to create a group chat."
+msgstr "Er strollad"
+
+msgid "You have to invite people so they can join"
+msgstr ""
+
+#, fuzzy
+msgid "You left this group chat"
+msgstr "Emaoc'h er webgaoz %s dija"
+
+msgid ""
+"You may need an invite to join this group chat again, if you choose to leave "
+"it permanently."
+msgstr ""
+
+msgid "You need Owner permission to change the configuration"
+msgstr ""
+
+#, python-format
+msgid "You now have the following hats: %s"
+msgstr ""
+
+#, fuzzy
+msgid "You requested to see this contact's online status"
+msgstr "Goulenn evit gwelet e/he stad"
+
+#, fuzzy
+msgid ""
+"You will appear offline for this contact and you will not receive further "
+"messages."
+msgstr "JID an darempred hag a resevo ar gemennadenn"
+
+#, fuzzy
+msgid "Your Nickname"
+msgstr "_A-raok al lesanv:"
+
+msgid "Your XMPP address (e.g. user@example.org)"
+msgstr ""
+
+#, fuzzy
+msgid "Your account has has been removed successfully."
+msgstr "Gant berzh eo bet krouet ho kont nevez!"
+
+msgid "Your affiliations to this group chat have been removed"
+msgstr ""
+
+#, fuzzy
+msgid "Your chat history database has been migrated successfully."
+msgstr "Gant berzh eo bet krouet ho kont nevez!"
+
+msgid ""
+"Your chat history is being migrated.\n"
+"This may take a while…"
+msgstr ""
+
+msgid "Your connection to the server is secured by this certificate"
+msgstr ""
+
+msgid "Your message can not be sent until you are connected."
+msgstr "N'eus ket tu da gas ho kemennadenn keit ha ma n'oc'h ket luget."
+
+#, fuzzy
+msgid "Your messages have been exported successfully"
+msgstr "Gant berzh eo bet krouet ho kont nevez!"
+
+#, fuzzy
+msgid "Your password"
+msgstr "Roit ur ger-kuzh nevez:"
+
+#, fuzzy
+msgid "Your password has successfully been changed."
+msgstr "_Penndibaboù"
+
+msgid "Your public key or authentication certificate"
+msgstr ""
+
+#, fuzzy
+msgid "Your roles in this group chat have been removed"
+msgstr "Gant berzh eo bet krouet ho kont nevez!"
+
+msgid ""
+"Your server does not offer a group chat service. Please specify the address "
+"of a different server."
+msgstr ""
+
+msgid "Your service offers the following features"
+msgstr ""
+
+#, fuzzy
+msgid "ZIP files"
+msgstr "An holl restroù"
+
+msgid "ZZZZzzzzzZZZZZ"
+msgstr ""
+
+msgid "[read more]"
+msgstr ""
+
+msgid "_Abort"
+msgstr ""
+
+#, fuzzy
+msgid "_About"
+msgstr "Diwar-benn"
+
+#, fuzzy
+msgid "_Accept"
+msgstr "Asantiñ"
+
+#, fuzzy
+msgid "_Add to Trusted Certificates"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "_Address"
+msgstr "_Chomlec'h:"
+
+#, fuzzy
+msgid "_Advanced Settings"
+msgstr "Actions a_vancées"
+
+#, fuzzy
+msgctxt "User status"
+msgid "_Available"
+msgstr "Dihegerz"
+
+#, fuzzy
+msgid "_Back"
+msgstr "Distro 'benn nebeut"
+
+msgid "_Block"
+msgstr ""
+
+msgctxt "User status"
+msgid "_Busy"
+msgstr ""
+
+msgid "_Cancel"
+msgstr "_Nullañ"
+
+#, fuzzy
+msgid "_Clear Devices"
+msgstr "Dibabit ur skeudenn"
+
+#, fuzzy
+msgid "_Close"
+msgstr "_Kas & Serriñ"
+
+#, fuzzy
+msgid "_Command"
+msgstr "Urzhioù: %s"
+
+#, fuzzy
+msgid "_Connect"
+msgstr "Kevreadenn"
+
+#, fuzzy
+msgid "_Connect Anyway"
+msgstr "O lugañ"
+
+#, fuzzy
+msgid "_Copy Link"
+msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+msgid "_Create"
+msgstr "Dizoberiant"
+
+#, fuzzy
+msgid "_Decline"
+msgstr "_Ezlinenn"
+
+#, fuzzy
+msgid "_Delete"
+msgstr "Dilemel"
+
+#, fuzzy
+msgid "_Destroy"
+msgstr "Taolennadur: %s"
+
+#, fuzzy
+msgid "_Disable Account"
+msgstr "Anv-kont direizh"
+
+#, fuzzy
+msgid "_Do not ask me again"
+msgstr "_Chom hep goulenn ket"
+
+msgid "_Edit"
+msgstr "_Aozañ"
+
+#, fuzzy
+msgid "_Features"
+msgstr "Perzhioù ar servijerien"
+
+#, fuzzy
+msgctxt "User status"
+msgid "_Free for Chat"
+msgstr "_Prest da flapiñ"
+
+msgid "_Hide (Tray Icon)"
+msgstr ""
+
+#, fuzzy
+msgid "_Host"
+msgstr "_Ostiz:"
+
+#, fuzzy
+msgid "_Hostname"
+msgstr "Servijer:"
+
+#, fuzzy
+msgid "_Import"
+msgstr "Ezporzhiañ"
+
+msgid "_Join"
+msgstr "E_barzhiñ"
+
+#, fuzzy
+msgid "_Join Support Chat"
+msgstr "Ebarzhiñ ur sal-flapiñ"
+
+msgid "_Keyboard Shortcuts"
+msgstr ""
+
+msgid "_Later"
+msgstr ""
+
+msgid "_Leave"
+msgstr ""
+
+#, fuzzy
+msgid "_Log In"
+msgstr "_Lugañ"
+
+#, fuzzy
+msgid "_Minimize"
+msgstr "Gajim"
+
+#, fuzzy
+msgid "_Moderate"
+msgstr "Kasour-ez"
+
+#, fuzzy
+msgid "_Name"
+msgstr "_Anv:"
+
+#, fuzzy
+msgid "_No"
+msgstr "Hini ebet"
+
+#, fuzzy
+msgctxt "User status"
+msgid "_Not Available"
+msgstr "D_ihegerz"
+
+msgid "_OK"
+msgstr "_Mat eo"
+
+msgid "_Offline"
+msgstr "_Ezlinenn"
+
+msgid "_Overwrite"
+msgstr ""
+
+#, fuzzy
+msgid "_Please choose a provider"
+msgstr "Ebarzhiñ ur _webgaoz"
+
+#, fuzzy
+msgid "_Port"
+msgstr "_Porzh:"
+
+#, fuzzy
+msgid "_Privacy Policy (Online)"
+msgstr "_Kenderc'hel"
+
+msgid "_Purge"
+msgstr ""
+
+#, fuzzy
+msgid "_Quit"
+msgstr "_Kuitaat"
+
+msgid "_Re-Login"
+msgstr ""
+
+msgid "_Remember my decision"
+msgstr ""
+
+msgid "_Remove"
+msgstr "_Dilemel"
+
+#, fuzzy
+msgid "_Report Spam"
+msgstr "_Diskleriañ ar Bug"
+
+#, fuzzy
+msgid "_Request"
+msgstr "Goulenn treuzkas"
+
+#, fuzzy
+msgid "_Reset Value"
+msgstr "_Distreiñ gant al livioù dre-ziouer"
+
+msgid "_Retract"
+msgstr ""
+
+#, fuzzy
+msgid "_Save"
+msgstr "Enrollet e-barzh: %s"
+
+msgid "_Search"
+msgstr "_Klask"
+
+msgid "_Select"
+msgstr ""
+
+msgid "_Send"
+msgstr "_Kas"
+
+#, fuzzy
+msgid "_Show Certificate"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "_Sign Up"
+msgstr "_Lugañ"
+
+msgid "_Stop Sharing"
+msgstr ""
+
+msgid "_Subscribe"
+msgstr "_Koumanantiñ"
+
+#, fuzzy
+msgid "_Type"
+msgstr "Doare:"
+
+msgid "_Unblock"
+msgstr ""
+
+msgid "_Unregister account from service"
+msgstr ""
+
+#, fuzzy
+msgid "_Unsubscribe"
+msgstr "_Koumanantiñ"
+
+#, fuzzy
+msgid "_Username"
+msgstr "_Anv:"
+
+#, fuzzy
+msgid "_View Certificate"
+msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+msgid "_Wiki (Online)"
+msgstr "_Kenderc'hel"
+
+msgid "accuracy"
+msgstr ""
+
+#, fuzzy
+msgid "alt"
+msgstr "Dilemel"
+
+#, fuzzy
+msgid "and NOT authenticated"
+msgstr "Implij an diskleriañ"
+
+#, fuzzy
+msgid "and authenticated"
+msgstr "Implij an diskleriañ"
+
+msgid "area"
+msgstr ""
+
+msgid "audio input"
+msgstr ""
+
+msgid "audio output"
+msgstr ""
+
+#, fuzzy
+msgid "bearing"
+msgstr "Glas-mor"
+
+msgid "bold"
+msgstr ""
+
+#, fuzzy
+msgid "building"
+msgstr "Skarzhañ %s"
+
+#, fuzzy, python-format
+msgid "cairo Version: %s"
+msgstr "Taolennadur: %s"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+msgid "chat;messaging;im;xmpp;voip;"
+msgstr ""
+
+msgid "column"
+msgstr ""
+
+#, fuzzy
+msgid "country"
+msgstr "Bro:"
+
+#, fuzzy
+msgid "countrycode"
+msgstr "Kont"
+
+msgid "datum"
+msgstr ""
+
+#, fuzzy
+msgid "description"
+msgstr "Taolennadur"
+
+msgid "error"
+msgstr ""
+
+msgid "example.org"
+msgstr ""
+
+msgid "floor"
+msgstr ""
+
+#, fuzzy
+msgid "invites you to join a group chat"
+msgstr "Er strollad"
+
+#, fuzzy
+msgid "is composing a message…"
+msgstr "a skriv ur gemennadenn..."
+
+msgid "is doing something else"
+msgstr "a ra un dra bennak all"
+
+#, fuzzy
+msgid "italic"
+msgstr "Stouet"
+
+#, fuzzy, python-format
+msgid "last seen: %s"
+msgstr "Abeg"
+
+msgid "lat"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "libsoup Version: %s"
+msgstr "Taolennadur: %s"
+
+msgid "locality"
+msgstr ""
+
+#, fuzzy
+msgid "lon"
+msgstr "Hini ebet"
+
+msgid "macOS"
+msgstr ""
+
+#, fuzzy
+msgid "or"
+msgstr "Da"
+
+msgid "paused composing a message"
+msgstr "a zo paouezet da skrivañ ar gemennadenn"
+
+msgid "postalcode"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "pycairo Version: %s"
+msgstr "Taolennadur: %s"
+
+#, python-format
+msgid "python-nbxmpp Version: %s"
+msgstr ""
+
+msgid "region"
+msgstr ""
+
+#, fuzzy
+msgid "room"
+msgstr "Digant"
+
+msgid "speed"
+msgstr ""
+
+msgid "street"
+msgstr ""
+
+#, fuzzy
+msgid "strike"
+msgstr "Lesanv"
+
+msgid "text"
+msgstr ""
+
+msgid "timestamp"
+msgstr ""
+
+msgid "translator-credits"
+msgstr ""
+"Troet e brezhoneg gant\n"
+"Giulia Fraboulet <djoulia@gmail.com>"
+
+msgid "video input"
+msgstr ""
+
+#, python-brace-format
+msgid "{nick} has left due to an error{reason}"
+msgstr ""
+
+#, python-brace-format
+msgid "{nick} has left{reason}"
+msgstr ""
+
+#, fuzzy, python-brace-format
+msgid "{nick} is now known as {new_nick}"
+msgstr "%s a zo bremañ %s"
+
+#, fuzzy, python-brace-format
+msgid "{nick} is now {show}"
+msgstr "%(nick)s a zo bremañ %(status)s"
+
+#, fuzzy, python-brace-format
+msgid "{nick} is now {show}{status}"
+msgstr "%(nick)s a zo bremañ %(status)s"
+
+msgid "…or drop it here"
+msgstr ""
+
+#, fuzzy, python-format
+#~ msgid "%s (desynced)"
+#~ msgstr "Dre ar munut"
+
+#, fuzzy, python-format
+#~ msgid "%s asks you to share your status"
+#~ msgstr "Anavezout a raio \"%s\" ho stad adalek bremañ."
+
+#, fuzzy, python-format
+#~ msgid "%s group chats found"
+#~ msgstr "N'eo ket bet kavet %s"
+
+#, python-format
+#~ msgid "(%(filesize_unit)s/s)"
+#~ msgstr "(%(filesize_unit)s/s)"
+
+#, fuzzy, python-brace-format
+#~ msgid "** Role of {nick} has been set to {role}{actor}{reason}"
+#~ msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy, python-brace-format
+#~ msgid "** Your Role has been set to {role}{actor}{reason}"
+#~ msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"
+
+#, fuzzy
+#~ msgid "<Description>"
+#~ msgstr "Taolennadur"
+
+#, fuzzy
+#~ msgid "<Plugin Name>"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#~ msgid "?Ask (for Subscription):None"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Gender:None"
+#~ msgstr "Kaser:"
+
+#, fuzzy
+#~ msgid "?Group Chat Contact Affiliation:None"
+#~ msgstr "Hini ebet"
+
+#~ msgid "?Group Chat Contact Role:None"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Group chat address:news"
+#~ msgstr "Flap a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat address:repairs"
+#~ msgstr "Flapoù a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat address:team"
+#~ msgstr "Flapoù a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat address:vacation"
+#~ msgstr "Pedadenn evit ur sal-flapiñ"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Archiving"
+#~ msgstr "Pedadenn evit ur sal-flapiñ"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Hidden"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Members Only"
+#~ msgstr "Message d'un Salon mis en Sur-brillance"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Moderated"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Group chat feature:No Password Required"
+#~ msgstr "Flapoù a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Not Anonymous"
+#~ msgstr "Flapoù a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Not Moderated"
+#~ msgstr "Flapoù a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Open"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Password Required"
+#~ msgstr "Flapoù a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Persistent"
+#~ msgstr "Flapoù a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Public"
+#~ msgstr "Message d'un Salon mis en Sur-brillance"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Semi-Anonymous"
+#~ msgstr "Message d'un Salon mis en Sur-brillance"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Temporary"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Group chat name:Family"
+#~ msgstr "Message d'un Salon mis en Sur-brillance"
+
+#, fuzzy
+#~ msgid "?Group chat name:News"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Group chat name:Repairs"
+#~ msgstr "Flap a-stroll"
+
+#, fuzzy
+#~ msgid "?Group chat name:Team"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?Group chat name:Vacation"
+#~ msgstr "Pedadenn evit ur sal-flapiñ"
+
+#, fuzzy
+#~ msgid "?Message row action:Copy"
+#~ msgstr "korf ar gemennadenn"
+
+#, fuzzy
+#~ msgid "?Message row action:Correct…"
+#~ msgstr "korf ar gemennadenn"
+
+#, fuzzy
+#~ msgid "?Message row action:Select Messages…"
+#~ msgstr "korf ar gemennadenn"
+
+#, fuzzy
+#~ msgid "?Message state:Received"
+#~ msgstr "Kemennadenn gentañ"
+
+#, fuzzy
+#~ msgid "?Noun:Download"
+#~ msgstr "Pellgargañ"
+
+#, fuzzy
+#~ msgid "?Noun:Upload"
+#~ msgstr "Kas"
+
+#~ msgid "?Subscription we already have:None"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?config description:None"
+#~ msgstr "Hini ebet"
+
+#, fuzzy
+#~ msgid "?config:Value"
+#~ msgstr "_Kenderc'hel"
+
+#, fuzzy
+#~ msgid "?profile:Address"
+#~ msgstr "Chomlec'h"
+
+#, fuzzy
+#~ msgid "?profile:Full Name"
+#~ msgstr "<b>Personelaet</b>"
+
+#, fuzzy
+#~ msgid "?profile:Note"
+#~ msgstr "restr"
+
+#, fuzzy
+#~ msgid "?profile:Role"
+#~ msgstr "restr"
+
+#, fuzzy
+#~ msgid "?transfer status:Aborted"
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer status:Completed"
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer status:Not started"
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer status:Paused"
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer status:Stalled"
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer status:Status: "
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer status:Transferred: "
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer status:Transferring"
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?transfer type:Type: "
+#~ msgstr "Sac'het an treuzkas"
+
+#, fuzzy
+#~ msgid "?user status:Available"
+#~ msgstr "Diskouez an eur:"
+
+#, fuzzy
+#~ msgid "?user status:_Available"
+#~ msgstr "_Hegerz"
+
+#~ msgid "A list of active, completed and stopped file transfers"
+#~ msgstr "Ur roll eus an treuzkasoù oberiant, echu pe arsavet"
+
+#, fuzzy, python-format
+#~ msgid "Account %s is still connected"
+#~ msgstr "Luget eo ar gont \"%s\" d'ar servijer"
+
+#, fuzzy
+#~ msgid "Account Settings…"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+#~ msgid "Account is not connected"
+#~ msgstr "Luget eo ar gont \"%s\" d'ar servijer"
+
+#, fuzzy
+#~ msgid "Account is not connected."
+#~ msgstr "Luget eo ar gont \"%s\" d'ar servijer"
+
+#, fuzzy
+#~ msgid "Activity"
+#~ msgstr "Oberiant"
+
+#, fuzzy
+#~ msgid "Add _Contact…"
+#~ msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+#~ msgid "Add new line"
+#~ msgstr "Oberiant"
+
+#, fuzzy
+#~ msgid "Add reaction"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+#~ msgid "Add some details…"
+#~ msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+#~ msgid "Add to Contact List…"
+#~ msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+#~ msgid "Add to new Group"
+#~ msgstr "Kemmañ ar _strolladoù"
+
+#, fuzzy
+#~ msgid "Adjust to Status"
+#~ msgstr "Goulenn evit gwelet e/he stad"
+
+#, fuzzy
+#~ msgid "Adjust to status"
+#~ msgstr "Goulenn evit gwelet e/he stad"
+
+#, fuzzy
+#~ msgid "All Groups"
+#~ msgstr "Strollad"
+
+#, fuzzy
+#~ msgid "Archiving Preferences"
+#~ msgstr "_Penndibaboù"
+
+#, fuzzy
+#~ msgid "Archiving Preferences Error"
+#~ msgstr "_Penndibaboù"
+
+#, fuzzy
+#~ msgid "Archiving Preferences Saved"
+#~ msgstr "_Penndibaboù"
+
+#, fuzzy
+#~ msgid "Are you sure you want to leave this group chat?"
+#~ msgstr "Ha sur oc'h e fell deoc'h kuitaat ar flap \"%s\"?"
+
+#, fuzzy
+#~ msgid "Are you sure you want to quit Gajim?"
+#~ msgstr "Êtes-vous sûr de vouloir quitter les salons \"%s\" ?"
+
+#, fuzzy
+#~ msgid "Audio / Video Calls"
+#~ msgstr "Flap prevez"
+
+#, fuzzy
+#~ msgid "Audio Output Device"
+#~ msgstr "Titour-stad"
+
+#, fuzzy
+#~ msgid "Audio preview is not available"
+#~ msgstr "N'eus ket tu da gevreañ"
+
+#, fuzzy
+#~ msgid "Author"
+#~ msgstr "_Aotren"
+
+#, fuzzy
+#~ msgid "Authorization Request"
+#~ msgstr "Kaset eo bet an aotre"
+
+#, fuzzy
+#~ msgid "Auto Away Settings"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+#~ msgid "Autojoin"
+#~ msgstr "E_barzhiñ"
+
+#, fuzzy
+#~ msgid "Blocking List"
+#~ msgstr "Roll argas"
+
+#, fuzzy
+#~ msgid "Bookmarks"
+#~ msgstr "_Ouzhpennañ ar webgaoz d'ar sinedoù"
+
+#, fuzzy, python-format
+#~ msgid "Bookmarks for %s"
+#~ msgstr "_Ouzhpennañ ar webgaoz d'ar sinedoù"
+
+#, fuzzy
+#~ msgid "Cancel the selected file transfer and remove incomplete files"
+#~ msgstr "A nulla an treuzkas dibabet hag a zilam ar restr diglok"
+
+#, fuzzy
+#~ msgid "Certificate Settings"
+#~ msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+#~ msgid "Ch_ange Subject"
+#~ msgstr "Kemmañ ar _sujed"
+
+#, fuzzy
+#~ msgid "Chat List"
+#~ msgstr "Darempredoù"
+
+#, fuzzy
+#~ msgid "Checking file…"
+#~ msgstr "Kas ur _restr"
+
+#, fuzzy
+#~ msgid "Choose Archive"
+#~ msgstr "Dibabit ur skeudenn"
+
+#, fuzzy
+#~ msgid "Choose Avatar…"
+#~ msgstr "Dibabit ur skeudenn"
+
+#, fuzzy
+#~ msgid "Choose Emoji"
+#~ msgstr "Dibabit ur son"
+
+#, fuzzy
+#~ msgid "Choose File to Send…"
+#~ msgstr "Dibabit ur restr da gas..."
+
+#, fuzzy
+#~ msgid "Choose the contact's groups"
+#~ msgstr "Ouzhennañ an darempred d'ar roll"
+
+#, fuzzy
+#~ msgid "Clear message entry"
+#~ msgstr "Kemennadenn gaset"
+
+#, fuzzy
+#~ msgid "Client Certificate"
+#~ msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Completed"
+#~ msgstr "Echu"
+
+#, fuzzy
+#~ msgid "Connection Settings"
+#~ msgstr "Kevreadenn"
+
+#~ msgid "Connection not available"
+#~ msgstr "N'eus ket tu en em lugañ"
+
+#, fuzzy
+#~ msgid "Contact List: Contact Background Color"
+#~ msgstr "Darempred luget"
+
+#, fuzzy
+#~ msgid "Contact List: Contact Font"
+#~ msgstr "Darempred diluget"
+
+#, fuzzy
+#~ msgid "Contact List: Contact Foreground Color"
+#~ msgstr "Darempred luget"
+
+#, fuzzy
+#~ msgid "Contact List: Group Background Color"
+#~ msgstr "Darempred diluget"
+
+#, fuzzy
+#~ msgid "Contact List: Group Font"
+#~ msgstr "Diskouez er _roll hepken"
+
+#, fuzzy
+#~ msgid "Contact Unsubscribed"
+#~ msgstr "_Koumanantiñ"
+
+#, fuzzy
+#~ msgid "Contact information"
+#~ msgstr "Titouroù"
+
+#, fuzzy
+#~ msgid "Contact list"
+#~ msgstr "Darempredoù"
+
+#, fuzzy
+#~ msgid "Conversation: URL Color"
+#~ msgstr "Istoradur ar gaoz"
+
+#, fuzzy
+#~ msgid "Copy Certificate Information"
+#~ msgstr "Titouroù"
+
+#, fuzzy
+#~ msgid "Copy Email Address"
+#~ msgstr "_Kopiañ ar JID/Chomlec'h postel"
+
+#, fuzzy
+#~ msgid "Copy Link"
+#~ msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+#~ msgid "Copy Link Location"
+#~ msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+#~ msgid "Copy Location"
+#~ msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+#~ msgid "Copy Path"
+#~ msgstr "Webgaoz:"
+
+#, fuzzy
+#~ msgid "Copy info to clipboard"
+#~ msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+#~ msgid "Correct the last message"
+#~ msgstr "titour stad"
+
+#, fuzzy
+#~ msgid "Create _Group Chat…"
+#~ msgstr "Flap a-stroll"
+
+#, fuzzy
+#~ msgid "Create new group chat"
+#~ msgstr "Flap a-stroll"
+
+#, fuzzy
+#~ msgid "Current Developers"
+#~ msgstr "Diorroerien kent:"
+
+#, fuzzy
+#~ msgid "Decryption failed"
+#~ msgstr "Kevreadenn"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "Dilemel"
+
+#, fuzzy
+#~ msgid "Delete Message"
+#~ msgstr "Titour-stad"
+
+#, fuzzy
+#~ msgid "Deny all subscription requests"
+#~ msgstr "Goulenn koumanantiñ"
+
+#, fuzzy
+#~ msgid "Description: "
+#~ msgstr "Taolennadur: %s"
+
+#, fuzzy
+#~ msgid "Developers"
+#~ msgstr "Diorroerien kent:"
+
+#, fuzzy
+#~ msgid "Direct transfer (not encrypted)"
+#~ msgstr "Sac'het an treuzkas"
+
+#, fuzzy
+#~ msgid "Don’t show this again"
+#~ msgstr "_Chom hep goulenn ket"
+
+#, fuzzy
+#~ msgctxt "Noun"
+#~ msgid "Download"
+#~ msgstr "Pellgargañ"
+
+#, fuzzy
+#~ msgid "Download File"
+#~ msgstr "Pellgargañ"
+
+#, fuzzy
+#~ msgid "Download Update"
+#~ msgstr "Pellgargañ"
+
+#, fuzzy
+#~ msgid "Download and Install"
+#~ msgstr "_Chom hep goulenn ket"
+
+#, fuzzy, python-format
+#~ msgid "Download failed (%s)"
+#~ msgstr "_Chom hep goulenn ket"
+
+#, fuzzy
+#~ msgid "Downloading…"
+#~ msgstr "O skrivañ"
+
+#, fuzzy
+#~ msgid "Drop files or contacts"
+#~ msgstr "Kas ur restr d'un darempred"
+
+#, fuzzy
+#~ msgid "Edit Name…"
+#~ msgstr "Anv:"
+
+#, fuzzy
+#~ msgid "Edit Profile…"
+#~ msgstr "Kas ur restr"
+
+#, fuzzy
+#~ msgid "Edit workspace…"
+#~ msgstr "Kemmañ ar _strolladoù"
+
+#, fuzzy
+#~ msgid "Encrypted Certificate"
+#~ msgstr "Anv-arveriad-ez direizh"
+
+#, fuzzy
+#~ msgid "Error!"
+#~ msgstr "Fazi en ur lenn ar restr:"
+
+#, python-format
+#~ msgid "Error: cannot open %s for reading"
+#~ msgstr "Fazi: dibosupl eo digeriñ %s evit e lenn"
+
+#, fuzzy
+#~ msgid "Feature not available on Windows"
+#~ msgstr "An emc'hemennadenn evit ar stad \"Dihegerz\""
+
+#, fuzzy
+#~ msgid "Features:"
+#~ msgstr "Perzhioù ar servijerien"
+
+#, fuzzy
+#~ msgid "File Offered"
+#~ msgstr "Treuzkasoù"
+
+#~ msgid "File Transfer Error"
+#~ msgstr "Fazi treuzkas"
+
+#, fuzzy
+#~ msgid "File Transfer Failed"
+#~ msgstr "Treuzkasoù"
+
+#~ msgid "File Transfers"
+#~ msgstr "Treuzkasoù"
+
+#, fuzzy
+#~ msgid "File error"
+#~ msgstr "Fazi treuzkas"
+
+#, fuzzy
+#~ msgid "File transfer stopped"
+#~ msgstr "Sac'het an treuzkas"
+
+#, fuzzy
+#~ msgid "File transfers"
+#~ msgstr "Treuzkasoù"
+
+#, python-format
+#~ msgid "Filename: %s"
+#~ msgstr "Anv ar restr: %s"
+
+#, fuzzy
+#~ msgid "Filetransfer Preference"
+#~ msgstr "Fazi treuzkas"
+
+#, fuzzy
+#~ msgid "Filter Chats…"
+#~ msgstr "Flapoù prevez"
+
+#, fuzzy
+#~ msgid "Full Message View"
+#~ msgstr "Kemennadenn gaset"
+
+#~ msgid "Gajim"
+#~ msgstr "Gajim"
+
+#, fuzzy
+#~ msgid "Gajim Team"
+#~ msgstr "Gajim - %s"
+
+#, fuzzy
+#~ msgid "Gajim can not read this file"
+#~ msgstr "N'hell ket Gajim tizhout ar restr-mañ"
+
+#, fuzzy, python-format
+#~ msgid "Gajim: No updates available (last check: %s)"
+#~ msgstr "Kont ebet hegerz"
+
+#, fuzzy
+#~ msgid "Gajim: No updates available (last check: never)"
+#~ msgstr "Kont ebet hegerz"
+
+#, fuzzy
+#~ msgid "Gajim: Update check disabled in preferences"
+#~ msgstr "_Penndibaboù"
+
+#, fuzzy
+#~ msgid "Group Chat Invitation"
+#~ msgstr "Pedadenn evit ur sal-flapiñ"
+
+#, fuzzy
+#~ msgid "Group Chat Invitation Received"
+#~ msgstr "Pedadenn evit ur sal-flapiñ"
+
+#, fuzzy
+#~ msgid "Group chat support"
+#~ msgstr "Flapoù a-stroll"
+
+#~ msgid "Hide this menu"
+#~ msgstr "Kuzhat ar meuziad-mañ"
+
+#, fuzzy
+#~ msgid "Homepage"
+#~ msgstr "Lec'hienn hiniennel:"
+
+#, fuzzy
+#~ msgid "IP / Port"
+#~ msgstr "_Porzh:"
+
+#, fuzzy, python-format
+#~ msgid "Idle since: %s"
+#~ msgstr "dibaoe %s"
+
+#~ msgid "Images"
+#~ msgstr "Skeudennoù"
+
+#, fuzzy
+#~ msgid "Insert Emoji"
+#~ msgstr "Gérer les frimousses"
+
+#~ msgid "Invalid File"
+#~ msgstr "Restr direizh"
+
+#, fuzzy
+#~ msgid "Invite Contacts…"
+#~ msgstr "Darempredoù"
+
+#, fuzzy
+#~ msgid "Invite New Contact"
+#~ msgstr "Darempredoù"
+
+#~ msgid "It is not possible to send empty files"
+#~ msgstr "N'eus ket tu da gas restroù goullo"
+
+#, fuzzy, python-format
+#~ msgid "Last seen %s"
+#~ msgstr "Abeg"
+
+#, fuzzy
+#~ msgctxt "Group chat description"
+#~ msgid "Local news and reports"
+#~ msgstr "La création de salon est réservée aux administrateurs."
+
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Kemmañ ar gont"
+
+#, fuzzy
+#~ msgid "Login Settings"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+#~ msgid "Manage Accounts…"
+#~ msgstr "_Kemmañ ar gont..."
+
+#, fuzzy
+#~ msgid "Manage Contact List"
+#~ msgstr "Darempredoù"
+
+#, fuzzy
+#~ msgid "Message Correction: Background Color"
+#~ msgstr "Kemennadennoù"
+
+#, fuzzy
+#~ msgid "Message composition"
+#~ msgstr "korf ar gemennadenn"
+
+#, fuzzy
+#~ msgid ""
+#~ "Messages will only be available for reading them later if storing chat "
+#~ "history is enabled and if the contact is in your contact list."
+#~ msgstr ""
+#~ "Posubl e vo lenn ar gemennadennoù diwezhatoc'h m'emañ an istoradur war "
+#~ "enaou."
+
+#, fuzzy
+#~ msgid "Moderate message?"
+#~ msgstr "titour stad"
+
+#, fuzzy
+#~ msgid "Modify Gateway…"
+#~ msgstr "_Kemmañ ar gont..."
+
+#, fuzzy
+#~ msgid "Move Contact"
+#~ msgstr "Darempredoù"
+
+#, fuzzy
+#~ msgid "No Connection Available"
+#~ msgstr "N'eus ket tu en em lugañ"
+
+#, fuzzy
+#~ msgid "No Notifications"
+#~ msgstr "Kemmañ ar gont"
+
+#, fuzzy
+#~ msgid "No proxy used"
+#~ msgstr "Proksi:"
+
+#, fuzzy
+#~ msgid "Not Connected"
+#~ msgstr "Kevreadenn"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Not started"
+#~ msgstr "N'eo ket kroget"
+
+#, fuzzy
+#~ msgid "Notification Area Icon"
+#~ msgstr "_Implij an arlun-gelaouiñ (trayicon)"
+
+#, fuzzy
+#~ msgid "Online Status"
+#~ msgstr "Stad"
+
+#, fuzzy
+#~ msgid "Open Link"
+#~ msgstr "_Kopiañ chomlec'h an ere"
+
+#, fuzzy
+#~ msgid "Open Link in Browser"
+#~ msgstr "_Digerién an ere er furcher web"
+
+#, fuzzy
+#~ msgid "Open Path"
+#~ msgstr "OpenPGP : "
+
+#, fuzzy
+#~ msgid "Open _Folder"
+#~ msgstr "_Digeriñ ar renkell pal"
+
+#, fuzzy
+#~ msgid "Organization (O)"
+#~ msgstr "_Merour-ez"
+
+#, fuzzy
+#~ msgid "Past as Code Block"
+#~ msgstr "Kod postel:"
+
+#, fuzzy
+#~ msgid "Pause or resume file transfer"
+#~ msgstr "Nullañ an treuzkas"
+
+#, fuzzy
+#~ msgid "Pending Event"
+#~ msgstr "Diskouez an holl _zarvoudoù o c'hortoz"
+
+#, fuzzy
+#~ msgid "Pl_ugins"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+#~ msgid "Plugin manager"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+#~ msgid "Plugins: No updates available"
+#~ msgstr "Kont ebet hegerz"
+
+#, fuzzy
+#~ msgid "Plugins: Update check disabled in preferences"
+#~ msgstr "_Penndibaboù"
+
+#~ msgid "Progress"
+#~ msgstr "Araokadur"
+
+#, fuzzy
+#~ msgid "Proxy Host"
+#~ msgstr "Proksi:"
+
+#, fuzzy
+#~ msgid "Proxy Type"
+#~ msgstr "Proksi:"
+
+#, fuzzy
+#~ msgid "Re-Login"
+#~ msgstr "Adlugañ bremañ?"
+
+#, fuzzy
+#~ msgid "Really block this contact?"
+#~ msgstr "N'eus ket tu da implij OpenPGP war an urzhiataer-mañ"
+
+#, fuzzy
+#~ msgid "Recent history"
+#~ msgstr "Nevez 'zo:"
+
+#~ msgid "Recipient: "
+#~ msgstr "Resever:"
+
+#, fuzzy, python-format
+#~ msgid "Recipient: %s"
+#~ msgstr "Resever:"
+
+#, fuzzy
+#~ msgid "Remove Chat History"
+#~ msgstr "Nevez 'zo:"
+
+#, fuzzy
+#~ msgid "Remove Group..."
+#~ msgstr "_Dilemel"
+
+#, fuzzy
+#~ msgid "Remove Notification"
+#~ msgstr "Kemmañ ar gont"
+
+#, fuzzy
+#~ msgid "Remove Transport"
+#~ msgstr "Dorioù"
+
+#, fuzzy
+#~ msgid "Remove completed, cancelled and failed file transfers from the list"
+#~ msgstr "Diverkañ an treuzkasadoù echu, nullaet pe sac'het"
+
+#, fuzzy
+#~ msgid "Remove contact from contact list"
+#~ msgstr "Dilemel an darempred diouzh ar roll"
+
+#, fuzzy
+#~ msgid "Remove from contact list"
+#~ msgstr "Dilemel an darempred diouzh ar roll"
+
+#, fuzzy
+#~ msgid "Report"
+#~ msgstr "_Diskleriañ ar Bug"
+
+#, fuzzy
+#~ msgid "Requires: gupnpigd-1.0"
+#~ msgstr "Ger-kuzh ret"
+
+#, fuzzy
+#~ msgid "STUN Server"
+#~ msgstr "Servijer:"
+
+#, fuzzy
+#~ msgid "STUN Server Settings"
+#~ msgstr "échec lors de la publication de votre vCard"
+
+#, fuzzy
+#~ msgid "Save File as…"
+#~ msgstr "Enrollañ ar restr dindan..."
+
+#, fuzzy
+#~ msgid "Save as…"
+#~ msgstr "Enrollet e-barzh: %s"
+
+#, fuzzy
+#~ msgid "Select File…"
+#~ msgstr "Kas ur _restr"
+
+#, fuzzy
+#~ msgid "Select an emoji"
+#~ msgstr "Utiliser les _frimousses"
+
+#, fuzzy
+#~ msgid "Select the account with which you want to synchronize"
+#~ msgstr "JID an darempred ho peus c'hoant flapiñ gantañ"
+
+#, fuzzy, python-format
+#~ msgid "Selected security label: %s"
+#~ msgstr "Argas %s"
+
+#, fuzzy
+#~ msgid "Send"
+#~ msgstr "_Kas"
+
+#, fuzzy
+#~ msgid "Send Chatstate"
+#~ msgstr "Stad diwezhañ: %s"
+
+#, fuzzy
+#~ msgid "Send File Directly…"
+#~ msgstr "Enrollañ ar restr dindan..."
+
+#, fuzzy
+#~ msgid "Send Files Directly"
+#~ msgstr "Enrollañ ar restr dindan..."
+
+#, fuzzy
+#~ msgid "Send Read Markers"
+#~ msgstr "Kas ar pakadoù derc'hel al lugadenn vev"
+
+#, fuzzy
+#~ msgid "Send message on Ctrl+Enter and make a new line with Enter."
+#~ msgstr ""
+#~ "Kas ar gemennadenn gant Ctrl+Kas ha mont d'al linenn gant Kas (emzalc'h "
+#~ "dre-ziouer ar poellad ICQ Mirabilis)."
+
+#, fuzzy
+#~ msgid "Send the message"
+#~ msgstr "Kas ur gemennadenn"
+
+#~ msgid "Sender: "
+#~ msgstr "Kaser:"
+
+#~ msgid "Server"
+#~ msgstr "Servijer"
+
+#, fuzzy
+#~ msgid "Server Info"
+#~ msgstr "Servijer"
+
+#, fuzzy
+#~ msgid "Server Software"
+#~ msgstr "Perzhioù ar servijerien"
+
+#, fuzzy, python-format
+#~ msgid "Server Software: %s\n"
+#~ msgstr "Perzhioù ar servijerien"
+
+#, fuzzy
+#~ msgid "Server Uptime"
+#~ msgstr "Enrollet e-barzh: %s"
+
+#, fuzzy
+#~ msgid "Set status message"
+#~ msgstr "titour stad"
+
+#, fuzzy
+#~ msgid "Show Gajim"
+#~ msgstr "Gajim"
+
+#, fuzzy
+#~ msgid "Show Location"
+#~ msgstr "Kemmañ ar gont"
+
+#, fuzzy
+#~ msgid "Show Offline Contacts"
+#~ msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+#~ msgid "Show _Features"
+#~ msgstr "Perzhioù ar servijerien"
+
+#, fuzzy
+#~ msgid "Show debug console"
+#~ msgstr "Diskouez ar gonsol _XML"
+
+#, fuzzy
+#~ msgid "Show previews for files"
+#~ msgstr "N'eus ket tu da gevreañ"
+
+#, fuzzy
+#~ msgid "Shows a list of file transfers between you and your contacts"
+#~ msgstr "A ziskouez ur roll eus an dreuzkasoù etrezoc'h hag ar re all"
+
+#, fuzzy
+#~ msgid "Shutting down Gajim"
+#~ msgstr "Gajim"
+
+#~ msgid "Sta_tus"
+#~ msgstr "S_tad"
+
+#, fuzzy
+#~ msgid "Start New Chat"
+#~ msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+#~ msgid "Start Voice Call…"
+#~ msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+#~ msgid "Status and status message for all accounts"
+#~ msgstr "A cheñch stad ar gont pe ar c'hontoù"
+
+#, fuzzy
+#~ msgid "Status message…"
+#~ msgstr "_Titour-stad:"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Status: "
+#~ msgstr "Stad:"
+
+#, fuzzy, python-format
+#~ msgid "Status: %s"
+#~ msgstr "Stad:"
+
+#, fuzzy
+#~ msgid "Stop File Transfers"
+#~ msgstr "Treuzkasoù"
+
+#~ msgid "Subscription Request"
+#~ msgstr "Goulenn koumanantiñ"
+
+#, fuzzy
+#~ msgid "Subscription:"
+#~ msgstr "Koumanant:"
+
+#, fuzzy
+#~ msgid "Support for service discovery including nodes and search for users"
+#~ msgstr "Merañ servijoù ar gont %s"
+
+#, fuzzy
+#~ msgid "Switch to the first - ninth chat"
+#~ msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+#~ msgid "Synchronize Accounts"
+#~ msgstr "Diskouez an darempredoù _ezlinenn"
+
+#, fuzzy
+#~ msgid "TLS Version"
+#~ msgstr "Taolennadur: %s"
+
+#, fuzzy, python-format
+#~ msgid "TLS verification failed: %s"
+#~ msgstr "Oc'h ouzhpennañ ur gelaouenn nevez evit %s"
+
+#~ msgid "The service could not be found"
+#~ msgstr "N'eo ket bet kavet ar servij"
+
+#, fuzzy
+#~ msgid "This account is not connected to the server"
+#~ msgstr "Luget eo ar gont \"%s\" d'ar servijer"
+
+#, fuzzy
+#~ msgid "This is your XMPP address"
+#~ msgstr "_Kopiañ ar JID/Chomlec'h postel"
+
+#, fuzzy
+#~ msgid "Toggle Menu Bar"
+#~ msgstr "Dorioù"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Transferred: "
+#~ msgstr "Treuzkasoù"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Transferring"
+#~ msgstr "O treuzkas"
+
+#, fuzzy, python-format
+#~ msgid "Transport \"%s\" will be removed"
+#~ msgstr "Dilamet e vo an nor \"%s\""
+
+#~ msgid "Treat * / _ pairs as possible formatting characters."
+#~ msgstr "Implij ur re */_ evel arouezioù neuziañ an destenn."
+
+#, fuzzy
+#~ msgid "Tune:"
+#~ msgstr "Doare:"
+
+#, fuzzy
+#~ msgctxt "File transfer type"
+#~ msgid "Type: "
+#~ msgstr "Doare"
+
+#, fuzzy
+#~ msgid "Unread Messages"
+#~ msgstr "Darvoudoù chomet dilenn"
+
+#, fuzzy
+#~ msgid "Unselect Chat"
+#~ msgstr "Goulenn treuzkas"
+
+#, fuzzy
+#~ msgid "Update Check"
+#~ msgstr "Hizivaat MOTD"
+
+#, fuzzy
+#~ msgid "Upload Files"
+#~ msgstr "Enrollañ ar restr dindan..."
+
+#, fuzzy
+#~ msgid "Upload could not be completed."
+#~ msgstr "N'eo ket bet kavet ar servij"
+
+#, fuzzy
+#~ msgid "Use STUN Server"
+#~ msgstr "Servijer:"
+
+#~ msgid "Use file transfer proxies"
+#~ msgstr "Implij ar proksioù evit treuzkas restroù"
+
+#, fuzzy
+#~ msgid "User Interface"
+#~ msgstr "_Anv:"
+
+#, fuzzy
+#~ msgid "User name…"
+#~ msgstr "_Anv:"
+
+#, fuzzy
+#~ msgctxt "Group chat name"
+#~ msgid "Vacation"
+#~ msgstr "Kemmañ ar gont"
+
+#, fuzzy
+#~ msgid "Video Framerate"
+#~ msgstr "Flap prevez"
+
+#, fuzzy
+#~ msgid "Video Input Device"
+#~ msgstr "Titour-stad"
+
+#, fuzzy
+#~ msgid "Video Resolution"
+#~ msgstr "Flap prevez"
+
+#, fuzzy
+#~ msgid "Video calls are not supported"
+#~ msgstr "N'eus ket tu en em lugañ"
+
+#, fuzzy
+#~ msgid "Why do you want to moderate these messages?"
+#~ msgstr "Ha fellout a ra deoc'h da vat diverkañ ar gemennadenn ziuzet?"
+
+#, fuzzy
+#~ msgid "Workspaces"
+#~ msgstr "Darempredoù"
+
+#, fuzzy
+#~ msgid "You Have Unread Messages"
+#~ msgstr "Kemennadennoù nevez ho peus"
+
+#, fuzzy
+#~ msgid "You are about to quit Gajim"
+#~ msgstr "Êtes-vous sûr de vouloir quitter les salons \"%s\" ?"
+
+#, fuzzy
+#~ msgid "You are not connected"
+#~ msgstr "N'oc'h ket luget d'ar servijer"
+
+#~ msgid "You are not connected to the server"
+#~ msgstr "N'oc'h ket luget d'ar servijer"
+
+#, fuzzy
+#~ msgid "You cannot synchronize with an account unless it is connected."
+#~ msgstr "N'hellit ket ebarzhiñ ur sal-flapiñ keit ha ma n'oc'h ket luget."
+
+#, fuzzy
+#~ msgid "You still have running file transfers"
+#~ msgstr "Nullañ an treuzkas"
+
+#, fuzzy
+#~ msgid ""
+#~ "You will no longer be able to send and receive messages from and to "
+#~ "contacts using this transport."
+#~ msgstr ""
+#~ "N'helloc'h ket mui kas pe resev kemennadennoù d'an darempredoù liammet "
+#~ "gant an nor-mañ."
+
+#, fuzzy
+#~ msgid "Your archiving preferences have successfully been saved."
+#~ msgstr "_Penndibaboù"
+
+#, fuzzy
+#~ msgid "_Account"
+#~ msgstr "Kontoù"
+
+#, fuzzy
+#~ msgid "_Accounts"
+#~ msgstr "Kontoù"
+
+#, fuzzy
+#~ msgid "_Debug Console"
+#~ msgstr "Diskouez ar gonsol _XML"
+
+#, fuzzy
+#~ msgid "_Default"
+#~ msgstr "Dilemel"
+
+#, fuzzy
+#~ msgid "_Description"
+#~ msgstr "Taolennadur"
+
+#, fuzzy
+#~ msgid "_Don’t ask again"
+#~ msgstr "_Chom hep goulenn ket"
+
+#, fuzzy
+#~ msgid "_Download"
+#~ msgstr "_Chom hep goulenn ket"
+
+#, fuzzy
+#~ msgid "_Download Again"
+#~ msgstr "_Chom hep goulenn ket"
+
+#, fuzzy
+#~ msgid "_File Transfer"
+#~ msgstr "Treuzkasoù"
+
+#, fuzzy
+#~ msgid "_Help"
+#~ msgstr "_Skoazell"
+
+#, fuzzy
+#~ msgid "_Login"
+#~ msgstr "_Lugañ"
+
+#, fuzzy
+#~ msgid "_Manage Account…"
+#~ msgstr "_Ouzhpennañ un darempred..."
+
+#, fuzzy
+#~ msgid "_Modify Account…"
+#~ msgstr "_Kemmañ ar gont..."
+
+#, fuzzy
+#~ msgid "_New post"
+#~ msgstr "Sal-flapiñ nevez"
+
+#, fuzzy
+#~ msgid "_Open"
+#~ msgstr "OpenPGP : "
+
+#, fuzzy
+#~ msgid "_Open Folder"
+#~ msgstr "_Digeriñ ar renkell pal"
+
+#, fuzzy
+#~ msgid "_Preferences"
+#~ msgstr "Penndibaboù"
+
+#, fuzzy
+#~ msgid "_Save as…"
+#~ msgstr "Enrollet e-barzh: %s"
+
+#, fuzzy
+#~ msgid "_Start / Join Chat…"
+#~ msgstr "Kregiñ da flapiñ"
+
+#, fuzzy
+#~ msgid "_Start Chat..."
+#~ msgstr "_Kregiñ da flapiñ"
+
+#, fuzzy
+#~ msgid "_Toggle Menu Bar"
+#~ msgstr "Dorioù"
+
+#, fuzzy
+#~ msgid "app.open-folder"
+#~ msgstr "_Digeriñ ar renkell pal"
+
+#~ msgid "file transfers list"
+#~ msgstr "roll an treuzkasadoù"
+
+#, fuzzy
+#~ msgid ""
+#~ "has invited you to a group chat.\n"
+#~ "Do you want to join?"
+#~ msgstr "Leuniit an titouroù diwar-benn an darempred da ouzhpennañ"
+
+#, fuzzy
+#~ msgctxt "Group chat address"
+#~ msgid "vacation"
+#~ msgstr "Kemmañ ar gont"
+
+#, fuzzy
+#~ msgid "yesterday "
+#~ msgstr "Dec'h"
+
+#, fuzzy, python-brace-format
+#~ msgid "{nick} has been removed from the group chat{by}{reason}"
+#~ msgstr "%(nick)s a zo bet skarzhet gant %(who)s : %(reason)s"

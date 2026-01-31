@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ManageRoster" parent="GtkBox">
+    <property name="name">ManageRoster</property>
+    <property name="orientation">1</property>
+    <property name="spacing">12</property>
+    <child>
+      <object class="GtkBox" id="_top_box">
+        <property name="orientation">0</property>
+        <property name="spacing">12</property>
+        <child>
+          <object class="GtkSearchEntry" id="_search_entry">
+            <property name="focusable">1</property>
+            <property name="hexpand">1</property>
+            <property name="placeholder-text" translatable="yes">Search…</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuButton" id="_import_button">
+            <property name="tooltip-text" translatable="yes">Import Contacts</property>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">lucide-file-up-symbolic</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">Import…</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="_export_button">
+            <property name="tooltip-text" translatable="yes">Export Contacts</property>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">lucide-file-down-symbolic</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">Export…</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="_scrolled_box">
+        <property name="orientation">1</property>
+        <child>
+          <object class="GtkScrolledWindow" id="_scrolled">
+            <property name="name">scrolled</property>
+            <property name="has-frame">1</property>
+            <property name="vexpand">1</property>
+            <property name="focusable">1</property>
+            <property name="hscrollbar-policy">never</property>
+            <child>
+              <object class="GtkColumnView" id="_column_view">
+                <property name="show-column-separators">true</property>
+                <property name="show-row-separators">true</property>
+                <property name="hexpand">true</property>
+                <property name="vexpand">true</property>
+                <child>
+                  <object class="GtkColumnViewColumn" id="_jid_col">
+                    <property name="title" translatable="yes">Address</property>
+                    <property name="resizable">true</property>
+                    <property name="factory">
+                      <object class="GtkSignalListItemFactory"></object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColumnViewColumn" id="_name_col">
+                    <property name="title" translatable="yes">Name</property>
+                    <property name="resizable">true</property>
+                    <property name="expand">true</property>
+                    <property name="factory">
+                      <object class="GtkSignalListItemFactory"></object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColumnViewColumn" id="_subscription_col">
+                    <property name="title" translatable="yes">Subscription</property>
+                    <property name="factory">
+                      <object class="GtkSignalListItemFactory"></object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColumnViewColumn" id="_ask_col">
+                    <property name="title" translatable="yes">Request</property>
+                    <property name="factory">
+                      <object class="GtkSignalListItemFactory"></object>
+                    </property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

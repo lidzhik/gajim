@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkBox" id="exception_box">
+    <property name="orientation">vertical</property>
+    <child>
+      <object class="GtkRevealer" id="infobar">
+        <property name="reveal-child">0</property>
+        <style>
+          <class name="infobar"/>
+          <class name="info"/>
+        </style>
+        <child>
+          <object class="GtkBox">
+            <property name="spacing">12</property>
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">lucide-info-symbolic</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Install &lt;tt&gt;sentry-sdk&lt;/tt&gt; to make reporting issues easier.</property>
+                <property name="use-markup">1</property>
+                <property name="hexpand">1</property>
+                <property name="wrap">true</property>
+                <property name="max-width-chars">46</property>
+                <property name="xalign">0</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">24</property>
+        <style>
+          <class name="p-18"/>
+        </style>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">18</property>
+            <child>
+              <object class="GtkImage">
+                <property name="valign">start</property>
+                <property name="pixel-size">48</property>
+                <property name="icon-name">lucide-frown-symbolic</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Sorry, that should not have happened</property>
+                <property name="justify">center</property>
+                <property name="wrap">1</property>
+                <property name="max-width-chars">50</property>
+                <style>
+                  <class name="title-2"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Gajim encountered an error.
+Please help us fixing this issue by sending this report.</property>
+                <property name="justify">center</property>
+                <property name="wrap">1</property>
+                <property name="max-width-chars">60</property>
+                <property name="lines">3</property>
+                <style>
+                  <class name="dimmed"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow">
+                <property name="height-request">200</property>
+                <property name="focusable">1</property>
+                <property name="has-frame">1</property>
+                <property name="child">
+                  <object class="GtkTextView" id="exception_view">
+                    <property name="focusable">1</property>
+                    <property name="hexpand">1</property>
+                    <property name="vexpand">1</property>
+                    <property name="editable">0</property>
+                    <property name="left-margin">4</property>
+                    <property name="right-margin">4</property>
+                    <property name="top-margin">4</property>
+                    <property name="bottom-margin">4</property>
+                    <property name="accepts-tab">0</property>
+                    <property name="monospace">1</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="user_feedback_box">
+                <property name="orientation">vertical</property>
+                <property name="visible">1</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Here you can add some feedback which helps reproducing this problem.</property>
+                    <style>
+                      <class name="dimmed"/>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="user_feedback_entry">
+                    <property name="width-request">400</property>
+                    <property name="focusable">1</property>
+                    <property name="hexpand">1</property>
+                    <property name="activates-default">1</property>
+                    <property name="placeholder-text" translatable="yes">Steps to reproduce the problem…</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="spacing">12</property>
+            <property name="hexpand">1</property>
+            <property name="halign">end</property>
+            <child>
+              <object class="GtkButton" id="close_button">
+                <property name="label" translatable="yes">_Close</property>
+                <property name="focusable">1</property>
+                <property name="use-underline">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSpinner" id="report_spinner">
+                <property name="visible">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="report_button">
+                <property name="label" translatable="yes">Send _Report</property>
+                <property name="focusable">1</property>
+                <property name="receives-default">1</property>
+                <property name="use-underline">1</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

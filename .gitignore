@@ -1,0 +1,41 @@
+syntax: glob
+*.orig
+*.swp
+*.gmo
+*.m4
+*.pyc
+*.pyo
+*~
+*#
+
+gajim/data/locale
+
+# Cache
+
+__pycache__/
+.mypy_cache/
+.ruff_cache/
+
+# Build folders
+
+debian_build/
+build/
+dist/
+gajim.egg-info/
+win/_build_root
+venv/
+.venv/
+node_modules/
+.flatpak-builder
+mac/gajim-source
+mac/nbxmpp-source
+mac/omemo-dr-source
+mac/gajim-venv
+
+# IDE files
+
+.vscode
+*.sublime-project
+*.sublime-workspace
+.idea
+uv.lock

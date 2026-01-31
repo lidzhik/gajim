@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.14.8
+    hooks:
+      - id: ruff-check
+        exclude: ".githooks/"
+      - id: ruff-format
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+    - id: codespell
+      pass_filenames: false
+      additional_dependencies:
+        - tomli
+
+  - repo: https://github.com/RobertCraigie/pyright-python
+    rev: v1.1.406
+    hooks:
+    - id: pyright
+      pass_filenames: false
+      additional_dependencies:
+        - nbxmpp @ git+https://dev.gajim.org/gajim/python-nbxmpp.git
+        - PyGObject-stubs @ git+https://github.com/pygobject/pygobject-stubs.git
+        - python-gitlab
+        - ruamel.yaml
+        - sentry-sdk
+      stages: [manual]
+
+  - repo: https://github.com/pycqa/isort
+    rev: 7.0.0
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v5.0.2
+    hooks:
+      - id: reuse
+        stages: [manual]

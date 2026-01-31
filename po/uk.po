@@ -1,0 +1,7426 @@
+# Copyright (C) Gajim Team
+# This file is distributed under the same license as the Gajim package.
+#
+# Sergiy Yegorov <prapor@unixzone.org.ua>, 2010, 2011, 2012, 2013.
+# Volodymyr Smoliar <v_2e@ukr.net>, 2022.
+# Daniel Brötzmann <mailtrash@posteo.de>, 2024.
+# Viktor Varvaruk <viktorvarvaruk01@gmail.com>, 2025.
+# Nomadic Entity <noiteluna@noleron.com>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gajim\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"PO-Revision-Date: 2025-12-23 17:19+0000\n"
+"Last-Translator: Nomadic Entity <noiteluna@noleron.com>\n"
+"Language-Team: Ukrainian <https://translate.gajim.org/projects/gajim/master/"
+"uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.0\n"
+
+msgid " (Video Call)"
+msgstr " (Відеодзвінок)"
+
+msgid " (Voice Call)"
+msgstr " (Голосовий дзвінок)"
+
+#, python-format
+msgid "%(contact)s declined your invitation to %(chat)s"
+msgstr "%(contact)s відхилили запрошення до %(chat)s"
+
+#, python-format
+msgid "%(contact)s invited you to %(chat)s"
+msgstr "%(contact)s запрошує Вас до %(chat)s"
+
+#, python-format
+msgid "%(count)s Participant"
+msgid_plural "%(count)s Participants"
+msgstr[0] "%(count)s учасник"
+msgstr[1] "%(count)s учасники"
+msgstr[2] "%(count)s учасників"
+
+#, python-format
+msgid ""
+"%(count)s messages from %(participant)s will be moderated.\n"
+"Why do you want to moderate these messages?"
+msgstr ""
+"Буде вичищено %(count)s повідомлень від %(participant)s.\n"
+"Чому Ви хочете вичистити ці повідомлення?"
+
+#, python-format
+msgid "%(days)s days, %(hours)s hours"
+msgstr "%(days)s днів, %(hours)s годин"
+
+#, python-format
+msgid "%(minutes)s min %(seconds)s s"
+msgstr "%(minutes)s хв %(seconds)s с"
+
+#, python-format
+msgid "%(name)s %(jid)s suggested me to add you to my contact list."
+msgstr "%(name)s %(jid)s пропонує мені додати вас до моїх контактів."
+
+#, python-format
+msgid ""
+"%(name)s (%(jid)s) would like to add some contacts to your contact list."
+msgstr ""
+"%(name)s (%(jid)s) хоче додати деякі контакти до вашого списку контактів."
+
+#, python-format
+msgid ""
+"%(name)s (%(jid)s) would like to delete some contacts from your contact list."
+msgstr "%(name)s (%(jid)s) бажає видалити деякі контакти з вашого реєстру."
+
+#, python-format
+msgid ""
+"%(name)s (%(jid)s) would like to modify some contacts in your contact list."
+msgstr "%(name)s (%(jid)s) бажає змінити деякі контакти у вашому реєстрі."
+
+#, python-format
+msgid "%(name)s cancelled the transfer (%(reason)s)"
+msgstr "%(name)s скасував пересилання (%(reason)s)"
+
+#, python-format
+msgid "%(nick)s has been banned by %(actor)s"
+msgstr "%(actor)s заблокували %(nick)s"
+
+#, python-format
+msgid "%(nick)s has been kicked by %(actor)s"
+msgstr "%(actor)s вигнали %(nick)s"
+
+#, python-format
+msgid "%(nick)s is now %(affiliation)s of this group chat"
+msgstr "%(nick)s тепер є %(affiliation)s цієї балачки"
+
+#, python-format
+msgid "%(nickname)s:"
+msgstr "%(nickname)s:"
+
+#, python-format
+msgid "%(number)s min ago"
+msgid_plural "%(number)s mins ago"
+msgstr[0] "%(number)s хвилину тому"
+msgstr[1] "%(number)s хвилини тому"
+msgstr[2] "%(number)s хвилин тому"
+
+#, python-format
+msgid "%(owner_or_admin_or_member)s of this group chat"
+msgstr "%(owner_or_admin_or_member)s цієї балачки"
+
+#, python-format
+msgid "%(progress)s %% (%(time)s remaining)"
+msgstr "%(progress)s %% (залишилося %(time)s)"
+
+#, python-format
+msgid "%(received)s of %(max)s"
+msgstr "%(received)s з %(max)s"
+
+#, python-format
+msgid "%(type)s encryption is active %(authenticated)s."
+msgstr "%(type)s шифрування увімкнено %(authenticated)s."
+
+#, python-format
+msgid "%(user)s is now %(role)s of this group chat"
+msgstr "%(user)s тепер %(role)s цієї балачки"
+
+#, python-format
+msgid "%(user)s now has the following hats: %(hats)s"
+msgstr "%(user)s тепер має такі капелюхи: %(hats)s"
+
+#, python-format
+msgctxt "own nickname in group chat"
+msgid "%s (You)"
+msgstr "%s (Ви)"
+
+#, python-format
+msgid "%s and %s are typing…"
+msgstr "%s та %s пишуть…"
+
+#, python-format
+msgid "%s can be joined by invite only."
+msgstr "До %s можна приєднатися лише за запрошенням."
+
+#, python-format
+msgid "%s has been banned"
+msgstr "%s було заблоковано"
+
+#, python-format
+msgid "%s has been invited to this group chat"
+msgstr "%s було запрошено до цієї балачки"
+
+#, python-format
+msgid "%s has been kicked"
+msgstr "%s було вигнано"
+
+#, python-format
+msgid "%s has been removed from this group chat"
+msgstr "%s було вилучено з цієї балачки"
+
+#, python-format
+msgid "%s has joined"
+msgstr "%s приєднався"
+
+#, python-format
+msgid "%s is a file but it should be a directory"
+msgstr "%s є файлом, а має бути каталогом"
+
+#, python-format
+msgid "%s is already in your contact list"
+msgstr "%s вже є у вашому реєстрі"
+
+#, python-format
+msgid "%s is calling"
+msgstr "%s телефонує"
+
+#, python-format
+msgid "%s is not a valid loglevel"
+msgstr "%s не є коректним рівнем журналювання"
+
+#, python-format
+msgid "%s is typing…"
+msgstr "%s друкує…"
+
+#, python-format
+msgid "%s of %s"
+msgstr "%s із %s"
+
+#, python-format
+msgid "%s participants are typing…"
+msgstr "%s учасників друкують…"
+
+#, python-format
+msgid "%s s"
+msgstr "%s с"
+
+#, python-format
+msgid "%s stopped sharing their status"
+msgstr "%s більше не повідомляє свій стан"
+
+#, python-format
+msgid "%s stopped the transfer"
+msgstr "%s припинив пересилання файлу"
+
+#, python-format
+msgid "%s wants to add you."
+msgstr "%s хоче додати Вас."
+
+#, python-format
+msgctxt "positive longitude"
+msgid "%sE"
+msgstr "%sE"
+
+#, python-format
+msgctxt "positive latitude"
+msgid "%sN"
+msgstr "%sN"
+
+#, python-format
+msgctxt "negative latitude"
+msgid "%sS"
+msgstr "%sS"
+
+#, python-format
+msgctxt "negative longitude"
+msgid "%sW"
+msgstr "%sW"
+
+msgid "'@' is missing in address. Are you sure this is correct?"
+msgstr "В адресі відсутній символ «@». Ви впевнені, що вона правильна?"
+
+#, python-format
+msgid "(changed by %s)"
+msgstr "(змінено %s)"
+
+#, fuzzy
+msgid "(inactive)"
+msgstr "Активний"
+
+#, python-format
+msgid "(reason: %s)"
+msgstr "(причина: %s)"
+
+msgid "(reason: affiliation changed)"
+msgstr "(причина: зміна афілійованості)"
+
+msgid "(reason: group chat configuration changed to members-only)"
+msgstr "(причина: налаштування балачки змінено на «лише для учасників»)"
+
+msgid "(reason: system shutdown)"
+msgstr "(причина: вимкнення системи)"
+
+msgid "1 Day"
+msgstr "1 день"
+
+msgid "1 Month"
+msgstr "1 місяць"
+
+msgid "1 Week"
+msgstr "1 тиждень"
+
+msgid "1 Year"
+msgstr "1 рік"
+
+msgid "1 hour"
+msgstr "1 година"
+
+msgid "2 Days"
+msgstr "2 дні"
+
+msgid "2 hours"
+msgstr "2 години"
+
+msgid "3 Months"
+msgstr "3 місяці"
+
+msgid "30 minutes"
+msgstr "30 хвилин"
+
+msgid "6 Months"
+msgstr "6 місяців"
+
+msgid "8 hours"
+msgstr "8 годин"
+
+#, python-format
+msgid ""
+"<b>\"%(title)s\"</b> by <i>%(artist)s</i>\n"
+"from <i>%(source)s</i>"
+msgstr ""
+"<b>\"%(title)s\"</b> від <i>%(artist)s</i>\n"
+"з <i>%(source)s</i>"
+
+msgid "<b>#</b>"
+msgstr "<b>#</b>"
+
+msgid "<b>*</b>"
+msgstr "<b>*</b>"
+
+msgid "<b>0</b>"
+msgstr "<b>0</b>"
+
+msgid "<b>1</b>"
+msgstr "<b>1</b>"
+
+msgid "<b>2</b> abc"
+msgstr "<b>2</b> абвгґ"
+
+msgid "<b>3</b> def"
+msgstr "<b>3</b> деєжз"
+
+msgid "<b>4</b> ghi"
+msgstr "<b>4</b> иіїйкл"
+
+msgid "<b>5</b> jkl"
+msgstr "<b>5</b> мноп"
+
+msgid "<b>6</b> mno"
+msgstr "<b>6</b> рсту"
+
+msgid "<b>7</b> pqrs"
+msgstr "<b>7</b> фхцч"
+
+msgid "<b>8</b> tuv"
+msgstr "<b>8</b> шщ"
+
+msgid "<b>9</b> wxyz"
+msgstr "<b>9</b> ьюя"
+
+msgid ""
+"<b>XMPP Address</b>\n"
+"&lt;user@domain/resource&gt; (only that resource matches)\n"
+"&lt;user@domain&gt; (any resource matches)\n"
+"&lt;domain/resource&gt; (only that resource matches)\n"
+"&lt;domain&gt; (the domain itself matches, as does any user@domain or domain/"
+"resource)\n"
+msgstr ""
+"<b>Адреса XMPP у наступному форматі:</b>\n"
+"&lt;користувач@домен/ресурс&gt; (пошук лише вказаного ресурсу)\n"
+"&lt;користувач@домен&gt; (пошук будь-якого ресурсу)\n"
+"&lt;домен/ресурс&gt; (пошук лише вказаного ресурсу)\n"
+"&lt;домен&gt; (пошук домену або комбінацій користувач@домен чи домен/"
+"ресурс)\n"
+
+msgid "<error>"
+msgstr "<помилка>"
+
+msgid "@APP_NAME@"
+msgstr "@APP_NAME@"
+
+msgid "A Group Chat needs at least one Owner"
+msgstr "Груповий чат потребує принаймні одного власника"
+
+msgid "A feature comparison of various providers"
+msgstr "Порівняння можливостей різних провайдерів"
+
+msgid "A fully-featured XMPP chat client"
+msgstr "Повноцінний клієнт XMPP-чату"
+
+msgid ""
+"A list of words (semicolon separated) that will be highlighted in group "
+"chats."
+msgstr "Перелік слів (через крапку з комою), які буде виділено у балачках."
+
+msgid "A new group chat has been created"
+msgstr "Було створено нову кімнату"
+
+msgid "A restart may be required for some settings to take effect"
+msgstr "Ви маєте перезавантажити Gajim, щоб деякі з параметрів набули чинності"
+
+msgid "A setting not related to privacy has been changed"
+msgstr "Змінено налаштування, не пов'язане з приватністю"
+
+#, python-format
+msgid "ALSA: %s"
+msgstr "ALSA: %s"
+
+msgid "API Preferences. Possible values: \"http\", \"iq\""
+msgstr "Налаштування API. Можливі значення: \"http\", \"iq\""
+
+msgctxt "User status"
+msgid "A_way"
+msgstr "Д_алеко"
+
+msgid "Abort"
+msgstr "Скасувати"
+
+msgid "Abuse"
+msgstr "Докучання"
+
+msgid "Accept"
+msgstr "Прийняти"
+
+msgid "Accept all Contact Requests"
+msgstr "Прийняти усі запити додавання до контактів"
+
+msgid "Account"
+msgstr "Обліковий запис"
+
+#, python-format
+msgid ""
+"Account %(name)s is still connected\n"
+"All chat and group chat windows will be closed."
+msgstr ""
+"Обліковий запис %(name)s все ще підключено\n"
+"Усі вікна з балачками буде закрито."
+
+msgid "Account Added"
+msgstr "Додано обліковий запис"
+
+msgid "Account Address"
+msgstr "Адреса облікового запису"
+
+msgid "Account Label"
+msgstr "Мітка облікового запису"
+
+msgid "Account Name..."
+msgstr "Назва облікового запису..."
+
+msgid "Account Removal Failed"
+msgstr "Не вдалося видалити обліковий запис"
+
+msgid "Account Removed"
+msgstr "Обліковий запис видалено"
+
+msgid "Account Wizard"
+msgstr "Майстер облікових записів"
+
+msgid "Account address: "
+msgstr "Адреса облікового запису: "
+
+msgid "Account disabled"
+msgstr "Обліковий запис вимкнено"
+
+msgid "Account exists already"
+msgstr "Обліковий запис уже існує"
+
+msgid "Account has been added successfully"
+msgstr "Обліковий запис було успішно додано"
+
+msgid "Account has to be connected"
+msgstr "Обліковий запис має бути з’єднаним"
+
+msgid "Account is being created"
+msgstr "Створюється обліковий запис"
+
+msgid "Account name: "
+msgstr "Ім'я облікового запису: "
+
+#, python-format
+msgid "Account: %s"
+msgstr "Обліковий запис: %s"
+
+msgid "Accounts"
+msgstr "Облікові записи"
+
+msgid "Action on Close"
+msgstr "Дія при закритті"
+
+msgid "Action when closing Gajim’s window"
+msgstr "Дія при закритті вікна Gajim"
+
+#, python-format
+msgid "Actions for \"%s\""
+msgstr "Дії для «%s»"
+
+msgid "Activate"
+msgstr "Активувати"
+
+msgid "Activated"
+msgstr "Увімкнено"
+
+msgid "Active"
+msgstr "Активний"
+
+msgid "Activity Feed"
+msgstr "Стрічка активності"
+
+msgid "Add"
+msgstr "Додати"
+
+msgid "Add Account"
+msgstr "Додати обліковий запис"
+
+msgid "Add Account…"
+msgstr "Додати обліковий запис…"
+
+msgid "Add Contact"
+msgstr "Додати контакт"
+
+msgid "Add Contact to New Group?"
+msgstr "Додати контакт до нової групи?"
+
+msgid "Add Contact…"
+msgstr "Додати контакт…"
+
+msgid "Add Entry"
+msgstr "Додати запис"
+
+msgid "Add Files…"
+msgstr "Додати файли…"
+
+msgid "Add Group…"
+msgstr "Додати групу…"
+
+msgid "Add Proxy"
+msgstr "Додати проксі"
+
+msgid "Add Reaction…"
+msgstr "Додати реакцію…"
+
+msgid "Add Setting"
+msgstr "Додати налаштування"
+
+msgid "Add Workspace"
+msgstr "Додати робочу область"
+
+msgid "Add a checkmark to received messages"
+msgstr "Додати позначку отримання на повідомленнях"
+
+msgid "Add a label to distinguish accounts in Gajim"
+msgstr "Додайте мітку, щоб розрізняти акаунти в Gajim"
+
+msgid "Add a name and color for your account"
+msgstr "Задати назву та колір обліковому запису"
+
+msgid "Add a setting you would like to change"
+msgstr "Додайте параметр, який потрібно змінити"
+
+msgid "Add new Theme"
+msgstr "Додати нову тему"
+
+msgid "Add this certificate to the list of _trusted certificates"
+msgstr "Додати цей сертифікат до переліку _довірених сертифікатів"
+
+msgid "Add to Group"
+msgstr "Додати до групи"
+
+#, python-format
+msgid "Added %(count)s contact"
+msgid_plural "Added %(count)s contacts"
+msgstr[0] "Додано %(count)s контакт"
+msgstr[1] "Додано %(count)s контакти"
+msgstr[2] "Додано %(count)s контактів"
+
+msgid "Additionally, you will lose your administrator affiliation."
+msgstr "Крім того, Ви втратите статус адміністратора."
+
+msgid "Additionally, you will lose your owner affiliation."
+msgstr "Крім того, Ви втратите приналежність до власника."
+
+msgid "Address"
+msgstr "Адреса"
+
+msgctxt "Profile"
+msgid "Address"
+msgstr "Адреса"
+
+msgid "Address does not belong to a group chat server"
+msgstr "Адреса не належить серверові групових балачок"
+
+msgid "Admin"
+msgstr "Адміністратор"
+
+msgid "Administration"
+msgstr "Адміністрація"
+
+msgctxt "Group chat contact affiliation"
+msgid "Administrator"
+msgstr "Адміністратор"
+
+msgctxt "Group chat contact affiliation"
+msgid "Administrators"
+msgstr "Адміністратори"
+
+msgid "Advanced"
+msgstr "Додатково"
+
+msgid "Advanced Configuration Editor"
+msgstr "Розширений редактор конфігурації"
+
+msgid "Advanced Configuration Editor (ACE)"
+msgstr "Редактор додаткових налаштувань"
+
+msgid "Advanced Settings"
+msgstr "Додаткові налаштування"
+
+msgid "Advanced settings"
+msgstr "Додаткові налаштування"
+
+#, python-format
+msgid "Advanced – %(account)s"
+msgstr "Advanced - %(account)s"
+
+#, python-format
+msgid "Adw Version: %s"
+msgstr "Версія Adw: %s"
+
+msgid "Affiliation"
+msgstr "Належність"
+
+msgid "Affiliations"
+msgstr "Афілійованість"
+
+#, python-format
+msgid "Affiliations of %(nick)s to this group chat have been removed"
+msgstr "Приналежність %(nick)s до цього групового чату було видалено"
+
+msgid "After"
+msgstr "Після того, як"
+
+msgid "All"
+msgstr "Всі"
+
+msgid "All Accounts"
+msgstr "Усі облікові записи"
+
+msgid "All Chat States"
+msgstr "Усі стани чату"
+
+msgid "All Chats"
+msgstr "Всі чати"
+
+#, fuzzy
+msgid "All Messages"
+msgstr "Повідомлення"
+
+msgid "All files"
+msgstr "Усі файли"
+
+#, python-format
+msgid "All hats of %s have been removed"
+msgstr "Всі шапки %s були видалені"
+
+msgid "All of these settings are optional and can be changed later"
+msgstr ""
+
+msgid "All of your hats have been removed"
+msgstr "Всі ваші капелюхи зняті"
+
+msgid "All other group chat participants can see your XMPP address"
+msgstr "Усі інші учасники групового чату можуть бачити вашу адресу XMPP"
+
+msgid ""
+"Allow Gajim to broadcast useful information via D-Bus. It also allows other "
+"applications to control Gajim remotely."
+msgstr ""
+"Дозволити Gajim передавати корисну інформацію через D-Bus. Це також "
+"дозволить іншим програмам керувати Gajim."
+
+msgid "Alternate venue (optional)..."
+msgstr "Альтернативне місце зустрічі (не обов'язково)…"
+
+msgid "Always"
+msgstr "Завжди"
+
+msgid "An Error Occurred"
+msgstr "Сталася помилка"
+
+msgid "An entry with this XMPP Address already exists"
+msgstr "Запис з цією XMPP-адресою вже існує"
+
+msgid "An error occurred"
+msgstr "Сталася помилка"
+
+msgid "An error occurred during account creation"
+msgstr "Під час спроби створення облікового запису сталася помилка"
+
+msgid "An error occurred while exporting your messages"
+msgstr "Під час експортування повідомлень сталася помилка"
+
+msgid "An error occurred while trying to change your password."
+msgstr "Під час спроби зміни пароля сталася помилка."
+
+#, python-format
+msgid "An error occurred while trying to create a file at %(path)s: %(error)s"
+msgstr "Під час спроби створення файлу %(path)s сталася помилка: %(error)s"
+
+#, python-brace-format
+msgid ""
+"An error occurred while trying to make {occupant_jid} {affiliation_or_role} "
+"in group \"{group}\""
+msgstr ""
+"Виникла помилка при спробі зробити {occupant_jid} {affiliation_or_role} в "
+"групі \"{group}\""
+
+#, python-brace-format
+msgid ""
+"An error occurred while trying to make {occupant_jid} {affiliation_or_role}: "
+"{error}"
+msgstr ""
+"Виникла помилка при спробі зробити {occupant_jid} {affiliation_or_role} : "
+"{error}"
+
+msgid "And more..."
+msgstr "І ще..."
+
+msgid "Anonymous login not supported"
+msgstr "Анонімний вхід не підтримується"
+
+msgid "Any participant is allowed to see your full XMPP Address"
+msgstr "Всі учасники можуть бачити вашу XMPP-адресу"
+
+msgid "Anyone can join"
+msgstr "Хто завгодно може приєднатися"
+
+msgid "Anyone can join this group chat"
+msgstr "Будь-хто може приєднатися до цього групового чату"
+
+msgid "Application verification failure"
+msgstr "Помилка під час перевірки програми"
+
+msgid "Apply"
+msgstr "Застосувати"
+
+msgid "Approve"
+msgstr "Схвалити"
+
+msgid "Archive"
+msgstr "Архів"
+
+msgid "Archive Malformed"
+msgstr "Архів несправний"
+
+msgid "Archive corrupted"
+msgstr "Архів пошкоджено"
+
+msgid "Archive empty"
+msgstr "Архів порожній"
+
+msgid "Archive is malformed"
+msgstr "Архів пошкоджений"
+
+msgid "Archiving"
+msgstr "Архівування"
+
+msgctxt "Group chat feature"
+msgid "Archiving"
+msgstr "Архівування"
+
+#, python-format
+msgid "Archiving – %(account)s"
+msgstr "Архівування - %(account)s"
+
+msgid "Ask For Status Message on…"
+msgstr "Запитувати повідомлення про стан при…"
+
+msgid "Ask before closing a group chat tab/window."
+msgstr "Запитати перед тим, як закрити вкладку/вікно групового чату."
+
+msgid "Ask before connecting unencrypted"
+msgstr "Запитайте перед підключенням незашифрований"
+
+msgid "Ask before quitting when Gajim’s window is closed"
+msgstr "Запитайте перед виходом, коли вікно Гаджима зачиняється"
+
+msgid "Assign groups to this contact. You can filter chats by group."
+msgstr ""
+"Призначити групи для цього контакту. Ви можете фільтрувати чати за групами."
+
+msgid "Attention Message Received"
+msgstr "Отримано повідомлення уваги"
+
+msgid "Audio"
+msgstr "Аудіо"
+
+msgid "Audio File"
+msgstr "Аудіофайл"
+
+msgid "Audio Input Device"
+msgstr "Пристрій введення звуку"
+
+msgid "Audio Preview"
+msgstr "Попередній перегляд аудіо"
+
+msgid "Audio test"
+msgstr "Тест аудіо"
+
+msgid "Authentication aborted"
+msgstr "Автентифікацію скасовано"
+
+msgid "Authentication currently not possible"
+msgstr "Автентифікація наразі неможлива"
+
+msgid "Authentication failed"
+msgstr "Автентифікація не вдалася"
+
+msgid "Authentication mechanism not supported"
+msgstr "Механізм автентифікації не підтримується"
+
+msgid "Authentication mechanism too weak"
+msgstr "Механізм автентифікації ненадійний"
+
+msgid "Authority and issuer serial number mismatch"
+msgstr "Серійні номери служби сертифікації і видавця не збігаються"
+
+msgid "Authority and subject key identifier mismatch"
+msgstr "Не збігаються поля видавця та ідентифікатора призначення ключа"
+
+msgid "Authors"
+msgstr "Автори"
+
+#, fuzzy
+msgid "Auto Away"
+msgstr "Auto Away"
+
+msgid "Auto Not Available"
+msgstr "Автоматично недоступно"
+
+msgid "Autodetect"
+msgstr "Автовизначення"
+
+msgid "Automatic Status"
+msgstr "Автоматичний стан"
+
+msgid "Automatic Status Change"
+msgstr "Автоматична зміна стану"
+
+msgid "Automatic preview disabled"
+msgstr "Автоматичний попередній перегляд вимкнено"
+
+msgid "Automatic preview disabled (file too big)"
+msgstr "Автоматичний попередній перегляд вимкнено (файл занадто великий)"
+
+msgid "Automatically accept all contact requests"
+msgstr "Автоматично приймати всі запити на контакт"
+
+msgid "Available"
+msgstr "Доступний"
+
+msgctxt "User status"
+msgid "Available"
+msgstr "Доступно"
+
+msgid "Available Features"
+msgstr "Доступні функції"
+
+msgid "Avatar file size too big"
+msgstr "Файл аватари завеликий"
+
+#, fuzzy
+msgctxt "User status"
+msgid "Away"
+msgstr "На дорозі по чай"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Back in some minutes."
+msgstr "Повернуся за декілька хвилин."
+
+msgid "Back soon"
+msgstr "Скоро повернуся"
+
+msgid "Ban"
+msgstr "Заборона"
+
+#, python-format
+msgid "Ban %s"
+msgstr "Заблокувати %s"
+
+msgid "Ban…"
+msgstr "Заблокувати…"
+
+msgid "Before"
+msgstr "До того, як"
+
+msgid "Behaviour of Application Window"
+msgstr "Поведінка вікна програми"
+
+msgid "Birthday"
+msgstr "День народження"
+
+msgid "Blind Trust"
+msgstr "Сліпа довіра"
+
+msgid "Blindly trust new devices until you verify them"
+msgstr "Сліпо довіряйте новим пристроям, поки не перевірите їх"
+
+msgid "Block"
+msgstr "Заблокувати"
+
+msgid "Block Contact?"
+msgstr "Блокувати контакт?"
+
+msgid "Block Contact…"
+msgstr "Заблокувати контакт…"
+
+msgid "Block Participant?"
+msgstr "Учасник блоку?"
+
+msgid "Blocked Contacts"
+msgstr "Заблоковані контакти"
+
+#, python-format
+msgid "Blocked Contacts – %(account)s"
+msgstr "Заблоковані контакти - %(account)s"
+
+msgid "Blocked Participants"
+msgstr "Заблоковані учасники"
+
+msgid "Block…"
+msgstr "Заблокувати…"
+
+msgctxt "Configuration type"
+msgid "Boolean"
+msgstr "Булевий"
+
+msgctxt "Contact subscription"
+msgid "Both"
+msgstr "Обидва"
+
+msgid "Browse"
+msgstr "Перегляд"
+
+msgid "Browse history by date"
+msgstr "Перегляд історії за датою"
+
+#, python-format
+msgid "Browsing %(address)s using account %(account)s"
+msgstr "Перегляд %(address)s з використанням облікового запису %(account)s"
+
+msgctxt "User status"
+msgid "Busy"
+msgstr "Зайнято"
+
+#, python-format
+msgid "By closing this chat, you will leave \"%s\"."
+msgstr "Закриваючи цей чат, ви залишите \"%s\"."
+
+msgid "CRL has expired"
+msgstr "Строк дії CRL завершився"
+
+msgid "CRL is not yet valid"
+msgstr "Строк дії CRL ще не почався"
+
+msgid "CRL signature failure"
+msgstr "Помилка під час роботи з підписом списку відкликаних сертифікатів"
+
+msgid "C_opy"
+msgstr "К_опіювати"
+
+msgid "Call"
+msgstr "Дзвінок"
+
+msgid "Call Incoming"
+msgstr "Вхідний дзвінок"
+
+msgid "Call Outgoing"
+msgstr "Вихідний дзвінок"
+
+msgid "Call ended"
+msgstr "Дзвінок завершено"
+
+#, python-format
+msgid "Call with %s"
+msgstr "Дзвінок з %s"
+
+msgid "Calling (Video)…"
+msgstr "Поклик (відео)…"
+
+msgid "Calling…"
+msgstr "Дзвінок…"
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "Cancel Download"
+msgstr "Скасувати завантаження"
+
+msgid "Certificate"
+msgstr "Сертифікат"
+
+#, python-format
+msgid "Certificate - %(account)s"
+msgstr "Сертифікат - %(account)s"
+
+msgid "Certificate Verification Failed"
+msgstr "Не вдалося перевірити сертифікат"
+
+msgid "Certificate chain too long"
+msgstr "Ланцюжок сертифіката занадто довгий"
+
+msgid "Certificate has expired"
+msgstr "Термін дії сертифіката завершився"
+
+msgid "Certificate is not yet valid"
+msgstr "Сертифікат ще не набув чинності"
+
+msgid "Certificate not trusted"
+msgstr "Сертифікат є недостовірним"
+
+msgid "Certificate rejected"
+msgstr "Сертифікат відхилено"
+
+msgid "Certificate revoked"
+msgstr "Сертифікат відкликано"
+
+msgid "Certificate signature failure"
+msgstr "Помилка під час підписування сертифіката"
+
+msgid "Change"
+msgstr "Змінити"
+
+msgid "Change Nickname"
+msgstr "Змінити псевдонім"
+
+msgid "Change Nickname…"
+msgstr "Змінити псевдонім…"
+
+msgid "Change Password"
+msgstr "Змінити пароль"
+
+msgid "Change Subject"
+msgstr "Змінити тему"
+
+msgid "Change your account’s password, etc."
+msgstr "Змінити пароль облікового запису та ін."
+
+msgid "Change your profile picture"
+msgstr "Змінити картинку вашого профілю"
+
+msgid "Change your status to \"Away\" after a certain amount of time"
+msgstr "Змініть свій статус на \"Відсутній\" через певний проміжок часу"
+
+msgid "Change your status to \"Not Available\" after a certain amount of time"
+msgstr "Змініть свій статус на \"Не доступний\" через певний проміжок часу"
+
+#, python-format
+msgid "Changed by %s"
+msgstr "Змінено %s"
+
+msgid "Changing Password..."
+msgstr "Зміна пароля…"
+
+msgid ""
+"Character to add after nickname when using nickname completion (tab) in "
+"group chat."
+msgstr ""
+"Символ, який буде додано після псевдоніма при використанні автодоповнення "
+"псевдоніма (tab) у груповій балачці."
+
+msgid "Chat"
+msgstr "Чат"
+
+#, fuzzy
+msgid "Chat Address"
+msgstr "Контактні адреси"
+
+msgid "Chat Banner: Background Color"
+msgstr "Заголовок балачки: колір тла"
+
+msgid "Chat Banner: Foreground Color"
+msgstr "Банер чату: колір переднього плану"
+
+msgid "Chat Banner: Text Font"
+msgstr "Банер чату: Шрифт тексту"
+
+msgid "Chat Details and Settings"
+msgstr "Деталі та налаштування чату"
+
+msgid "Chat Type"
+msgstr "Тип чату"
+
+msgid ""
+"Chat freely: Take your chats where you want. Use a provider of your choice "
+"and synchronize chats between all your devices. Gajim is interoperable with "
+"many other chat apps – and it's free."
+msgstr ""
+"Спілкуйтеся вільно: Перенесіть свої чати туди, де ви хочете. Використовуйте "
+"провайдера на свій вибір і синхронізуйте чати між усіма своїми пристроями. "
+"Gajim сумісний з багатьма іншими програмами для чату - і це безкоштовно."
+
+msgid "Chat window"
+msgstr "Вікно чату"
+
+msgid "Chats"
+msgstr "Балачки"
+
+msgid "Chats from this account will use this workspace by default"
+msgstr ""
+"Чати з цього акаунта використовуватимуть цю робочу область за замовчуванням"
+
+msgid "Check For Updates"
+msgstr "Перевірити оновлення"
+
+msgid "Check for Gajim updates periodically"
+msgstr "Періодично перевіряти оновлення Gajim"
+
+msgid "Check for updates"
+msgstr "Перевірити оновлення"
+
+msgid "Check for updates periodically"
+msgstr "Періодично перевіряти оновлення"
+
+msgid "Check which features are available"
+msgstr "Перевірте, які функції доступні"
+
+msgid "Choose Device"
+msgstr "Вибрати пристрій"
+
+msgid "Choose History Export Directory"
+msgstr "Вкажіть теку для експорту історії"
+
+msgid "Choose Sound"
+msgstr "Оберіть звук"
+
+msgid "Choose a color or select an image"
+msgstr "Вкажіть колір або картинку"
+
+msgid "Choose a group…"
+msgstr "Вибрати групу…"
+
+msgid "Choose encryption"
+msgstr "Оберіть шифрування"
+
+msgid "City"
+msgstr "Місто"
+
+msgid "Clear"
+msgstr "Очистити"
+
+msgid "Clear Devices?"
+msgstr "Очистити пристрої?"
+
+msgid "Clear Devices…"
+msgstr "Очистити пристрої…"
+
+msgid "Clear File"
+msgstr "Очистити файл"
+
+msgid "Clear Input"
+msgstr "Очистити вхід"
+
+msgid "Clear Sound"
+msgstr "Очистити звук"
+
+msgid ""
+"Click messages to select them\n"
+"(Ctrl + Double Click to deselect)"
+msgstr ""
+"Клацніть повідомлення, щоб вибрати їх\n"
+"(Ctrl + Подвійний клік, щоб зняти виділення)"
+
+msgid "Click on contacts you would like to invite to this group chat."
+msgstr "Оберіть контакти для запрошення до цієї кімнати."
+
+msgid "Click to view location"
+msgstr "Натисніть для перегляду місцезнаходження"
+
+msgid ""
+"Clickable schemes in addition to the hard-coded list of IANA-registered "
+"ones. Space-separated, lower-case, no colons."
+msgstr ""
+"Схеми, на які можна натиснути, на додаток до жорстко закодованого списку "
+"зареєстрованих в IANA. Через пробіл, малі літери, без двокрапки."
+
+msgid "Close"
+msgstr "Закрити"
+
+msgid "Close Chat"
+msgstr "Закрити чат"
+
+msgid "Close a chat by pressing the Escape key"
+msgstr "Закрийте чат, натиснувши клавішу Escape"
+
+#, fuzzy
+msgid "Close this preview"
+msgstr "Немає автоматичного попереднього перегляду"
+
+msgid "Close with Escape"
+msgstr "Закриваємо з Втечею"
+
+msgid "Code snippet"
+msgstr "Фрагмент коду"
+
+msgid "Color"
+msgstr "Колір"
+
+msgid "Comma-separated list of emojis for quick reaction buttons"
+msgstr "Список емодзі через кому для кнопок швидкого реагування"
+
+msgid "Command List"
+msgstr "Список команд"
+
+msgid "Command executed successfully"
+msgstr "Команда виконана успішно"
+
+msgid "Commands"
+msgstr "Команди"
+
+msgid "Common Name (CN): "
+msgstr "Загальна назва (ЗН): "
+
+#, python-format
+msgid ""
+"Compare this code with the one shown on your contact’s screen to ensure the "
+"safety of your end-to-end encrypted chat with %s."
+msgstr ""
+"Порівняйте цей код з тим, що відображається на екрані вашого контакту, щоб "
+"переконатися в безпеці вашого наскрізного зашифрованого чату за допомогою %s."
+
+msgid ""
+"Compare this code with the one shown on your contact’s screen to ensure the "
+"safety of your end-to-end encrypted chat."
+msgstr ""
+"Порівняйте цей код з тим, що відображається на екрані вашого контакту, щоб "
+"переконатися в безпеці вашого наскрізного зашифрованого чату."
+
+msgid "Complete"
+msgstr "Завершено"
+
+msgid "Completed"
+msgstr "Завершено"
+
+msgid "Composing Only"
+msgstr "Лише про друк"
+
+msgid "Computer"
+msgstr "Комп'ютер"
+
+msgid "Configuration"
+msgstr "Налаштування"
+
+msgid "Configure"
+msgstr "Налаштувати"
+
+msgid "Configure logging system"
+msgstr "Налаштувати ведення журналів"
+
+msgid ""
+"Configure which messages will be archived on the server. Not archiving "
+"messages on the server may prevent them from synchronizing between your "
+"devices."
+msgstr ""
+
+msgid "Confirm Unencrypted Connection"
+msgstr "Підтвердьте незашифроване з'єднання"
+
+msgid "Confirm new password..."
+msgstr "Підтвердьте новий пароль…"
+
+msgid "Connect"
+msgstr "З'єднатись"
+
+msgid "Connect on startup"
+msgstr "З'єднуватись після запуску"
+
+msgid "Connecting"
+msgstr "Виконується з'єднання"
+
+msgid "Connecting to server..."
+msgstr "Виконується з'єднання з сервером…"
+
+msgid "Connecting..."
+msgstr "Виконується з'єднання…"
+
+msgid "Connection"
+msgstr "З'єднання"
+
+msgid "Connection Error"
+msgstr "Помилка з'єднання"
+
+msgid "Connection failed"
+msgstr "Спроба з’єднання завершилася невдало"
+
+#, python-format
+msgid "Connection with %s could not be established."
+msgstr "Не вдалося з’єднатися з %s."
+
+#, python-format
+msgid "Connection – %(account)s"
+msgstr "Підключення - %(account)s"
+
+msgid "Contact"
+msgstr "Контакт"
+
+msgid "Contact Connected"
+msgstr "Контакт з'єднано"
+
+msgid "Contact Details"
+msgstr "Контактні дані"
+
+msgid "Contact Disconnected"
+msgstr "Контакт від'єднано"
+
+msgid "Contact Information"
+msgstr "Інформація про контакт"
+
+msgid "Contact Infos"
+msgstr "Контактна інформація"
+
+msgid "Contact List"
+msgstr "Список контактів"
+
+msgid "Contact List Exchange"
+msgstr "Обмін списками контактів"
+
+#, python-format
+msgid "Contact List – %(account)s"
+msgstr "Список контактів - %(account)s"
+
+msgid "Contact Removed"
+msgstr "Контакт видалено"
+
+msgid "Contact Request"
+msgstr "Запит на контакт"
+
+msgid "Contacts"
+msgstr "Контакти"
+
+msgid "Conversation: Nickname Color (Incoming)"
+msgstr "Розмова: колір псевдоніма (для вхідних)"
+
+msgid "Conversation: Nickname Color (Outgoing)"
+msgstr "Розмова: колір псевдоніма (для вихідних)"
+
+msgid "Conversation: Text Color"
+msgstr "Розмова: колір тексту"
+
+msgid "Conversation: Text Font"
+msgstr "Розмова: шрифт тексту"
+
+msgid "Conversations"
+msgstr "Розмови"
+
+msgid "Conversations are not stored on the server"
+msgstr "Розмови не зберігаються на сервері"
+
+msgid "Conversations are stored on the server"
+msgstr "Розмови зберігатимуться на сервері"
+
+msgid "Copy"
+msgstr "Копіювати"
+
+msgctxt "Message row action"
+msgid "Copy"
+msgstr "Копіювати"
+
+msgid "Copy Address"
+msgstr "Копіювати адресу"
+
+msgid "Copy Text"
+msgstr "Копіювати текст"
+
+msgid "Copy XMPP Address"
+msgstr "Копіювати XMPP адресу"
+
+msgid "Copy XMPP Address/Email"
+msgstr "Копіювати XMPP-адресу/адресу електронної пошти"
+
+msgid "Copy code snippet"
+msgstr "Копіювати фрагмент коду"
+
+msgid "Copy to Clipboard"
+msgstr "Скопіювати в буфер обміну"
+
+msgid "Copy to clipboard"
+msgstr "Скопіювати в буфер обміну"
+
+#, fuzzy
+msgid "Correct Message"
+msgstr "Прямі повідомлення"
+
+msgid "Could Not Save File"
+msgstr "Не вдалося зберегти файл"
+
+msgid "Could not access file"
+msgstr "Не вдалося звернутись до файлу"
+
+msgid "Could not find any messages for this participant."
+msgstr "Не вдалося знайти жодного повідомлення для цього учасника."
+
+#, python-format
+msgid "Could not open file (%s)"
+msgstr "Не вдалося відкрити файл (%s)"
+
+#, python-format
+msgid "Could not read content of %s. Only CSV files can be imported."
+msgstr ""
+
+msgid "Could not save file to selected directory."
+msgstr "Не вдалося зберегти файл до вибраного каталогу."
+
+msgid "Could not select file or folder"
+msgstr "Не вдалося вибрати файл або папку"
+
+msgid "Could not update providers list"
+msgstr "Не вдалося оновити список постачальників"
+
+msgid "Country"
+msgstr "Країна"
+
+msgid "Create Account"
+msgstr "Створити обліковий запис"
+
+msgid "Create Group Chat"
+msgstr "Створити груповий чат"
+
+msgid "Create Group Chat…"
+msgstr "Створити груповий чат…"
+
+msgid "Create New Account"
+msgstr "Створити новий обліковий запис"
+
+msgid "Create New Group Chat"
+msgstr "Створити новий груповий чат"
+
+msgid "Creating Account..."
+msgstr "Створення облікового запису…"
+
+msgid "Credentials expired"
+msgstr "Термін дії облікових даних сплив"
+
+msgid "Custom"
+msgstr "Нестандартний"
+
+msgid "D-Bus Interface"
+msgstr "Інтерфейс D-Bus"
+
+msgid "Danger Zone"
+msgstr "Небезпечна зона"
+
+msgid "Dark Theme"
+msgstr "Темна тема"
+
+msgid "Database Migration"
+msgstr "Міграція баз даних"
+
+msgid "Database migration failed"
+msgstr "Міграція бази даних не вдалася"
+
+msgid "Deactivated"
+msgstr "Вимкнено"
+
+msgid "Debug Console"
+msgstr "Консоль налагодження"
+
+msgid "Debug Logging"
+msgstr "Журнал налагодження"
+
+msgid "Decline"
+msgstr "Відхилити"
+
+msgid "Decrease Font Size"
+msgstr "Зменшити розмір шрифту"
+
+msgid "Decrease playback speed"
+msgstr "Зменшити швидкість відтворення"
+
+msgid "Default Encryption"
+msgstr "Шифрування за замовчуванням"
+
+msgid "Default Sync Threshold"
+msgstr "Типовий період синхронізації"
+
+msgid "Default Workspace"
+msgstr "Робоча область за замовчуванням"
+
+msgid "Default device"
+msgstr "Типовий пристрій"
+
+msgid "Default for chats (e.g. Contact is typing)"
+msgstr "За замовчуванням для чатів (наприклад, контакт набирає текст)"
+
+msgid "Default for chats and private group chats"
+msgstr "Типово для балачок та приватних групових балачок"
+
+msgid "Default for group chats (e.g. Contact is typing)"
+msgstr "За замовчуванням для групових чатів (наприклад, контакт набирає текст)"
+
+#, fuzzy
+msgid "Default for new chats"
+msgstr "Типово для балачок"
+
+msgid "Default for new group chats"
+msgstr "Типово для нових групових балачок"
+
+msgid "Default for new public group chats"
+msgstr "Типово для нових публічних групових балачок"
+
+msgid "Delete"
+msgstr "Вилучити"
+
+msgid "Delete Fingerprint?"
+msgstr "Видалити відбиток пальця?"
+
+msgid "Delete Message Locally?"
+msgstr "Видалити повідомлення локально?"
+
+msgctxt "Message row action"
+msgid "Delete Message Locally…"
+msgstr "Видалити повідомлення локально…"
+
+msgid "Delete Node?"
+msgstr "Видалити вузол?"
+
+msgid "Delete Theme?"
+msgstr "Видалити тему?"
+
+msgid "Deny"
+msgstr "Відмовити"
+
+msgid "Deny all contact requests"
+msgstr "Відхилити всі запити на контакт"
+
+msgid "Description"
+msgstr "Опис"
+
+msgid "Destroy Group Chat"
+msgstr "Знищення групового чату"
+
+msgid "Destroy This Chat"
+msgstr "Знищити цей чат"
+
+msgid "Destroy…"
+msgstr "Знищити…"
+
+msgid "Details"
+msgstr "Подробиці"
+
+#, python-format
+msgid "Details - %(account)s"
+msgstr "Деталі - %(account)s"
+
+msgid "Details about the certificate used by this connection"
+msgstr "Інформація про сертифікат, який використовується для цього з'єднання"
+
+#, python-format
+msgid "Device \"%s\""
+msgstr "Пристрій «%s»"
+
+msgid "Devices"
+msgstr "Пристрої"
+
+#, python-format
+msgid "Dictionary URL is missing a \"%s\""
+msgstr "У адресі URL для словника не вказано «%s»"
+
+msgid "Direct Messages"
+msgstr "Прямі повідомлення"
+
+msgid "Direct Message…"
+msgstr "Пряме повідомлення…"
+
+msgid "Directory"
+msgstr "Каталог"
+
+#, python-format
+msgid ""
+"Directory \"%s\" is not writable. You do not have the proper permissions to "
+"create files in this directory."
+msgstr ""
+"Каталог \"%s\" недоступний для запису. Ви не маєте належних прав для "
+"створення файлів у цьому каталозі."
+
+msgid "Directory Not Writable"
+msgstr "Каталог недоступний для запису"
+
+msgid "Disable Account?"
+msgstr "Вимкнути акаунт?"
+
+msgid "Disabled"
+msgstr "Вимкнено"
+
+msgid "Disabled in Preferences"
+msgstr "Вимкнено в налаштуваннях"
+
+msgid ""
+"Disclose information about media that is currently being played on your "
+"system."
+msgstr ""
+"Показувати інформацію про медіафайли, які зараз грають на вашому комп'ютері."
+
+msgid "Disclose information about the operating system you currently use"
+msgstr "Показувати інформацію про вашу операційну систему"
+
+msgid "Disclose the time of your last activity"
+msgstr "Показувати час вашої останньої активності"
+
+msgid "Discover Services…"
+msgstr "Переглянути служби…"
+
+#, python-format
+msgid "Do you accept this request (account: %s)?"
+msgstr "Чи приймаєте ви запит (обліковий запис: %s)?"
+
+msgid "Do you accept this request?"
+msgstr "Чи приймаєте ви цей запит?"
+
+msgid ""
+"Do you really want to remove all chat messages from Gajim?\n"
+"Warning: This can’t be undone!\n"
+"Gajim will quit afterwards."
+msgstr ""
+"Справді бажаєте видалити усі повідомлення у Gajim?\n"
+"Увага: це неможливо буде повернути!\n"
+"Gajim буде вимкнено після цього."
+
+#, python-format
+msgid "Do you want to block %(name)s?"
+msgstr "Ви хочете заблокувати %(name)s?"
+
+msgid "Do you want to delete this PEP node?"
+msgstr "Ви хочете видалити цей PEP-вузол?"
+
+msgid "Do you want to delete this theme?"
+msgstr "Справді бажаєте видалити цю тему?"
+
+msgid "Do you want to overwrite the currently installed version?"
+msgstr "Бажаєте перезаписати поверх встановленої версії?"
+
+#, python-format
+msgid "Do you want to remove \"%(group)s\"?"
+msgstr "Ви хочете видалити \"%(group)s\"?"
+
+msgid "Do you want to remove all chat history for this chat?"
+msgstr "Ви хочете видалити всю історію чату для цього чату?"
+
+msgid "Do you want to remove this chat including its chat history?"
+msgstr "Ви хочете видалити цей чат разом з історією чату?"
+
+msgid "Do you want to remove this proxy?"
+msgstr "Ви хочете видалити цей проксі?"
+
+msgid ""
+"Do you want to retract this message?\n"
+"Please note that retracting a message does not guarantee that your provider "
+"or your contact’s device will remove it."
+msgstr ""
+"Ви хочете відкликати це повідомлення?\n"
+"Зверніть увагу, що відкликання повідомлення не гарантує, що ваш провайдер "
+"або пристрій вашого контакту видалить його."
+
+#, python-format
+msgid "Do you want to unblock %(name)s?"
+msgstr "Ви хочете розблокувати %(name)s?"
+
+#, python-format
+msgid "Do you want to unregister your account on <b>%s</b> as well?"
+msgstr "Бажаєте також видалити реєстрацію облікового запису на <b>%s</b>?"
+
+msgid "Doing so will permanently delete this Fingerprint"
+msgstr "Це призведе до остаточного видалення цього відбитка пальця"
+
+msgid "Download"
+msgstr "Завантажити"
+
+#, python-format
+msgid "Downloaded %s messages"
+msgstr "Завантажено %s повідомлень"
+
+#, python-format
+msgid "Draft: %s"
+msgstr "Чернетка: %s"
+
+msgid "Drop files here"
+msgstr "Скидайте файли сюди"
+
+msgid "Eating"
+msgstr "Їм"
+
+msgid "Edit"
+msgstr "Правка"
+
+msgid "Edit Shortcut"
+msgstr "Ярлик редагування"
+
+msgid "Edit display name…"
+msgstr "Редагувати назву відображення…"
+
+msgid "Edit your message (Esc to cancel)…"
+msgstr "Відредагуйте своє повідомлення (Esc для скасування)…"
+
+msgid "Edit…"
+msgstr "Правити…"
+
+msgctxt "Message row action"
+msgid "Edit…"
+msgstr "Правити…"
+
+#, python-format
+msgid ""
+"Either a custom URL with %%s in it (where %%s is the word/phrase) or "
+"\"WIKTIONARY\" (which means use Wikitionary)."
+msgstr ""
+"Або власну URL-адресу з %%s у ній (де %%s - це слово/фраза), або "
+"\"WIKTIONARY\" (що означає використовувати Вікісловник)."
+
+msgid "Email"
+msgstr "Електронна пошта"
+
+msgid "Emoji Shortcodes"
+msgstr "Коди емодзі"
+
+msgid "Emojis"
+msgstr "Емодзі"
+
+msgid "Enable"
+msgstr "Увімкнути"
+
+msgid "Enable Account"
+msgstr "Увімкнути обліковий запис"
+
+msgid "Enable KeepassXC Integration"
+msgstr "Увімкнути інтеграцію з KeepassXC"
+
+msgid "Enabled"
+msgstr "Увімкнено"
+
+msgid ""
+"Enables Gajim to measure your computer’s idle time in order to set your "
+"Status automatically"
+msgstr ""
+"Дозволяє Gajim вимірювати час простою вашого комп'ютера, щоб автоматично "
+"встановлювати ваш статус"
+
+msgid "Enables Gajim to play sounds for various notifications"
+msgstr "Можливість програвати звуки сповіщень"
+
+msgid "Enables Gajim to provide a Audio preview"
+msgstr "Дозволяє Gajim надавати попередній аудіо перегляд"
+
+msgid "Enables Gajim to spell check your messages while composing"
+msgstr "Дозволяє перевіряти правопис повідомлень під час набору"
+
+msgid ""
+"Enables Gajim to store Passwords securely instead of storing them in "
+"plaintext"
+msgstr "Дозволяє зберігати паролі безпечно, а не відкритим текстом"
+
+#, python-format
+msgid "Encrypted (%s)"
+msgstr "Зашифровано (%s)"
+
+msgid "Encrypting file…"
+msgstr "Шифрування файлу…"
+
+msgid "Encryption (OMEMO)"
+msgstr "Шифрування (OMEMO)"
+
+#, python-format
+msgid "Encryption (OMEMO) – %(account)s"
+msgstr "Шифрування (OMEMO) - %(account)s"
+
+msgid "Encryption Error"
+msgstr "Помилка шифрування"
+
+msgid "Encryption error"
+msgstr "Помилка шифрування"
+
+msgid "Encryption is not available in private chats"
+msgstr "Шифрування недоступне в приватних чатах"
+
+msgid "Encryption method to use unless overridden on a per-contact basis"
+msgstr ""
+"Метод шифрування використовується, якщо не перевизначено для кожного "
+"контакту окремо"
+
+msgid "Encryption required"
+msgstr "Вимагається шифрування"
+
+msgid "End call"
+msgstr "Закінчити дзвінок"
+
+msgid "Endpoint for retrieving a list of providers for sign up"
+msgstr "Кінцева точка для отримання списку провайдерів для реєстрації"
+
+msgid "Enter a password to join this chat"
+msgstr "Введіть пароль, щоб приєднатися до цього чату"
+
+msgid "Enter group name"
+msgstr "Введіть назву групи"
+
+msgid "Enter new contact name"
+msgstr "Введіть нове ім'я контакту"
+
+msgid "Enter new password..."
+msgstr "Уведіть новий пароль…"
+
+msgid "Enter your new nickname"
+msgstr "Введіть свій новий нікнейм"
+
+msgid ""
+"Enter your nickname. This is how your name is displayed to your contacts."
+msgstr "Вкажіть ваш псевдонім. Він буде показаний вашим контактам."
+
+msgid "Error"
+msgstr "Помилка"
+
+msgid "Error Loading Image"
+msgstr "Помилка завантаження зображення"
+
+msgid "Error in audio data stream."
+msgstr "Помилка в потоці аудіоданих."
+
+msgid "Error opening file"
+msgstr "Помилка під час спроби прочитати файл"
+
+msgid "Error while Exporting"
+msgstr "Помилка експортування"
+
+msgid "Error while processing image"
+msgstr "Помилка обробки зображення"
+
+msgid "Error while receiving search results."
+msgstr "Помилка отримання результатів пошуку."
+
+msgid "Error while retrieving search form."
+msgstr "Помилка запиту форми пошуку."
+
+msgid "Error while uploading avatar"
+msgstr "Помилка завантаження аватари"
+
+#, python-format
+msgid "Error: %s"
+msgstr "Помилка: %s"
+
+#, python-format
+msgid "Error: %s (mime types: %s)"
+msgstr "Помилка: %s (типи мімів: %s)"
+
+msgid "Event"
+msgstr "Подія"
+
+msgid "Everyone"
+msgstr "Усі"
+
+msgid "Everything"
+msgstr "Усе"
+
+msgid "Exceptions from the above setting"
+msgstr ""
+
+msgid "Execute"
+msgstr "Виконати"
+
+msgid "Execute Command…"
+msgstr "Виконати команду…"
+
+msgid "Executing…"
+msgstr "Виконання…"
+
+msgid "Expires on: "
+msgstr "Спливає: "
+
+msgid "Expiry date"
+msgstr "Термін придатності"
+
+msgid "Export"
+msgstr "Експортувати"
+
+msgid "Export CSV"
+msgstr "Експорт CSV"
+
+msgid "Export Chat History"
+msgstr "Експорт історії чату"
+
+msgid "Export Contacts"
+msgstr "Контакти для експорту"
+
+msgid "Export Error"
+msgstr "Помилка експорту"
+
+msgid "Export Finished"
+msgstr "Експортування завершено"
+
+msgid "Export History…"
+msgstr "Історія експорту…"
+
+msgid "Export your chat history from Gajim"
+msgstr "Експортувати історію балачок з Gajim"
+
+msgid "Exporting History..."
+msgstr "Експорт історії…"
+
+msgid "Exporting your messages..."
+msgstr "Експортування повідомлень…"
+
+msgid "Export…"
+msgstr "Експорт…"
+
+msgid ""
+"Express yourself: Sometimes words are not enough. Use reactions, replies, "
+"record voice messages, and send status updates to fully express yourself."
+msgstr ""
+"Висловіть себе: Іноді слів недостатньо. Використовуйте реакції, відповіді, "
+"записуйте голосові повідомлення та надсилайте оновлення статусу, щоб "
+"повністю виразити себе."
+
+msgid "Extended Address"
+msgstr "Додаткова адреса"
+
+msgid "FA_Q (Online)"
+msgstr "Ча_Пи (в інтернеті)"
+
+msgid "Failed to Configure Group Chat"
+msgstr "Не вдалося налаштувати груповий чат"
+
+msgid "Failed to Create Group Chat"
+msgstr "Не вдалося створити груповий чат"
+
+msgid "Failed to Join Group Chat"
+msgstr "Не вдалося приєднатися до групового чату"
+
+msgid "Failed to generate avatar."
+msgstr "Не вдалося згенерувати аватару."
+
+msgid "Fake audio output"
+msgstr "Фальшивий вихід аудіо"
+
+msgid "Features"
+msgstr "Можливості"
+
+msgid "Feedback"
+msgstr "Зворотний зв'язок"
+
+msgid "Female"
+msgstr "Жіноча"
+
+msgid "Fetching messages…"
+msgstr "Отримання повідомлень…"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "File Offered…"
+msgstr "Запропонований файл…"
+
+msgid "File Preview"
+msgstr "Попередній перегляд файлів"
+
+msgid "File Size Limit"
+msgstr "Обмеження на розмір файлу"
+
+msgid "File Transfer"
+msgstr "Передача файлів"
+
+msgid "File Transfer Cancelled"
+msgstr "Передачу файлу скасовано"
+
+msgid "File Transfer Completed"
+msgstr "Завершення передавання файла"
+
+msgid "File Transfer Stopped"
+msgstr "Зупинка передавання файла"
+
+msgid "File Verification Failed"
+msgstr "Не вдалося перевірити файл"
+
+msgid "File corrupted during transfer"
+msgstr "Файл пошкоджено під час передачі"
+
+msgid "File does not exist"
+msgstr "Файла не існує"
+
+msgid "File is empty"
+msgstr "Файл порожній"
+
+#, python-format
+msgid "File is too large, maximum allowed file size is: %s"
+msgstr "Файл занадто великий, максимально допустимий розмір файлу: %s"
+
+msgid "File saved"
+msgstr "Файл збережено"
+
+msgid "File too big"
+msgstr "Файл занадто великий"
+
+#, python-format
+msgid "File: %s"
+msgstr "Файл: %s"
+
+msgid "Filter"
+msgstr "Фільтри"
+
+msgid "Filter Chats"
+msgstr "Фільтрувати чати"
+
+msgid "Filters"
+msgstr "Фільтри"
+
+msgid "Filters (active)"
+msgstr "Фільтри (активні)"
+
+msgid "Fingerprint for this Device"
+msgstr "Відбиток пальця для цього пристрою"
+
+msgid "Fingerprints"
+msgstr "Відбитки пальців"
+
+#, fuzzy, python-format
+msgid "Fingerprints of devices connected with \"%s\""
+msgstr "Пристрої, пов'язані з \"%s\""
+
+msgid "Finished"
+msgstr "Готово"
+
+#, python-format
+msgid ""
+"Finished synchronising chat history:\n"
+"%s messages downloaded"
+msgstr ""
+"Завершено синхронізацію історії чату:\n"
+"завантажено %s повідомлень"
+
+msgid "Focus Input"
+msgstr ""
+
+msgid "Focus Search"
+msgstr "Фокусний пошук"
+
+#, python-format
+msgid "Folder: %s"
+msgstr "Папка: %s"
+
+msgid "For example: \"Julia is now online\""
+msgstr "Наприклад: \"Юлія зараз онлайн\""
+
+msgid "Force Bookmark 2 usage"
+msgstr "Примусове використання закладки 2"
+
+msgid "Forever"
+msgstr "Назавжди"
+
+msgid "Forget Group Chat"
+msgstr "Забудьте про груповий чат"
+
+msgid "Forget this Group Chat?"
+msgstr "Забули цей груповий чат?"
+
+msgid "Forget this Group Chat…"
+msgstr "Забудьте про цей груповий чат…"
+
+#, fuzzy
+msgid "Format Text Bold"
+msgstr "Розмова: колір тексту"
+
+msgid "Format Text Italic"
+msgstr ""
+
+msgid "Format Text Strikethrough"
+msgstr ""
+
+msgid "Format error in CRL's lastUpdate field"
+msgstr "Помилка форматування у полі сертифіката lastUpdate"
+
+msgid "Format error in CRL's nextUpdate field"
+msgstr "Помилка форматування у полі сертифіката nextUpdate"
+
+msgid "Format error in certificate's notAfter field"
+msgstr "Помилка форматування у полі сертифіката notAfter"
+
+msgid "Format error in certificate's notBefore field"
+msgstr "Помилка форматування у полі сертифіката notBefore"
+
+msgid "Format your message"
+msgstr "Форматувати повідомлення"
+
+msgid "Forward 10 seconds"
+msgstr "Вперед 10 секунд"
+
+#, python-format
+msgid "Found %s contacts to import"
+msgstr "Знайдено %s контактів для імпорту"
+
+msgctxt "User status"
+msgid "Free for Chat"
+msgstr "Можна побалакати"
+
+msgid "From"
+msgstr "Від"
+
+msgctxt "Contact subscription"
+msgid "From"
+msgstr "Від"
+
+msgid "Full Name"
+msgstr "Повне ім'я"
+
+msgctxt "Profile"
+msgid "Full Name"
+msgstr "Повне ім'я"
+
+msgid "Fully-featured XMPP chat client"
+msgstr "Повнофункціональний XMPP чат-клієнт"
+
+#, python-format
+msgid "GLib Version: %s"
+msgstr "Версія GLib: %s"
+
+#, python-format
+msgid "GTK Version: %s"
+msgstr "Версія GTK: %s"
+
+#, python-format
+msgid "Gajim %s is available"
+msgstr "Gajim %s доступний"
+
+msgid "Gajim - Error"
+msgstr "Gajim - Помилка"
+
+msgid "Gajim Themes"
+msgstr "Теми Gajim"
+
+msgid "Gajim Update"
+msgstr "Оновлення Гаджіма"
+
+msgid "Gajim Update Check"
+msgstr "Перевірка оновлення Gajim"
+
+msgid ""
+"Gajim aims to be an easy to use and fully-featured XMPP client. Just chat "
+"with your friends or family, easily share pictures and thoughts or discuss "
+"the news with your groups."
+msgstr ""
+"Gajim прагне бути простим у використанні і повнофункціональним XMPP-"
+"клієнтом. Просто спілкуйтеся з друзями чи родиною, легко діліться "
+"фотографіями та думками або обговорюйте новини з вашими групами."
+
+msgid ""
+"Gajim encountered an error.\n"
+"Please help us fixing this issue by sending this report."
+msgstr ""
+"Gajim виявив помилку.\n"
+"Будь ласка, допоможіть нам виправити цю проблему, надіславши цей звіт."
+
+msgid "Gajim is fully synchronized with the archive."
+msgstr "Gajim повністю синхронізований з архівом."
+
+msgid "Gajim is quitting…"
+msgstr "Gajim виходить…"
+
+msgid ""
+"Gajim was not able to reach the server. Make sure your XMPP address is "
+"correct."
+msgstr ""
+"Gajim не зміг зв'язатися з сервером. Переконайтеся, що ваша XMPP-адреса "
+"правильна."
+
+msgid "Gajim will now exit"
+msgstr "Зараз Gajim завершить роботу"
+
+msgid "Gathering information…"
+msgstr "Збір інформації…"
+
+msgid "Gender"
+msgstr "Стать"
+
+msgctxt "Profile"
+msgid "Gender"
+msgstr "Стать"
+
+msgid "General"
+msgstr "Загальне"
+
+#, python-format
+msgid "General – %(account)s"
+msgstr "Загальні - %(account)s"
+
+msgid "Global Group Chat Search"
+msgstr "Глобальний пошук у груповому чаті"
+
+msgid "Global Proxy"
+msgstr "Глобальний проксі"
+
+msgid "Global Status"
+msgstr "Глобальний статус"
+
+msgid "Go"
+msgstr "Іди."
+
+msgid "Grant Voice"
+msgstr "Грант Голос"
+
+msgid "Group"
+msgstr "Група"
+
+msgid "Group Chat"
+msgstr "Групповий чат"
+
+msgid "Group Chat Details"
+msgstr "Деталі групового чату"
+
+msgid "Group Chat Language"
+msgstr "Мова групового чату"
+
+msgid "Group Chat Message Highlight"
+msgstr "Виділення повідомлення у груповому чаті"
+
+msgid "Group Chat Message Received"
+msgstr "Отримано повідомлення у груповому чаті"
+
+#, fuzzy
+msgid "Group Chat Settings"
+msgstr "Деталі групового чату"
+
+msgid "Group Chats"
+msgstr "Групові чати"
+
+msgid "Group chat already exists"
+msgstr "Груповий чат вже існує"
+
+msgid "Group chat can be found via search"
+msgstr "Груповий чат можна знайти за допомогою пошуку"
+
+msgid "Group chat does not exist"
+msgstr "Такої балачки не існує"
+
+msgid "Group chat has been destroyed"
+msgstr "Балачку було видалено"
+
+msgid "Group chat is closed"
+msgstr "Групповий чат закритий"
+
+msgid "Group chat is now fully anonymous"
+msgstr "Груповий чат тепер повністю анонімний"
+
+msgid "Group chat is now non-anonymous"
+msgstr "Груповий чат тепер не анонімний"
+
+msgid "Group chat is now semi-anonymous"
+msgstr "Груповий чат тепер напіванонімний"
+
+msgid "Group chat now does not show unavailable members"
+msgstr "У груповому чаті тепер не відображаються недоступні учасники"
+
+msgid "Group chat now shows unavailable members"
+msgstr "Груповий чат тепер показує недоступних учасників"
+
+msgid "Groups"
+msgstr "Групи"
+
+#, python-format
+msgid "HTTP (%(method)s) Authorization for %(url)s (ID: %(id)s)"
+msgstr "HTTP (%(method)s) Авторизація для %(url)s (ID: %(id)s)"
+
+msgid "HTTP Authorization Request"
+msgstr "Запит на авторизацію HTTP"
+
+msgid "HTTPS Verification"
+msgstr "Перевірка HTTPS"
+
+#, python-format
+msgid "Hello, I am $name. %s"
+msgstr "Привіт, я $name. %s"
+
+msgid "Here you can add some feedback which helps reproducing this problem."
+msgstr ""
+
+msgctxt "Group chat feature"
+msgid "Hidden"
+msgstr "Приховано"
+
+msgid "Hide"
+msgstr "Приховати"
+
+msgid "Hide Chat List"
+msgstr "Приховати список чатів"
+
+msgid "Home"
+msgstr "Головна"
+
+msgid "Hostname"
+msgstr "Ім'я хоста"
+
+#, python-format
+msgid "Hostname – %(account)s"
+msgstr "Ім'я хоста - %(account)s"
+
+#, python-format
+msgid ""
+"Hostname: %(hostname)s\n"
+"Software: %(software)s\n"
+"Uptime: %(uptime)s\n"
+msgstr ""
+"Ім'я хоста: %(hostname)s\n"
+"Програмне забезпечення: %(software)s\n"
+"Час роботи: %(uptime)s\n"
+
+msgid "How far back should the chat history be synchronized?"
+msgstr "Як давно потрібно синхронізувати історію чату?"
+
+msgid "How long Gajim should keep your chat history"
+msgstr "Як довго Gajim повинен зберігати історію вашого чату"
+
+msgid "How to install plugins with Flatpak"
+msgstr "Як встановити плагіни за допомогою Flatpak"
+
+msgid "I can see contact's online status"
+msgstr "Я можу бачити статус контакту в мережі"
+
+msgid "I would like to add you to my contact list."
+msgstr "Я хочу додати вас до мого списку контактів."
+
+msgid "I would like to add you to my roster."
+msgstr "Я хочу додати вас до свого реєстру."
+
+msgid "ID"
+msgstr "ІДЕНТИФІКАТОР"
+
+msgid "IEC standard says KiB = 1024 bytes, KB = 1000 bytes."
+msgstr "Згідно до стандарту IEC: кіБ = 1024 байтам, кБ = 1000 байтам."
+
+msgctxt "Profile"
+msgid "IM Address"
+msgstr "IM-адреса"
+
+msgid "Id"
+msgstr "Ідентифікатор"
+
+msgid "Identified Error"
+msgstr "Виявлено помилку"
+
+msgid ""
+"Identifier for this device. Don’t change this unless you know what you are "
+"doing."
+msgstr ""
+"Ідентифікатор цього пристрою. Не змінюйте його, якщо не знаєте, що робите."
+
+msgid "Idle Time"
+msgstr "Час простою"
+
+msgid ""
+"If enabled, Gajim makes the window flash (the default behaviour in most "
+"Window Managers) when holding pending events."
+msgstr ""
+"Якщо увімкнено, Gajim змушує вікно блимати (типова поведінка у більшості "
+"віконних менеджерів) під час відкладених подій."
+
+msgid "If enabled, Gajim offers to download plugins hosted on gajim.org"
+msgstr ""
+"Якщо увімкнено, Gajim пропонує завантажити плагіни, розміщені на gajim.org"
+
+msgid "If enabled, Gajim will ignore incoming attention requests (\"wizz\")."
+msgstr "Якщо увімкнено, Gajim ігноруватиме вхідні запити на увагу (\"wizz\")."
+
+msgid ""
+"If enabled, Gajim will try to use a STUN server when using Jingle. The one "
+"in \"stun_server\" option, or the one given by the XMPP server."
+msgstr ""
+"Якщо увімкнено, Gajim намагатиметься використовувати STUN-сервер під час "
+"використання Jingle. Той, що вказано у параметрі \"stun_server\", або той, "
+"що надається XMPP-сервером."
+
+msgid "Ignore Unknown Contacts"
+msgstr "Ігнорувати невідомі контакти"
+
+msgid "Ignore everything from contacts not in your contact list"
+msgstr "Ігнорувати всі контакти, яких немає у вашому списку контактів"
+
+msgid "Image"
+msgstr "Зображення"
+
+msgid "Import"
+msgstr "Імпорт"
+
+msgid "Import Contacts"
+msgstr "Імпорт контактів"
+
+msgid "Import Contacts?"
+msgstr "Імпортувати контакти?"
+
+msgid "Import Error"
+msgstr "Помилка імпорту"
+
+msgid "Import from Account"
+msgstr "Імпорт з облікового запису"
+
+msgid "Import from File"
+msgstr "Імпорт з файлу"
+
+msgid "Import…"
+msgstr "Імпорт…"
+
+msgid ""
+"In order to write messages in this chat, you need to request voice first.\n"
+"A moderator will process your request."
+msgstr ""
+"Для того, щоб писати повідомлення в цьому чаті, вам потрібно спочатку "
+"запросити голос.\n"
+"Модератор обробить ваш запит."
+
+msgid "In this group chat"
+msgstr "У цій балачці"
+
+msgid "Incoming Call"
+msgstr "Вхідний дзвінок"
+
+msgid "Incoming Call (Video)"
+msgstr "Вхідний дзвінок (відео)"
+
+msgid "Increase Font Size"
+msgstr "Збільшити розмір шрифту"
+
+msgid "Increase playback speed"
+msgstr "Збільшити швидкість відтворення"
+
+msgid "Information"
+msgstr "Інформація"
+
+msgid "Insecure Connection"
+msgstr "Небезпечне з'єднання"
+
+msgid "Install"
+msgstr "Встановити"
+
+msgid "Install <tt>sentry-sdk</tt> to make reporting issues easier."
+msgstr "Встановіть <tt>sentry-sdk</tt> для легшого повідомлення про помилки."
+
+msgid "Install Plugin from ZIP-File"
+msgstr "Встановіть плагін із ZIP-файлу"
+
+msgid "Install a keyring to store passwords on your system."
+msgstr "Встановіть брелок для зберігання паролів у вашій системі."
+
+msgid "Install from Archive"
+msgstr "Встановлення з архіву"
+
+msgid "Installation failed"
+msgstr "Інсталяція завершилася невдало"
+
+msgctxt "Configuration type"
+msgid "Integer"
+msgstr "Ціле число"
+
+msgid "Invalid Address"
+msgstr "Неправильна адреса"
+
+msgid "Invalid CA certificate"
+msgstr "Некоректний сертифікат CA"
+
+msgid "Invalid Name"
+msgstr "Неправильне ім'я"
+
+msgid "Invalid Node"
+msgstr "Недійсний вузол"
+
+msgid "Invalid Server Name"
+msgstr "Некоректна назва сервера"
+
+msgid "Invalid Stanza"
+msgstr "Неправильна строфа"
+
+msgid "Invalid XMPP Address"
+msgstr "Неправильна XMPP-адреса"
+
+#, python-format
+msgid "Invalid address: %s"
+msgstr "Неправильна адреса: %s"
+
+msgid "Invalid domain name"
+msgstr "Неправильне доменне ім'я"
+
+msgid "Invalid server response"
+msgstr "Неправильна відповідь сервера"
+
+msgid "Invitation"
+msgstr "Запрошення"
+
+msgid "Invitation Declined"
+msgstr "Запрошення відхилено"
+
+msgid "Invite"
+msgstr "Запросити"
+
+msgid "Invite Contacts"
+msgstr "Запросити контакти"
+
+msgid "Invite to this chat…"
+msgstr "Запросити в цей чат…"
+
+msgid "Invitees"
+msgstr "Запрошені"
+
+msgid "Is a microphone plugged in and accessible?"
+msgstr "Чи підключений і доступний мікрофон?"
+
+msgid "Issue date"
+msgstr "Дата випуску"
+
+msgid "Issued by"
+msgstr "Видано"
+
+msgid "Issued by\n"
+msgstr "Видано\n"
+
+msgid "Issued on: "
+msgstr "Випущено: "
+
+msgid "Issued to"
+msgstr "Видано на ім'я"
+
+msgid "Issued to\n"
+msgstr "Видано на ім'я\n"
+
+msgid "Issues detected"
+msgstr "Виявлені проблеми"
+
+msgid "I’m eating."
+msgstr "Я їм."
+
+msgid "I’m out enjoying life."
+msgstr "Я насолоджуюся життям."
+
+msgid "I’m watching a movie."
+msgstr "Я дивлюся кіно."
+
+msgid "I’m working."
+msgstr "Я працюю."
+
+msgid "JID"
+msgstr "JID"
+
+msgid "JPEG files"
+msgstr "Файли JPEG"
+
+msgid "Join"
+msgstr "Приєднуйтесь"
+
+msgid "Join Group Chat"
+msgstr "Приєднатись до групової балачки"
+
+msgid "Join Group Chat as…"
+msgstr "Приєднуйтесь до групового чату як…"
+
+msgid "Join Group Chat?"
+msgstr "Приєднатися до групового чату?"
+
+msgid "Join Groupchat…"
+msgstr "Приєднуйтесь до Groupchat…"
+
+msgid "Joining Group Chat…"
+msgstr "Приєднання до групового чату…"
+
+msgid "Joining…"
+msgstr "Приєднання до…"
+
+msgid "Join…"
+msgstr "Приєднуйтесь…"
+
+msgid "Just now"
+msgstr "Щойно"
+
+msgid "Keep Chat History"
+msgstr "Зберігати історію чату"
+
+msgid "Key usage does not include certificate signing"
+msgstr "До призначення ключа не належить підписування сертифікатів"
+
+msgid "Kick"
+msgstr "Викинути"
+
+#, python-format
+msgid "Kick %s"
+msgstr "Удар %s"
+
+msgid "Kick…"
+msgstr "Штовхай…"
+
+msgid "Label"
+msgstr "Етикетка"
+
+#, python-format
+msgid "Language: %s"
+msgstr "Мова: %s"
+
+#, python-format
+msgid "Last seen: %s"
+msgstr "Останній раз бачили: %s"
+
+msgid "Leave Group Chat?"
+msgstr "Вийти з групового чату?"
+
+msgid "Leave _Permanently"
+msgstr "Виїхати _назавжди"
+
+msgid ""
+"List of send hosts (comma separated) in addition to local interfaces for "
+"file transfers (in case of address translation/port forwarding)."
+msgstr ""
+"Список хостів відправлення (через кому) на додаток до локальних інтерфейсів "
+"для передачі файлів (у разі трансляції адрес/переадресації портів)."
+
+msgid "Listing of providers"
+msgstr "Перелік постачальників послуг"
+
+msgid "Live Preview"
+msgstr "Попередній перегляд в реальному часі"
+
+msgid "Load Image"
+msgstr "Завантажити зображення"
+
+msgid "Loading Avatar Failed"
+msgstr "Не вдалося завантажити аватар"
+
+msgid "Loading Preview…"
+msgstr "Завантаження попереднього перегляду…"
+
+msgid "Loading avatar image failed"
+msgstr "Не вдалося завантажити зображення аватара"
+
+msgid "Loading…"
+msgstr "Завантаження…"
+
+msgid "Local Time"
+msgstr "Місцевий час"
+
+#, python-format
+msgid "Location at %s"
+msgstr "Розташування в %s"
+
+msgid "Log"
+msgstr "Журнал"
+
+msgid "Log In"
+msgstr "Увійдіть в систему"
+
+msgid "Log in with your credentials"
+msgstr "Увійдіть, використовуючи свої облікові дані"
+
+msgid "Login"
+msgstr "Логін"
+
+#, python-format
+msgid "Login – %(account)s"
+msgstr "Логін - %(account)s"
+
+msgid "Look it up in _Dictionary"
+msgstr "Пошукати це у _словнику"
+
+msgid "Make Admin"
+msgstr "Зробити адміністратором"
+
+msgid "Make Member"
+msgstr "Зробити учасником"
+
+msgid "Make Owner"
+msgstr "Власник марки"
+
+msgid "Make your profile visible for everyone or just for your contacts."
+msgstr "Зробіть свій профіль видимим для всіх або тільки для ваших контактів."
+
+msgid "Male"
+msgstr "Чоловік"
+
+msgid "Manage"
+msgstr "Керувати"
+
+msgid "Manage Proxies"
+msgstr "Керування проксі-серверами"
+
+msgid "Manage Proxies..."
+msgstr "Керування проксі-серверами..."
+
+msgid "Manage Shortcuts"
+msgstr "Керування ярликами"
+
+msgid "Manage Sounds"
+msgstr "Керування звуками"
+
+msgid "Manage Trust"
+msgstr "Керуйте довірою"
+
+msgid "Manage and configure Gajim plugins"
+msgstr "Керування та налаштування плагінів Gajim"
+
+msgid "Manage your Devices…"
+msgstr "Керування пристроями…"
+
+msgid "Manually set the hostname for the server"
+msgstr "Вручну задайте ім'я хоста для сервера"
+
+msgid "Mark as Read"
+msgstr "Позначити як прочитане"
+
+msgid "Mark as read"
+msgstr "Позначити як прочитане"
+
+msgid "Maximum file size for preview downloads"
+msgstr "Максимальний розмір файлу для попереднього завантаження"
+
+msgid "Me"
+msgstr "Я"
+
+msgid "Media Playback"
+msgstr "Відтворення медіа"
+
+msgid "Member"
+msgstr "Учасник"
+
+msgctxt "Group chat contact affiliation"
+msgid "Member"
+msgstr "Учасник"
+
+msgctxt "Group chat contact affiliation"
+msgid "Members"
+msgstr "Члени"
+
+msgctxt "Group chat feature"
+msgid "Members Only"
+msgstr "Тільки для учасників"
+
+msgid "Mention: Message Background Color"
+msgstr "Згадка: Колір тла повідомлення"
+
+msgid "Message"
+msgstr "Повідомлення"
+
+msgid "Message History"
+msgstr "Історія повідомлень"
+
+msgid "Message Receipts (✔)"
+msgstr "Квитанції про отримання повідомлень (✔)"
+
+msgid "Message Received"
+msgstr "Повідомлення отримано"
+
+msgid "Message Sent"
+msgstr "Повідомлення надіслано"
+
+msgid "Message content unknown"
+msgstr "Зміст повідомлення невідомий"
+
+#, python-format
+msgid ""
+"Message corrected. Original message:\n"
+"%s"
+msgstr ""
+"Повідомлення було відредаговане. Оригінальне повідомлення:\n"
+"%s"
+
+msgid "Messages"
+msgstr "Повідомлення"
+
+msgid "Messages are archived on the server"
+msgstr "Повідомлення архівуються на сервері"
+
+#, fuzzy
+msgid "Messages from Contacts"
+msgstr "?Message state:Отримано"
+
+msgid "Messages from this users are blocked"
+msgstr "Повідомлення від цього користувача блокуються"
+
+#, python-format
+msgid "Migration to version %s"
+msgstr "Міґрація до версії %s"
+
+msgid "Minimize"
+msgstr "Згорнути"
+
+msgid "Minutes until your status gets changed"
+msgstr "Хвилини до зміни вашого статусу"
+
+msgid "Miscellaneous"
+msgstr "Різне"
+
+msgid "Missing dependencies for audio support"
+msgstr "Відсутні залежності для підтримки аудіо"
+
+msgid "Missing necessary encryption plugin"
+msgstr "Відсутній необхідний плагін шифрування"
+
+msgid "Moderate Message?"
+msgstr "Помірковане повідомлення?"
+
+msgid "Moderate Messages?"
+msgstr "Помірковані повідомлення?"
+
+msgctxt "Message row action"
+msgid "Moderate all messages…"
+msgstr "Видалити всі повідомлення…"
+
+msgctxt "Group chat feature"
+msgid "Moderated"
+msgstr "Модерується"
+
+msgctxt "Message row action"
+msgid "Moderate…"
+msgstr "Видалити…"
+
+msgid "Moderation"
+msgstr "Модерація"
+
+msgctxt "Group chat contact role"
+msgid "Moderator"
+msgstr "Модератор"
+
+msgctxt "Group chat contact role"
+msgid "Moderators"
+msgstr "Модератори"
+
+msgid "Modify"
+msgstr "Змінити"
+
+msgid "More infos at providers.xmpp.net"
+msgstr "Більше інформації на providers.xmpp.net"
+
+msgid "Move"
+msgstr "Відійди."
+
+msgid "Move Chat"
+msgstr "Перемістити чат"
+
+msgid "Move Contact to New Group?"
+msgstr "Перенести контакт до нової групи?"
+
+msgid "Move to Group"
+msgstr "Перейти до групи"
+
+msgid "Movie"
+msgstr "Відео"
+
+msgid "Must be a port number"
+msgstr "Повинен бути номер порту"
+
+msgid "Mute Chat"
+msgstr "Вимкнути звук у чаті"
+
+msgid "Mute Sounds"
+msgstr "Вимкнути звук"
+
+msgid "My Workspace"
+msgstr "Мій робочий простір"
+
+msgid "Name"
+msgstr "Назва"
+
+msgid "Name <b>default</b> is not allowed"
+msgstr "Імʼя <b>default</b> не є дозволеним"
+
+msgid "Needs libspelling to be installed"
+msgstr "Потребує встановлення libspelling"
+
+msgid "Never"
+msgstr "Ніколи"
+
+msgid "New Contact"
+msgstr "Новий контакт"
+
+msgid "New Group"
+msgstr "Нова група"
+
+msgid "New Group…"
+msgstr "Нова група…"
+
+msgid "New Search"
+msgstr "Новий пошук"
+
+msgid "New Workspace"
+msgstr "Новий робочий простір"
+
+msgid "New message from"
+msgstr "Нове повідомлення від"
+
+msgid "Next"
+msgstr "Далі"
+
+msgid "Nickname"
+msgstr "Псевдонім"
+
+msgid "Nickname contains invalid characters"
+msgstr "Нік містить недопустимі символи"
+
+msgid "Nickname…"
+msgstr "Нікнейм…"
+
+msgid "No"
+msgstr "Ні"
+
+msgid "No File Transfer available"
+msgstr "Передача файлів недоступна"
+
+#, fuzzy
+msgid "No Messages"
+msgstr "Повідомлення"
+
+msgid "No Messages Found"
+msgstr "Не знайдено жодного повідомлення"
+
+msgctxt "Group chat feature"
+msgid "No Password Required"
+msgstr "Пароль не потрібен"
+
+msgid "No Proxy"
+msgstr "Без довіреної особи"
+
+msgid "No Results Found"
+msgstr "Не знайдено жодного результату"
+
+msgid "No Sync"
+msgstr "Без синхронізації"
+
+msgid "No Threshold"
+msgstr "Без порогу"
+
+msgid "No additional requirements"
+msgstr "Немає додаткових вимог"
+
+msgid "No automatic preview"
+msgstr "Немає автоматичного попереднього перегляду"
+
+msgid "No certificate available"
+msgstr "Сертифікат відсутній"
+
+msgid "No commands available"
+msgstr "Команди недоступні"
+
+msgid "No contact addresses published for this server."
+msgstr "Для цього сервера не опубліковано жодної контактної адреси."
+
+msgid ""
+"No contacts found\n"
+"You can also type an XMPP address"
+msgstr ""
+"Не знайдено жодного контакту\n"
+"Ви також можете ввести XMPP-адресу"
+
+msgid "No contacts found to import"
+msgstr "Не знайдено контактів для імпорту"
+
+msgid ""
+"No contacts left.\n"
+"You can also type an XMPP address."
+msgstr ""
+"Контактів не залишилося.\n"
+"Ви також можете ввести XMPP-адресу."
+
+msgid "No devices found to encrypt this message to. Querying for devices now…"
+msgstr ""
+"Не знайдено пристроїв для шифрування цього повідомлення. Запит на пристрої "
+"зараз…"
+
+msgid "No devices online"
+msgstr "Немає пристроїв онлайн"
+
+msgid "No group assigned"
+msgstr "Групу не призначено"
+
+msgid "No info available"
+msgstr "Інформація відсутня"
+
+msgid "No keys pressed"
+msgstr "Не натиснуто жодної клавіші"
+
+#, python-format
+msgid "No permission to export file to %s"
+msgstr "Недостатньо дозволів, аби експортувати файл до %s"
+
+msgid "No results"
+msgstr "Немає результатів"
+
+msgid "No results found"
+msgstr "Не знайдено жодного результату"
+
+msgid "No undecided fingerprints"
+msgstr ""
+
+msgid "Node"
+msgstr "Вузол"
+
+msgctxt "Configuration description"
+msgid "None"
+msgstr "Немає"
+
+msgctxt "Contact subscription"
+msgid "None"
+msgstr "Немає"
+
+msgctxt "Gender"
+msgid "None"
+msgstr "Немає"
+
+msgctxt "Group chat contact affiliation"
+msgid "None"
+msgstr "Немає"
+
+msgctxt "Group chat contact role"
+msgid "None"
+msgstr "Немає"
+
+msgctxt "Group chat feature"
+msgid "Not Anonymous"
+msgstr "Не анонімно"
+
+#, fuzzy
+msgid "Not Available"
+msgstr "Недоступно"
+
+msgctxt "User status"
+msgid "Not Available"
+msgstr "Недоступно"
+
+msgid "Not Decided"
+msgstr "Не вирішено"
+
+msgid "Not Joined"
+msgstr "Не приєднався"
+
+msgctxt "Group chat feature"
+msgid "Not Moderated"
+msgstr "Не модерується"
+
+msgid "Not accelerated"
+msgstr "Не прискорено"
+
+msgid "Not available"
+msgstr "Немає в наявності"
+
+msgid "Not connected"
+msgstr "Не підключено"
+
+msgid "Not encrypted"
+msgstr "Не зашифровано"
+
+msgctxt "Profile"
+msgid "Note"
+msgstr "Примітка"
+
+msgid "Note to myself"
+msgstr "Замітка для себе"
+
+msgid "Note: Anonymous accounts are not possible with all providers"
+msgstr "Примітка: Анонімні акаунти можливі не у всіх провайдерів"
+
+msgid "Notes"
+msgstr "Примітки"
+
+msgid "Notification Sounds"
+msgstr "Звуки сповіщень"
+
+msgid "Notifications"
+msgstr "Сповіщення"
+
+msgid "Notify after update"
+msgstr "Повідомити після оновлення"
+
+msgid "Notify me when the automatic update was successful"
+msgstr "Повідомте мене, коли автоматичне оновлення буде успішним"
+
+msgid "Notify on all Messages"
+msgstr "Повідомляти про всі повідомлення"
+
+msgid "OK"
+msgstr "ГАРАЗД."
+
+msgctxt "Switch"
+msgid "Off"
+msgstr "Вимкнено"
+
+msgid "Offline"
+msgstr "Поза мережею"
+
+msgctxt "Switch"
+msgid "On"
+msgstr "На"
+
+msgid "One Month"
+msgstr "Один місяць"
+
+msgid "One Year"
+msgstr "Один рік"
+
+msgid "Only Admins and Owners can modify the affiliation"
+msgstr "Змінювати приналежність можуть лише Адміністратори та Власники"
+
+msgid "Only moderators can see your XMPP address"
+msgstr "Тільки модератори можуть бачити вашу XMPP-адресу"
+
+msgid "Open"
+msgstr "Відкрито"
+
+msgctxt "Group chat feature"
+msgid "Open"
+msgstr "Відкрито"
+
+#, fuzzy, python-format
+msgid "Open %s"
+msgstr "Відкрито"
+
+#, fuzzy
+msgid "Open Email Composer"
+msgstr "Open Email Composer"
+
+#, fuzzy
+msgid "Open Emoji Chooser"
+msgstr "Open Email Composer"
+
+msgid "Open Folder"
+msgstr "Відкрити папку"
+
+msgid "Open Link in _Browser"
+msgstr "Відкрити посилання у _браузері"
+
+msgid "Open as _Link"
+msgstr "Відкрити як _посилання"
+
+msgid "Open folder"
+msgstr "Відкрийте папку"
+
+msgid "OpenGL accelerated"
+msgstr "Прискорення OpenGL"
+
+msgid "Operating System"
+msgstr "Операційна система"
+
+msgctxt "Profile"
+msgid "Organisation"
+msgstr "Організація"
+
+msgid "Organization"
+msgstr "Організація"
+
+msgid "Organization (O): "
+msgstr "Організація (О): "
+
+msgctxt "Gender"
+msgid "Other"
+msgstr "Інше"
+
+msgid "Other devices connected with your account"
+msgstr "Інші пристрої, пов'язані з вашим акаунтом"
+
+msgid "Others"
+msgstr "Інші"
+
+msgid "Out"
+msgstr "Відійшов(шла)"
+
+msgid "Out of memory"
+msgstr "Не вистачає пам'яті"
+
+msgid "Outcasts"
+msgstr "Вигнанці"
+
+msgid "Overwrite Plugin?"
+msgstr "Перезаписати плагін?"
+
+msgid "Owner"
+msgstr "Власник"
+
+msgctxt "Group chat contact affiliation"
+msgid "Owner"
+msgstr "Власник"
+
+msgctxt "Group chat contact affiliation"
+msgid "Owners"
+msgstr "Власники"
+
+msgid "PEP Configuration"
+msgstr "Конфігурація PEP"
+
+msgid "PEP Node Not Removed"
+msgstr "PEP-вузол не видалено"
+
+#, python-format
+msgid "PEP Service Configuration (%s)"
+msgstr "Налаштування служби повідомлення про стан (%s)"
+
+#, python-format
+msgid ""
+"PEP node %(node)s was not removed:\n"
+"%(message)s"
+msgstr ""
+"Вузол повідомлення про стан %(node)s було вилучено:\n"
+"%(message)s"
+
+msgid "PNG files"
+msgstr "PNG файли"
+
+msgid "Packages"
+msgstr "Пакети"
+
+#, python-format
+msgid "Pango Version: %s"
+msgstr "Версія Pango: %s"
+
+msgctxt "Group chat contact role"
+msgid "Participant"
+msgstr "Учасник"
+
+msgid "Participants"
+msgstr "Учасники"
+
+msgctxt "Group chat contact role"
+msgid "Participants"
+msgstr "Учасники та учасниці"
+
+msgid "Participants Count"
+msgstr "Кількість учасників"
+
+msgid "Participants asking for voice:"
+msgstr "Учасники просять надати їм голос:"
+
+msgid "Participants entering this group chat are allowed to send messages"
+msgstr ""
+"Учасники, які увійшли до цього групового чату, можуть надсилати повідомлення"
+
+msgid ""
+"Participants entering this group chat need to request permission to send "
+"messages"
+msgstr ""
+"Учасники, які входять до цього групового чату, повинні запитувати дозвіл на "
+"надсилання повідомлень"
+
+msgid "Pass_word"
+msgstr "Пароль_слово"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Password Change Failed"
+msgstr "Не вдалося змінити пароль"
+
+msgid "Password Changed"
+msgstr "Пароль змінено"
+
+msgid "Password Required"
+msgstr "Слід ввести пароль"
+
+msgctxt "Group chat feature"
+msgid "Password Required"
+msgstr "Потрібен пароль"
+
+msgid "Passwords do not match"
+msgstr "Паролі не збігаються"
+
+msgid "Paste Last Input"
+msgstr "Вставити останнє введення"
+
+msgid "Paste as Code Block"
+msgstr "Вставити як кодовий блок"
+
+msgid "Paste as Quote"
+msgstr "Вставити як цитату"
+
+msgid "Pasting Content Failed"
+msgstr "Не вдалося вставити вміст"
+
+msgid "Path length constraint exceeded"
+msgstr "Перевищення обмеження на довжину адреси"
+
+msgid "Pending"
+msgstr "На розгляді"
+
+msgid "Pending Voice Requests"
+msgstr "Очікувані голосові запити"
+
+msgid "Permanently"
+msgstr "Назавжди"
+
+msgid "Permanently remove this group chat from the server"
+msgstr "Назавжди видалити цей груповий чат з сервера"
+
+msgctxt "Group chat feature"
+msgid "Persistent"
+msgstr "Наполегливий"
+
+msgid "Personal notes about this contact"
+msgstr "Особиста інформація про цей контакт"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Phone No."
+msgstr "Номер телефону."
+
+msgid "Picture and Name"
+msgstr "Зображення та ім'я"
+
+msgid "Pin Chat"
+msgstr "Пін-чат"
+
+msgid "Pinned"
+msgstr "Закріпленo"
+
+msgid "Pipewire"
+msgstr "Трубопровід"
+
+msgid "Play Sound"
+msgstr "Відтворити звук"
+
+msgid "Play Sounds"
+msgstr "Відтворити звуки"
+
+msgid "Play sounds even when you are Away, Busy, etc."
+msgstr ""
+"Відтворення звучить, навіть коли ви перебуваєте у від'їзді, зайняті тощо."
+
+msgid "Play sounds to notify about events"
+msgstr "Відтворення звуків для сповіщення про події"
+
+msgid "Please choose an account"
+msgstr "Будь ласка, оберіть обліковий запис"
+
+msgid "Please enter an XMPP address"
+msgstr "Будь ласка, введіть XMPP-адресу"
+
+msgid "Please enter your credentials or Sign Up"
+msgstr "Будь ласка, введіть свої облікові дані або зареєструйтесь"
+
+msgid "Please enter your new password."
+msgstr "Будь ласка, введіть новий пароль."
+
+#, python-format
+msgid ""
+"Please enter your password for\n"
+"%(jid)s\n"
+"(Account: %(account)s)"
+msgstr ""
+"Будь ласка, введіть пароль для\n"
+"%(jid)s\n"
+"(Обліковий запис: %(account)s)"
+
+#, python-format
+msgid "Please make sure you are connected with \"%s\"."
+msgstr "Будь ласка, переконайтеся, що ви підключені за допомогою \"%s\"."
+
+msgid ""
+"Please select one of your accounts.\n"
+"Gajim will export all messages from the selected account and chats to a "
+"directory of your choice."
+msgstr ""
+"Будь ласка, виберіть один з ваших акаунтів.\n"
+"Gajim експортує всі повідомлення з обраного акаунта і чати до обраного вами "
+"каталогу."
+
+msgid "Please use these settings with caution!"
+msgstr "Будь ласка, використовуйте ці налаштування з обережністю!"
+
+msgid "Plugin Failed"
+msgstr "Не вдалося підключити плагін"
+
+msgid "Plugin Settings"
+msgstr "Налаштування плагіна"
+
+msgid "Plugin Update"
+msgstr "Оновлення плагіна"
+
+msgid "Plugin already exists"
+msgstr "Додаток вже встановлено"
+
+msgid "Plugin could not be loaded"
+msgstr "Не вдалося завантажити плагін"
+
+msgid "Plugins"
+msgstr "Додатки"
+
+msgid "Plugins Updated Successfully"
+msgstr "Плагіни успішно оновлено"
+
+msgid "Port"
+msgstr "Порт"
+
+msgid "Port must be a number between 0 and 65535"
+msgstr "Порт повинен бути числом від 0 до 65535"
+
+msgid "Post Office Box"
+msgstr "Поштова скринька"
+
+msgid "Postal Code"
+msgstr "Поштовий індекс"
+
+msgid "Prefer direct messages in private group chats "
+msgstr "Надавати перевагу прямим повідомленням у приватних групових чатах "
+
+msgctxt "Configuration"
+msgid "Preference Name"
+msgstr "Налаштування Назва"
+
+msgid "Preferences"
+msgstr "Параметри"
+
+msgid "Presets"
+msgstr "Пресети"
+
+msgid ""
+"Press the keys you want to associate with this action. To disable this "
+"shortcut, click apply."
+msgstr ""
+"Натисніть клавіші, які ви хочете пов'язати з цією дією. Щоб вимкнути цей "
+"ярлик, натисніть застосувати."
+
+msgid "Preview Size"
+msgstr "Розмір попереднього перегляду"
+
+msgid "Preview all Image URLs"
+msgstr "Переглянути всі URL-адреси зображень"
+
+msgid "Preview in Public Group Chats"
+msgstr "Попередній перегляд у публічних групових чатах"
+
+msgid "Preview new messages in notification popup?"
+msgstr ""
+"Здійснювати попередній перегляд нових повідомлень у виринаючому сповіщенні?"
+
+msgid "Previous"
+msgstr "Попередні"
+
+msgid "Print XML stanzas and other debug information"
+msgstr "Друк XML-рядків та іншої налагоджувальної інформації"
+
+msgid "Priority"
+msgstr "Пріоритет"
+
+msgid "Privacy"
+msgstr "Конфіденційність"
+
+#, python-format
+msgid "Privacy – %(account)s"
+msgstr "Конфіденційність - %(account)s"
+
+msgid "Private"
+msgstr "Рядовий"
+
+msgid "Processing image…"
+msgstr "Обробка зображення…"
+
+msgid "Profile"
+msgstr "Профіль"
+
+msgid "Profile application with cprofile"
+msgstr "Застосування профілю за допомогою cprofile"
+
+msgid "Pronouns"
+msgstr "Займенники"
+
+msgid "Protocol"
+msgstr "Протокол"
+
+#, python-format
+msgid "Provider - %(account)s"
+msgstr "Провайдер - %(account)s"
+
+#, python-format
+msgid "Provider Category: %s"
+msgstr "Категорія постачальника: %s"
+
+#, python-format
+msgid "Provider Contacts - %(account)s"
+msgstr "Контакти провайдера - %(account)s"
+
+msgid "Provider Infos"
+msgstr "Інформація про постачальника"
+
+msgid "Providers list is up to date"
+msgstr "Список постачальників актуальний"
+
+msgid "Prox_y"
+msgstr "Прокс_і"
+
+msgid "Proxies"
+msgstr "Проксі-сервери"
+
+msgid "Proxy"
+msgstr "Довірена особа"
+
+msgid "Proxy, custom hostname and port"
+msgstr "Проксі, користувацьке ім'я хоста та порт"
+
+msgid "Public"
+msgstr "Громадськість"
+
+msgctxt "Group chat feature"
+msgid "Public"
+msgstr "Громадськість"
+
+msgctxt "Profile"
+msgid "Public Encryption Key"
+msgstr "Відкритий ключ шифрування"
+
+msgid "Public Information"
+msgstr "Публічна інформація"
+
+msgid "Public Key Information"
+msgstr "Інформація про відкритий ключ"
+
+msgid "Public Key: "
+msgstr "Відкритий ключ: "
+
+#, python-format
+msgid "Pulse: %s"
+msgstr "Пульс: %s"
+
+#, fuzzy
+msgid "Purge"
+msgstr "Чистка"
+
+msgid "Purge Chat History"
+msgstr "Очистити історію чату"
+
+msgid "Purge all Chat History?"
+msgstr "Очистити весь журнал чату?"
+
+#, python-format
+msgid "PyGObject Version: %s"
+msgstr "Версія PyGTK: %s"
+
+msgid "Quit"
+msgstr "Вийти"
+
+msgid "Quit Gajim"
+msgstr "Вийти з Gajim"
+
+#, fuzzy
+msgid "Quitting…"
+msgstr "Чекаю…"
+
+msgid "Quote Next Message"
+msgstr "Процитувати наступне повідомлення"
+
+msgid "Quote Previous Message"
+msgstr "Процитувати попереднє повідомлення"
+
+msgid "Re-Login Now?"
+msgstr "Повторно увійти зараз?"
+
+msgid "Re_gister"
+msgstr "За_реєструватися"
+
+#, python-format
+msgid "React with %s"
+msgstr "Реагувати за допомогою %s"
+
+msgid "Read Receipts"
+msgstr "Позначки про прочитане"
+
+msgid "Read _Wikipedia Article"
+msgstr "Прочитати статтю у В_ікіпедії"
+
+msgid "Read more about blind trust"
+msgstr "Дізнайтеся більше про сліпу довіру"
+
+msgid "Reason"
+msgstr "Підстава"
+
+msgid "Reason (optional)"
+msgstr "Причина (необов'язково)"
+
+msgid "Reason (optional)..."
+msgstr "Причина (необов'язково)..."
+
+msgid "Reason for destruction"
+msgstr "Причина знищення"
+
+msgid "Received"
+msgstr "Отримано"
+
+msgctxt "Message state"
+msgid "Received"
+msgstr "Отримано"
+
+msgid "Recognize your account by color"
+msgstr "Розпізнайте свій рахунок за кольором"
+
+msgid "Record"
+msgstr "Запис"
+
+msgid "Record Voice Message… (hold button to record directly)"
+msgstr ""
+"Записати голосове повідомлення... (утримуйте кнопку для безпосереднього "
+"запису)"
+
+msgid "Redirect"
+msgstr "Перенаправлення"
+
+msgid "Register"
+msgstr "Зареєструватися"
+
+msgid "Register on the Website"
+msgstr "Зареєструватися на сайті"
+
+msgid "Registering…"
+msgstr "Реєстрація…"
+
+msgid "Registration failed"
+msgstr "Спроба з’єднання завершилася невдало"
+
+msgid "Registration successful"
+msgstr "Реєстрація вдала"
+
+msgid "Reject file transfer"
+msgstr "Відхилити передачу файлів"
+
+msgid "Reload"
+msgstr "Перезавантажити"
+
+msgid "Remember Last Status"
+msgstr "Запам'ятати останній статус"
+
+msgid "Remote server not found"
+msgstr "Віддалений сервер не знайдено"
+
+msgid "Remote server timeout"
+msgstr "Тайм-аут віддаленого сервера"
+
+msgid "Remove"
+msgstr "Видалити"
+
+#, python-format
+msgid "Remove %s contacts from your contact list?"
+msgstr "Видалити контакти %s зі списку контактів?"
+
+msgid "Remove Account"
+msgstr "Вилучення облікового запису"
+
+msgid "Remove Chat History?"
+msgstr "Видалити історію чату?"
+
+msgid "Remove Contact"
+msgstr "Видалити контакт"
+
+msgid "Remove Contacts?"
+msgstr "Видалити контакти?"
+
+msgid "Remove Contact…"
+msgstr "Видалити контакт…"
+
+msgid "Remove From Contact List?"
+msgstr "Видалити зі списку контактів?"
+
+msgid "Remove Group?"
+msgstr "Видалити групу?"
+
+msgid "Remove Group…"
+msgstr "Видалити групу…"
+
+msgid "Remove History…"
+msgstr "Видалити історію…"
+
+msgid "Remove Proxy"
+msgstr "Видалити проксі-сервер"
+
+msgid "Remove Proxy?"
+msgstr "Видалити проксі?"
+
+msgid "Remove Setting"
+msgstr "Видалити налаштування"
+
+msgid "Remove Theme"
+msgstr "Видалити тему"
+
+msgid "Remove Workspace?"
+msgstr "Видалити робочу область?"
+
+msgid "Remove from Contact List…"
+msgstr "Видалити зі списку контактів…"
+
+msgid "Remove from Group"
+msgstr "Видалити з групи"
+
+msgid "Remove this workspace"
+msgstr "Видаліть цю робочу область"
+
+msgid "Remove your group chat avatar"
+msgstr "Видаліть аватарку групового чату"
+
+msgid "Remove your profile picture"
+msgstr "Видаліть своє зображення профілю"
+
+#, python-format
+msgid "Removed %(count)s contact"
+msgid_plural "Removed %(count)s contacts"
+msgstr[0] "Вилучено %(count)s контакт"
+msgstr[1] "Вилучено %(count)s контакти"
+msgstr[2] "Вилучено %(count)s контактів"
+
+msgid "Remove…"
+msgstr "Приберіть…"
+
+msgid "Removing Account..."
+msgstr "Видалення облікового запису..."
+
+msgid ""
+"Removing the account will delete most related data. If you want to "
+"disconnect the account for a short time, use the status selector."
+msgstr ""
+"Видалення облікового запису призведе до видалення більшості пов'язаних з ним "
+"даних. Якщо ви хочете відключити обліковий запис на короткий час, "
+"скористайтеся селектором стану."
+
+msgid "Rename"
+msgstr "Перейменувати"
+
+msgid "Rename Contact?"
+msgstr "Перейменувати контакт?"
+
+msgid "Rename…"
+msgstr "Перейменувати…"
+
+msgid "Reply…"
+msgstr "Відповідай…"
+
+msgid "Request"
+msgstr "Запит"
+
+msgid "Request Search Form"
+msgstr "Форма запиту на пошук"
+
+msgid "Request Voice"
+msgstr "Запит голосу"
+
+msgid "Request contact information (Tune, Location)"
+msgstr "Запитайте контактну інформацію (Мелодія, місцезнаходження)"
+
+msgid "Request pending"
+msgstr "Запит очікує на розгляд"
+
+msgid "Request to see this contact's online status"
+msgstr "Запит на перегляд онлайн-статусу цього контакту"
+
+msgid "Requesting Command List"
+msgstr "Запит списку команд"
+
+msgid "Requesting HTTP File Upload Slot…"
+msgstr "Запит слоту для завантаження HTTP-файлів…"
+
+msgid "Requesting Register Form"
+msgstr "Запит на реєстраційну форму"
+
+msgid "Requesting register form from server…"
+msgstr "Запит форми реєстрації від сервера…"
+
+msgid "Requesting search form from server"
+msgstr "Запит форми пошуку на сервері"
+
+msgid "Required"
+msgstr "Потрібно"
+
+msgid ""
+"Requires:\n"
+"org.freedesktop.ScreenSaver or\n"
+"org.gnome.Mutter.IdleMonitor or\n"
+"libxss"
+msgstr ""
+"Потребує:\n"
+"org.freedesktop.ScreenSaver або\n"
+"org.gnome.Mutter.IdleMonitor або\n"
+"libxss"
+
+msgid "Requires: gnome-keyring or kwallet"
+msgstr "Потрібно: гном-брелок або гаманець"
+
+msgid "Requires: gsound"
+msgstr "Потрібно: gsound"
+
+msgid "Requires: gstreamer-1.0, gst-plugins-base-1.0"
+msgstr "Потрібно: gstreamer-1.0, gst-plugins-base-1.0"
+
+msgid "Requires: libspelling"
+msgstr "Потрібно: libspelling"
+
+msgid "Reserved Name"
+msgstr "Зарезервоване ім'я"
+
+msgid "Reset"
+msgstr "Перезавантаження"
+
+msgid "Reset Filters"
+msgstr "Скидання фільтрів"
+
+msgid "Reset Font Size"
+msgstr "Скинути розмір шрифту"
+
+msgid "Reset Hints"
+msgstr "Скинути підказки"
+
+msgid "Reset all chats to the current default value"
+msgstr "Скинути всі чати до поточного значення за замовчуванням"
+
+msgid "Reset all group chats to the current default value"
+msgstr "Скинути всі групові чати до поточного значення за замовчуванням"
+
+msgid "Reset to original name"
+msgstr "Скинути до початкової назви"
+
+msgid "Resets value to default"
+msgstr "Скидає значення до значення за замовчуванням"
+
+msgid "Resource"
+msgstr "Ресурс"
+
+msgid "Restart Gajim to finish this update"
+msgstr "Перезапустіть Gajim, щоб завершити оновлення"
+
+msgid "Restart Gajim to start debug logging"
+msgstr "Перезапустіть Gajim, щоб розпочати налагодження журналу"
+
+msgid "Restart Pending"
+msgstr "Очікується перезапуск"
+
+msgid "Restore Closed Chat"
+msgstr "Відновлення закритого чату"
+
+msgid "Restore last state"
+msgstr "Відновити останній стан"
+
+msgid "Restore status and status message of your last session"
+msgstr "Відновлення статусу та повідомлення про стан останнього сеансу"
+
+msgid "Retract Message?"
+msgstr "Відкликати повідомлення?"
+
+msgctxt "Message row action"
+msgid "Retract…"
+msgstr "Відкликати…"
+
+msgid "Revoke Member"
+msgstr "Відкликати учасника"
+
+msgid "Revoke Voice"
+msgstr "Відкликати голос"
+
+msgid "Rewind 10 seconds"
+msgstr "Відмотати на 10 секунд назад"
+
+msgid "Role"
+msgstr "Роль"
+
+msgctxt "Profile"
+msgid "Role"
+msgstr "Роль"
+
+#, python-format
+msgid "Roles of %s have been removed in this group chat"
+msgstr "У цьому груповому чаті вилучено ролі %s"
+
+msgid "SHA-1:"
+msgstr "SHA-1:"
+
+msgid "SHA-256:"
+msgstr "SHA-256:"
+
+msgid "SSL Certificate Verification Error"
+msgstr "Помилка перевірки SSL-сертифіката"
+
+msgid "SSL certificate error"
+msgstr "Помилка сертифіката SSL"
+
+msgid "STUN server to use when using Jingle"
+msgstr "STUN-сервер для використання з Jingle"
+
+msgid "SVG files"
+msgstr "Файли SVG"
+
+msgid "Sales"
+msgstr "Продажі"
+
+msgid "Save"
+msgstr "Зберегти"
+
+msgid "Save Password"
+msgstr "Зберегти пароль"
+
+msgid "Save as..."
+msgstr "Зберегти як..."
+
+msgid "Save display name"
+msgstr "Зберегти ім'я відображення"
+
+msgid "Saving Avatar Failed"
+msgstr "Збереження аватара не вдалося"
+
+msgid "Saving avatar image failed"
+msgstr "Не вдалося зберегти зображення аватара"
+
+msgid "Say hi to your new contact…"
+msgstr "Привітайтеся з новим контактом…"
+
+msgid "Scan QR Code"
+msgstr "Відскануйте QR-код"
+
+#, python-format
+msgid "Scan this QR code to join %s."
+msgstr "Відскануйте цей QR-код, щоб приєднатися до %s."
+
+#, python-format
+msgid "Scan this QR code to start a chat with %s."
+msgstr "Відскануйте цей QR-код, щоб почати чат з %s."
+
+#, python-format
+msgid "Scanning %(current)d / %(total)d ..."
+msgstr "Сканування %(current)d / %(total)d ..."
+
+msgid "Scroll Down"
+msgstr "Прокрутити вниз"
+
+msgid "Scroll Up"
+msgstr "Прокрутити вгору"
+
+msgid "Scroll to this message"
+msgstr "Прокрутіть до цього повідомлення"
+
+msgid "Scroll up to load more chat history…"
+msgstr "Прокрутіть вгору, щоб завантажити більше історії чату…"
+
+msgid "Search"
+msgstr "Пошук"
+
+msgid "Search Chat History"
+msgstr "Пошук в історії чату"
+
+msgid "Search Filters"
+msgstr "Фільтри пошуку"
+
+msgid "Search Filters (Active)"
+msgstr "Фільтри пошуку (активні)"
+
+msgid "Search Participants…"
+msgstr "Учасники пошуку…"
+
+msgid "Search Result"
+msgstr "Результат пошуку"
+
+msgid "Search all Chats"
+msgstr "Шукати в усіх чатах"
+
+msgid "Search contacts..."
+msgstr "Пошук контактів..."
+
+msgid "Search for Gajim updates periodically?"
+msgstr "Періодично шукати оновлення Gajim?"
+
+msgid ""
+"Search for group chats globally\n"
+"(press Return to start search)"
+msgstr ""
+"Пошук групових чатів по всьому світу\n"
+"(натисніть клавішу Return, щоб почати пошук)"
+
+msgid "Search in chats…"
+msgstr "Пошук в чатах…"
+
+msgid "Searching"
+msgstr "Шукаю"
+
+msgid "Searching…"
+msgstr "Шукаю…"
+
+#, python-format
+msgid ""
+"Searching…\n"
+"%s results"
+msgstr ""
+"Пошук...\n"
+"%s результатів"
+
+msgid "Search…"
+msgstr "Пошук…"
+
+msgid "Secure Password Storage"
+msgstr "Безпечне зберігання паролів"
+
+msgid ""
+"Secured conversations: State of the art end-to-end encryption for your "
+"conversations. Share messages, pictures, and files with your contacts – and "
+"only with them."
+msgstr ""
+"Захищені розмови: Найсучасніше наскрізне шифрування для ваших розмов. "
+"Діліться повідомленнями, зображеннями та файлами зі своїми контактами - і "
+"тільки з ними."
+
+msgid "Security"
+msgstr "Безпека"
+
+msgid "Security Labels"
+msgstr "Етикетки безпеки"
+
+msgid "Security Warning"
+msgstr "Попередження про безпеку"
+
+#, python-format
+msgid "Seen by %s"
+msgstr "Побачено %s"
+
+#, python-format
+msgid "Seen by %s participants"
+msgstr "Побачено %s учасниками"
+
+msgid "Select Account"
+msgstr "Виберіть обліковий запис"
+
+msgctxt "Message row action"
+msgid "Select Messages…"
+msgstr "Вибрати повідомлення…"
+
+msgid "Select a security label for your message…"
+msgstr "Виберіть мітку безпеки для вашого повідомлення…"
+
+msgid "Select an activity to see details."
+msgstr "Виберіть активність, щоб переглянути деталі."
+
+msgid "Select playback speed"
+msgstr "Виберіть швидкість відтворення"
+
+#, fuzzy
+msgid "Select the account you want to use to create a new group chat"
+msgstr "Виберіть контакти, які ви бажаєте синхронізувати"
+
+msgid "Select your audio input (e.g. microphone)"
+msgstr "Виберіть аудіовхід (наприклад, мікрофон)"
+
+msgid "Selected image could not be loaded."
+msgstr "Вибране зображення не вдалося завантажити."
+
+msgid "Self signed certificate"
+msgstr "Сертифікат є самопідписаним"
+
+msgid "Self signed certificate in certificate chain"
+msgstr "Самопідписаний сертифікат у ланцюжку сертифікатів"
+
+msgctxt "Group chat feature"
+msgid "Semi-Anonymous"
+msgstr "Напіванонімний"
+
+msgid "Send Chat Indicators"
+msgstr "Індикатори надсилання чату"
+
+msgid "Send Chat Indicators in Group Chats"
+msgstr "Індикатори надсилання чату в групових чатах"
+
+msgid "Send Chat State"
+msgstr "Надіслати стан чату"
+
+msgid "Send File"
+msgstr "Надіслати файл"
+
+#, python-format
+msgid "Send File (max. %s)…"
+msgstr "Надіслати файл (макс. %s)…"
+
+msgid "Send Files"
+msgstr "Надіслати файли"
+
+msgid "Send File…"
+msgstr "Надіслати файл…"
+
+msgid "Send Message"
+msgstr "Надіслати повідомлення"
+
+msgid "Send Message Receipts"
+msgstr "Надсилання квитанцій про отримання повідомлень"
+
+msgid "Send Messages with Control+Enter"
+msgstr "Надсилати повідомлення за допомогою комбінації клавіш Control+Enter"
+
+msgid "Send _Report"
+msgstr "Надіслати _Звіт"
+
+msgid "Send and receive read receipts"
+msgstr "Надсилати та отримувати позначки про прочитане"
+
+#, python-format
+msgid "Sent contact: \"%(jid)s\" (%(name)s)"
+msgstr "Відправлено контакт: «%(jid)s» (%(name)s)"
+
+msgid "Sent contacts:"
+msgstr "Надіслати контакти:"
+
+msgid "Separate profile files completely (even history database and plugins)"
+msgstr ""
+"Повністю розділити файли профілю (навіть базу даних історії та плагіни)"
+
+msgid "Serial Number: "
+msgstr "Серійний номер: "
+
+msgid "Server Shutdown"
+msgstr "Вимкнення сервера"
+
+msgid "Service"
+msgstr "Сервіс"
+
+msgid "Service Discovery"
+msgstr "Пошук у службі"
+
+#, python-format
+msgid "Service Discovery using account %s"
+msgstr "Пошук служб за допомогою облікового запису %s"
+
+msgid "Service Gateway"
+msgstr "Сервісний шлюз"
+
+msgid "Service Not Browsable"
+msgstr "Послуга не доступна для перегляду"
+
+msgid "Service Not Found"
+msgstr "Сервіс не знайдено"
+
+msgid "Service Provider"
+msgstr "Постачальник послуг"
+
+msgid "Set Trust"
+msgstr "Встановити довіру"
+
+msgid "Set a subject for this chat"
+msgstr "Створіть тему для цього чату"
+
+msgid "Set configuration directory"
+msgstr "Призначити конфігураційний каталог"
+
+msgid "Set date…"
+msgstr "Призначте дату…"
+
+msgid "Sets an environment variable so GLib debug messages are printed"
+msgstr "Встановлює змінну оточення для друку налагоджувальних повідомлень GLib"
+
+msgid "Setting is locked by the system"
+msgstr "Налаштування заблоковано системою"
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "Share Contact…"
+msgstr "Поділитися контактами…"
+
+msgid "Share Group Chat…"
+msgstr "Поділитися груповим чатом…"
+
+msgid "Share Status"
+msgstr "Статус акції"
+
+msgid "Share Video"
+msgstr "Поділитися відео"
+
+msgid "Share my online status"
+msgstr "Поділіться моїм статусом в Інтернеті"
+
+msgid "Shortcuts"
+msgstr "Ярлики"
+
+msgid "Show Chat List"
+msgstr "Показати список чатів"
+
+msgid "Show Commands"
+msgstr "Показати команди"
+
+msgid "Show Contact Infos"
+msgstr "Показати контактну інформацію"
+
+msgid "Show Content"
+msgstr "Показати вміст"
+
+msgid "Show Details"
+msgstr "Показати деталі"
+
+msgid "Show Inactive Devices"
+msgstr "Показати неактивні пристрої"
+
+msgid "Show Join/Leave"
+msgstr "Показати Приєднався/Покинув"
+
+msgid "Show Joined / Left"
+msgstr "Показати приєднався / залишив"
+
+#, fuzzy
+msgid "Show Link Preview"
+msgstr "Попередній перегляд в реальному часі"
+
+msgid "Show Plugins"
+msgstr "Показати плагіни"
+
+msgid "Show Send Message Button"
+msgstr "Показати кнопку \"Надіслати повідомлення"
+
+msgid "Show Status Changes"
+msgstr "Показати зміни статусу"
+
+#, fuzzy
+msgid "Show Subject on Join"
+msgstr "Показати тему по приєднанні"
+
+msgid "Show Title Bar"
+msgstr "Показати рядок заголовка"
+
+msgid "Show Transfers"
+msgstr "Показати перекази"
+
+msgid "Show Voice Message Button"
+msgstr "Показати кнопку голосового повідомлення"
+
+msgid ""
+"Show a confirmation dialog to block a contact? Empty string means never show "
+"the dialog."
+msgstr ""
+"Показувати діалогове вікно підтвердження для блокування контакту? Порожній "
+"рядок означає ніколи не показувати діалог."
+
+msgid "Show a list of emojis"
+msgstr "Показати список смайликів"
+
+msgid "Show all reactions"
+msgstr "Показати всі реакції"
+
+msgid "Show all warnings"
+msgstr "Показати всі попередження"
+
+msgid "Show in Taskbar"
+msgstr "Показати на панелі завдань"
+
+msgid ""
+"Show labels describing confidentiality of messages, if the server supports "
+"XEP-0258"
+msgstr ""
+"Показувати мітки, що описують конфіденційність повідомлень, якщо сервер "
+"підтримує XEP-0258"
+
+msgid ""
+"Show message meta data (avatar, nickname, timestamp) only once, if there are "
+"multiple messages from the same sender within a specific timespan."
+msgstr ""
+"Показувати метадані повідомлення (аватар, нікнейм, позначку часу) лише один "
+"раз, якщо є кілька повідомлень від одного і того ж відправника протягом "
+"певного проміжку часу."
+
+msgid "Show notifications even if you are Away, Busy, etc."
+msgstr ""
+"Показувати сповіщення, навіть якщо ви перебуваєте у від'їзді, зайняті тощо."
+
+msgid "Show notifications on the system tray icon"
+msgstr "Відображати сповіщення на іконці в системному лотку"
+
+msgid "Show on Startup"
+msgstr "Показати на Startup"
+
+msgid "Show only critical errors"
+msgstr "_Показати лише критичні помилки"
+
+msgid ""
+"Show previews automatically in public group chats (may disclose your data)"
+msgstr ""
+"Автоматично показувати попередній перегляд у публічних групових чатах (може "
+"розкрити ваші дані)"
+
+msgid "Show previews for any URLs containing images (may be unsafe)"
+msgstr ""
+"Показувати попередній перегляд для всіх URL-адрес, що містять зображення "
+"(може бути небезпечно)"
+
+msgid "Show suggestions for shortcodes, e.g. :+1:"
+msgstr "Показувати пропозиції для шорткодів, наприклад, :+1:"
+
+msgid "Show the application's version"
+msgstr "Показати версію програми"
+
+msgid "Show the window’s title bar"
+msgstr "Показати рядок заголовка вікна"
+
+msgid "Show window in the taskbar"
+msgstr "Показати вікно на панелі завдань"
+
+msgid "Show window when starting Gajim"
+msgstr "Показати вікно при запуску Gajim"
+
+msgid "Show/Hide Window"
+msgstr "Показати/приховати вікно"
+
+msgid "Sign In"
+msgstr "Увійдіть"
+
+msgid "Sign Up"
+msgstr "Зареєструватися"
+
+msgid "Sign up Anonymously"
+msgstr "Зареєструватися анонімно"
+
+msgid "Sign up for a new account with a provider of your choice"
+msgstr "Створіть новий обліковий запис у вибраного вами провайдера"
+
+msgid "Signup not allowed"
+msgstr "Реєстрація заборонена"
+
+msgid "Size of preview images in pixels"
+msgstr "Розмір зображень попереднього перегляду в пікселях"
+
+msgid "Sleeping"
+msgstr "Сплю"
+
+msgid "Software"
+msgstr "Програмне забезпечення"
+
+msgid "Something went wrong. Video feature disabled."
+msgstr "Щось пішло не так. Функцію відео вимкнено."
+
+msgid "Sorry, that should not have happened"
+msgstr "Вибачте, цього не повинно було статися"
+
+msgid "Sort Participant List by Status"
+msgstr "Сортування списку учасників за статусом"
+
+msgid "Sort by Status"
+msgstr "Сортувати за статусом"
+
+msgid "Sounds"
+msgstr "Звуки"
+
+msgid "Sounds When Away"
+msgstr "Звуки на відстані"
+
+msgid "Spaces are not allowed"
+msgstr "Пробіли не допускаються"
+
+msgid "Spam"
+msgstr "Спам"
+
+#, python-format
+msgid "Speed: %s"
+msgstr "Швидкість: %s"
+
+msgid "Spell Checker"
+msgstr "Перевірка правопису"
+
+msgid "Spell Checking"
+msgstr "Перевірка правопису"
+
+msgid "Stage"
+msgstr "Етап"
+
+msgid "Start / Join Chat"
+msgstr "Почати / приєднатися до чату"
+
+msgid "Start Chat"
+msgstr "Розпочати чат"
+
+msgid "Start Chatting…"
+msgstr "Почати спілкування…"
+
+msgid "Start Chat…"
+msgstr "Почати чат…"
+
+msgid "Start Search..."
+msgstr "Почати пошук..."
+
+msgid "Start a new chat"
+msgstr "Почніть новий чат"
+
+msgid ""
+"Start a new chat, join a group chat or search for new group chats globally. "
+"You can also enter an XMPP address."
+msgstr ""
+"Почніть новий чат, приєднайтеся до групового чату або шукайте нові групові "
+"чати по всьому світу. Ви також можете ввести XMPP-адресу."
+
+msgid "Start/Stop recording"
+msgstr "Почати/зупинити запис"
+
+msgid "Start/stop playback"
+msgstr "Початок/зупинка відтворення"
+
+msgid "State"
+msgstr "Держава"
+
+msgid "Status"
+msgstr "Стан"
+
+msgid "Status Message"
+msgstr "Повідомлення про стан"
+
+msgid "Status Message: Text Color"
+msgstr "Повідомлення про стан: Колір тексту"
+
+msgid "Status Message: Text Font"
+msgstr "Повідомлення про стан: Текстовий шрифт"
+
+msgid "Status Messages in Participants List"
+msgstr "Повідомлення про стан у списку учасників"
+
+msgid "Status is not shared"
+msgstr "Статус не розголошується"
+
+msgid "Status is shared"
+msgstr "Статус спільний"
+
+msgid "Status: Away Color"
+msgstr "Статус: Відсутній колір"
+
+msgid "Status: DND Color"
+msgstr "Статус: DND Колір"
+
+msgid "Status: Offline Color"
+msgstr "Статус: Вимкнено Колір"
+
+msgid "Status: Online Color"
+msgstr "Статус: Онлайн-розмальовка"
+
+msgid ""
+"Stay in contact: Chats and groups help you keep in touch with your friends "
+"and family. Build communities by connecting to people with the same "
+"interests. Use groups to organize the little things or the next big event."
+msgstr ""
+"Залишайтеся на зв'язку: Чати та групи допомагають вам підтримувати зв'язок з "
+"друзями та родиною. Створюйте спільноти, об'єднуючись з людьми зі спільними "
+"інтересами. Використовуйте групи для організації дрібних справ або наступної "
+"великої події."
+
+msgid "Steps to reproduce the problem…"
+msgstr ""
+
+msgid "Stop Sharing Online Status?"
+msgstr "Припинити ділитися статусом в Інтернеті?"
+
+msgid "Street"
+msgstr "Вулиця"
+
+msgid "Style"
+msgstr "Стиль"
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "Subject Alt Names: "
+msgstr "Інші назви: "
+
+msgid "Subject issuer mismatch"
+msgstr "Видано для іншого призначення"
+
+msgid "Subject last changed by"
+msgstr "Тема востаннє була змінена"
+
+msgctxt "Contact subscription"
+msgid "Subscribe"
+msgstr "Підписатися"
+
+msgid "Subscribed"
+msgstr "Підписано"
+
+msgid "Subscription"
+msgstr "Підписка"
+
+msgid "Successfully Added Contacts"
+msgstr "Успішно додано контакти"
+
+msgid "Successfully Removed Contacts"
+msgstr "Успішно видалені контакти"
+
+#, python-brace-format
+msgid "Successfully build new session with {device_id}."
+msgstr "Успішно створіть нову сесію за допомогою {device_id}."
+
+msgid "Support"
+msgstr "Підтримка"
+
+msgid ""
+"Sure you want to quit Gajim?\n"
+"You won’t be able to send and receive messages if you do.\n"
+"\n"
+"Alternatively, you can either minimize Gajim’s window, or hide it "
+"completely. Use Gajim’s system tray icon to restore the window."
+msgstr ""
+"Впевнені, що хочете вийти з Gajim?\n"
+"Якщо Ви це зробите, то не зможете надсилати та отримувати повідомлення.\n"
+"\n"
+"Натомість, Ви можете згорнути вікно Gajim або повністю приховати його. Аби "
+"відновити вікно, скористайтеся піктограмою Gajim у системному лотку."
+
+msgid "Switch to Chat 1"
+msgstr "Перейдіть до чату 1"
+
+msgid "Switch to Chat 2"
+msgstr "Перейдіть до чату 2"
+
+msgid "Switch to Chat 3"
+msgstr "Перейдіть до чату 3"
+
+msgid "Switch to Chat 4"
+msgstr "Перейдіть до чату 4"
+
+msgid "Switch to Chat 5"
+msgstr "Перейдіть до чату 5"
+
+msgid "Switch to Chat 6"
+msgstr "Перейдіть до чату 6"
+
+msgid "Switch to Chat 7"
+msgstr "Перейдіть до чату 7"
+
+msgid "Switch to Chat 8"
+msgstr "Перейдіть до чату 8"
+
+msgid "Switch to Chat 9"
+msgstr "Перейдіть до чату 9"
+
+msgid "Switch to Next Chat"
+msgstr "Перейдіть до наступного чату"
+
+msgid "Switch to Next Unread Chat"
+msgstr "Перейти до наступної непрочитаної балачки"
+
+msgid "Switch to Previous Chat"
+msgstr "Перехід до попереднього чату"
+
+msgid "Switch to Previous Unread Chat"
+msgstr "Перехід до попередньої непрочитаної балачки"
+
+msgid "Switch to Workspace 1"
+msgstr "Перейдіть до робочої області 1"
+
+msgid "Switch to Workspace 2"
+msgstr "Перейдіть до робочої області 2"
+
+msgid "Switch to Workspace 3"
+msgstr "Перейдіть до робочої області 3"
+
+msgid "Switch to Workspace 4"
+msgstr "Перейдіть до робочої області 4"
+
+msgid "Switch to Workspace 5"
+msgstr "Перейдіть до робочої області 5"
+
+msgid "Switch to Workspace 6"
+msgstr "Перейдіть до робочої області 6"
+
+msgid "Switch to Workspace 7"
+msgstr "Перейдіть до робочої області 7"
+
+msgid "Switch to Workspace 8"
+msgstr "Перейдіть до робочої області 8"
+
+msgid "Switch to Workspace 9"
+msgstr "Перейдіть до робочої області 9"
+
+msgid "Sync Group Chat Block List"
+msgstr "Синхронізувати список блокування групових чатів"
+
+msgid "Sync Threshold"
+msgstr "Поріг синхронізації"
+
+msgid "Synchronize"
+msgstr "Синхронізувати"
+
+msgid "Synchronize Chat History"
+msgstr "Синхронізувати історію чату"
+
+msgid "Synchronize History…"
+msgstr "Синхронізувати історію…"
+
+msgid "Synchronize group chat block list with other devices"
+msgstr "Синхронізація списку блоків групового чату з іншими пристроями"
+
+msgid "Synchronize joined group chats"
+msgstr "Синхронізувати приєднані групові чати"
+
+msgid "Synchronize joined group chats with other devices."
+msgstr "Синхронізуйте приєднані групові чати з іншими пристроями."
+
+msgid "Synchronize the status of all accounts"
+msgstr "Синхронізація стану всіх облікових записів"
+
+msgid "Synchronizing Chat History…"
+msgstr "Синхронізація історії балачки…"
+
+msgid "System"
+msgstr "Система"
+
+msgid "System Notifications"
+msgstr "Системні сповіщення"
+
+#, fuzzy
+msgid "System Notifications When Away"
+msgstr "Системні сповіщення про відсутність"
+
+msgid "System Tray Icon"
+msgstr "Іконка в системному лотку"
+
+msgid "System Tray Notifications"
+msgstr "Сповіщення в системному лотку"
+
+msgid "Telephone"
+msgstr ""
+
+msgid "Tell your contacts if you received a message"
+msgstr "Повідомте своїм контактам, якщо ви отримали повідомлення"
+
+msgctxt "Group chat feature"
+msgid "Temporary"
+msgstr "Тимчасово"
+
+msgctxt "Configuration type"
+msgid "Text"
+msgstr "Текст"
+
+msgid "Text File"
+msgstr "Текстовий файл"
+
+msgid "Thanks"
+msgstr "Подяки"
+
+msgid "Thanks to all the package maintainers."
+msgstr "Дякуємо всім супровідникам пакунків."
+
+msgid "The certificate does not match the expected identity of the site"
+msgstr "Сертифікат не відповідає очікуваній ідентичності сайту"
+
+msgid "The certificate has been revoked"
+msgstr "Сертифікат відкликано"
+
+msgid "The certificate has expired"
+msgstr "Термін дії сертифіката закінчився"
+
+msgid "The certificate’s activation time is in the future"
+msgstr "Час активації сертифіката в майбутньому"
+
+msgid "The certificate’s algorithm is insecure"
+msgstr "Алгоритм сертифікату є незахищеним"
+
+msgid ""
+"The contact will be informed that you stopped sharing your status. Please "
+"note that this can have other side effects."
+msgstr ""
+"Контакт буде поінформований про те, що ви припинили ділитися своїм статусом. "
+"Зверніть увагу, що це може мати інші побічні ефекти."
+
+msgid ""
+"The following warnings came up while trying to verify the provider's "
+"certificate"
+msgstr ""
+"Під час спроби перевірити сертифікат провайдера з'являються такі попередження"
+
+msgid "The last message was written on a mobile client"
+msgstr "Останнє повідомлення було написано на мобільному клієнті"
+
+msgid "The referenced message is not available."
+msgstr "Повідомлення, на яке є посилання, недоступне."
+
+msgid "The server has assigned or modified your nickname in this group chat"
+msgstr "Сервер призначив або змінив ваш нікнейм у цьому груповому чаті"
+
+msgid "The server rejected the registration without an error message"
+msgstr "Сервер відхилив реєстрацію без повідомлення про помилку"
+
+msgid "The server returned an insecure transport (HTTP)."
+msgstr "Сервер повернув незахищений транспорт (HTTP)."
+
+msgid "The server was shut down."
+msgstr "Сервер був вимкнений."
+
+msgid "The signing certificate authority is not known"
+msgstr "Центр сертифікації підписів не відомий"
+
+msgid "Theme"
+msgstr "Тема"
+
+msgid "Themes"
+msgstr "Теми"
+
+msgid "There are connectivity issues"
+msgstr "Існують проблеми зі зв'язком"
+
+msgid "There are devices for which you have not made a trust decision yet."
+msgstr "Є пристрої, щодо яких ви ще не прийняли рішення про довіру."
+
+msgid ""
+"There are plenty of providers to choose from.\n"
+"Creating an account with one provider allows you to communicate with "
+"contacts from other providers as well."
+msgstr ""
+"Існує безліч провайдерів на вибір.\n"
+"Створивши обліковий запис в одного провайдера, ви зможете спілкуватися з "
+"контактами інших провайдерів."
+
+msgid "There are updates for Gajim’s plugins"
+msgstr "Вийшли оновлення для плагінів Gajim"
+
+#, python-format
+msgid "There has been an error while trying to fetch messages: %s"
+msgstr "Виникла помилка при спробі отримати повідомлення: %s"
+
+msgid "There is an update available for this plugin"
+msgstr "Для цього плагіна доступне оновлення"
+
+msgid "There is no encryption method available for the chosen encryption."
+msgstr "Для обраного методу шифрування недоступний метод шифрування."
+
+msgid "There is no more history"
+msgstr "Історії більше немає"
+
+msgid ""
+"There is no service at the address you entered, or it is not responding. "
+"Check the address and try again."
+msgstr ""
+"За вказаною вами адресою служб не виявлено, або ця адреса не відповідає. "
+"Перевірте, чи правильно вказано адресу, а потім повторіть спробу."
+
+#, python-format
+msgid ""
+"There was an error while attempting to verify the SSL certificate of your "
+"XMPP server (%s)."
+msgstr ""
+"Під час спроби перевірити SSL-сертифікат вашого XMPP-сервера (%s) сталася "
+"помилка."
+
+#, python-format
+msgid ""
+"There was an error while trying to save the file.\n"
+"Error: %s."
+msgstr ""
+"Під час спроби зберегти файл сталася помилка.\n"
+"Помилка: %s."
+
+msgid "This Device"
+msgstr "Цей пристрій"
+
+msgid "This account has already been added"
+msgstr "Цей обліковий запис вже додано"
+
+msgid "This address does not seem to offer any gateway service."
+msgstr "Здається, ця адреса не пропонує жодних послуг шлюзу."
+
+msgid "This address is not reachable."
+msgstr "Ця адреса недоступна."
+
+msgid ""
+"This chat’s configuration is unsuitable for encryption with OMEMO. To use "
+"OMEMO in this chat, it should be non-anonymous and members-only."
+msgstr ""
+"Конфігурація цього чату не підходить для шифрування за допомогою OMEMO. Щоб "
+"використовувати OMEMO в цьому чаті, він має бути неанонімним і призначеним "
+"лише для учасників."
+
+msgid "This contact does not share their status with you"
+msgstr "Цей контакт не ділиться з вами своїм статусом"
+
+msgid "This contact is a bot"
+msgstr "Цей контакт є ботом"
+
+msgid "This device is not compatible."
+msgstr "Цей пристрій не сумісний."
+
+msgid "This gateway does not support Ad-Hoc Commands."
+msgstr "Цей шлюз не підтримує спеціальні команди."
+
+msgid "This gateway does not support direct registering."
+msgstr "Цей шлюз не підтримує пряму реєстрацію."
+
+msgid "This group chat can not be found via search"
+msgstr "Цей груповий чат не можна знайти через пошук"
+
+msgid "This group chat does not require a password upon entry"
+msgstr "Цей груповий чат не вимагає введення пароля при вході"
+
+msgid "This group chat does require a password upon entry"
+msgstr "Цей груповий чат вимагає введення пароля при вході"
+
+msgid ""
+"This group chat is members-only, but you are not on the members list. An "
+"authorized person needs to invite you."
+msgstr ""
+"Цей груповий чат доступний лише для учасників, але вас немає у списку "
+"учасників. Уповноважена особа має запросити вас."
+
+msgid "This group chat is restricted to members only"
+msgstr "Цей груповий чат доступний лише для учасників"
+
+msgid "This group chat persists even if there are no participants"
+msgstr ""
+"Цей груповий чат продовжує працювати, навіть якщо в ньому немає учасників"
+
+msgid "This group chat will be destroyed once the last participant left"
+msgstr "Ця балачка буде видалена, щойно у ній не залишиться учасників"
+
+msgid "This information will be publicly visible."
+msgstr "Ця інформація буде загальнодоступною."
+
+msgid "This is a public group chat. Encryption is not available."
+msgstr "Це публічний груповий чат. Шифрування недоступне."
+
+msgid ""
+"This is the theme you are currently using.\n"
+"Do you want to delete this theme?"
+msgstr ""
+"Це тема, яку ви зараз використовуєте.\n"
+"Ви хочете видалити цю тему?"
+
+msgid "This message has been moderated"
+msgstr "Це повідомлення пройшло модерацію"
+
+#, python-format
+msgid "This message has been moderated by %s"
+msgstr "Це повідомлення було відмодеровано %s"
+
+#, python-brace-format
+msgid "This message has been retracted on {date}"
+msgstr "Це повідомлення було відкликано {date}"
+
+#, python-format
+msgid "This message was encrypted with %s and could not be decrypted."
+msgstr ""
+"Це повідомлення було зашифровано за допомогою %s і не може бути розшифроване."
+
+msgid ""
+"This message was encrypted with Legacy OpenPGP and could not be decrypted. "
+"You can install the PGP plugin to handle those messages."
+msgstr ""
+"Це повідомлення було зашифровано за допомогою Legacy OpenPGP і не може бути "
+"розшифроване. Ви можете встановити плагін PGP для обробки таких повідомлень."
+
+msgid "This message was encrypted with OMEMO, but not for your device."
+msgstr ""
+"Це повідомлення було зашифровано за допомогою OMEMO, але не для вашого "
+"пристрою."
+
+msgid "This message was encrypted with OTR and could not be decrypted."
+msgstr ""
+"Це повідомлення було зашифровано за допомогою OTR і не може бути "
+"розшифроване."
+
+msgid ""
+"This message was encrypted with OpenPGP for XMPP and could not be decrypted. "
+"You can install the OpenPGP plugin to handle those messages."
+msgstr ""
+"Це повідомлення було зашифровано за допомогою OpenPGP для XMPP і не може "
+"бути розшифроване. Ви можете встановити плагін OpenPGP для обробки таких "
+"повідомлень."
+
+msgid "This message will be deleted from your local chat history"
+msgstr "Це повідомлення буде видалено з історії вашого локального чату"
+
+msgid "This plugin is managed by your operating system"
+msgstr "Цей додаток керується Вашою операційною системою"
+
+msgid "This server does not allow signup."
+msgstr "Цей сервер не дозволяє реєстрацію."
+
+msgid "This server does not support anonymous login."
+msgstr "Цей сервер не підтримує анонімний вхід."
+
+msgid ""
+"This service could not respond with detailed information.\n"
+"It is most likely a legacy service or broken."
+msgstr ""
+"Ця служба не може надсилати у відповідь докладні відомості.\n"
+"Імовірними причинами є застарілість або пошкодженість служби."
+
+msgid "This service does not contain any items to browse."
+msgstr "Ця служба не містить жодних елементів, які можна було б переглядати."
+
+msgid "This service has not yet responded with detailed information"
+msgstr "Ця служба ще не надала докладних відомостей"
+
+msgid "This type of service does not contain any items to browse."
+msgstr "Служби такого типу не містять елементів, які можна було б переглядати."
+
+msgid "This will clear the devices store for your account."
+msgstr "Це очистить сховище пристроїв для вашого акаунта."
+
+msgid "This will purge all locally stored chat history"
+msgstr "Це призведе до очищення всього локально збереженого журналу чату"
+
+msgid "This will remove the account and delete all data"
+msgstr "Це призведе до видалення облікового запису та видалення всіх даних"
+
+msgid "This will remove your account from Gajim."
+msgstr "Це призведе до видалення вашого облікового запису з Gajim."
+
+msgid "This will reset all introduction hints"
+msgstr "Це призведе до скидання всіх вступних підказок"
+
+msgid ""
+"This workspace contains chats. All chats will be moved to the next "
+"workspace. Remove anyway?"
+msgstr ""
+"Ця робоча область містить чати. Усі чати буде переміщено до наступної "
+"робочої області. Все одно видалити?"
+
+msgid "Three Months"
+msgstr "Три місяці"
+
+msgid "Time Until Away"
+msgstr "Час до від'їзду"
+
+msgid "Time Until Not Available"
+msgstr "Час до недоступності"
+
+msgid "Time Zone"
+msgstr "Часовий пояс"
+
+msgctxt "Profile"
+msgid "Timezone"
+msgstr "Часовий пояс"
+
+msgctxt "Profile"
+msgid "Title"
+msgstr "Назва"
+
+msgctxt "Contact subscription"
+msgid "To"
+msgstr "До"
+
+msgid "To apply all changes instantly, you have to re-login."
+msgstr ""
+"Щоб застосувати всі зміни миттєво, вам потрібно повторно увійти в систему."
+
+msgid ""
+"To send an encrypted message, you have to decide whether to trust the device "
+"of your contact."
+msgstr ""
+"Щоб надіслати зашифроване повідомлення, ви повинні вирішити, чи довіряти "
+"пристрою вашого контакту."
+
+msgid "Toggle Chat List"
+msgstr "Переключити список чату"
+
+msgid "Toggle participants list"
+msgstr "Переключити список учасників"
+
+msgid "Transferring File…"
+msgstr "Передача файлу…"
+
+msgid "Transports"
+msgstr "Транспорти"
+
+msgid "Trust Management"
+msgstr "Довірче управління"
+
+msgid "Trust Not Decided"
+msgstr "Довіра не вирішена"
+
+msgid "Try Again"
+msgstr "Спробуйте ще раз"
+
+msgid "Try a different search"
+msgstr "Спробуйте інший пошук"
+
+msgid "Trying to change password..."
+msgstr "Спроба змінити пароль..."
+
+msgid "Trying to create account..."
+msgstr "Спроба створити обліковий запис..."
+
+msgid "Trying to gather information on this address…"
+msgstr "Намагаючись зібрати інформацію за цією адресою…"
+
+msgid "Trying to remove account..."
+msgstr "Спроба видалити обліковий запис..."
+
+msgid "Turn Camera off"
+msgstr "Вимкнути камеру"
+
+msgid "Turn Camera on"
+msgstr "Увімкніть камеру"
+
+msgid "Type"
+msgstr "Тип"
+
+msgctxt "Configuration"
+msgid "Type"
+msgstr "Тип"
+
+msgid "Type to search for values..."
+msgstr "Введіть для пошуку значень..."
+
+msgid "Typing Only"
+msgstr "Тільки друк"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Unable to decode issuer public key"
+msgstr "Не вдалося декодувати відкритий ключ видавця"
+
+msgid "Unable to decrypt CRL's signature"
+msgstr "Не вдалося розшифрувати підпис списку відкликаних сертифікатів"
+
+msgid "Unable to decrypt certificate's signature"
+msgstr "Не вдалося розшифрувати підпис сертифікату"
+
+msgid "Unable to get certificate CRL"
+msgstr "Не вдалося отримати список відкликаних сертифікатів"
+
+msgid "Unable to get issuer certificate"
+msgstr "Не вдається отримати сертифікат видавця"
+
+msgid "Unable to get local issuer certificate"
+msgstr "Не вдалося отримати сертифікат локального видавця"
+
+msgid "Unable to properly remove the plugin"
+msgstr "Не вдається коректно вилучити додаток лм"
+
+msgid "Unable to save profile"
+msgstr "Не вдається зберегти профіль"
+
+msgid "Unable to verify the first certificate"
+msgstr "Не вдалося перевірити перший сертифікат"
+
+msgid "Unblock"
+msgstr "Розблокувати"
+
+msgid "Unblock Participant?"
+msgstr "Розблокувати учасника?"
+
+#, fuzzy, python-format
+msgid "Undecided fingerprints of devices connected with \"%s\""
+msgstr "Пристрої, пов'язані з \"%s\""
+
+msgid "Unencrypted"
+msgstr "Незашифрований"
+
+msgid "Uninstall"
+msgstr "Видалити"
+
+msgid "Unknown"
+msgstr "Невідомо"
+
+msgctxt "Contact subscription"
+msgid "Unknown"
+msgstr "Невідомо"
+
+msgid "Unknown Artist"
+msgstr "Невідомий виконавець"
+
+msgid "Unknown Error"
+msgstr "Невідома помилка"
+
+#, python-format
+msgid "Unknown SSL error \"%s\""
+msgstr "Невідома помилка SSL \"%s\""
+
+msgid "Unknown Source"
+msgstr "Невідоме джерело"
+
+#, python-format
+msgid "Unknown TLS error \"%s\""
+msgstr "Невідома помилка TLS \"%s\""
+
+msgid "Unknown Title"
+msgstr "Невідома назва"
+
+#, python-format
+msgid "Unknown command: %s"
+msgstr "Невідома команда: %s"
+
+msgid "Unknown error."
+msgstr "Невідома помилка."
+
+msgid "Unknown language"
+msgstr "Невідома мова"
+
+msgid "Unknown validation error"
+msgstr "Невідома помилка перевірки"
+
+msgid "Unmute Chat"
+msgstr "Вимкнути звук у чаті"
+
+msgid "Unpin Chat"
+msgstr "Відкріпити чат"
+
+msgid "Unsupported certificate purpose"
+msgstr "Непідтримуване призначення сертифіката"
+
+msgid "Until Gajim is Closed"
+msgstr "До закриття Гаджіма"
+
+msgid "Untrusted"
+msgstr "Ненадійний"
+
+msgid "Update"
+msgstr "Оновлення"
+
+msgid "Update Avatar"
+msgstr "Оновити аватар"
+
+msgid "Update automatically"
+msgstr "Оновлення автоматично"
+
+#, python-format
+msgid "Update available: Version %s"
+msgstr "Доступне оновлення: Версія %s"
+
+msgid "Update plugins automatically"
+msgstr "Автоматичне оновлення плагінів"
+
+msgid "Updates"
+msgstr "Оновлення"
+
+msgid "Updates will be installed next time Gajim is started"
+msgstr "Оновлення буде встановлено під час наступного запуску Gajim"
+
+msgid "Updating Plugin…"
+msgstr "Оновлення плагіна…"
+
+msgid "Updating provider list…"
+msgstr "Оновлення списку постачальників…"
+
+msgid "Upload File…"
+msgstr "Завантажити файл…"
+
+msgid "Uploading Avatar Failed"
+msgstr "Не вдалося завантажити аватар"
+
+#, python-format
+msgid "Uploading avatar image failed: %s"
+msgstr "Не вдалося завантажити зображення аватара: %s"
+
+msgid "Uploading via HTTP File Upload…"
+msgstr "Завантаження через HTTP Завантаження файлів…"
+
+msgid "Use \"//\" to start a message with a slash \"/\"."
+msgstr "Використовуйте \"//\", щоб почати повідомлення з косою рискою \"/\"."
+
+msgid "Use GSSAPI"
+msgstr "Використовуйте GSSAPI"
+
+msgid "Use Image"
+msgstr "Використовувати зображення"
+
+msgid "Use System Keyring"
+msgstr "Використовуйте брелок системи"
+
+msgid "Use Unencrypted Connection"
+msgstr "Використовуйте незашифроване з'єднання"
+
+msgid "Use a profile to run multiple Gajim instances"
+msgstr "Використовуйте профіль для запуску декількох екземплярів Gajim"
+
+msgid "Use an unencrypted connection to the server"
+msgstr "Використовуйте незашифроване з'єднання з сервером"
+
+msgid "Use defined profile in configuration directory"
+msgstr "Використовувати призначений профіль у каталозі налаштувань"
+
+msgid "Use proxy auth_entication"
+msgstr "Використовувати розпізнавання на проксі"
+
+msgid "Use your system’s keyring to store passwords"
+msgstr "Використовуйте брелок вашої системи для зберігання паролів"
+
+#, python-format
+msgid "User %s not found"
+msgstr "Користувача %s не знайдено"
+
+msgid "User Interface Font Size"
+msgstr "Розмір шрифту інтерфейсу користувача"
+
+msgid "Users"
+msgstr "Користувачі"
+
+#, python-format
+msgid "V4L2: %s"
+msgstr "V4L2: %s"
+
+msgid "Validity"
+msgstr "Термін дії"
+
+msgid "Validity\n"
+msgstr "Термін дії\n"
+
+msgctxt "Configuration"
+msgid "Value"
+msgstr "Значення"
+
+msgid "Verified"
+msgstr "Перевірено"
+
+msgid "Version"
+msgstr "Версія"
+
+msgid "Video"
+msgstr "Відео"
+
+msgid "Video test"
+msgstr "Тест відео"
+
+msgid "Visit Provider's Website"
+msgstr "Відвідайте веб-сайт провайдера"
+
+msgid "Visit Website"
+msgstr "Відвідати веб-сайт"
+
+msgctxt "Group chat contact role"
+msgid "Visitor"
+msgstr "Відвідувач"
+
+msgctxt "Group chat contact role"
+msgid "Visitors"
+msgstr "Відвідувачі"
+
+msgid "Visual Notifications"
+msgstr "Візуальні сповіщення"
+
+msgid "Voice Message"
+msgstr "Голосове повідомлення"
+
+msgid "Voice Messages are not available"
+msgstr "Голосові повідомлення недоступні"
+
+msgid "Voice message could not be saved. Please try again."
+msgstr ""
+"Не вдалося зберегти голосове повідомлення. Будь ласка, спробуйте ще раз."
+
+msgid "WAV Sounds"
+msgstr "Звуки WAV"
+
+msgid "Waiting…"
+msgstr "Чекаю…"
+
+msgid "Warning"
+msgstr "Попередження"
+
+#, python-format
+msgid "Web Search URL is missing a \"%s\""
+msgstr "У URL-адресі веб-пошуку відсутній символ \"%s\""
+
+msgid "Web _Search for it"
+msgstr "Пошук у _Тенетах"
+
+msgid "Website"
+msgstr "Веб-сайт"
+
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+
+msgid "What does this mean?"
+msgstr "Що це означає?"
+
+msgid "Where participants should go"
+msgstr "Куди учасникам варто поїхати"
+
+msgid ""
+"Whether to check for a valid certificate before downloading (not safe to "
+"disable)"
+msgstr ""
+"Чи перевіряти наявність дійсного сертифіката перед завантаженням (відключати "
+"небезпечно)"
+
+msgid "Which provider should I choose?"
+msgstr "Якого провайдера обрати?"
+
+msgid "Why do you want to moderate this message?"
+msgstr "Чому ви хочете модерувати це повідомлення?"
+
+msgid "Width of group chat roster in pixel"
+msgstr "Ширина списку учасників групового чату в пікселях"
+
+msgid "Windows"
+msgstr "Windows"
+
+msgid "Work"
+msgstr "Робота"
+
+msgid "Working"
+msgstr "Працюю"
+
+msgid "Workspace Settings"
+msgstr "Налаштування робочого простору"
+
+msgid "Workspace settings…"
+msgstr "Налаштування робочого простору…"
+
+msgid "X11"
+msgstr "X11"
+
+msgid "XMPP Address"
+msgstr "Адреса XMPP"
+
+msgid "XMPP Address…"
+msgstr "XMPP-адреса…"
+
+msgid "XMPP Chat Client"
+msgstr "Клієнт чату XMPP"
+
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+msgid "Yes"
+msgstr "Так"
+
+msgid "Yesterday"
+msgstr "Вчора"
+
+#, python-format
+msgid "Yesterday (%s)"
+msgstr "Вчора (%s)"
+
+msgid "You"
+msgstr "Ви"
+
+#, python-format
+msgid "You (%s) joined the group chat"
+msgstr "Ви (%s) приєдналися до групового чату"
+
+msgid "You are a visitor"
+msgstr "Ви відвідувач"
+
+msgid "You are a visitor."
+msgstr "Ви відвідувач."
+
+#, python-format
+msgid ""
+"You are about to connect to the account %(account)s (%(server)s) using an "
+"insecure connection method. This means conversations will not be encrypted. "
+"Connecting PLAIN is strongly discouraged."
+msgstr ""
+"Ви маєте намір зʼєднатися з обліковим записом %(account)s (%(server)s) через "
+"незахищене зʼєднання. Це означає, що Ваша розмова не буде зашифрована. "
+"Наполегливо радимо уникати такого типу зʼєднання."
+
+#, python-format
+msgid "You are about to remove %(name)s (%(jid)s) from your contact list."
+msgstr "Ви збираєтесь вилучити \"%(name)s\" (%(jid)s) з вашого реєстру."
+
+msgid "You are currently not joined this group chat"
+msgstr "Ви ще не приєднані до цього групового чату"
+
+msgid "You are not allowed to modify the affiliation of Admins and Owners"
+msgstr "Ви не маєте права змінювати приналежність Адміністраторів та Власників"
+
+msgid ""
+"You are not connected to the server. Without a connection, you can not "
+"browse available services"
+msgstr ""
+"Ви не підключені до сервера. Без з'єднання ви не можете переглядати доступні "
+"послуги"
+
+#, python-format
+msgid "You are now %(affiliation)s of this group chat"
+msgstr "Тепер ви %(affiliation)s цього групового чату"
+
+#, python-format
+msgid "You are now %(role)s of this group chat"
+msgstr "Тепер ви %(role)s у цьому груповому чаті"
+
+#, python-format
+msgid "You are now known as %s"
+msgstr "Ви тепер відомі як %s"
+
+#, python-brace-format
+msgid "You are now {show}{status}"
+msgstr "Ви тепер {show} {status}"
+
+msgid "You are offline"
+msgstr "Ви знаходитесь поза мережею"
+
+msgid "You are offline. Go online to send messages…"
+msgstr "Ви не в мережі. Увійдіть в мережу, щоб надсилати повідомлення…"
+
+#, python-format
+msgid "You can join this group chat instead: %s"
+msgstr "Замість цього ви можете приєднатися до цього групового чату: %s"
+
+msgid "You can not join a group chat unless you are connected."
+msgstr ""
+"Вам слід з’єднати ваш обліковий запис, щоб взяти участь у груповій балачці."
+
+msgid "You can see the contact's online status"
+msgstr "Ви можете бачити онлайн статус контакту"
+
+msgid "You cancelled the transfer"
+msgstr "Ви скасували переказ"
+
+msgid "You cannot add yourself to your contact list."
+msgstr "Ви не можете додати себе до списку контактів."
+
+msgid "You cannot see this contact's online status"
+msgstr "Ви не бачите онлайн-статус цього контакту"
+
+msgid "You can’t send private messages to contacts if they are offline."
+msgstr ""
+"Ви не можете надсилати приватні повідомлення контактам, якщо вони не в "
+"мережі."
+
+msgid "You don't share your status with this contact"
+msgstr "Ви не ділитеся своїм статусом з цим контактом"
+
+msgid "You have been banned"
+msgstr "Вас заблоковано"
+
+#, python-format
+msgid "You have been banned by %s"
+msgstr "Вас було заблоковано %s"
+
+#, python-format
+msgid "You have been invited to %s"
+msgstr "Вас запрошено на %s"
+
+msgid "You have been kicked"
+msgstr "Вас було виключено"
+
+#, python-format
+msgid "You have been kicked by %s"
+msgstr "Вас вдарили ногою %s"
+
+msgid "You have been removed from this group chat"
+msgstr "Вас було видалено з цього групового чату"
+
+#, python-format
+msgid "You have been removed from this group chat by %s"
+msgstr "Вас було видалено з цього групового чату на %s"
+
+msgid "You have insufficient permissions"
+msgstr "У вас недостатньо дозволів"
+
+msgid "You have left due to an error"
+msgstr "Ви пішли через помилку"
+
+msgid "You have to be connected to create a group chat."
+msgstr "Щоб створити груповий чат, ви повинні бути підключені до мережі."
+
+msgid "You have to invite people so they can join"
+msgstr "Ви повинні запросити людей, щоб вони могли приєднатися"
+
+msgid "You left this group chat"
+msgstr "Ви покинули цей груповий чат"
+
+msgid ""
+"You may need an invite to join this group chat again, if you choose to leave "
+"it permanently."
+msgstr ""
+"Вам може знадобитися запрошення, щоб знову приєднатися до цього групового "
+"чату, якщо ви вирішите залишити його назавжди."
+
+msgid "You need Owner permission to change the configuration"
+msgstr "Для зміни конфігурації потрібен дозвіл Власника"
+
+#, python-format
+msgid "You now have the following hats: %s"
+msgstr "Тепер у вас є такі шапки: %s"
+
+msgid "You requested to see this contact's online status"
+msgstr "Ви надіслали запит на перегляд онлайн-статусу цього контакту"
+
+msgid ""
+"You will appear offline for this contact and you will not receive further "
+"messages."
+msgstr ""
+"Для цього контакту ви будете вимкнені з мережі і не отримуватимете подальших "
+"повідомлень."
+
+msgid "Your Nickname"
+msgstr "Ваш нікнейм"
+
+msgid "Your XMPP address (e.g. user@example.org)"
+msgstr "Ваша XMPP-адреса (наприклад, user@example.org)"
+
+msgid "Your account has has been removed successfully."
+msgstr "Ваш обліковий запис успішно видалено."
+
+msgid "Your affiliations to this group chat have been removed"
+msgstr "Ваша приналежність до цього групового чату була видалена"
+
+msgid "Your chat history database has been migrated successfully."
+msgstr "Вашу базу даних історії чату успішно перенесено."
+
+msgid ""
+"Your chat history is being migrated.\n"
+"This may take a while…"
+msgstr ""
+"Ваша історія чату мігрує.\n"
+"Це може зайняти деякий час…"
+
+msgid "Your connection to the server is secured by this certificate"
+msgstr "Ваше з'єднання з сервером захищене цим сертифікатом"
+
+msgid "Your message can not be sent until you are connected."
+msgstr "Ваше повідомлення не може бути відправлене до встановлення з'єднання."
+
+msgid "Your messages have been exported successfully"
+msgstr "Ваші повідомлення успішно експортовано"
+
+msgid "Your password"
+msgstr "Ваш пароль"
+
+msgid "Your password has successfully been changed."
+msgstr "Ваш пароль успішно змінено."
+
+msgid "Your public key or authentication certificate"
+msgstr "Ваш відкритий ключ або сертифікат автентифікації"
+
+msgid "Your roles in this group chat have been removed"
+msgstr "Ваші ролі в цьому груповому чаті було видалено"
+
+msgid ""
+"Your server does not offer a group chat service. Please specify the address "
+"of a different server."
+msgstr ""
+"Ваш сервер не пропонує послугу групового чату. Будь ласка, вкажіть адресу "
+"іншого сервера."
+
+msgid "Your service offers the following features"
+msgstr "Ваш сервіс пропонує наступні можливості"
+
+msgid "ZIP files"
+msgstr "ZIP-файли"
+
+msgid "ZZZZzzzzzZZZZZ"
+msgstr "ZZZZZZZZZZZZZZ"
+
+msgid "[read more]"
+msgstr "[читати далі]"
+
+msgid "_Abort"
+msgstr "_Перервати"
+
+msgid "_About"
+msgstr "_Про Gajim"
+
+msgid "_Accept"
+msgstr "_Прийняти"
+
+msgid "_Add to Trusted Certificates"
+msgstr "Додати до довірених сертифікатів"
+
+msgid "_Address"
+msgstr "Адреса"
+
+msgid "_Advanced Settings"
+msgstr "Розширені налаштування"
+
+msgctxt "User status"
+msgid "_Available"
+msgstr "_Доступно"
+
+msgid "_Back"
+msgstr "_Назад"
+
+msgid "_Block"
+msgstr "_Заблокувати"
+
+msgctxt "User status"
+msgid "_Busy"
+msgstr "_Зайнято"
+
+msgid "_Cancel"
+msgstr "_Скасувати"
+
+msgid "_Clear Devices"
+msgstr "Очистити пристрої"
+
+msgid "_Close"
+msgstr "_Закрити"
+
+msgid "_Command"
+msgstr "_Команда"
+
+msgid "_Connect"
+msgstr "Підключитися"
+
+msgid "_Connect Anyway"
+msgstr "_Підключись у будь-якому випадку"
+
+msgid "_Copy Link"
+msgstr "Скопіювати посилання"
+
+msgid "_Create"
+msgstr "Створити"
+
+msgid "_Decline"
+msgstr "Відхилення"
+
+msgid "_Delete"
+msgstr "Видалити"
+
+msgid "_Destroy"
+msgstr "_Знищити"
+
+msgid "_Disable Account"
+msgstr "Вимкнути обліковий запис"
+
+msgid "_Do not ask me again"
+msgstr "Більше _не питати мене"
+
+msgid "_Edit"
+msgstr "_Правка"
+
+msgid "_Features"
+msgstr "Особливості"
+
+msgctxt "User status"
+msgid "_Free for Chat"
+msgstr "_Можна побалакати"
+
+msgid "_Hide (Tray Icon)"
+msgstr "Приховати (піктограма в лотку)"
+
+msgid "_Host"
+msgstr "Ведучий"
+
+msgid "_Hostname"
+msgstr "Ім'я хоста"
+
+msgid "_Import"
+msgstr "Імпортувати"
+
+msgid "_Join"
+msgstr "При_єднатися"
+
+msgid "_Join Support Chat"
+msgstr "Приєднатися до чату підтримки"
+
+msgid "_Keyboard Shortcuts"
+msgstr "_Сочетания клавиш на клавиатуре"
+
+msgid "_Later"
+msgstr "_Пізніше"
+
+msgid "_Leave"
+msgstr "_Покинути"
+
+msgid "_Log In"
+msgstr "Увійдіть"
+
+msgid "_Minimize"
+msgstr "Згорнути"
+
+msgid "_Moderate"
+msgstr "_Видалити"
+
+msgid "_Name"
+msgstr "ім'я"
+
+msgid "_No"
+msgstr "Ні."
+
+msgctxt "User status"
+msgid "_Not Available"
+msgstr "_Недоступно"
+
+msgid "_OK"
+msgstr "_Гаразд"
+
+msgid "_Offline"
+msgstr "_Поза мережею"
+
+msgid "_Overwrite"
+msgstr "Перезаписати"
+
+msgid "_Please choose a provider"
+msgstr "Будь ласка, оберіть провайдера"
+
+msgid "_Port"
+msgstr "_Порт"
+
+msgid "_Privacy Policy (Online)"
+msgstr "Політика конфіденційності (онлайн)"
+
+msgid "_Purge"
+msgstr "_Очистити"
+
+msgid "_Quit"
+msgstr "_Вийти"
+
+msgid "_Re-Login"
+msgstr "Повторний вхід"
+
+msgid "_Remember my decision"
+msgstr "Пам'ятайте моє рішення"
+
+msgid "_Remove"
+msgstr "В_илучити"
+
+msgid "_Report Spam"
+msgstr "Повідомити про спам"
+
+msgid "_Request"
+msgstr "Запит"
+
+msgid "_Reset Value"
+msgstr "_Скинути значення"
+
+msgid "_Retract"
+msgstr "_Відкликати"
+
+msgid "_Save"
+msgstr "Зберегти"
+
+msgid "_Search"
+msgstr "_Пошук"
+
+msgid "_Select"
+msgstr "_Вибрати"
+
+msgid "_Send"
+msgstr "_Надіслати"
+
+msgid "_Show Certificate"
+msgstr "Показати сертифікат"
+
+msgid "_Sign Up"
+msgstr "Зареєструватися"
+
+msgid "_Stop Sharing"
+msgstr "Припинити ділитися"
+
+msgid "_Subscribe"
+msgstr "_Підписатися"
+
+msgid "_Type"
+msgstr "Тип"
+
+msgid "_Unblock"
+msgstr "Розблокувати"
+
+msgid "_Unregister account from service"
+msgstr "Видалити обліковий запис з сервісу"
+
+msgid "_Unsubscribe"
+msgstr "_Скасувати підписку"
+
+msgid "_Username"
+msgstr "_ім'я користувача"
+
+msgid "_View Certificate"
+msgstr "_Сертифікат перегляду"
+
+msgid "_Wiki (Online)"
+msgstr "_Wiki (Онлайн)"
+
+msgid "accuracy"
+msgstr "точність"
+
+msgid "alt"
+msgstr "висота"
+
+msgid "and NOT authenticated"
+msgstr "і НЕ уповноваженим"
+
+msgid "and authenticated"
+msgstr "і уповноваженим"
+
+msgid "area"
+msgstr "зона"
+
+msgid "audio input"
+msgstr "аудіо вхід"
+
+msgid "audio output"
+msgstr "аудіо вихід"
+
+msgid "bearing"
+msgstr "пеленг"
+
+msgid "bold"
+msgstr "жирний"
+
+msgid "building"
+msgstr "будівля"
+
+#, python-format
+msgid "cairo Version: %s"
+msgstr "cairo Версія: %s"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+msgid "chat;messaging;im;xmpp;voip;"
+msgstr "чат; обмін повідомленнями; im; xmpp; voip;"
+
+msgid "column"
+msgstr "колонка"
+
+msgid "country"
+msgstr "країні"
+
+msgid "countrycode"
+msgstr "код країни"
+
+msgid "datum"
+msgstr "характеристика"
+
+msgid "description"
+msgstr "опис"
+
+msgid "error"
+msgstr "помилка"
+
+msgid "example.org"
+msgstr "example.org"
+
+msgid "floor"
+msgstr "поверх"
+
+msgid "invites you to join a group chat"
+msgstr "запрошують Вас до балачки"
+
+msgid "is composing a message…"
+msgstr "пише повідомлення…"
+
+msgid "is doing something else"
+msgstr "робить щось інше"
+
+msgid "italic"
+msgstr "курсив"
+
+#, python-format
+msgid "last seen: %s"
+msgstr "останній раз бачили: %s"
+
+msgid "lat"
+msgstr "широта"
+
+#, python-format
+msgid "libsoup Version: %s"
+msgstr "libsoup Версія: %s"
+
+msgid "locality"
+msgstr "місцевість"
+
+msgid "lon"
+msgstr "довгота"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "or"
+msgstr "або"
+
+msgid "paused composing a message"
+msgstr "призупинив (призупинила) створення повідомлення"
+
+msgid "postalcode"
+msgstr "поштовий індекс"
+
+#, python-format
+msgid "pycairo Version: %s"
+msgstr "Версія pycairo: %s"
+
+#, python-format
+msgid "python-nbxmpp Version: %s"
+msgstr "python-nbxmpp Версія: %s"
+
+msgid "region"
+msgstr "регіон"
+
+msgid "room"
+msgstr "кімната"
+
+msgid "speed"
+msgstr "швидкість"
+
+msgid "street"
+msgstr "вулиця"
+
+msgid "strike"
+msgstr "страйк"
+
+msgid "text"
+msgstr "текст"
+
+msgid "timestamp"
+msgstr "мітка часу"
+
+msgid "translator-credits"
+msgstr ""
+"Сергій Єгоров\n"
+"Волоцюжна Сутність"
+
+msgid "video input"
+msgstr "відео вхід"
+
+#, python-brace-format
+msgid "{nick} has left due to an error{reason}"
+msgstr "{nick} пішов через помилку{reason}"
+
+#, python-brace-format
+msgid "{nick} has left{reason}"
+msgstr "{nick} пішов.{reason}"
+
+#, python-brace-format
+msgid "{nick} is now known as {new_nick}"
+msgstr "{nick} тепер відома як {new_nick}"
+
+#, python-brace-format
+msgid "{nick} is now {show}"
+msgstr "{nick} зараз {show}"
+
+#, python-brace-format
+msgid "{nick} is now {show}{status}"
+msgstr "{nick} зараз {show}{status}"
+
+msgid "…or drop it here"
+msgstr "...або киньте сюди."
+
+#, python-format
+#~ msgid "%s (desynced)"
+#~ msgstr "%s (не синхронізовано)"
+
+#, python-format
+#~ msgid "%s asks you to share your status"
+#~ msgstr "%s просить вас повідомити ваш стан"
+
+#, python-format
+#~ msgid "%s group chats found"
+#~ msgstr "Знайдено %s групових балачок"
+
+#, python-format
+#~ msgid "%s has read up to this point"
+#~ msgstr "%s прочитав(ла) до цього місця"
+
+#, fuzzy, python-format
+#~ msgid ""
+#~ "%s is online with multiple devices.\n"
+#~ "Choose the device you would like to send the files to."
+#~ msgstr ""
+#~ "%s в мережі на кількох пристроях.\n"
+#~ "Оберіть пристрій, до якого надіслати файл."
+
+#, python-format
+#~ msgid "(%(filesize_unit)s/s)"
+#~ msgstr "(%(filesize_unit)s/s)"
+
+#, python-brace-format
+#~ msgid ""
+#~ "** Affiliation of {nick} has been set to {affiliation}{actor}{reason}"
+#~ msgstr ""
+#~ "** Належність {nick} було встановлено у значення {affiliation} {actor} "
+#~ "{reason}"
+
+#, python-brace-format
+#~ msgid "** Role of {nick} has been set to {role}{actor}{reason}"
+#~ msgstr "** Роль {nick} було встановлено у значення {role} {actor} {reason}"
+
+#, fuzzy, python-brace-format
+#~ msgid "** Your Affiliation has been set to {affiliation}{actor}{reason}"
+#~ msgstr ""
+#~ "** Вашу належність було встановлено у значення {affiliation} {actor} "
+#~ "{reason}"
+
+#, python-brace-format
+#~ msgid "** Your Role has been set to {role}{actor}{reason}"
+#~ msgstr "** Вашу роль було встановлено у значення {role} {actor} {reason}"
+
+#~ msgid "<Description>"
+#~ msgstr "<Опис>"
+
+#~ msgid "<Plugin Name>"
+#~ msgstr "<Назва додатка>"
+
+#~ msgid "<empty>"
+#~ msgstr "<порожньо>"
+
+#~ msgid "?Ask (for Subscription):None"
+#~ msgstr "?Ask (for Subscription):Немає"
+
+#~ msgid "?Gender:None"
+#~ msgstr "?Gender:Не вказано"
+
+#~ msgid "?Gender:Other"
+#~ msgstr "?Gender:Інша"
+
+#~ msgid "?Group Chat Contact Affiliation:None"
+#~ msgstr "?Group Chat Contact Affiliation:Жодного"
+
+#~ msgid "?Group Chat Contact Role:None"
+#~ msgstr "?Group Chat Contact Role:Немає"
+
+#~ msgid "?Group chat address:family"
+#~ msgstr "?Group chat address:сім'я"
+
+#~ msgid "?Group chat address:news"
+#~ msgstr "?Group chat address:новини"
+
+#~ msgid "?Group chat address:repairs"
+#~ msgstr "?Group chat address:ремонт"
+
+#~ msgid "?Group chat address:team"
+#~ msgstr "?Group chat address:команда"
+
+#~ msgid "?Group chat address:vacation"
+#~ msgstr "?Group chat address:відпустка"
+
+#~ msgid "?Group chat description:Local help group"
+#~ msgstr "?Group chat description:Місцева група допомоги"
+
+#~ msgid "?Group chat description:Spring gathering"
+#~ msgstr "?Group chat description:Весняні збори"
+
+#~ msgid "?Group chat description:Trip planning"
+#~ msgstr "?Group chat description:Планування подорожей"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Archiving"
+#~ msgstr "Запрошення до групової балачки"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Hidden"
+#~ msgstr "?Роль у груповій балачці:Немає"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Members Only"
+#~ msgstr "Виділення повідомлення групової балачки:"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Moderated"
+#~ msgstr "?Роль у груповій балачці:Немає"
+
+#, fuzzy
+#~ msgid "?Group chat feature:No Password Required"
+#~ msgstr "Групові балачки"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Not Anonymous"
+#~ msgstr "Групові балачки"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Not Moderated"
+#~ msgstr "Групові балачки"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Open"
+#~ msgstr "?Роль у груповій балачці:Немає"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Password Required"
+#~ msgstr "Групові балачки"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Persistent"
+#~ msgstr "Групові балачки"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Public"
+#~ msgstr "Виділення повідомлення групової балачки:"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Semi-Anonymous"
+#~ msgstr "Виділення повідомлення групової балачки:"
+
+#, fuzzy
+#~ msgid "?Group chat feature:Temporary"
+#~ msgstr "?Роль у груповій балачці:Немає"
+
+#, fuzzy
+#~ msgid "?Group chat name:Family"
+#~ msgstr "Виділення повідомлення групової балачки:"
+
+#, fuzzy
+#~ msgid "?Group chat name:News"
+#~ msgstr "?Роль у груповій балачці:Немає"
+
+#, fuzzy
+#~ msgid "?Group chat name:Repairs"
+#~ msgstr "_Групова балачка"
+
+#, fuzzy
+#~ msgid "?Group chat name:Team"
+#~ msgstr "?Роль у груповій балачці:Немає"
+
+#, fuzzy
+#~ msgid "?Group chat name:Vacation"
+#~ msgstr "Запрошення до групової балачки"
+
+#, fuzzy
+#~ msgid "?Message row action:Copy"
+#~ msgstr "Вміст повідомлення"
+
+#, fuzzy
+#~ msgid "?Message row action:Correct…"
+#~ msgstr "Вміст повідомлення"
+
+#, fuzzy
+#~ msgid "?Message row action:Select Messages…"
+#~ msgstr "Вміст повідомлення"
+
+#~ msgid "?Message state:Received"
+#~ msgstr "?Message state:Отримано"
+
+#~ msgid "?Noun:Download"
+#~ msgstr "?Noun:Завантажити"
+
+#~ msgid "?Noun:Upload"
+#~ msgstr "?Noun:Вивантажити"
+
+#~ msgid "?Subscription we already have:None"
+#~ msgstr "?Subscription we already have:Жодної"
+
+#~ msgid "?config description:None"
+#~ msgstr "?config description:Немає"
+
+#~ msgid "?config type:Boolean"
+#~ msgstr "?config type:Булове"
+
+#~ msgid "?config type:Integer"
+#~ msgstr "?config type:Ціле число"
+
+#~ msgid "?config type:Text"
+#~ msgstr "?config type:Текст"
+
+#~ msgid "?config:Type"
+#~ msgstr "?config:Тип"
+
+#~ msgid "?config:Value"
+#~ msgstr "?config:Значення"
+
+#~ msgid "?profile:Address"
+#~ msgstr "?profile:Адреса"
+
+#~ msgid "?profile:Full Name"
+#~ msgstr "?profile:Повне ім'я"
+
+#~ msgid "?profile:Gender"
+#~ msgstr "?profile:Стать"
+
+#, fuzzy
+#~ msgid "?profile:IM Address"
+#~ msgstr "?profile:Адреса IM"
+
+#~ msgid "?profile:Note"
+#~ msgstr "?profile:Примітка"
+
+#~ msgid "?profile:Organisation"
+#~ msgstr "?profile:Організація"
+
+#~ msgid "?profile:Role"
+#~ msgstr "?profile:Роль"
+
+#~ msgid "?profile:Title"
+#~ msgstr "?profile:Посада"
+
+#~ msgid "?switch:Off"
+#~ msgstr "?switch:Вимк."
+
+#~ msgid "?switch:On"
+#~ msgstr "?switch:Увімк."
+
+#~ msgid "?transfer status:Aborted"
+#~ msgstr "?transfer status:Скасовано"
+
+#~ msgid "?transfer status:Completed"
+#~ msgstr "?transfer status:Завершено"
+
+#~ msgid "?transfer status:Not started"
+#~ msgstr "?transfer status:Не розпочато"
+
+#~ msgid "?transfer status:Paused"
+#~ msgstr "?transfer status:Призупинено"
+
+#~ msgid "?transfer status:Stalled"
+#~ msgstr "?transfer status:Застрягло"
+
+#~ msgid "?transfer status:Status: "
+#~ msgstr "?transfer status:Стан: "
+
+#~ msgid "?transfer status:Transferred: "
+#~ msgstr "?transfer status:Передано: "
+
+#~ msgid "?transfer status:Transferring"
+#~ msgstr "?transfer status:Пересилання"
+
+#~ msgid "?transfer type:Type: "
+#~ msgstr "?transfer type:Тип: "
+
+#~ msgid "?user status:Available"
+#~ msgstr "?user status:Доступний"
+
+#~ msgid "?user status:_Available"
+#~ msgstr "?user status:_Доступний"
+
+#~ msgid ""
+#~ "A file with this name already exists and you do not have permission to "
+#~ "overwrite it."
+#~ msgstr ""
+#~ "Файл з такою назвою вже існує, у вас немає прав для його перезапису."
+
+#~ msgid "A list of active, completed and stopped file transfers"
+#~ msgstr "Перелік активних, завершених та зупинених передач файлів"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Aborted"
+#~ msgstr "Скасувати"
+
+#, python-format
+#~ msgid "Account %s is still connected"
+#~ msgstr "Обліковий запис %s все ще з’єднаний"
+
+#~ msgid "Account Settings…"
+#~ msgstr "Налаштування облікових записів…"
+
+#~ msgid "Account is not connected"
+#~ msgstr "Обліковий запис не підключено"
+
+#~ msgid "Account is not connected."
+#~ msgstr "Обліковий запис не підключено."
+
+#, fuzzy
+#~ msgid "Action for left-clicking a preview"
+#~ msgstr "Дія лівої кнопки миші на мініатюрах"
+
+#, fuzzy
+#~ msgid "Activity"
+#~ msgstr "Увімкнути"
+
+#~ msgid "Add _Contact…"
+#~ msgstr "Додати _контакт…"
+
+#~ msgid "Add new line"
+#~ msgstr "Додати новий рядок"
+
+#, fuzzy
+#~ msgid "Add reaction"
+#~ msgstr "Додати налаштування"
+
+#~ msgid "Add some details…"
+#~ msgstr "Додати подробиці…"
+
+#~ msgid "Add to Contact List…"
+#~ msgstr "Додати до реєстру…"
+
+#, fuzzy
+#~ msgid "Add to new Group"
+#~ msgstr "Додати групу…"
+
+#~ msgid "Adjust to Status"
+#~ msgstr "Узгодити зі станом"
+
+#~ msgid "Adjust to status"
+#~ msgstr "Узгодити зі станом"
+
+#, fuzzy
+#~ msgid "All Groups"
+#~ msgstr "Групи"
+
+#~ msgid "Another process is using this file."
+#~ msgstr "Інший процес використовує цей файл."
+
+#~ msgid "Archiving Preferences"
+#~ msgstr "Налаштування архівації"
+
+#~ msgid "Archiving Preferences Error"
+#~ msgstr "Помилка налаштувань архівації"
+
+#~ msgid "Archiving Preferences Saved"
+#~ msgstr "Налаштування архівації збережені"
+
+#, python-format
+#~ msgid "Archiving Preferences for %s"
+#~ msgstr "Архівація налаштувань для %s"
+
+#~ msgid "Are you sure you want to leave this group chat?"
+#~ msgstr "Ви справді бажаєте полишити цю групову балачку?"
+
+#~ msgid "Are you sure you want to quit Gajim?"
+#~ msgstr "Ви справді бажаєте вийти з Gajim?"
+
+#, fuzzy
+#~ msgid "Audio / Video Calls"
+#~ msgstr "Аудіо/Відео"
+
+#~ msgid "Audio Output Device"
+#~ msgstr "Пристрій відтворення звуку"
+
+#~ msgid "Audio preview is not available"
+#~ msgstr "Попередній перегляд аудіо недоступний"
+
+#~ msgid "Audio/Video"
+#~ msgstr "Аудіо/Відео"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Authorization Request"
+#~ msgstr "Було надіслано уповноваження"
+
+#, fuzzy
+#~ msgid "Auto Away Settings"
+#~ msgstr "Гарячі клавіші"
+
+#, fuzzy
+#~ msgid "Auto Extended Away Settings"
+#~ msgstr "Не буде довго"
+
+#~ msgid "Autojoin"
+#~ msgstr "Автоматичне приєднання"
+
+#, fuzzy
+#~ msgid "Automatic spell-checking for your messages"
+#~ msgstr "Перевірка правопису повідомлень, які ви створюєте."
+
+#~ msgid "Blocking List"
+#~ msgstr "Список блокування"
+
+#, python-format
+#~ msgid "Blocking List for %s"
+#~ msgstr "Список блокування для %s"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Закладки"
+
+#, python-format
+#~ msgid "Bookmarks for %s"
+#~ msgstr "Закладки для %s"
+
+#~ msgid "Cancel the selected file transfer and remove incomplete files"
+#~ msgstr "Скасувати обране передавання файлу і вилучити незавершені файли"
+
+#, fuzzy, python-format
+#~ msgid "Cannot overwrite existing file \"%s\""
+#~ msgstr "Не вдалося перезаписати наявний файл «%s»"
+
+#~ msgid "Certificate Settings"
+#~ msgstr "Налаштування сертифіката"
+
+#~ msgid "Ch_ange Subject"
+#~ msgstr "З_мінити тему"
+
+#, fuzzy
+#~ msgid "Chat List"
+#~ msgstr "Список контактів"
+
+#~ msgid "Chat securely with End-to-End encryption via OMEMO or OpenPGP"
+#~ msgstr ""
+#~ "Спілкуватися з наскрізним шифруванням за допомогою OMEMO або OpenPGP"
+
+#~ msgid "Chat securely with End-to-End encryption via OMEMO or OpenPGP."
+#~ msgstr ""
+#~ "Спілкуватися з наскрізним шифруванням за допомогою OMEMO або OpenPGP."
+
+#~ msgid "Checking file…"
+#~ msgstr "Перевірка файлу…"
+
+#~ msgid "Choose Archive"
+#~ msgstr "Вибрати архів"
+
+#~ msgid "Choose Avatar…"
+#~ msgstr "Вибрати аватару…"
+
+#~ msgid "Choose Emoji"
+#~ msgstr "Виберіть емодзі"
+
+#~ msgid "Choose File to Send…"
+#~ msgstr "Вибрати файл для надсилання…"
+
+#~ msgid "Choose the contact's groups"
+#~ msgstr "Обрати групи для контакту"
+
+#~ msgid "Clear message entry"
+#~ msgstr "Очистити вміст повідомлення"
+
+#~ msgid "Click to change time display"
+#~ msgstr "Натисніть, щоб змінити відображення часу"
+
+#~ msgid ""
+#~ "Click to view Gajim's wiki page on how to install plugins in Flatpak."
+#~ msgstr ""
+#~ "Натисніть для перегляду Gajim wiki про встановлення додатків у Flatpak."
+
+#~ msgid "Client Certificate"
+#~ msgstr "Клієнтський сертифікат"
+
+#, python-format
+#~ msgid "Code snippet (%s)"
+#~ msgstr "Фрагмент коду (%s)"
+
+#~ msgid "Complete a command or a nickname"
+#~ msgstr "Завершіть команду або псевдонім"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Completed"
+#~ msgstr "Завершено"
+
+#~ msgid "Connect to other Messengers via Transports (Facebook, IRC, ...)"
+#~ msgstr ""
+#~ "Підключення до інших месенджерів через Транспорти (Facebook, IRC, …)"
+
+#~ msgid "Connection Settings"
+#~ msgstr "Налаштування з'єднання"
+
+#~ msgid "Connection not available"
+#~ msgstr "З’єднання недоступне"
+
+#~ msgid "Contact List: Contact Background Color"
+#~ msgstr "Список контактів: колір тла контактів"
+
+#~ msgid "Contact List: Contact Font"
+#~ msgstr "Список контактів: шрифт контактів"
+
+#~ msgid "Contact List: Contact Foreground Color"
+#~ msgstr "Список контактів: колір шрифту контактів"
+
+#~ msgid "Contact List: Group Background Color"
+#~ msgstr "Список контактів: колір тла груп"
+
+#~ msgid "Contact List: Group Font"
+#~ msgstr "Список контактів: шрифт груп"
+
+#~ msgid "Contact List: Group Foreground Color"
+#~ msgstr "Список контактів: колір шрифту груп"
+
+#, fuzzy
+#~ msgid "Contact Unsubscribed"
+#~ msgstr "_Непідписаний"
+
+#~ msgid "Contact information"
+#~ msgstr "Інформація про контакт"
+
+#~ msgid "Contact list"
+#~ msgstr "Список контактів"
+
+#~ msgid "Conversation: URL Color"
+#~ msgstr "Розмова: колір URL"
+
+#~ msgid "Copy Certificate Information"
+#~ msgstr "Копіювати інформацію сертифіката"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "Копіювати адресу електронної пошти"
+
+#, fuzzy
+#~ msgid "Copy Link"
+#~ msgstr "_Копіювати посилання"
+
+#~ msgid "Copy Link Location"
+#~ msgstr "Копіювати посилання"
+
+#~ msgid "Copy Location"
+#~ msgstr "Копіювати місцезнаходження"
+
+#, fuzzy
+#~ msgid "Copy Path"
+#~ msgstr "Копіювати"
+
+#~ msgid "Copy info to clipboard"
+#~ msgstr "Копіювати інформацію до буфера обміну"
+
+#, fuzzy
+#~ msgid "Correct the last message"
+#~ msgstr "повідомлення про стан"
+
+#~ msgctxt "Message row action"
+#~ msgid "Correct…"
+#~ msgstr "Правильно…"
+
+#~ msgid "Create _Group Chat…"
+#~ msgstr "Створити _Групову балачку…"
+
+#~ msgid "Create new group chat"
+#~ msgstr "Створити нову групову балачку"
+
+#~ msgid "Create new post"
+#~ msgstr "Створити нове повідомлення"
+
+#~ msgid "Creating thumbnail failed"
+#~ msgstr "Не вдалося створити мініатюру"
+
+#~ msgid "Current Developers"
+#~ msgstr "Поточні розробники"
+
+#, fuzzy
+#~ msgid "Decryption failed"
+#~ msgstr "Спроба з’єднання завершилася невдало"
+
+#~ msgid "Default"
+#~ msgstr "Типовий"
+
+#, fuzzy
+#~ msgid "Delete Message"
+#~ msgstr "Прямі повідомлення"
+
+#, fuzzy
+#~ msgid "Deny all subscription requests"
+#~ msgstr "Запит на підписку"
+
+#~ msgid "Description: "
+#~ msgstr "Опис: "
+
+#, fuzzy
+#~ msgid "Developers"
+#~ msgstr "Колишні розробники:"
+
+#, fuzzy
+#~ msgid "Dial Number"
+#~ msgstr "Номер GG:"
+
+#, fuzzy
+#~ msgid "Direct transfer (not encrypted)"
+#~ msgstr "Зупинка передавання файла"
+
+#~ msgid "Disclose the local system time of the device Gajim runs on"
+#~ msgstr "Показувати місцевий час на пристрої, де запущений Gajim"
+
+#~ msgid "Don’t show this again"
+#~ msgstr "Більше не показувати"
+
+#, fuzzy
+#~ msgctxt "Noun"
+#~ msgid "Download"
+#~ msgstr "Завантажити"
+
+#, fuzzy
+#~ msgid "Download File"
+#~ msgstr "Завантажити"
+
+#~ msgid "Download Update"
+#~ msgstr "Завантажити оновлення"
+
+#~ msgid "Download and Install"
+#~ msgstr "Завантажити та встановити"
+
+#, python-format
+#~ msgid "Download failed (%s)"
+#~ msgstr "Не вдалося завантажити (%s)"
+
+#~ msgid "Downloading…"
+#~ msgstr "Завантаження…"
+
+#~ msgid "Drop files or contacts"
+#~ msgstr "Перетягніть файли або контакти"
+
+#~ msgid "Easily send pictures, videos or other files to friends and groups"
+#~ msgstr "Легко надсилайте картинки, відео та інші файли друзям або групам"
+
+#~ msgid "Edit Name…"
+#~ msgstr "Змінити ім'я…"
+
+#~ msgid "Edit Profile…"
+#~ msgstr "Змінити профіль…"
+
+#~ msgid "Edit workspace…"
+#~ msgstr "Редагувати робочий простір…"
+
+#~ msgid "Enables Gajim to provide Audio and Video chats"
+#~ msgstr "Можливість проводити аудіо та відео розмови"
+
+#, fuzzy
+#~ msgid "Enables Gajim to provide a notification area icon"
+#~ msgstr "Можливість показувати значок в системному лотку"
+
+#~ msgid ""
+#~ "Enables Gajim to request your router to forward ports for file transfers"
+#~ msgstr ""
+#~ "Можливість запиту до маршрутизатора для надання порту для передавання "
+#~ "файлів"
+
+#~ msgid "Enables libappindicator, an alternative tray icon provider"
+#~ msgstr "Підтримка libappindicator — альтернативного системного лотка"
+
+#~ msgid "Encrypted Certificate"
+#~ msgstr "Зашифрований сертифікат"
+
+#~ msgid "Error received: {}"
+#~ msgstr "Отримано помилку: {}"
+
+#~ msgid "Error!"
+#~ msgstr "Помилка!"
+
+#, python-format
+#~ msgid "Error: cannot open %s for reading"
+#~ msgstr "Помилка: не вдалося відкрити %s для читання"
+
+#~ msgid "Even more features via plugins"
+#~ msgstr "Більше можливостей у додатках"
+
+#~ msgid "Expires on"
+#~ msgstr "Спливає"
+
+#~ msgctxt "Group chat name"
+#~ msgid "Family"
+#~ msgstr "Сім'я"
+
+#, fuzzy
+#~ msgid "Feature not available on Windows"
+#~ msgstr "Функція недоступна у Windows"
+
+#~ msgid "Features:"
+#~ msgstr "Можливості:"
+
+#~ msgid "File Offered"
+#~ msgstr "Запропонований файл"
+
+#~ msgid "File Transfer Error"
+#~ msgstr "Помилка під час передавання файла"
+
+#~ msgid "File Transfer Failed"
+#~ msgstr "Перенесення файлу не вдалося"
+
+#~ msgid "File Transfers"
+#~ msgstr "Перенесення файлів"
+
+#~ msgid "File error"
+#~ msgstr "Помилка файлу"
+
+#~ msgid "File transfer stopped"
+#~ msgstr "Зупинка передавання файла"
+
+#, fuzzy
+#~ msgid "File transfers"
+#~ msgstr "Перенесення файлів"
+
+#, python-format
+#~ msgid "Filename: %s"
+#~ msgstr "Назва файла: %s"
+
+#, fuzzy
+#~ msgid "Filetransfer Preference"
+#~ msgstr "Помилка під час передавання файла"
+
+#, fuzzy
+#~ msgid "Filter Chats…"
+#~ msgstr "Конфіденційні балачки"
+
+#~ msgid "Fingerprint"
+#~ msgstr "Відбиток пальця"
+
+#, fuzzy
+#~ msgid "Full Message View"
+#~ msgstr "Повідомлення надіслано"
+
+#~ msgid "Gajim"
+#~ msgstr "Gajim"
+
+#, fuzzy
+#~ msgid "Gajim Team"
+#~ msgstr "Теми Gajim"
+
+#, fuzzy
+#~ msgid "Gajim can not read this file"
+#~ msgstr "Gajim не може отримати доступу до цього файла"
+
+#, fuzzy, python-format
+#~ msgid "Gajim: No updates available (last check: %s)"
+#~ msgstr "Немає жодного облікового запису"
+
+#, fuzzy
+#~ msgid "Gajim: No updates available (last check: never)"
+#~ msgstr "Немає жодного облікового запису"
+
+#, fuzzy
+#~ msgid "Gajim: Update check disabled in preferences"
+#~ msgstr "Вимкнено в налаштуваннях"
+
+#~ msgid "Group Chat Invitation"
+#~ msgstr "Запрошення до групового чату"
+
+#, fuzzy
+#~ msgid "Group Chat Invitation Received"
+#~ msgstr "Запрошення до групової балачки"
+
+#, fuzzy
+#~ msgid "Group chat support"
+#~ msgstr "Групові балачки"
+
+#~ msgid "Hide this menu"
+#~ msgstr "Сховати це меню"
+
+#, fuzzy
+#~ msgid "Homepage"
+#~ msgstr "Домашня сторінка:"
+
+#, fuzzy
+#~ msgid "IP / Port"
+#~ msgstr "_Порт:"
+
+#, python-format
+#~ msgid "Idle since: %s"
+#~ msgstr "Відсутній з: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "If enabled, Gajim will save the main window position when hiding it, and "
+#~ "restore it when showing the window again."
+#~ msgstr ""
+#~ "Якщо увімкнено, Gajim буде зберігати положення вікна ховаючи реєстр та "
+#~ "відновлювати при його показі."
+
+#, fuzzy
+#~ msgid ""
+#~ "If enabled, you will be able to set a negative priority to your account "
+#~ "in the Accounts window. BE CAREFUL, when you are logged in with a "
+#~ "negative priority, you will NOT receive any message from your server."
+#~ msgstr ""
+#~ "Якщо цей параметр матиме значення «True», ви зможете встановлювати "
+#~ "від’ємне значення пріоритету для вашого облікового запису у вікні зміни "
+#~ "параметрів облікового запису. БУДЬТЕ ОБЕРЕЖНІ за умови входу з від’ємним "
+#~ "пріоритетом: у такому разі ви НЕ отримуватимете повідомлень від вашого "
+#~ "сервера."
+
+#~ msgid ""
+#~ "If you quit now, the file(s) being transferred will be lost.\n"
+#~ "Do you still want to quit?"
+#~ msgstr ""
+#~ "Якщо ви вийдете зараз, усі передачі файлів буде зупинено.\n"
+#~ "Ви все ще бажаєте вийти?"
+
+#~ msgid "Images"
+#~ msgstr "Зображення"
+
+#~ msgid "Invalid File"
+#~ msgstr "Некоректний файл"
+
+#, fuzzy
+#~ msgid "Invite Contacts…"
+#~ msgstr "Запросити _контакти"
+
+#, fuzzy
+#~ msgid "Invite New Contact"
+#~ msgstr "Запросити _контакти"
+
+#~ msgid "It is not possible to send empty files"
+#~ msgstr "Надсилання порожніх файлів не передбачено"
+
+#, fuzzy, python-format
+#~ msgid "Last seen %s"
+#~ msgstr "Підстава"
+
+#~ msgid "Let others know if you read up to this point"
+#~ msgstr "Повідомте інших, якщо ви дочитали до цього місця"
+
+#, fuzzy
+#~ msgid "Let this contact know if you read up to this point"
+#~ msgstr "Повідомте інших, якщо ви дочитали до цього місця"
+
+#~ msgctxt "Group chat description"
+#~ msgid "Local help group"
+#~ msgstr "Місцева група підтримки"
+
+#~ msgctxt "Group chat description"
+#~ msgid "Local news and reports"
+#~ msgstr "Місцеві новини та репортажі"
+
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Положення:"
+
+#, fuzzy
+#~ msgid "Login Settings"
+#~ msgstr "Додатки"
+
+#, fuzzy
+#~ msgid "Manage Accounts…"
+#~ msgstr "_Змінити обліковий запис"
+
+#, fuzzy
+#~ msgid "Manage Contact List"
+#~ msgstr "Список контактів"
+
+#, fuzzy
+#~ msgid "Message Correction: Background Color"
+#~ msgstr "Повідомлення"
+
+#, fuzzy
+#~ msgid "Message composition"
+#~ msgstr "Вміст повідомлення"
+
+#, fuzzy
+#~ msgid ""
+#~ "Messages will only be available for reading them later if storing chat "
+#~ "history is enabled and if the contact is in your contact list."
+#~ msgstr ""
+#~ "Доступ для читання повідомлень буде можливим, лише якщо ви увімкнули "
+#~ "журнал, а контакт наявний у вашому реєстрі."
+
+#, fuzzy
+#~ msgid "Moderate message?"
+#~ msgstr "повідомлення про стан"
+
+#, fuzzy
+#~ msgid "Modify Gateway…"
+#~ msgstr "_Змінити обліковий запис"
+
+#, fuzzy
+#~ msgid "Move Contact"
+#~ msgstr "Перейменувати контакт"
+
+#~ msgctxt "Group chat name"
+#~ msgid "News"
+#~ msgstr "Новини"
+
+#, fuzzy
+#~ msgid "No Connection Available"
+#~ msgstr "З’єднання недоступне"
+
+#, fuzzy
+#~ msgid "No Notifications"
+#~ msgstr "Сповіщення"
+
+#, fuzzy
+#~ msgid "No proxy used"
+#~ msgstr "Прокс_і:"
+
+#~ msgid "Not Connected"
+#~ msgstr "Не підключено"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Not started"
+#~ msgstr "Не розпочато"
+
+#~ msgid "Notification Area Icon"
+#~ msgstr "Піктограма області сповіщень"
+
+#~ msgid "Notify of events in the notification area."
+#~ msgstr "Сповіщення про події у зоні сповіщень."
+
+#, fuzzy
+#~ msgid "Online Status"
+#~ msgstr "Стан"
+
+#, fuzzy
+#~ msgid "Open Link"
+#~ msgstr "Відкрити як _посилання"
+
+#, fuzzy
+#~ msgid "Open Link in Browser"
+#~ msgstr "_Відкрити посилання у веб-переглядачі"
+
+#, fuzzy
+#~ msgid "Open Path"
+#~ msgstr "OpenPGP: "
+
+#, fuzzy
+#~ msgid "Open _Folder"
+#~ msgstr "В_ідкриту теку, яка містить цей файл"
+
+#, fuzzy
+#~ msgid "Organization (O)"
+#~ msgstr "У відпустці"
+
+#~ msgid "PKCS12 Files"
+#~ msgstr "Файли PKCS12"
+
+#, fuzzy
+#~ msgid "Pa_use/Resume"
+#~ msgstr "_Продовжити"
+
+#, fuzzy
+#~ msgid "Past as Code Block"
+#~ msgstr "Вставити як кодовий блок"
+
+#, fuzzy
+#~ msgid "Pause or resume file transfer"
+#~ msgstr "Скасувати передавання файла"
+
+#, fuzzy
+#~ msgid "Pending Event"
+#~ msgstr "Показати усі _події з черги"
+
+#, fuzzy
+#~ msgid "Pl_ugins"
+#~ msgstr "Додатки"
+
+#, fuzzy
+#~ msgid "Plugin manager"
+#~ msgstr "Активація додатка невдалаДодаток"
+
+#, fuzzy
+#~ msgid "Plugins: No updates available"
+#~ msgstr "Немає жодного облікового запису"
+
+#, fuzzy
+#~ msgid "Plugins: Update check disabled in preferences"
+#~ msgstr "Вимкнено в налаштуваннях"
+
+#~ msgid "Progress"
+#~ msgstr "Поступ"
+
+#~ msgctxt "Group chat description"
+#~ msgid "Project discussion"
+#~ msgstr "Обговорення проекту"
+
+#, fuzzy
+#~ msgid "Proxy Host"
+#~ msgstr "Проксі-_вузол:"
+
+#, fuzzy
+#~ msgid "Proxy Type"
+#~ msgstr "Прокс_і:"
+
+#, fuzzy
+#~ msgid "Re-Login"
+#~ msgstr "Повторно увійти зараз?"
+
+#, fuzzy
+#~ msgid "Really block this contact?"
+#~ msgstr "Чи увімкнено OpenPGP для цього контакту?"
+
+#, fuzzy
+#~ msgid "Recent history"
+#~ msgstr "Нещодавно:"
+
+#~ msgid "Recipient: "
+#~ msgstr "Отримувач:"
+
+#, python-format
+#~ msgid "Recipient: %s"
+#~ msgstr "Отримувач: %s"
+
+#, fuzzy
+#~ msgid "Remove Chat History"
+#~ msgstr "Нещодавно:"
+
+#, fuzzy
+#~ msgid "Remove Group..."
+#~ msgstr "Вилучити групу"
+
+#, fuzzy
+#~ msgid "Remove Notification"
+#~ msgstr "Сповіщення"
+
+#, fuzzy
+#~ msgid "Remove Transport"
+#~ msgstr "Показувати транс_порти"
+
+#, fuzzy
+#~ msgid "Remove completed, cancelled and failed file transfers from the list"
+#~ msgstr ""
+#~ "Вилучає завершені, скасовані та невдалі передавання файлів зі списку"
+
+#, fuzzy
+#~ msgid "Remove contact from contact list"
+#~ msgstr "Вилучає контакт з реєстру"
+
+#, fuzzy
+#~ msgid "Remove from contact list"
+#~ msgstr "Вилучає контакт з реєстру"
+
+#~ msgctxt "Group chat name"
+#~ msgid "Repairs"
+#~ msgstr "Ремонтні роботи"
+
+#, fuzzy
+#~ msgid "Report"
+#~ msgstr "_Повідомити про помилку"
+
+#, fuzzy
+#~ msgid "Requires: gupnpigd-1.0"
+#~ msgstr "Потрібен python-gupnp-igd."
+
+#, fuzzy
+#~ msgid "Requires: libappindicator3"
+#~ msgstr "Потрібна бібліотека libxss."
+
+#~ msgid "Requires: libxss"
+#~ msgstr "Потрібно: libxss"
+
+#, fuzzy
+#~ msgctxt "proxy configuration"
+#~ msgid "SOCKS5"
+#~ msgstr "SOCKS5"
+
+#, fuzzy
+#~ msgid "STUN Server"
+#~ msgstr "Сервер STUN:"
+
+#, fuzzy
+#~ msgid "STUN Server Settings"
+#~ msgstr "Додатки"
+
+#, fuzzy
+#~ msgid "Save File as…"
+#~ msgstr "Зберегти файл як..."
+
+#, fuzzy
+#~ msgid "Save as…"
+#~ msgstr "Зберегти _як"
+
+#, fuzzy
+#~ msgid "Select File…"
+#~ msgstr "Надіслати файл…"
+
+#, fuzzy
+#~ msgid "Select the account with which you want to synchronize"
+#~ msgstr "Оберіть обліковий запис, з яким слід виконати синхронізацію"
+
+#, fuzzy, python-format
+#~ msgid "Selected security label: %s"
+#~ msgstr "Попередження"
+
+#, fuzzy
+#~ msgid "Send"
+#~ msgstr "_Надіслати"
+
+#, fuzzy
+#~ msgid "Send Chatstate"
+#~ msgstr "Попередній стан: %"
+
+#, fuzzy
+#~ msgid "Send File Directly…"
+#~ msgstr "Зберегти файл як..."
+
+#, fuzzy
+#~ msgid "Send Files Directly"
+#~ msgstr "Зберегти файл як..."
+
+#~ msgid "Send Read Markers"
+#~ msgstr "Надіслати маркери читання"
+
+#~ msgid "Send message on Ctrl+Enter and make a new line with Enter."
+#~ msgstr ""
+#~ "Надішліть повідомлення на Ctrl+Enter та створіть новий рядок, натиснувши "
+#~ "Enter."
+
+#, fuzzy
+#~ msgid "Send the message"
+#~ msgstr "Надіслати повідомлення"
+
+#~ msgid "Sender: "
+#~ msgstr "Відправник:"
+
+#, fuzzy
+#~ msgid "Serial Number"
+#~ msgstr "Номер GG:"
+
+#~ msgid "Server"
+#~ msgstr "Сервер"
+
+#, fuzzy
+#~ msgid "Server Info"
+#~ msgstr "Сервер"
+
+#, fuzzy
+#~ msgid "Server Software"
+#~ msgstr "Збережено за адресою: %s"
+
+#, fuzzy, python-format
+#~ msgid "Server Software: %s\n"
+#~ msgstr "Збережено за адресою: %s"
+
+#~ msgid "Server Uptime"
+#~ msgstr "Час роботи сервера"
+
+#~ msgid "Set status message"
+#~ msgstr "Встановити повідомлення про стан"
+
+#, fuzzy
+#~ msgid "Show Gajim"
+#~ msgstr "Gajim"
+
+#, fuzzy
+#~ msgid "Show Location"
+#~ msgstr "Положення:"
+
+#, fuzzy
+#~ msgid "Show Offline Contacts"
+#~ msgstr "Показувати _від’єднані контакти"
+
+#, fuzzy
+#~ msgid "Show _Features"
+#~ msgstr "Можливості"
+
+#, fuzzy
+#~ msgid "Show debug console"
+#~ msgstr "Показати _XML-консоль"
+
+#, fuzzy
+#~ msgid "Show previews for files"
+#~ msgstr "Аудіо сесія недоступна"
+
+#, fuzzy
+#~ msgid "Shows a list of file transfers between you and your contacts"
+#~ msgstr "Показує список передавань файлів"
+
+#~ msgid "Shutting down Gajim"
+#~ msgstr "Вимкнення Гаджіма"
+
+#~ msgctxt "Group chat description"
+#~ msgid "Spring gathering"
+#~ msgstr "Весняний збір"
+
+#~ msgid "Sta_tus"
+#~ msgstr "Ста_н"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Stalled"
+#~ msgstr "Встановлено"
+
+#, fuzzy
+#~ msgid "Start New Chat"
+#~ msgstr "Почати балачку"
+
+#, fuzzy
+#~ msgid "Start Video Call…"
+#~ msgstr "Почати балачку"
+
+#, fuzzy
+#~ msgid "Start Voice Call…"
+#~ msgstr "Почати балачку"
+
+#, fuzzy
+#~ msgid "Status and status message for all accounts"
+#~ msgstr "Змінює стан облікового запису або обліковий запис"
+
+#~ msgid "Status message…"
+#~ msgstr "Повідомлення про стан…"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Status: "
+#~ msgstr "Стан: "
+
+#, fuzzy, python-format
+#~ msgid "Status: %s"
+#~ msgstr "Стан: "
+
+#, fuzzy
+#~ msgid "Stop File Transfers"
+#~ msgstr "Перенесення файлів"
+
+#~ msgid "Subscription Request"
+#~ msgstr "Запит на підписку"
+
+#, fuzzy
+#~ msgid "Subscription:"
+#~ msgstr "Підписка:"
+
+#~ msgid "Support for service discovery including nodes and search for users"
+#~ msgstr "Підтримка пошуку служб включно з вузлами та пошуком користувачів"
+
+#, fuzzy
+#~ msgid "Switch to the first - ninth chat"
+#~ msgstr "Почати балачку"
+
+#~ msgid "Synchronise"
+#~ msgstr "Синхронізувати"
+
+#, fuzzy
+#~ msgid "Synchronize Accounts"
+#~ msgstr "Синхронізувати контакти"
+
+#, fuzzy
+#~ msgid "TLS Version"
+#~ msgstr "Версія:"
+
+#, fuzzy, python-format
+#~ msgid "TLS verification failed: %s"
+#~ msgstr "Перевірка сертифіката SSL для %s"
+
+#~ msgctxt "Group chat name"
+#~ msgid "Team"
+#~ msgstr "Команда"
+
+#, python-format
+#~ msgid ""
+#~ "The file %s has been received, but it seems to have been damaged along "
+#~ "the way.\n"
+#~ "Do you want to download it again?"
+#~ msgstr ""
+#~ "Файл %s було отримано повністю, але схоже, що його пошкоджено.\n"
+#~ "Бажаєте перезавантажити його?"
+
+#~ msgid "The service could not be found"
+#~ msgstr "Не вдалося знайти службу"
+
+#~ msgid "This account is not connected to the server"
+#~ msgstr "Цей обліковий запис не з’єднано з сервером"
+
+#~ msgid "This is your XMPP address"
+#~ msgstr "Це ваша XMPP-адреса"
+
+#, fuzzy
+#~ msgid "Toggle Menu Bar"
+#~ msgstr "Показувати транс_порти"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Transferred: "
+#~ msgstr "Перенесення файлів"
+
+#, fuzzy
+#~ msgctxt "File transfer state"
+#~ msgid "Transferring"
+#~ msgstr "Перенесення"
+
+#, fuzzy, python-format
+#~ msgid "Transport \"%s\" will be removed"
+#~ msgstr "Транспорт \"%s\" буде вилучено"
+
+#~ msgid "Treat * / _ pairs as possible formatting characters."
+#~ msgstr "Вважати пари символів * / _ символами форматування."
+
+#~ msgctxt "Group chat description"
+#~ msgid "Trip planning"
+#~ msgstr "Планування подорожі"
+
+#, fuzzy
+#~ msgid "Tune:"
+#~ msgstr "Музика:"
+
+#, fuzzy
+#~ msgctxt "File transfer type"
+#~ msgid "Type: "
+#~ msgstr "Тип"
+
+#, fuzzy
+#~ msgid "Unread Messages"
+#~ msgstr "Непрочитані події"
+
+#~ msgid "Unselect Chat"
+#~ msgstr "Відмінити вибір чату"
+
+#, fuzzy
+#~ msgid "Update Check"
+#~ msgstr "Перевірка правопису"
+
+#, fuzzy
+#~ msgid "Upload Files"
+#~ msgstr "Зберегти файл як..."
+
+#~ msgid "Upload could not be completed."
+#~ msgstr "Завантаження не вдалося завершити."
+
+#, fuzzy
+#~ msgid "Use STUN Server"
+#~ msgstr "Сервер STUN:"
+
+#~ msgid "Use file transfer proxies"
+#~ msgstr "Використовувати проксі передавання файлів"
+
+#, fuzzy
+#~ msgid "User Interface"
+#~ msgstr "Інтерфейс D-Bus"
+
+#, fuzzy
+#~ msgid "User name…"
+#~ msgstr "_Користувач:"
+
+#~ msgctxt "Group chat name"
+#~ msgid "Vacation"
+#~ msgstr "Відпустка"
+
+#, fuzzy
+#~ msgid "Video Framerate"
+#~ msgstr "Частота кадрів відео"
+
+#, fuzzy
+#~ msgid "Video Input Device"
+#~ msgstr "Пристрій введення відео"
+
+#, fuzzy
+#~ msgid "Video Resolution"
+#~ msgstr "Тест відео"
+
+#, fuzzy
+#~ msgid "Video calls are not supported"
+#~ msgstr "Відео сесія недоступна"
+
+#, fuzzy
+#~ msgid "What happened"
+#~ msgstr "Що сталося?"
+
+#, fuzzy
+#~ msgid "Why do you want to moderate these messages?"
+#~ msgstr "Ви справді бажаєте вилучити виділене повідомлення?"
+
+#, fuzzy
+#~ msgid "Workspaces"
+#~ msgstr "Перейменувати контакт"
+
+#, fuzzy
+#~ msgid "You Have Unread Messages"
+#~ msgstr "У вас є непрочитані повідомлення"
+
+#, fuzzy
+#~ msgid "You are about to quit Gajim"
+#~ msgstr "Ви справді бажаєте вийти з Gajim?"
+
+#~ msgid "You are not connected"
+#~ msgstr "Ви не підключені"
+
+#~ msgid "You are not connected to the server"
+#~ msgstr "Ваш комп’ютер не з’єднано з сервером"
+
+#~ msgid "You cannot synchronize with an account unless it is connected."
+#~ msgstr ""
+#~ "Можливістю синхронізації можна скористатися, лише якщо обліковий запис "
+#~ "з’єднано з сервером."
+
+#, fuzzy, python-format
+#~ msgid ""
+#~ "You do not have permissions for this directory.\n"
+#~ "Error: %s."
+#~ msgstr "Ваш користувач не має права на створення файлів у цьому каталозі."
+
+#, fuzzy
+#~ msgid "You do not have permissions to create files in this directory."
+#~ msgstr "Ваш користувач не має права на створення файлів у цьому каталозі."
+
+#, fuzzy
+#~ msgid "You still have running file transfers"
+#~ msgstr "Ви маєте активні перенесення файлів"
+
+#, fuzzy
+#~ msgid ""
+#~ "You will no longer be able to send and receive messages from and to "
+#~ "contacts using this transport."
+#~ msgstr ""
+#~ "Ви більше не зможете надсилати і отримувати повідомлення від контактів за "
+#~ "допомогою цього транспорту."
+
+#, fuzzy
+#~ msgid "Your archiving preferences have successfully been saved."
+#~ msgstr "Налаштування архівації збережено!"
+
+#~ msgid "_Account"
+#~ msgstr "_Обліковий запис"
+
+#, fuzzy
+#~ msgid "_Accounts"
+#~ msgstr "Облікові записи"
+
+#~ msgid "_Clear"
+#~ msgstr "_Очистити"
+
+#, fuzzy
+#~ msgid "_Debug Console"
+#~ msgstr "Консоль XML"
+
+#~ msgid "_Default"
+#~ msgstr "За замовчуванням"
+
+#~ msgid "_Description"
+#~ msgstr "Опис"
+
+#, fuzzy
+#~ msgid "_Don’t ask again"
+#~ msgstr "Більше _не питати мене"
+
+#, fuzzy
+#~ msgid "_Download"
+#~ msgstr "Більше _не питати мене"
+
+#, fuzzy
+#~ msgid "_Download Again"
+#~ msgstr "Більше _не питати мене"
+
+#, fuzzy
+#~ msgid "_File Transfer"
+#~ msgstr "Перенесення файлів"
+
+#, fuzzy
+#~ msgid "_Help"
+#~ msgstr "_Довідка"
+
+#, fuzzy
+#~ msgid "_Manage Account…"
+#~ msgstr "_Додати контакт..."
+
+#, fuzzy
+#~ msgid "_Modify Account…"
+#~ msgstr "_Змінити обліковий запис"
+
+#, fuzzy
+#~ msgid "_New post"
+#~ msgstr "Нове повідомлення"
+
+#, fuzzy
+#~ msgid "_Open"
+#~ msgstr "OpenPGP: "
+
+#, fuzzy
+#~ msgid "_Open Folder"
+#~ msgstr "В_ідкриту теку, яка містить цей файл"
+
+#, fuzzy
+#~ msgid "_Preferences"
+#~ msgstr "Параметри"
+
+#, fuzzy
+#~ msgid "_Save as…"
+#~ msgstr "Зберегти _як"
+
+#, fuzzy
+#~ msgid "_Start / Join Chat…"
+#~ msgstr "Почати балачку"
+
+#~ msgid "_Start Chat..."
+#~ msgstr "_Почати балачку..."
+
+#, fuzzy
+#~ msgid "_Toggle Menu Bar"
+#~ msgstr "Показувати транс_порти"
+
+#~ msgid "_Undo"
+#~ msgstr "_Скасувати"
+
+#, fuzzy
+#~ msgid "_View"
+#~ msgstr "П_ерегляд"
+
+#~ msgid "app.open-file"
+#~ msgstr "app.open-file"
+
+#~ msgid "app.open-folder"
+#~ msgstr "app.open-folder"
+
+#~ msgid "app.open-link"
+#~ msgstr "app.open-link"
+
+#~ msgid "app.save-file-as"
+#~ msgstr "app.save-file-as"
+
+#, python-format
+#~ msgid "e.g. %s"
+#~ msgstr "наприклад, %s"
+
+#~ msgctxt "Group chat address"
+#~ msgid "family"
+#~ msgstr "сім'я"
+
+#~ msgid "file transfers list"
+#~ msgstr "перелік передач файлів"
+
+#~ msgid ""
+#~ "has invited you to a group chat.\n"
+#~ "Do you want to join?"
+#~ msgstr ""
+#~ "запросив вас до групового чату.\n"
+#~ "Бажаєте приєднатися?"
+
+#~ msgctxt "Group chat address"
+#~ msgid "news"
+#~ msgstr "новини"
+
+#~ msgctxt "Group chat address"
+#~ msgid "repairs"
+#~ msgstr "ремонт"
+
+#~ msgctxt "Group chat address"
+#~ msgid "team"
+#~ msgstr "команда"
+
+#~ msgctxt "Group chat address"
+#~ msgid "vacation"
+#~ msgstr "відпустка"
+
+#, fuzzy
+#~ msgid "yesterday "
+#~ msgstr "Вчора"
+
+#, fuzzy, python-brace-format
+#~ msgid "{nick} has been removed from the group chat{by}{reason}"
+#~ msgstr "{nick} було вилучено з кімнати {by} {reason}"

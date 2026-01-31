@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkBox" id="default_page">
+    <property name="can-focus">0</property>
+    <property name="orientation">vertical</property>
+    <property name="spacing">6</property>
+    <child>
+      <object class="GtkLabel">
+        <property name="can-focus">0</property>
+        <property name="margin-bottom">18</property>
+        <property name="label" translatable="yes">Activity Feed</property>
+        <style>
+          <class name="title-1"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="can-focus">0</property>
+        <property name="label" translatable="yes">Select an activity to see details.</property>
+        <style>
+          <class name="dimmed"/>
+        </style>
+      </object>
+    </child>
+  </object>
+</interface>
