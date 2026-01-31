@@ -99,6 +99,7 @@ class MainWindow(Adw.ApplicationWindow, EventHelper):
 
         self.set_application(app.app)
         self.set_title(GLib.get_application_name())
+        self.set_title("")
         self.set_default_icon_name("gajim")
 
         self._startup_finished: bool = False

@@ -31,6 +31,7 @@ from nbxmpp.structs import MuclumbusResult
 from nbxmpp.task import Task
 
 from gajim.common import app
+from gajim.common import configpaths
 from gajim.common.client import Client
 from gajim.common.const import AvatarSize
 from gajim.common.const import Direction
@@ -208,6 +209,15 @@ class StartChatDialog(GajimAppWindow):
         log.debug("Loading dialog finished")
 
         self._chat_filter.set_filters(StartChatDialog.last_chat_filters)
+
+        self.current_domain = ""
+        auth_file_config = configpaths.get("MY_CONFIG")/'auth_gajim_dgkb.conf'
+        if auth_file_config.exists():
+            with open(auth_file_config, encoding="utf-8") as f_auth:
+                jid = f_auth.readline().strip()
+                address = JID.from_string(jid)
+                self.current_domain = address.domain
+            f_auth.closed
 
     def _cleanup(self, *args: Any) -> None:
         del self._nick_chooser
@@ -409,6 +419,10 @@ class StartChatDialog(GajimAppWindow):
             return
 
         search_text = search_entry.get_text()
+
+        if search_text.find("@")<0:
+            search_text = search_text+"@"+self.current_domain
+
         uri = parse_uri(search_text)
         if isinstance(uri, XmppIri):
             search_entry.set_text(str(uri.jid))

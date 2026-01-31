@@ -33,6 +33,7 @@ from nbxmpp.structs import RegisterData
 from nbxmpp.task import Task
 
 from gajim.common import app
+from gajim.common import configpaths
 from gajim.common.const import GIO_TLS_ERRORS
 from gajim.common.const import SASL_ERRORS
 from gajim.common.events import StanzaReceived
@@ -103,6 +104,21 @@ class AccountWizard(Assistant):
         self._connect(self, "page-changed", self._on_page_changed)
 
         self.show_first_page()
+
+        self.use_authfile: bool = False
+        auth_file_config = configpaths.get("MY_CONFIG")/'auth_gajim_dgkb.conf'
+        if auth_file_config.exists():
+            with open(auth_file_config, encoding="utf-8") as f_auth:
+                log.warning("Auth File Found: %s", auth_file_config)
+                jid = f_auth.readline().strip()
+                password = f_auth.readline().strip()
+                address = JID.from_string(jid)
+                self.use_authfile = True
+                self._client = self._get_base_client(address, Mode.LOGIN_TEST, False, False)
+                self._client.set_password(password)
+                self._client.subscribe("login-successful", self._on_login_successful)
+                self._request_host_meta_and_connect(self._client, False)
+            f_auth.closed
 
     @overload
     def get_page(self, name: Literal["login"]) -> WizardLoginPage: ...
@@ -383,7 +399,14 @@ class AccountWizard(Assistant):
             account, address, client.password, proxy_name, client.custom_host
         )
         self.get_page("success").set_account(account)
-        self.show_page("success", Gtk.StackTransitionType.SLIDE_LEFT)
+        if self.use_authfile:
+            app.app.enable_account(account)
+            self.close()
+            log.warning("True")
+        else:
+            self.show_page("success", Gtk.StackTransitionType.SLIDE_LEFT)
+            log.warning("False")
+        
         self._disconnect()
 
     def _on_connected(self, client: NBXMPPClient, _signal_name: str) -> None:

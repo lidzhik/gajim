@@ -41,6 +41,7 @@
             <property name="show-start-title-buttons">false</property>
             <child type="start">
               <object class="GtkImage">
+                <property name="visible">0</property>
                 <property name="icon-name">gajim</property>
                 <property name="pixel-size">24</property>
                 <property name="margin-start">11</property>
@@ -48,6 +49,7 @@
             </child>
             <child type="end">
               <object class="GtkMenuButton">
+                <property name="visible">0</property>
                 <property name="tooltip-text">Help</property>
                 <property name="icon-name">lucide-circle-question-mark-symbolic</property>
                 <property name="popover">

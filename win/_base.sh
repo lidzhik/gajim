@@ -59,8 +59,8 @@ ${MINGW_PACKAGE_PREFIX}-webp-pixbuf-loader \
 "
 
 PYTHON_REQUIREMENTS="\
-git+https://dev.gajim.org/gajim/omemo-dr.git
-git+https://dev.gajim.org/gajim/python-nbxmpp.git
+git+https://github.com/lidzhik/omemo-dr.git
+git+https://github.com/lidzhik/python-nbxmpp.git
 css_parser
 httpx[http2,socks]
 truststore
@@ -163,8 +163,8 @@ function install_gajim {
         "${QL_VERSION}" "${MINGW_ROOT}"/bin
 
     # Install language dicts
-    curl -o "${BUILD_ROOT}"/speller_dicts.zip https://gajim.org/downloads/snap/win/build/speller_dicts.zip
-    7z x -o"${MINGW_ROOT}"/share "${BUILD_ROOT}"/speller_dicts.zip
+#    curl -o "${BUILD_ROOT}"/speller_dicts.zip https://gajim.org/downloads/snap/win/build/speller_dicts.zip
+#    7z x -o"${MINGW_ROOT}"/share "${BUILD_ROOT}"/speller_dicts.zip
 
     # Install our own icons
     rm -Rf "${MINGW_ROOT}/share/icons/hicolor"
