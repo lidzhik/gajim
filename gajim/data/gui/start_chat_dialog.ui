@@ -66,6 +66,7 @@
                     </child>
                     <child>
                       <object class="GtkToggleButton" id="global_search_toggle">
+                        <property name="visible">0</property>
                         <property name="focusable">1</property>
                         <property name="receives-default">1</property>
                         <property name="tooltip-text" translatable="yes">Global Group Chat Search</property>
@@ -79,6 +80,7 @@
                     </child>
                     <child>
                       <object class="GtkMenuButton" id="settings_menu">
+                        <property name="visible">0</property>
                         <property name="focusable">1</property>
                         <property name="receives-default">1</property>
                         <property name="halign">end</property>

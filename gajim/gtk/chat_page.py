@@ -67,13 +67,14 @@ class ChatPage(Gtk.Paned):
         self._chat_control = self._chat_stack.get_chat_control()
 
         search_entry = self._chat_list_header.get_search_entry()
-        chat_filter = self._chat_list_header.get_chat_filter()
+        #chat_filter = self._chat_list_header.get_chat_filter()
 
         self._chat_list_stack.set_search_entry(search_entry)
-        self._chat_list_stack.set_chat_filter(chat_filter)
+        #self._chat_list_stack.set_chat_filter(chat_filter)
         self._activity_list.set_search_entry(search_entry)
 
         self._add_actions()
+
 
         app.ged.register_event_handler(
             "register-actions", ged.GUI1, self._on_register_actions

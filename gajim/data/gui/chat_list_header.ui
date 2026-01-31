@@ -57,7 +57,9 @@
           </object>
         </child>
         <child>
-          <object class="ChatFilter" id="_chat_filter" />
+          <object class="ChatFilter" id="_chat_filter">
+            <property name="visible">0</property>
+          </object>
         </child>
         <child>
           <object class="GtkMenuButton" id="_start_chat_menu_button">
