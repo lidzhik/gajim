@@ -1,3 +1,5 @@
+Forked from https://dev.gajim.org/gajim/gajim
+
 [[_TOC_]]
 
 ## Gajim
