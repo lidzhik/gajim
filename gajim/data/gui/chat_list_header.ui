@@ -63,7 +63,6 @@
         </child>
         <child>
           <object class="GtkMenuButton" id="_start_chat_menu_button">
-            <property name="tooltip-text">Start Chat…</property>
             <child>
               <object class="GtkImage">
                 <property name="icon-name">lucide-plus-symbolic</property>

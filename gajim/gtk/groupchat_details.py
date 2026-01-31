@@ -55,11 +55,11 @@ class GroupchatDetails(GajimAppWindow):
                 SideBarMenuItem(
                     "settings", _("Settings"), icon_name="lucide-settings-symbolic"
                 ),
-                SideBarMenuItem(
-                    "encryption-omemo",
-                    _("Encryption (OMEMO)"),
-                    icon_name="lucide-lock-symbolic",
-                ),
+#                SideBarMenuItem(
+#                    "encryption-omemo",
+#                    _("Encryption (OMEMO)"),
+#                    icon_name="lucide-lock-symbolic",
+#                ),
                 SideBarMenuItem(
                     "blocks",
                     _("Blocked Participants"),
@@ -113,7 +113,7 @@ class GroupchatDetails(GajimAppWindow):
 
         self._add_groupchat_info()
         self._add_groupchat_settings()
-        self._add_groupchat_encryption()
+#       self._add_groupchat_encryption()
         self._add_blocks()
 
         if self._client.state.is_available and self._contact.is_joined:
