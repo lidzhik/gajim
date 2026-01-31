@@ -6,14 +6,25 @@ We use [msys2](https://www.msys2.org/) for creating the Windows installer and de
 
 Download [msys2](https://www.msys2.org/) (`msys2-x86_64-xxx.exe`) and follow the install instructions on the [msys2](https://www.msys2.org/) startpage (**Important!**)
 
+********************************
+* Change Servers to worked at C:\msys64\etc\pacman.d\
+********************************
+
 * Fork the master branch on dev.gajim.org
 * Execute `C:\msys64\msys2_shell.cmd -mingw64`
+
+********************************
+* Run `pacman -Sy` to update
+* Run `pacman -Su` to upgrade
+* Run `pacman -S mingw-w64-x86_64-gtk4`
+* Run `pacman -S python3-pip`
+********************************
+
 * Run `pacman -S git` to install git
-* Run `git clone https://dev.gajim.org/USERNAME/gajim.git`
+* Run `git clone https://github.com/lidzhik/gajim.git`
 * Run `cd gajim/win` to end up where this README exists.
-* Execute `./dev_env.sh` to install all the needed dependencies.
-* Now go to the git root dir `cd ..`
-* Launch Gajim `./launch.py`
+* Execute `cd ~/gajim/win && ./dev_env.sh` to install all the needed dependencies.
+* Launch Gajim `cd ~/gajim/ && ./launch.py`
 
 ### GTK Inspector
 
@@ -28,7 +39,7 @@ Afterwards press CTRL + SHIFT + I to  activate GTK Inspector
 
 ## Build Gajim / Create an Installer
 
-Follow the steps in the Development section, but instead of `./dev_env.sh` execute `./build.sh`.
+Follow the steps in the Development section, but instead of `cd ~/gajim/win && ./dev_env.sh` execute `cd ~/gajim/win && ./build.sh`.
 
 Both the installer and the portable installer should appear in `C:\msys64\home\USER\gajim\win\_build_root`.
 
