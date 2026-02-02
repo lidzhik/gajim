@@ -139,8 +139,8 @@ Section "Uninstall"
     SetShellVarContext current
     Delete "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk"
     RMDir "$SMPROGRAMS\$StartMenuFolder"
-    Delete "$DESKTOP\Gajim.lnk"
-    Delete "$SMSTARTUP\Gajim.lnk"
+    Delete "$DESKTOP\Messenger.lnk"
+    Delete "$SMSTARTUP\Messenger.lnk"
     SetShellVarContext all
     Delete "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk"
     RMDir "$SMPROGRAMS\$StartMenuFolder"

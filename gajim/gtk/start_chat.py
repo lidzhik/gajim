@@ -184,7 +184,7 @@ class StartChatDialog(GajimAppWindow):
 
         self._chat_filter = ChatFilter()
         self._connect(self._chat_filter, "filter-changed", self._on_chat_filter_changed)
-        self._chat_filter.insert_after(self._ui.controls_box, self._ui.search_entry)
+#       self._chat_filter.insert_after(self._ui.controls_box, self._ui.search_entry)
 
         self._connect(
             self.get_default_controller(), "key-pressed", self._on_key_pressed
