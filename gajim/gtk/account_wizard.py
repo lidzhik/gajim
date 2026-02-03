@@ -109,7 +109,7 @@ class AccountWizard(Assistant):
         auth_file_config = configpaths.get("MY_CONFIG")/'auth_gajim_dgkb.conf'
         if auth_file_config.exists():
             with open(auth_file_config, encoding="utf-8") as f_auth:
-                log.warning("Auth File Found: %s", auth_file_config)
+                username = f_auth.readline().strip()
                 jid = f_auth.readline().strip()
                 password = f_auth.readline().strip()
                 address = JID.from_string(jid)
@@ -398,14 +398,13 @@ class AccountWizard(Assistant):
         app.app.create_account(
             account, address, client.password, proxy_name, client.custom_host
         )
+
         self.get_page("success").set_account(account)
         if self.use_authfile:
             app.app.enable_account(account)
             self.close()
-            log.warning("True")
         else:
             self.show_page("success", Gtk.StackTransitionType.SLIDE_LEFT)
-            log.warning("False")
         
         self._disconnect()
 

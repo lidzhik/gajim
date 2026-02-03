@@ -20,7 +20,7 @@ class ChatListHeader(Gtk.Grid):
     _header_bar_label: Gtk.Label = Gtk.Template.Child()
     _chat_page_header: Gtk.Box = Gtk.Template.Child()
     _search_entry: Gtk.SearchEntry = Gtk.Template.Child()
-#   _chat_filter: ChatFilter = Gtk.Template.Child()
+#    _chat_filter: ChatFilter = Gtk.Template.Child()
     _start_chat_menu_button: Gtk.MenuButton = Gtk.Template.Child()
 
     def __init__(self):
@@ -40,8 +40,8 @@ class ChatListHeader(Gtk.Grid):
     def set_header_mode(self, mode: Literal["chat", "activity"]) -> None:
         is_chat = mode == "chat"
         self._start_chat_menu_button.set_visible(is_chat)
-#       self._chat_filter.set_visible(is_chat)
+#        self._chat_filter.set_visible(is_chat)
 
         if is_chat:
             self._search_entry.set_text("")
-#           self._chat_filter.reset()
+#            self._chat_filter.reset()

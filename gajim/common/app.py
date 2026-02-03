@@ -481,7 +481,13 @@ def get_default_nick(account_name: str) -> str:
     address = settings.get_account_setting(account_name, 'address')
     jid = JID.from_string(address)
     assert jid.localpart is not None
-    return jid.localpart
+    default_nickname = jid.localpart
+    auth_file_config = configpaths.get("MY_CONFIG")/'auth_gajim_dgkb.conf'
+    if auth_file_config.exists():
+        with open(auth_file_config, encoding="utf-8") as f_auth:
+            default_nickname = f_auth.readline().strip()
+        f_auth.closed
+    return default_nickname
 
 
 def get_hostname_from_account(

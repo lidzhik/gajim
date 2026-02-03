@@ -126,8 +126,8 @@ function install_mingw_deps {
 }
 
 function install_python_deps {
-    build_pip install precis-i18n
-    build_pip install $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
+    build_pip install --break-system-packages precis-i18n
+    build_pip install --break-system-packages $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
 }
 
 function post_install_deps {
@@ -150,7 +150,7 @@ function install_gajim {
     cd ..
 
     build_python make.py build --dist=win
-    build_pip install .
+    build_pip install --break-system-packages .
 
     QL_VERSION=$(MSYSTEM= build_python -c \
         "import gajim; import sys; sys.stdout.write(gajim.__version__.split('+')[0])")

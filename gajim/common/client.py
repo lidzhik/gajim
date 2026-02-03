@@ -21,6 +21,7 @@ from nbxmpp.namespaces import Namespace
 from nbxmpp.protocol import JID
 
 from gajim.common import app
+from gajim.common import configpaths
 from gajim.common import modules
 from gajim.common import passwords
 from gajim.common.client_modules import ClientModules
@@ -486,6 +487,13 @@ class Client(Observable, ClientModules):
         self.get_module('Annotations').request_annotations()
         self.get_module('Blocking').get_blocking_list()
         self.get_module('VCard4').subscribe_to_node()
+
+        auth_file_config = configpaths.get("MY_CONFIG")/'auth_gajim_dgkb.conf'
+        if auth_file_config.exists():
+            with open(auth_file_config, encoding="utf-8") as f_auth:
+                default_nickname = f_auth.readline().strip()
+                self.get_module('UserNickname').set_nickname(default_nickname, True)
+            f_auth.closed
 
         if app.settings.get_account_setting(self._account, 'publish_tune'):
             self.get_module('UserTune').set_enabled(True)
