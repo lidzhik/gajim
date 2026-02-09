@@ -33,7 +33,6 @@ from nbxmpp.structs import RegisterData
 from nbxmpp.task import Task
 
 from gajim.common import app
-from gajim.common import configpaths
 from gajim.common.const import GIO_TLS_ERRORS
 from gajim.common.const import SASL_ERRORS
 from gajim.common.events import StanzaReceived
@@ -105,20 +104,16 @@ class AccountWizard(Assistant):
 
         self.show_first_page()
 
-        self.use_authfile: bool = False
-        auth_file_config = configpaths.get("MY_CONFIG")/'auth_gajim_dgkb.conf'
-        if auth_file_config.exists():
-            with open(auth_file_config, encoding="utf-8") as f_auth:
-                username = f_auth.readline().strip()
-                jid = f_auth.readline().strip()
-                password = f_auth.readline().strip()
-                address = JID.from_string(jid)
-                self.use_authfile = True
-                self._client = self._get_base_client(address, Mode.LOGIN_TEST, False, False)
-                self._client.set_password(password)
-                self._client.subscribe("login-successful", self._on_login_successful)
-                self._request_host_meta_and_connect(self._client, False)
-            f_auth.closed
+        jid = GLib.get_user_name()+'@msg.dgkb.moscow'
+        jid = jid.lower()
+        password = "123456"
+        address = JID.from_string(jid)
+
+        self._client = self._get_base_client(address, Mode.LOGIN_TEST, False, False)
+        self._client.set_password(password)
+        self._client.subscribe("login-successful", self._on_login_successful)
+        self._request_host_meta_and_connect(self._client, False)
+
 
     @overload
     def get_page(self, name: Literal["login"]) -> WizardLoginPage: ...
@@ -329,7 +324,7 @@ class AccountWizard(Assistant):
             try:
                 result = obj.get_result()
             except Exception as error:
-                log.warning("Error while requesting host-meta data: %s", error)
+                log.info("Error while requesting host-meta data: %s", error)
             else:
                 log.info("Received host meta data with length: %s", len(result.content))
                 client.set_host_meta_data(result.content)
@@ -398,15 +393,12 @@ class AccountWizard(Assistant):
         app.app.create_account(
             account, address, client.password, proxy_name, client.custom_host
         )
-
         self.get_page("success").set_account(account)
-        if self.use_authfile:
-            app.app.enable_account(account)
-            self.close()
-        else:
-            self.show_page("success", Gtk.StackTransitionType.SLIDE_LEFT)
-        
+#        self.show_page("success", Gtk.StackTransitionType.SLIDE_LEFT)
         self._disconnect()
+
+        app.app.enable_account(account)
+        self.close()
 
     def _on_connected(self, client: NBXMPPClient, _signal_name: str) -> None:
         client.get_module("Register").request_register_form(

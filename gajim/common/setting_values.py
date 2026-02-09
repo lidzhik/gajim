@@ -229,7 +229,7 @@ APP_SETTINGS: dict[str, str | int | float | bool | list[Any]] = {
     'show_in_taskbar': True,
     'show_main_window_on_startup': 'always',
     'show_notifications': True,
-    'show_notifications_away': False,
+    'show_notifications_away': True,
     'show_send_message_button': True,
     'show_voice_message_button': False,
     'show_status_msgs_in_roster': True,

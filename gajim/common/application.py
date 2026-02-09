@@ -139,6 +139,46 @@ class CoreApplication(ged.EventHelper):
     def _log(self) -> logging.Logger:
         return app.log('app')
 
+    def _on_get_dgkb_fullname_data(self, obj: FileTransfer) -> None:
+        try:
+            result = obj.get_result()
+            result_json = json.loads(result.content)
+            log.info("Get Full Name Data: %s", result_json)
+            for item in result_json:
+                for account in app.settings.get_active_accounts():
+                    client = app.get_client(account)
+                    if item is not None:
+                        client.get_module("UserNickname").set_nickname(item, public=True)
+        except Exception as error:
+            log.warning("Error Get & Save Full Name: %s", error)
+
+    def _on_get_dgkb_bookmarks_data(self, obj: FileTransfer) -> None:
+        try:
+            result = obj.get_result()
+            result_json = json.loads(result.content)
+            log.info("Get Bookmarks Data: %s", result_json)
+            for item in result_json:
+                for account in app.settings.get_active_accounts():
+                    client = app.get_client(account)
+                    if item is not None:
+                        client.get_module('Bookmarks').add_or_modify(item, autojoin=True)
+        except Exception as error:
+            log.warning("Error Get & Save Bookmark: %s", error)
+
+
+    def _on_get_dgkb_contacts_data(self, obj: FileTransfer) -> None:
+        try:
+            result = obj.get_result()
+            result_json = json.loads(result.content)
+            log.info("Get Contacts Data: %s", result_json)
+            for item in result_json:
+                for account in app.settings.get_active_accounts():
+                    client = app.get_client(account)
+                    if item is not None:
+                        client.get_module('Contacts').add_contact(item)
+        except Exception as error:
+            log.warning("Error Get & Save Contacts: %s", error)
+
     def _core_command_line(self, options: GLib.VariantDict) -> None:
         if options.contains('cprofile'):
             self.start_profiling()
@@ -445,6 +485,24 @@ class CoreApplication(ged.EventHelper):
         client = app.get_client(event.account)
         if client.get_module('MAM').available:
             client.get_module('MAM').request_archive_on_signin()
+
+        app.ftm.http_request(
+            "GET",
+            "https://msg.dgkb.moscow/api/bookmarks/?jid="+app.get_default_nick(event.account),
+            callback=self._on_get_dgkb_bookmarks_data,
+        )
+
+        app.ftm.http_request(
+            "GET",
+            "https://msg.dgkb.moscow/api/fullname/?jid="+app.get_default_nick(event.account),
+            callback=self._on_get_dgkb_fullname_data,
+        )
+
+#        app.ftm.http_request(
+#            "GET",
+#            "https://msg.dgkb.moscow/api/contacts/?jid="+app.get_default_nick(event.account),
+#            callback=self._on_get_dgkb_contacts_data,
+#        )
 
     def change_status(self,
                       status: str,

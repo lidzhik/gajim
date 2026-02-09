@@ -17,6 +17,7 @@
                 </style>
                 <child>
                   <object class="GtkBox">
+                    <property name="visible">0</property>
                     <property name="spacing">12</property>
                     <child>
                       <object class="GtkImage">

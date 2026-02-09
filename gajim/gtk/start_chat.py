@@ -31,7 +31,6 @@ from nbxmpp.structs import MuclumbusResult
 from nbxmpp.task import Task
 
 from gajim.common import app
-from gajim.common import configpaths
 from gajim.common.client import Client
 from gajim.common.const import AvatarSize
 from gajim.common.const import Direction
@@ -410,7 +409,6 @@ class StartChatDialog(GajimAppWindow):
             return
 
         search_text = search_entry.get_text()
-
         uri = parse_uri(search_text)
         if isinstance(uri, XmppIri):
             search_entry.set_text(str(uri.jid))

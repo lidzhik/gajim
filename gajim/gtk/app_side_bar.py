@@ -71,6 +71,8 @@ class AppSideBar(Gtk.Box, EventHelper):
             ]
         )
 
+        self._toggle_row.set_visible(False)
+
     def _on_register_actions(self, _event: RegisterActions) -> None:
         action = app.window.lookup_action("chat-list-visible")
         assert action is not None

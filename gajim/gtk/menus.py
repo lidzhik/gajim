@@ -101,15 +101,15 @@ def get_self_contact_menu(contact: types.BareContact) -> GajimMenu:
 
     menu = GajimMenu()
 
-    menu.add_item(_("Profile"), f"app.{account}-profile", account)
+#    menu.add_item(_("Profile"), f"app.{account}-profile", account)
     submenu = get_send_file_submenu()
     menu.append_submenu(_("Send File"), submenu)
 
-    params = ExportHistoryParam(account=account, jid=jid)
-    menu.add_item(_("Export History…"), "app.export-history", params)
+#    params = ExportHistoryParam(account=account, jid=jid)
+#    menu.add_item(_("Export History…"), "app.export-history", params)
 
-    params = AccountJidParam(account=account, jid=jid)
-    menu.add_item(_("Remove History…"), "app.remove-history", params)
+#    params = AccountJidParam(account=account, jid=jid)
+#    menu.add_item(_("Remove History…"), "app.remove-history", params)
     return menu
 
 
@@ -148,8 +148,8 @@ def get_singlechat_menu(contact: types.BareContact) -> GajimMenu:
         GLib.Variant("(sas)", (account, jids)),
     )
 
-    menu.add_item(_("Export History…"), "app.export-history", export_params)
-    menu.add_item(_("Remove History…"), "app.remove-history", params)
+#    menu.add_item(_("Export History…"), "app.export-history", export_params)
+#    menu.add_item(_("Remove History…"), "app.remove-history", params)
 
     return menu
 
@@ -161,11 +161,11 @@ def get_private_chat_menu(contact: types.GroupchatParticipant) -> GajimMenu:
 
     menu.add_item(_("Upload File…"), "win.send-file-httpupload", value)
 
-    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
-    menu.add_item(_("Export History…"), "app.export-history", params)
+#    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
+#    menu.add_item(_("Export History…"), "app.export-history", params)
 
-    params = AccountJidParam(account=contact.account, jid=contact.jid)
-    menu.add_item(_("Remove History…"), "app.remove-history", params)
+#    params = AccountJidParam(account=contact.account, jid=contact.jid)
+#    menu.add_item(_("Remove History…"), "app.remove-history", params)
 
     occupant_param = None
     if contact.occupant_id is not None:
@@ -199,15 +199,15 @@ def get_send_file_submenu() -> GajimMenu:
 def get_groupchat_menu(contact: GroupchatContact) -> GajimMenu:
     menu = GajimMenu()
 
-    menu.add_item(_("Change Nickname…"), "win.muc-change-nickname", None)
-    menu.add_item(_("Request Voice"), "win.muc-request-voice", None)
-    menu.add_item(_("Execute Command…"), "win.muc-execute-command", "")
+#    menu.add_item(_("Change Nickname…"), "win.muc-change-nickname", None)
+#    menu.add_item(_("Request Voice"), "win.muc-request-voice", None)
+#    menu.add_item(_("Execute Command…"), "win.muc-execute-command", "")
 
-    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
-    menu.add_item(_("Export History…"), "app.export-history", params)
+#    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
+#    menu.add_item(_("Export History…"), "app.export-history", params)
 
-    params = AccountJidParam(account=contact.account, jid=contact.jid)
-    menu.add_item(_("Remove History…"), "app.remove-history", params)
+#    params = AccountJidParam(account=contact.account, jid=contact.jid)
+#    menu.add_item(_("Remove History…"), "app.remove-history", params)
 
     return menu
 
@@ -421,7 +421,7 @@ def get_start_chat_button_menu() -> GajimMenu:
     menuitems: MenuItemListT = [
         (_("Start Chat…"), "app.start-chat", value),
         (_("Create Group Chat…"), "app.create-groupchat", ""),
-        (_("Add Contact…"), "app.add-contact", ""),
+#       (_("Add Contact…"), "app.add-contact", ""),
     ]
 
     return GajimMenu.from_list(menuitems)

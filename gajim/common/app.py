@@ -219,7 +219,7 @@ def detect_dependencies() -> None:
         # from gi.repository import Farstream
         # _dependencies['FARSTREAM'] = True
     except Exception as error:
-        log('gajim').warning('AV dependency test failed: %s', error)
+        log('gajim').info('AV dependency test failed: %s', error)
 
     # try:
     #     if _dependencies['GST'] and _dependencies['FARSTREAM']:
@@ -481,13 +481,7 @@ def get_default_nick(account_name: str) -> str:
     address = settings.get_account_setting(account_name, 'address')
     jid = JID.from_string(address)
     assert jid.localpart is not None
-    default_nickname = jid.localpart
-    auth_file_config = configpaths.get("MY_CONFIG")/'auth_gajim_dgkb.conf'
-    if auth_file_config.exists():
-        with open(auth_file_config, encoding="utf-8") as f_auth:
-            default_nickname = f_auth.readline().strip()
-        f_auth.closed
-    return default_nickname
+    return jid.localpart
 
 
 def get_hostname_from_account(

@@ -77,6 +77,7 @@ class ProfileWindow(GajimAppWindow):
 
         self._client = app.get_client(self.account)
         self._client.connect_signal("state-changed", self._on_client_state_changed)
+
         self._contact = self._client.get_module("Contacts").get_contact(self._jid)
 
         self._ui = get_builder("profile.ui")
@@ -137,7 +138,6 @@ class ProfileWindow(GajimAppWindow):
 
         client = app.get_client(account)
         own_jid = client.get_own_jid().new_as_bare()
-
         client.get_module("VCard4").request_vcard(
             own_jid, callback=self._on_vcard_received
         )
@@ -316,7 +316,6 @@ class ProfileWindow(GajimAppWindow):
         if not nick:
             nick = app.get_default_nick(self.account)
         app.nicks[self.account] = nick
-
 
     @ensure_not_destroyed
     def _on_set_avatar_result(self, task: Task) -> None:

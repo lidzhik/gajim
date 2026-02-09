@@ -78,13 +78,13 @@ class Preferences(GajimAppWindow, EventHelper):
         preferences = [
             GeneralPage(),
             ChatsPage(),
-            #VisualNotificationsPage(),
+            VisualNotificationsPage(),
             StatusPage(),
             StylePage(),
-            #AudioVideoPage(),
+            AudioVideoPage(),
             ShortcutsPage(),
-            #PluginsPage(),
-            #AdvancedPage(),
+            PluginsPage(),
+            AdvancedPage(),
             # Subpages
             AutoAwayPage(),
             AutoExtendedAwayPage(),
@@ -162,15 +162,15 @@ class Preferences(GajimAppWindow, EventHelper):
         account_menu = SideBarMenuItem(account, label, group=_("Accounts"))
 
         pages = [
-            #AccountGeneralPage(account),
-            #AccountPrivacyPage(account),
-            #AccountOmemoPage(account),
+            AccountGeneralPage(account),
+            AccountPrivacyPage(account),
+            AccountOmemoPage(account),
             AccountConnectionPage(account),
             AccountProviderPage(account),
             AccountManageRosterPage(account),
             AccountBlockedContactsPage(account),
             AccountArchivingPage(account),
-            #AccountAdvancedPage(account),
+            AccountAdvancedPage(account),
             # Subpages
             LoginPage(account),
             HostnamePage(account),
