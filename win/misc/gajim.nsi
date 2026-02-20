@@ -96,7 +96,7 @@ Section "Gajim" SecGajim
 
     SetOutPath "$INSTDIR\bin"
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
-        SetShellVarContext current
+        SetShellVarContext all
         CreateDirectory "$SMPROGRAMS\$StartMenuFolder"
         CreateShortCut "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk" "$INSTDIR\bin\Gajim.exe"
         SetShellVarContext all
@@ -106,13 +106,13 @@ Section "Gajim" SecGajim
 SectionEnd
 
 Section $(NAME_SecDesktopIcon) SecDesktopIcon
-    SetShellVarContext current
+    SetShellVarContext all
     SetOutPath "$INSTDIR\bin"
     CreateShortCut "$DESKTOP\Messenger.lnk" "$INSTDIR\bin\Gajim.exe"
 SectionEnd
 
 Section $(NAME_SecAutostart) SecAutostart
-    SetShellVarContext current
+    SetShellVarContext all
     SetOutPath "$INSTDIR\bin"
     CreateShortCut "$SMSTARTUP\Messenger.lnk" "$INSTDIR\bin\Gajim.exe"
 SectionEnd
@@ -136,7 +136,7 @@ Section "Uninstall"
 
     !insertmacro MUI_STARTMENU_GETFOLDER Application $StartMenuFolder
 
-    SetShellVarContext current
+    SetShellVarContext all
     Delete "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk"
     RMDir "$SMPROGRAMS\$StartMenuFolder"
     Delete "$DESKTOP\Messenger.lnk"

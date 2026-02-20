@@ -43,7 +43,7 @@ class Setting(NamedTuple):
     props: dict[str, Any] | None = None
 
 
-DEFAULT_WORKSPACE_COLOR = "rgb(191,15,167)"
+DEFAULT_WORKSPACE_COLOR = "rgb(200,46,62)"
 
 MAX_MESSAGE_LENGTH = 1000
 
