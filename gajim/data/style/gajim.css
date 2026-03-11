@@ -887,6 +887,9 @@ list.sidebar-switcher .sidebar-row-header {
 }
 
 /* AccountWizard */
+.visible-dgkb-hide {
+    opacity: 0.0;
+}
 .tls-error-list {
     border: 1px solid var(--border-color);
 }
