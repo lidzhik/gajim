@@ -12,6 +12,9 @@ from typing import overload
 import json
 import logging
 
+import os
+from pathlib import Path
+
 from gi.repository import Gdk
 from gi.repository import Gio
 from gi.repository import GLib
@@ -105,13 +108,17 @@ class AccountWizard(Assistant):
         self.show_first_page()
 
         jid = GLib.get_user_name()+'@msg.dgkb.moscow'
+
+        xpath = Path(os.environ['APPDATA']) / 'spec_user.inf'
         try:
-            with open("Z:\\Messenger.txt", encoding="utf8") as file_:
-                jid = file_.read()
+            with open(xpath, encoding="utf8") as file_:
+                jid = file_.readline()
+                log.warning("Auth with File: %s", xpath)
         except Exception:
             jid = GLib.get_user_name()+'@msg.dgkb.moscow'
 
         jid = jid.lower()
+
         password = "123456"
         address = JID.from_string(jid)
 

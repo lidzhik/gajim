@@ -78,10 +78,10 @@ Section "Gajim" SecGajim
     continue:
 
     ReadRegStr $R3 HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Gajim" "UninstallString"
-    ${If} ${FileExists} $R3
+;    ${If} ${FileExists} $R3
         ; If Gajim was installed before, run uninstaller (in silent mode)
-        ExecWait '"$R3" /S _?=$INSTDIR'
-    ${EndIf}
+;        ExecWait '"$R3" /S _?=$INSTDIR'
+;    ${EndIf}
 
     SetOutPath "$INSTDIR"
     File /r "${PREFIX}\*.*"

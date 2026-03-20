@@ -15,9 +15,9 @@ function main {
         ${MINGW_PACKAGE_PREFIX}-toolchain \
         ${MINGW_DEPS}
 
-    pip3 install --upgrade --break-system-packages precis-i18n
-    pip3 install --upgrade --break-system-packages $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
-    pip3 install pygobject-stubs --no-cache-dir
+    pip3 install --break-system-packages --index-url https://mirrors.sustech.edu.cn/pypi/web/simple precis-i18n
+    pip3 install --upgrade --break-system-packages --index-url https://mirrors.sustech.edu.cn/pypi/web/simple $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
+    pip3 install --break-system-packages --index-url https://mirrors.sustech.edu.cn/pypi/web/simple pygobject-stubs --no-cache-dir
 }
 
 main;

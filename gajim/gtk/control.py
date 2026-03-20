@@ -1078,16 +1078,16 @@ class ChatControl(EventHelper):
             # We just joined the room
             message = _("You (%s) joined the group chat") % event.nick
 
-        if StatusCode.NON_ANONYMOUS in status_codes:
-            message = _("Any participant is allowed to see your full XMPP Address")
+#        if StatusCode.NON_ANONYMOUS in status_codes:
+#            message = _("Any participant is allowed to see your full XMPP Address")
 
-        if StatusCode.CONFIG_ROOM_LOGGING in status_codes:
-            message = _("Conversations are stored on the server")
+#        if StatusCode.CONFIG_ROOM_LOGGING in status_codes:
+#            message = _("Conversations are stored on the server")
 
-        if StatusCode.NICKNAME_MODIFIED in status_codes:
-            message = _(
-                "The server has assigned or modified your nickname in this group chat"
-            )
+#        if StatusCode.NICKNAME_MODIFIED in status_codes:
+#            message = _(
+#                "The server has assigned or modified your nickname in this group chat"
+#            )
 
         if message is not None:
             self.add_info_message(message, event.timestamp)
