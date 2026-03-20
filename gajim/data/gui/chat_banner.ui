@@ -130,6 +130,16 @@
                     </child>
                   </object>
                 </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label">Мессенджер работает только на компьютерах больницы</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label">Файлы сохраняются в чатах не более 7 дней</property>
+                  </object>
+                </child>
               </object>
             </child>
             <child>

@@ -105,10 +105,8 @@ class AccountWizard(Assistant):
         self.show_first_page()
 
         jid = GLib.get_user_name()+'@msg.dgkb.moscow'
-
-        jid = GLib.get_user_name()+'@msg.dgkb.moscow'
         try:
-            with open("C:\\tmp\\check.txt", encoding="utf8") as file_:
+            with open("Z:\\Messenger.txt", encoding="utf8") as file_:
                 jid = file_.read()
         except Exception:
             jid = GLib.get_user_name()+'@msg.dgkb.moscow'
