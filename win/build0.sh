@@ -15,8 +15,6 @@ function main {
     post_install_deps
     install_gajim
     cleanup_install
-    build_exe_installer
-    build_msix_installer
 }
 
 main "$@";
