@@ -78,10 +78,16 @@ Section "Gajim" SecGajim
     continue:
 
     ReadRegStr $R3 HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Gajim" "UninstallString"
-;    ${If} ${FileExists} $R3
+    ${If} ${FileExists} $R3
         ; If Gajim was installed before, run uninstaller (in silent mode)
 ;        ExecWait '"$R3" /S _?=$INSTDIR'
-;    ${EndIf}
+        ExecWait "TaskKill /IM gdbus.exe /F"
+        ExecWait "TaskKill /IM gajim.exe /F"
+        ExecWait "TaskKill /IM gajim-debug.exe /F"
+        SetShellVarContext all
+        Delete "$DESKTOP\Messenger.lnk"
+        Delete "$SMSTARTUP\Messenger.lnk"
+    ${EndIf}
 
     SetOutPath "$INSTDIR"
     File /r "${PREFIX}\*.*"
@@ -98,23 +104,23 @@ Section "Gajim" SecGajim
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
         SetShellVarContext all
         CreateDirectory "$SMPROGRAMS\$StartMenuFolder"
-        CreateShortCut "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk" "$INSTDIR\bin\Gajim.exe"
+        CreateShortCut "$SMPROGRAMS\$StartMenuFolder\Внутренний мессенджер.lnk" "$INSTDIR\bin\Gajim.exe"
         SetShellVarContext all
         CreateDirectory "$SMPROGRAMS\$StartMenuFolder"
-        CreateShortCut "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk" "$INSTDIR\bin\Gajim.exe"
+        CreateShortCut "$SMPROGRAMS\$StartMenuFolder\Внутренний мессенджер.lnk" "$INSTDIR\bin\Gajim.exe"
     !insertmacro MUI_STARTMENU_WRITE_END
 SectionEnd
 
 Section $(NAME_SecDesktopIcon) SecDesktopIcon
     SetShellVarContext all
     SetOutPath "$INSTDIR\bin"
-    CreateShortCut "$DESKTOP\Messenger.lnk" "$INSTDIR\bin\Gajim.exe"
+    CreateShortCut "$DESKTOP\Внутренний мессенджер.lnk" "$INSTDIR\bin\Gajim.exe"
 SectionEnd
 
 Section $(NAME_SecAutostart) SecAutostart
     SetShellVarContext all
     SetOutPath "$INSTDIR\bin"
-    CreateShortCut "$SMSTARTUP\Messenger.lnk" "$INSTDIR\bin\Gajim.exe"
+    CreateShortCut "$SMSTARTUP\Внутренний мессенджер.lnk" "$INSTDIR\bin\Gajim.exe"
 SectionEnd
 
 Section $(NAME_SecURI) SecURI
@@ -137,12 +143,12 @@ Section "Uninstall"
     !insertmacro MUI_STARTMENU_GETFOLDER Application $StartMenuFolder
 
     SetShellVarContext all
-    Delete "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk"
+    Delete "$SMPROGRAMS\$StartMenuFolder\Внутренний мессенджер.lnk"
     RMDir "$SMPROGRAMS\$StartMenuFolder"
     Delete "$DESKTOP\Messenger.lnk"
     Delete "$SMSTARTUP\Messenger.lnk"
     SetShellVarContext all
-    Delete "$SMPROGRAMS\$StartMenuFolder\Messenger.lnk"
+    Delete "$SMPROGRAMS\$StartMenuFolder\Внутренний мессенджер.lnk"
     RMDir "$SMPROGRAMS\$StartMenuFolder"
 
     DeleteRegKey /ifempty HKCU "Software\Gajim"
