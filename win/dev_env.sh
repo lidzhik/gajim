@@ -15,9 +15,9 @@ function main {
         ${MINGW_PACKAGE_PREFIX}-toolchain \
         ${MINGW_DEPS}
 
-    pip3 install --no-index --find-links=/var/pip --upgrade precis-i18n
-    pip3 install --no-index --find-links=/var/pip --upgrade $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
-    pip3 install --no-index --find-links=/var/pip pygobject-stubs --no-cache-dir
+    pip3 install --break-system-packages --no-index --find-links=/var/pip --upgrade precis-i18n
+    pip3 install --break-system-packages --no-index --find-links=/var/pip --upgrade $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
+    pip3 install --break-system-packages --no-index --find-links=/var/pip pygobject-stubs --no-cache-dir
 }
 
 main;
