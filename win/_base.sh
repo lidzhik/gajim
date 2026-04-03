@@ -117,7 +117,7 @@ function create_root {
     mkdir -p "${BUILD_ROOT}"/var/lib/pacman
     mkdir -p "${BUILD_ROOT}"/var/log
 
-    build_pacman -Syu
+    cp -a /var/lib/pacman/sync/. "${BUILD_ROOT}"/var/lib/pacman/sync/
     build_pacman --noconfirm -S base
 }
 
