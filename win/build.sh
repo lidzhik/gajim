@@ -8,10 +8,7 @@ source "$DIR"/_base.sh
 
 function main {
     set_build_root
-    install_pre_deps
     create_root
-    install_mingw_deps
-    install_python_deps
     post_install_deps
     install_gajim
     cleanup_install
