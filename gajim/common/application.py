@@ -13,7 +13,6 @@ import sys
 from datetime import datetime
 from pstats import SortKey
 
-from gi.repository import Gio
 from gi.repository import GLib
 from nbxmpp.const import ConnectionProtocol
 from nbxmpp.const import ConnectionType
@@ -102,11 +101,6 @@ class CoreApplication(ged.EventHelper):
             from gajim.gtk.audio_player import AudioPlayer
             app.audio_player = AudioPlayer()
 
-        self._network_monitor = Gio.NetworkMonitor.get_default()
-        self._network_monitor.connect('notify::network-available',
-                                      self._network_status_changed)
-        self._network_state = self._network_monitor.get_network_available()
-
         if sys.platform in ('win32', 'darwin'):
             GLib.timeout_add_seconds(20, self._check_for_updates)
 
@@ -138,46 +132,6 @@ class CoreApplication(ged.EventHelper):
     @property
     def _log(self) -> logging.Logger:
         return app.log('app')
-
-    def _on_get_dgkb_fullname_data(self, obj: FileTransfer) -> None:
-        try:
-            result = obj.get_result()
-            result_json = json.loads(result.content)
-            log.info("Get Full Name Data: %s", result_json)
-            for item in result_json:
-                for account in app.settings.get_active_accounts():
-                    client = app.get_client(account)
-                    if item is not None:
-                        client.get_module("UserNickname").set_nickname(item, public=True)
-        except Exception as error:
-            log.warning("Error Get & Save Full Name: %s", error)
-
-    def _on_get_dgkb_bookmarks_data(self, obj: FileTransfer) -> None:
-        try:
-            result = obj.get_result()
-            result_json = json.loads(result.content)
-            log.info("Get Bookmarks Data: %s", result_json)
-            for item in result_json:
-                for account in app.settings.get_active_accounts():
-                    client = app.get_client(account)
-                    if item is not None:
-                        client.get_module('Bookmarks').add_or_modify(item, autojoin=True)
-        except Exception as error:
-            log.warning("Error Get & Save Bookmark: %s", error)
-
-
-    def _on_get_dgkb_contacts_data(self, obj: FileTransfer) -> None:
-        try:
-            result = obj.get_result()
-            result_json = json.loads(result.content)
-            log.info("Get Contacts Data: %s", result_json)
-            for item in result_json:
-                for account in app.settings.get_active_accounts():
-                    client = app.get_client(account)
-                    if item is not None:
-                        client.get_module('Contacts').add_contact(item)
-        except Exception as error:
-            log.warning("Error Get & Save Contacts: %s", error)
 
     def _core_command_line(self, options: GLib.VariantDict) -> None:
         if options.contains('cprofile'):
@@ -317,24 +271,6 @@ class CoreApplication(ged.EventHelper):
 
         warnings.showwarning = warn_with_traceback
         warnings.filterwarnings(action='always')
-
-    def _network_status_changed(self,
-                                monitor: Gio.NetworkMonitor,
-                                _network_available: bool
-                                ) -> None:
-        connected = monitor.get_network_available()
-        if connected == self._network_state:
-            return
-
-        self._network_state = connected
-        if connected:
-            self._log.info('Network connection available')
-        else:
-            self._log.info('Network connection lost')
-            for client in app.get_clients():
-                if (client.state.is_connected or
-                        client.state.is_available):
-                    client.disconnect(gracefully=False, reconnect=True)
 
     def _check_for_updates(self) -> None:
         if not app.settings.get('check_for_update'):
@@ -485,24 +421,6 @@ class CoreApplication(ged.EventHelper):
         client = app.get_client(event.account)
         if client.get_module('MAM').available:
             client.get_module('MAM').request_archive_on_signin()
-
-        app.ftm.http_request(
-            "GET",
-            "https://msg.dgkb.moscow/api/bookmarks/?jid="+app.get_default_nick(event.account),
-            callback=self._on_get_dgkb_bookmarks_data,
-        )
-
-        app.ftm.http_request(
-            "GET",
-            "https://msg.dgkb.moscow/api/fullname/?jid="+app.get_default_nick(event.account),
-            callback=self._on_get_dgkb_fullname_data,
-        )
-
-#        app.ftm.http_request(
-#            "GET",
-#            "https://msg.dgkb.moscow/api/contacts/?jid="+app.get_default_nick(event.account),
-#            callback=self._on_get_dgkb_contacts_data,
-#        )
 
     def change_status(self,
                       status: str,

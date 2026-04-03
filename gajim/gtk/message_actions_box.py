@@ -36,6 +36,7 @@ from gajim.common.i18n import _
 from gajim.common.modules.contacts import BareContact
 from gajim.common.modules.contacts import GroupchatContact
 from gajim.common.modules.contacts import GroupchatParticipant
+from gajim.common.open_graph_parser import OpenGraphData
 from gajim.common.storage.archive import models as mod
 from gajim.common.structs import ReplyData
 from gajim.common.types import ChatContactT
@@ -47,6 +48,7 @@ from gajim.gtk.emoji_chooser import EmojiChooser
 from gajim.gtk.menus import get_encryption_menu
 from gajim.gtk.menus import get_format_menu
 from gajim.gtk.message_input import MessageInputTextView
+from gajim.gtk.message_url_previews import MessageURLPreviews
 from gajim.gtk.referenced_message import ReplyBox
 from gajim.gtk.security_label_selector import SecurityLabelSelector
 from gajim.gtk.util.classes import SignalManager
@@ -102,6 +104,9 @@ class MessageActionsBox(Gtk.Grid, EventHelper, SignalManager):
         self._ui.action_box.reorder_child_after(
             self._security_label_selector, self._ui.input_wrapper
         )
+
+        self._message_url_previews = MessageURLPreviews()
+        self._ui.link_previews_box.append(self._message_url_previews)
 
         self._message_input = MessageInputTextView(self)
         self._connect(self._message_input, "buffer-changed", self._on_buffer_changed)
@@ -310,6 +315,7 @@ class MessageActionsBox(Gtk.Grid, EventHelper, SignalManager):
 
         self._set_chatstate(True)
 
+        self._message_url_previews.switch_contact(contact)
         self._message_input.switch_contact(contact)
 
         self._chat_state_indicator.switch_contact(contact)
@@ -333,7 +339,7 @@ class MessageActionsBox(Gtk.Grid, EventHelper, SignalManager):
             reply_pk = reply_data.pk
 
         draft = None
-        if text or reply_pk is not None:
+        if any([text, reply_pk]):
             draft = Draft(text, reply_pk)
 
         app.storage.drafts.set(self._contact, draft)
@@ -411,6 +417,7 @@ class MessageActionsBox(Gtk.Grid, EventHelper, SignalManager):
 
     def reset_state_after_send(self) -> None:
         self._message_input.clear()
+        self._message_url_previews.clear()
         self._cancel_action()
         assert self._contact is not None
         app.storage.drafts.set(self._contact, None)
@@ -715,6 +722,8 @@ class MessageActionsBox(Gtk.Grid, EventHelper, SignalManager):
             allow_send_message(has_text, self._contact)
         )
 
+        self._message_url_previews.generate_url_previews(self._message_input.get_text())
+
         encryption_name = self._contact.settings.get("encryption")
 
         if has_text and encryption_name:
@@ -823,10 +832,19 @@ class MessageActionsBox(Gtk.Grid, EventHelper, SignalManager):
 
         return message_reply
 
+    def get_open_graph_data(self) -> dict[str, OpenGraphData] | None:
+        return self._message_url_previews.get_open_graph_data()
+
     def _on_paste_clipboard(self, textview: MessageInputTextView) -> None:
         clipboard = self.get_clipboard()
         formats = clipboard.get_formats()
         mime_types = formats.get_mime_types()
+
+        log.debug(
+            "Clipboard paste received, mime-types: %s, gtypes: %s",
+            mime_types,
+            formats.get_gtypes(),
+        )
 
         if mime_types is None:
             log.warning("Could not determine clipboard mime types")
@@ -856,20 +874,31 @@ class MessageActionsBox(Gtk.Grid, EventHelper, SignalManager):
         try:
             file_list = clipboard.read_value_finish(result)
         except Exception as e:
-            formats = clipboard.get_formats()
-            mime_types = formats.get_mime_types()
-            InformationAlertDialog(
-                _("Pasting Content Failed"),
-                _("Error: %s (mime types: %s)") % (e, mime_types),
-            )
+            log.info("FileList read failed, trying text fallback: %s", e)
+            clipboard.read_text_async(None, self._on_clipboard_text_fallback_finished)
             return
 
         if file_list is None or not isinstance(file_list, Gdk.FileList):
-            log.info("No URIs pasted")
+            log.info("Unexpected type received %r, trying text fallback", file_list)
+            clipboard.read_text_async(None, self._on_clipboard_text_fallback_finished)
             return
 
         uris = [file.get_uri() for file in file_list.get_files()]
         app.window.activate_action("win.send-file", GLib.Variant("as", uris))
+
+    def _on_clipboard_text_fallback_finished(
+        self,
+        clipboard: Gdk.Clipboard,
+        result: Gio.AsyncResult,
+    ) -> None:
+        try:
+            text = clipboard.read_text_finish(result)
+        except Exception as e:
+            log.warning("Text fallback paste also failed: %s", e)
+            return
+
+        if text:
+            self._message_input.get_buffer().insert_at_cursor(text)
 
     def _on_clipboard_read_texture_finished(
         self,

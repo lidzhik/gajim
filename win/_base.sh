@@ -10,7 +10,7 @@ DIR="$( cd "$( dirname "$0" )" && pwd )"
 cd "${DIR}"
 
 MAJOR_PY_VERSION="3"
-MINOR_PY_VERSION="13"
+MINOR_PY_VERSION="14"
 PYTHON_VERSION="${MAJOR_PY_VERSION}.${MINOR_PY_VERSION}"
 BUILD_VERSION="0"
 
@@ -59,8 +59,8 @@ ${MINGW_PACKAGE_PREFIX}-webp-pixbuf-loader \
 "
 
 PYTHON_REQUIREMENTS="\
-git+https://github.com/lidzhik/omemo-dr.git
-git+https://github.com/lidzhik/python-nbxmpp.git
+git+https://dev.gajim.org/gajim/omemo-dr.git
+git+https://dev.gajim.org/gajim/python-nbxmpp.git
 css_parser
 httpx[http2,socks]
 truststore
@@ -126,12 +126,8 @@ function install_mingw_deps {
 }
 
 function install_python_deps {
-#    build_pip install precis-i18n
-#    build_pip install $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
-    build_pip install --break-system-packages  precis-i18n
-    build_pip install --break-system-packages $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
-#    build_pip install --break-system-packages --index-url https://mirrors.sustech.edu.cn/pypi/web/simple precis-i18n
-#    build_pip install --break-system-packages --index-url https://mirrors.sustech.edu.cn/pypi/web/simple $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
+    build_pip install precis-i18n
+    build_pip install $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
 }
 
 function post_install_deps {
@@ -154,9 +150,7 @@ function install_gajim {
     cd ..
 
     build_python make.py build --dist=win
-#    build_pip install .
-    build_pip install --break-system-packages .
-#    build_pip install --break-system-packages --index-url https://mirrors.sustech.edu.cn/pypi/web/simple .
+    build_pip install .
 
     QL_VERSION=$(MSYSTEM= build_python -c \
         "import gajim; import sys; sys.stdout.write(gajim.__version__.split('+')[0])")
@@ -169,8 +163,8 @@ function install_gajim {
         "${QL_VERSION}" "${MINGW_ROOT}"/bin
 
     # Install language dicts
-#    curl -o "${BUILD_ROOT}"/speller_dicts.zip https://gajim.org/downloads/snap/win/build/speller_dicts.zip
-#    7z x -o"${MINGW_ROOT}"/share "${BUILD_ROOT}"/speller_dicts.zip
+    curl -o "${BUILD_ROOT}"/speller_dicts.zip https://gajim.org/downloads/snap/win/build/speller_dicts.zip
+    7z x -o"${MINGW_ROOT}"/share "${BUILD_ROOT}"/speller_dicts.zip
 
     # Install our own icons
     rm -Rf "${MINGW_ROOT}/share/icons/hicolor"
@@ -340,7 +334,7 @@ function makepri {
 
 function build_exe_installer {
     MSYSTEM='MINGW64' /usr/bin/bash -lc "cd ${BUILD_ROOT} && makensis -NOCD -DVERSION=\"$QL_VERSION_DESC\" -DARCH=\"${MSYSTEM_CARCH}\" -DPREFIX=\"${MSYSTEM_PREFIX:1}\" ${MISC}/gajim.nsi"
-#    MSYSTEM='MINGW64' /usr/bin/bash -lc "cd ${BUILD_ROOT} && makensis -NOCD -DVERSION=\"$QL_VERSION_DESC\" -DARCH=\"${MSYSTEM_CARCH}\" -DPREFIX=\"${MSYSTEM_PREFIX:1}\" ${MISC}/gajim-portable.nsi"
+    MSYSTEM='MINGW64' /usr/bin/bash -lc "cd ${BUILD_ROOT} && makensis -NOCD -DVERSION=\"$QL_VERSION_DESC\" -DARCH=\"${MSYSTEM_CARCH}\" -DPREFIX=\"${MSYSTEM_PREFIX:1}\" ${MISC}/gajim-portable.nsi"
 }
 
 function build_msix_installer {

@@ -31,6 +31,7 @@ from nbxmpp.util import generate_id
 from gajim.common import types
 from gajim.common.const import MUCJoinedState
 from gajim.common.const import PresenceShowExt
+from gajim.common.open_graph_parser import OpenGraphData
 from gajim.common.storage.archive.const import MessageType
 from gajim.common.util.datetime import convert_epoch_to_local_datetime
 from gajim.common.util.datetime import utc_now
@@ -88,6 +89,7 @@ class OutgoingMessage:
     control: Any | None = None
     correct_id: str | None = None
     reply_data: ReplyData | None = None
+    open_graph_data: dict[str, OpenGraphData] | None = None
     reaction_data: tuple[str, set[str]] | None = None
     retraction_id: str | None = None
     oob_url: str | None = None

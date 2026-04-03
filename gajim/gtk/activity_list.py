@@ -4,6 +4,7 @@
 
 from __future__ import annotations
 
+import typing
 from typing import Any
 from typing import cast
 from typing import Generic
@@ -27,6 +28,8 @@ from gajim.common.i18n import _
 from gajim.common.modules.contacts import BareContact
 from gajim.common.modules.contacts import GroupchatContact
 from gajim.common.modules.contacts import ResourceContact
+from gajim.common.storage.archive.const import ChatDirection
+from gajim.common.storage.archive.const import MessageType
 from gajim.common.util.datetime import utc_now
 from gajim.common.util.muc import get_groupchat_name
 from gajim.common.util.user_strings import get_uf_relative_time
@@ -35,6 +38,10 @@ from gajim.plugins.repository import PluginRepository
 
 from gajim.gtk.util.classes import SignalManager
 from gajim.gtk.util.misc import get_ui_string
+
+if typing.TYPE_CHECKING:
+    from gajim.gtk.activity_page import ActivityPage
+
 
 log = logging.getLogger("gajim.gtk.activity_list")
 
@@ -47,11 +54,7 @@ EventT = (
     | events.UnsubscribedPresenceReceived
     | events.GajimUpdateAvailable
     | events.AllowGajimUpdateCheck
-)
-
-EventNotifications = (
-    events.MucInvitation,
-    events.SubscribePresenceReceived,
+    | events.ReactionUpdated
 )
 
 
@@ -70,7 +73,9 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
 
         self.add_css_class("activity-list-view")
 
-        self._model = Gio.ListStore(item_type=ActivityListItem)
+        self._model: Gio.ListStore[ActivityListItem[Any]] = Gio.ListStore(
+            item_type=ActivityListItem
+        )
 
         factory = Gtk.SignalListItemFactory()
         self._connect(factory, "setup", self._on_factory_setup)
@@ -87,8 +92,6 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
 
         self._timer_id = GLib.timeout_add_seconds(60, self._update_time)
 
-        self._items: dict[str, ActivityListItem[Any]] = {}
-
         self._custom_filter = Gtk.CustomFilter.new(self._filter_func)
 
         self._filter_model = Gtk.FilterListModel(
@@ -103,6 +106,8 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
         self._connect(
             self._selection_model, "notify::selected-item", self._on_selection_changed
         )
+        self._connect(self, "activate", self._on_activity_item_activate)
+        self._connect(self, "unselected", self._on_activity_item_unselected)
 
         self.set_model(self._selection_model)
 
@@ -114,7 +119,9 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
                 ("unsubscribed-presence-received", ged.GUI1, self._on_event),
                 ("gajim-update-available", ged.GUI1, self._on_event),
                 ("allow-gajim-update-check", ged.GUI1, self._on_event),
+                ("reaction-updated", ged.GUI1, self._on_event),
                 ("account-disabled", ged.GUI1, self._on_account_disabled),
+                ("timezone-changed", ged.GUI2, self._on_timezone_changed),
             ]
         )
 
@@ -132,6 +139,7 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
             events.UnsubscribedPresenceReceived: Unsubscribed,
             events.GajimUpdateAvailable: GajimUpdate,
             events.AllowGajimUpdateCheck: GajimUpdatePermission,
+            events.ReactionUpdated: Reaction,
         }
 
     def do_unroot(self) -> None:
@@ -153,9 +161,17 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
         del self._custom_filter
         app.check_finalize(self)
 
+    def set_page(self, page: ActivityPage) -> None:
+        self._activity_page = page
+        self._activity_page.connect("page-removed", self._on_activity_page_removed)
+
+    def _on_activity_page_removed(
+        self, page: ActivityPage, item: ActivityListItemT
+    ) -> None:
+        self._remove(item)
+
     def select_with_context_id(self, context_id: str) -> None:
         for position, item in enumerate(self._model):
-            item = cast(ActivityListItem[Any], item)
             if item.context_id == context_id:
                 self._selection_model.set_selected(position)
                 return
@@ -164,6 +180,9 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
         self._selection_model.unselect_all()
 
     def _add(self, item: ActivityListItemT, *, prepend: bool = True) -> None:
+        if item.unique:
+            self._remove_same_items(item)
+
         if prepend:
             self._model.insert(0, item)
         else:
@@ -172,16 +191,41 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
         if not item.read:
             self._increase_unread_count()
 
-    def _remove(self, position: int, read: bool) -> None:
-        if not read:
-            self._decrease_unread_count()
+    def _remove_same_items(self, new_item: ActivityListItemT) -> None:
+        for i in reversed(range(len(self._model))):
+            old_item = self._model.get_item(i)
+            assert old_item is not None
+
+            if (
+                isinstance(old_item, type(new_item))
+                and old_item.account == new_item.account
+            ):
+                if not old_item.read:
+                    self._decrease_unread_count()
+                self._model.remove(i)
+
+    def _remove_by_type(self, item_type: type[ActivityListItemT]) -> None:
+        for i in reversed(range(len(self._model))):
+            item = self._model.get_item(i)
+            assert item is not None
+
+            if isinstance(item, item_type):
+                if not item.read:
+                    self._decrease_unread_count()
+                self._model.remove(i)
+
+    def _remove(self, item: ActivityListItemT) -> None:
+        found, position = self._model.find(item)
+        if not found:
+            return
 
         self._model.remove(position)
+        if not item.read:
+            self._decrease_unread_count()
 
-    def _update_time(self) -> int:
+    def _update_time(self) -> bool:
         now = utc_now()
         for item in self._model:
-            item = cast(ActivityListItem[Any], item)
             delta = now - item.timestamp
             if delta > dt.timedelta(days=8):
                 # Items older than 8 days show an absolute timestamp
@@ -191,6 +235,16 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
             item.update_time()
 
         return GLib.SOURCE_CONTINUE
+
+    def _on_activity_item_activate(
+        self, listview: ActivityListView, position: int
+    ) -> None:
+        item = listview.get_listitem(position)
+        item.activated()
+        self._activity_page.process_row_activated(item)
+
+    def _on_activity_item_unselected(self, _listview: ActivityListView) -> None:
+        self._activity_page.show_default_page()
 
     def _increase_unread_count(self) -> None:
         self.set_property("unread-count", self.unread_count + 1)
@@ -256,15 +310,17 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
 
     def _on_event(self, event: EventT) -> None:
         list_item_cls = self._event_item_map[type(event)]
-        item = list_item_cls.from_event(event)  # pyright: ignore
+        if not list_item_cls.can_create(event):  # pyright: ignore
+            return
 
+        item = list_item_cls.from_event(event)  # pyright: ignore
         self._add(item)
 
-        if isinstance(event, EventNotifications):
+        if item.should_notify():
             app.ged.raise_event(
                 events.Notification(
-                    context_id=event.context_id,
-                    account=event.account,
+                    context_id=item.context_id,
+                    account=item.account,
                     jid=None,
                     type=event.name,
                     title=item.title,
@@ -281,18 +337,12 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
         item = GajimPluginUpdate.from_event(
             events.PluginUpdatesAvailable(manifests=manifests)
         )
-        self._items["plugin-updates-available"] = item
         self._add(item)
 
     def _on_plugin_auto_update_finished(
         self, _repository: PluginRepository, _signal_name: str
     ) -> None:
-        item = self._items.get("plugin-updates-available")
-        if item is not None:
-            found, position = self._model.find(item)
-            if found:
-                self._remove(position, item.read)
-
+        self._remove_by_type(GajimPluginUpdate)
         item = GajimPluginUpdateFinished.from_event()
         self._add(item)
 
@@ -303,23 +353,27 @@ class ActivityListView(Gtk.ListView, SignalManager, EventHelper):
             if item.account == event.account:
                 self._model.remove(pos)
 
+    def _on_timezone_changed(self, event: events.TimezoneChanged) -> None:
+        self._add(TimezoneChanged.from_event(event))
+
 
 class ActivityListItem(Generic[E], GObject.Object):
     __gtype_name__ = "ActivityListItem"
 
-    context_id = GObject.Property(type=str)
-    account = GObject.Property(type=str)
-    account_visible = GObject.Property(type=bool, default=False)
-    activity_type = GObject.Property(type=int)
-    activity_type_icon = GObject.Property(type=str)
-    avatar = GObject.Property(type=Gdk.Paintable)
-    timestamp = GObject.Property(type=object)
-    title = GObject.Property(type=str)
-    subject = GObject.Property(type=str)
-    read = GObject.Property(type=bool, default=False)
-    search_text = GObject.Property(type=str)
-    event = GObject.Property(type=object)
+    context_id: str = GObject.Property(type=str)  # pyright: ignore
+    account: str = GObject.Property(type=str)  # pyright: ignore
+    account_visible: bool = GObject.Property(type=bool, default=False)  # pyright: ignore
+    activity_type: int = GObject.Property(type=int)  # pyright: ignore
+    activity_type_icon: str = GObject.Property(type=str)  # pyright: ignore
+    avatar: Gdk.Paintable = GObject.Property(type=Gdk.Paintable)  # pyright: ignore
+    timestamp: dt.datetime = GObject.Property(type=object)  # pyright: ignore
+    title: str = GObject.Property(type=str)  # pyright: ignore
+    subject: str = GObject.Property(type=str)  # pyright: ignore
+    read: bool = GObject.Property(type=bool, default=False)  # pyright: ignore
+    search_text: str = GObject.Property(type=str)  # pyright: ignore
+    event: E = GObject.Property(type=object)  # pyright: ignore
     state = GObject.Property(type=object)
+    unique: bool = GObject.Property(type=bool, default=False)  # pyright: ignore
 
     def __init__(
         self,
@@ -334,6 +388,7 @@ class ActivityListItem(Generic[E], GObject.Object):
         subject: str,
         read: bool,
         event: E,
+        unique: bool = False,
     ) -> None:
         self._timestamp_string = get_uf_relative_time(timestamp)
 
@@ -351,6 +406,7 @@ class ActivityListItem(Generic[E], GObject.Object):
             search_text=f"{title} {subject}",
             event=event,
             state={},
+            unique=unique,
         )
 
     @GObject.Property(type=str, flags=GObject.ParamFlags.READABLE)
@@ -363,6 +419,16 @@ class ActivityListItem(Generic[E], GObject.Object):
 
     def get_event(self) -> E:
         return self.event
+
+    def activated(self) -> None:
+        return
+
+    def should_notify(self) -> bool:
+        return False
+
+    @staticmethod
+    def can_create(event: E) -> bool:
+        return True
 
     def __repr__(self) -> str:
         return f"ActivityListItem: {self.account} - {self.activity_type}"
@@ -465,6 +531,7 @@ class GajimUpdate(ActivityListItem[events.GajimUpdateAvailable]):
             subject=_("Gajim %s is available") % event.version,
             read=False,
             event=event,
+            unique=True,
         )
 
 
@@ -486,6 +553,7 @@ class GajimUpdatePermission(ActivityListItem[events.AllowGajimUpdateCheck]):
             subject=_("Search for Gajim updates periodically?"),
             read=False,
             event=event,
+            unique=True,
         )
 
 
@@ -507,6 +575,7 @@ class GajimPluginUpdate(ActivityListItem[events.PluginUpdatesAvailable]):
             subject=_("There are updates for Gajim’s plugins"),
             read=False,
             event=event,
+            unique=True,
         )
 
 
@@ -528,6 +597,7 @@ class GajimPluginUpdateFinished(ActivityListItem[None]):
             subject=_("Updates will be installed next time Gajim is started"),
             read=False,
             event=None,
+            unique=True,
         )
 
 
@@ -563,6 +633,9 @@ class Subscribe(ActivityListItem[events.SubscribePresenceReceived]):
             read=False,
             event=event,
         )
+
+    def should_notify(self) -> bool:
+        return True
 
 
 class Unsubscribed(ActivityListItem[events.UnsubscribedPresenceReceived]):
@@ -634,6 +707,9 @@ class MucInvitation(ActivityListItem[events.MucInvitation]):
             event=event,
         )
 
+    def should_notify(self) -> bool:
+        return True
+
 
 class MucInvitationDeclined(ActivityListItem[events.MucDecline]):
     @classmethod
@@ -668,6 +744,106 @@ class MucInvitationDeclined(ActivityListItem[events.MucDecline]):
         )
 
 
+class TimezoneChanged(ActivityListItem[events.TimezoneChanged]):
+    @classmethod
+    def from_event(cls, event: events.TimezoneChanged) -> TimezoneChanged:
+        scale = app.window.get_scale_factor()
+        texture = app.app.avatar_storage.get_gajim_circle_icon(AvatarSize.ROSTER, scale)
+        return cls(
+            context_id=event.context_id,
+            account=event.account,
+            account_visible=True,
+            activity_type=0,
+            activity_type_icon="lucide-info-symbolic",
+            avatar=texture,
+            title=_("Timezone Update"),
+            timestamp=utc_now(),
+            subject=_("Update your timezone?"),
+            read=False,
+            event=event,
+            unique=True,
+        )
+
+
+class Reaction(ActivityListItem[events.ReactionUpdated]):
+    @classmethod
+    def from_event(cls, event: events.ReactionUpdated) -> Reaction:
+        client = app.get_client(event.account)
+        scale = app.window.get_scale_factor()
+        assert event.message is not None
+        if event.message.type in (MessageType.GROUPCHAT, MessageType.PM):
+            muc_jid = event.message.remote.jid
+            if event.message.type == MessageType.PM:
+                muc_jid.new_as_bare()
+
+            groupchat_name = get_groupchat_name(client, muc_jid)
+
+            assert event.occupant is not None
+            texture = app.app.avatar_storage.get_occupant_texture(
+                event.jid, event.occupant, AvatarSize.ROSTER, scale
+            )
+            nickname = event.occupant.nickname
+            title = _("Reaction from %s (%s)") % (nickname, groupchat_name)
+
+        else:
+            contact = client.get_module("Contacts").get_contact(event.jid)
+            assert isinstance(contact, BareContact)
+            texture = contact.get_avatar(AvatarSize.ROSTER, scale)
+            nickname = contact.name
+            title = _("Reaction from %s") % nickname
+
+        assert event.message is not None
+        assert event.emojis is not None
+        emojis = " ".join(event.emojis)
+
+        subject = _(
+            "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+        ) % {
+            "contact": nickname,
+            "reaction": emojis,
+            "message": event.message.text or "",
+        }
+        return cls(
+            context_id=event.context_id,
+            account=event.account,
+            account_visible=True,
+            activity_type=0,
+            activity_type_icon="lucide-reply-symbolic",
+            avatar=texture,
+            title=title,
+            timestamp=utc_now(),
+            subject=subject,
+            read=False,
+            event=event,
+        )
+
+    @staticmethod
+    def can_create(event: events.ReactionUpdated) -> bool:
+        return (
+            event.message is not None
+            # Message is in the database
+            and event.message.direction == ChatDirection.OUTGOING
+            # Message we sent out
+            and event.direction == ChatDirection.INCOMING
+            # A reaction we received from someone else
+        )
+
+    def activated(self) -> None:
+        assert self.event.message is not None
+        app.window.scroll_to_message(self.event.account, self.event.message)
+
+    def should_notify(self) -> bool:
+        assert self.event.message is not None
+        if self.event.is_mam_message or app.window.is_chat_active(
+            self.account, self.event.jid
+        ):
+            return False
+
+        if self.event.message.type in (MessageType.GROUPCHAT, MessageType.PM):
+            return app.settings.get_app_setting("gc_notify_on_reaction_default")
+        return app.settings.get_app_setting("notify_on_reaction_default")
+
+
 ActivityListItemT = (
     GajimUpdate
     | GajimUpdatePermission
@@ -677,4 +853,6 @@ ActivityListItemT = (
     | Unsubscribed
     | MucInvitation
     | MucInvitationDeclined
+    | TimezoneChanged
+    | Reaction
 )

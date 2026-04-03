@@ -25,6 +25,7 @@ from gajim.common.modules.contacts import GroupchatContact
 from gajim.common.modules.contacts import GroupchatParticipant
 
 from gajim.gtk.activity_list import ActivityListView
+from gajim.gtk.activity_page import ActivityPage
 from gajim.gtk.chat_list import ChatList
 from gajim.gtk.chat_list_header import ChatListHeader
 from gajim.gtk.chat_list_stack import ChatListStack
@@ -71,7 +72,11 @@ class ChatPage(Gtk.Paned):
 
         self._chat_list_stack.set_search_entry(search_entry)
         self._chat_list_stack.set_chat_filter(chat_filter)
+
+        activity_page = self._chat_stack.get_child_by_name("activity")
+        assert isinstance(activity_page, ActivityPage)
         self._activity_list.set_search_entry(search_entry)
+        self._activity_list.set_page(activity_page)
 
         self._add_actions()
 
@@ -130,7 +135,6 @@ class ChatPage(Gtk.Paned):
     def _on_chat_selected(
         self, _chat_list_stack: ChatListStack, workspace_id: str, account: str, jid: JID
     ) -> None:
-        self._list_stack.set_visible_child_name("chat-list-stack")
         self._chat_stack.show_chat(account, jid)
 
         if (
@@ -200,15 +204,15 @@ class ChatPage(Gtk.Paned):
         self._update_list_stack_header()
 
     def show_activity_page(self, context_id: str | None = None) -> None:
-        if context_id:
-            self._activity_list.select_with_context_id(context_id)
-        else:
-            self._activity_list.unselect()
-
         self._chat_list_header.set_label(_("Activity Feed"))
         self._chat_list_header.set_header_mode("activity")
         self._list_stack.set_visible_child_name("activity-list")
         self._chat_stack.show_activity_page(context_id)
+
+        if context_id:
+            self._activity_list.select_with_context_id(context_id)
+        else:
+            self._activity_list.unselect()
 
     def update_workspace(self, workspace_id: str) -> None:
         name = app.settings.get_workspace_setting(workspace_id, "name")

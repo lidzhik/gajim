@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2026-01-17 10:19+0000\n"
 "Last-Translator: Mako N <mako@pasero.net>\n"
 "Language-Team: Japanese <https://translate.gajim.org/projects/gajim/master/"
@@ -35,6 +35,10 @@ msgstr "%(contact)s は %(chat)s への招待を断りました"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s はあなたを %(chat)s に招待しました"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, python-format
 msgid "%(count)s Participant"
@@ -846,12 +850,6 @@ msgstr "離席中"
 msgid "Back"
 msgstr "戻る"
 
-msgid "Back in some minutes."
-msgstr "数分後に戻ります。"
-
-msgid "Back soon"
-msgstr "すぐに戻ります"
-
 msgid "Ban"
 msgstr "締め出し"
 
@@ -936,6 +934,10 @@ msgstr "証明書失効リストは検証されていません"
 
 msgid "CRL signature failure"
 msgstr "証明書失効リストの署名の失敗"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "SVG ファイル"
 
 msgid "C_opy"
 msgstr "コピー (_O)"
@@ -1372,6 +1374,10 @@ msgstr "ファイルにアクセスできませんでした"
 msgid "Could not find any messages for this participant."
 msgstr "この参加者宛てのメッセージは見つかりませんでした。"
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "プロバイダー一覧を更新できませんでした"
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr "ファイルを開けませんでした (%s)"
@@ -1657,9 +1663,6 @@ msgstr "下書き: %s"
 msgid "Drop files here"
 msgstr "ここにファイルをドロップ"
 
-msgid "Eating"
-msgstr "食事"
-
 msgid "Edit"
 msgstr "編集"
 
@@ -1812,10 +1815,6 @@ msgstr "アバターのアップロード中のエラー"
 #, python-format
 msgid "Error: %s"
 msgstr "エラー: %s"
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "エラー: %s (MIME タイプ: %s)"
 
 msgid "Event"
 msgstr "イベント"
@@ -2122,6 +2121,11 @@ msgstr ""
 "ニュースについて議論したりもできます。"
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2346,6 +2350,9 @@ msgstr ""
 "サーバーは \"stun_server\" オプションか、または XMPP サーバーによって与えられ"
 "ます。"
 
+msgid "Ignore"
+msgstr ""
+
 msgid "Ignore Unknown Contacts"
 msgstr "未知の相手先を無視"
 
@@ -2501,18 +2508,6 @@ msgstr "証明対象\n"
 
 msgid "Issues detected"
 msgstr ""
-
-msgid "I’m eating."
-msgstr "食事中です。"
-
-msgid "I’m out enjoying life."
-msgstr "出かけています。"
-
-msgid "I’m watching a movie."
-msgstr "ただいま映画鑑賞中です。"
-
-msgid "I’m working."
-msgstr "仕事中です。"
 
 msgid "JID"
 msgstr "JID"
@@ -2819,9 +2814,6 @@ msgstr "相手先を新しいグループに移動しますか ?"
 msgid "Move to Group"
 msgstr "グループに移動"
 
-msgid "Movie"
-msgstr "映画"
-
 msgid "Must be a port number"
 msgstr "ポート番号が必要です"
 
@@ -2905,6 +2897,10 @@ msgstr "非同期"
 
 msgid "No Threshold"
 msgstr "制限なし"
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "タイムゾーン"
 
 msgid "No additional requirements"
 msgstr "追加要件なし"
@@ -3047,6 +3043,12 @@ msgstr "通知"
 msgid "Notify after update"
 msgstr "更新後に通知する"
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr "自動更新に成功したら通知します"
 
@@ -3136,9 +3138,6 @@ msgstr "アカウントに係属する他のデバイス"
 
 msgid "Others"
 msgstr "その他"
-
-msgid "Out"
-msgstr "外出中"
 
 msgid "Out of memory"
 msgstr "メモリが足りません"
@@ -3529,6 +3528,18 @@ msgstr "登録 (_G)"
 #, python-format
 msgid "React with %s"
 msgstr "%s でリアクション"
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "\"%s\" に対する操作"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "\"%s\" に対する操作"
+
+#, fuzzy
+msgid "Reactions"
+msgstr "休暇"
 
 msgid "Read Receipts"
 msgstr "既読通知"
@@ -4274,9 +4285,6 @@ msgstr "登録は許可されていません"
 msgid "Size of preview images in pixels"
 msgstr "プレビュー画像のサイズ (単位: ピクセル)"
 
-msgid "Sleeping"
-msgstr "睡眠中"
-
 msgid "Software"
 msgstr "ソフトウェア"
 
@@ -4872,6 +4880,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "タイムゾーン"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "タイムゾーン"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr "肩書"
@@ -5057,6 +5069,10 @@ msgstr "更新"
 msgid "Update Avatar"
 msgstr "アバターを更新"
 
+#, fuzzy
+msgid "Update Timezone"
+msgstr "タイムゾーン"
+
 msgid "Update automatically"
 msgstr "自動で更新する"
 
@@ -5066,6 +5082,13 @@ msgstr "利用可能な更新: バージョン %s"
 
 msgid "Update plugins automatically"
 msgstr "プラグインを自動で更新します"
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "プラグインを自動で更新します"
+
+msgid "Update your timezone?"
+msgstr ""
 
 msgid "Updates"
 msgstr "更新"
@@ -5173,9 +5196,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr "傍聴者"
 
-msgid "Visual Notifications"
-msgstr "目への通知"
-
 msgid "Voice Message"
 msgstr "音声メッセージ"
 
@@ -5234,9 +5254,6 @@ msgstr "Windows"
 
 msgid "Work"
 msgstr "仕事"
-
-msgid "Working"
-msgstr "仕事中"
 
 msgid "Workspace Settings"
 msgstr "作業空間の設定"
@@ -5475,9 +5492,6 @@ msgstr "サーバーは以下の機能を提供します"
 
 msgid "ZIP files"
 msgstr "ZIP ファイル"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr "ZZZZzzzzzZZZZZ"
 
 msgid "[read more]"
 msgstr "[続きを読む]"
@@ -6247,6 +6261,12 @@ msgstr "…またはここにドロップ"
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "入力メッセージの自動スペルチェック"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "数分後に戻ります。"
+
+#~ msgid "Back soon"
+#~ msgstr "すぐに戻ります"
+
 #~ msgid "Blocking List"
 #~ msgstr "追放者の一覧"
 
@@ -6496,6 +6516,9 @@ msgstr "…またはここにドロップ"
 #~ msgid "Easily send pictures, videos or other files to friends and groups"
 #~ msgstr "友人やグループへの画像・動画やその他のファイルの簡単な送信"
 
+#~ msgid "Eating"
+#~ msgstr "食事"
+
 #~ msgid "Edit Name…"
 #~ msgstr "名前を編集…"
 
@@ -6526,6 +6549,10 @@ msgstr "…またはここにドロップ"
 
 #~ msgid "Error!"
 #~ msgstr "エラー !"
+
+#, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "エラー: %s (MIME タイプ: %s)"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -6697,6 +6724,12 @@ msgstr "…またはここにドロップ"
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "空のファイルを転送することはできません"
 
+#~ msgid "I’m eating."
+#~ msgstr "食事中です。"
+
+#~ msgid "I’m out enjoying life."
+#~ msgstr "出かけています。"
+
 #, python-format
 #~ msgid ""
 #~ "I’m synchronizing my contacts from my account at \"%s\". Could you please "
@@ -6704,6 +6737,12 @@ msgstr "…またはここにドロップ"
 #~ msgstr ""
 #~ "私はアカウントの相手先を \"%s\" に同期しています。このアドレスをあなたの相"
 #~ "手先一覧に追加していただけますか ?"
+
+#~ msgid "I’m watching a movie."
+#~ msgstr "ただいま映画鑑賞中です。"
+
+#~ msgid "I’m working."
+#~ msgstr "仕事中です。"
 
 #~ msgid "Keep and manage all your chat history"
 #~ msgstr "すべての会話履歴の保存と管理"
@@ -6786,6 +6825,9 @@ msgstr "…またはここにドロップ"
 #~ msgid "Move Contact"
 #~ msgstr "相手先を移動"
 
+#~ msgid "Movie"
+#~ msgstr "映画"
+
 #~ msgid "Never miss a message, keep all your chat clients synchronized"
 #~ msgstr "他のクライアントと同期し、メッセージを取りこぼしません"
 
@@ -6848,6 +6890,9 @@ msgstr "…またはここにドロップ"
 
 #~ msgid "Organize your chats with workspaces"
 #~ msgstr "チャットを作業空間にまとめる"
+
+#~ msgid "Out"
+#~ msgstr "外出中"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PKCS12 形式のファイル"
@@ -7111,6 +7156,9 @@ msgstr "…またはここにドロップ"
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim を終了しています"
 
+#~ msgid "Sleeping"
+#~ msgstr "睡眠中"
+
 #~ msgctxt "Group chat description"
 #~ msgid "Spring gathering"
 #~ msgstr "春の集い"
@@ -7292,10 +7340,6 @@ msgstr "…またはここにドロップ"
 #~ msgid "User name…"
 #~ msgstr "名前を変更…"
 
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "休暇"
-
 #~ msgid "Video Framerate"
 #~ msgstr "ビデオのフレームレート"
 
@@ -7308,6 +7352,9 @@ msgstr "…またはここにドロップ"
 #~ msgid "Video calls are not supported"
 #~ msgstr "ビデオ通話に対応していません"
 
+#~ msgid "Visual Notifications"
+#~ msgstr "目への通知"
+
 #~ msgid "WebSocket URL"
 #~ msgstr "WebSocket の URL"
 
@@ -7316,6 +7363,9 @@ msgstr "…またはここにドロップ"
 
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "なぜこれらのメッセージを抑制したいのですか ?"
+
+#~ msgid "Working"
+#~ msgstr "仕事中"
 
 #~ msgid "Workspaces"
 #~ msgstr "作業空間"
@@ -7360,6 +7410,9 @@ msgstr "…またはここにドロップ"
 
 #~ msgid "Your archiving preferences have successfully been saved."
 #~ msgstr "書庫の設定を保存しました。"
+
+#~ msgid "ZZZZzzzzzZZZZZ"
+#~ msgstr "ZZZZzzzzzZZZZZ"
 
 #~ msgid "_Account"
 #~ msgstr "アカウント (_A)"

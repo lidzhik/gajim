@@ -219,7 +219,7 @@ def detect_dependencies() -> None:
         # from gi.repository import Farstream
         # _dependencies['FARSTREAM'] = True
     except Exception as error:
-        log('gajim').info('AV dependency test failed: %s', error)
+        log('gajim').warning('AV dependency test failed: %s', error)
 
     # try:
     #     if _dependencies['GST'] and _dependencies['FARSTREAM']:
@@ -342,7 +342,7 @@ def get_room_and_nick_from_fjid(jid: str) -> list[str]:
 
 
 def get_jid_without_resource(jid: str) -> str:
-    return jid.split('/')[0]
+    return jid.split('/', maxsplit=1)[0]
 
 
 def get_number_of_connected_accounts(

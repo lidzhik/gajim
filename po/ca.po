@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2024-11-19 21:11+0000\n"
 "Last-Translator: Daniel Brötzmann <mailtrash@posteo.de>\n"
 "Language-Team: Catalan <https://translate.gajim.org/projects/gajim/master/ca/"
@@ -32,6 +32,10 @@ msgstr ""
 
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
+msgstr ""
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
 msgstr ""
 
 #, fuzzy, python-format
@@ -895,12 +899,6 @@ msgstr "Absent"
 msgid "Back"
 msgstr ""
 
-msgid "Back in some minutes."
-msgstr ""
-
-msgid "Back soon"
-msgstr ""
-
 #, fuzzy
 msgid "Ban"
 msgstr "_Bandeja"
@@ -994,6 +992,10 @@ msgstr ""
 
 msgid "CRL signature failure"
 msgstr ""
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Perfil"
 
 msgid "C_opy"
 msgstr ""
@@ -1471,6 +1473,9 @@ msgstr ""
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+msgid "Could not generate link preview"
+msgstr ""
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr ""
@@ -1782,9 +1787,6 @@ msgstr "Estat"
 msgid "Drop files here"
 msgstr "Mostra els contactes desconnectats"
 
-msgid "Eating"
-msgstr ""
-
 #, fuzzy
 msgid "Edit"
 msgstr "_Edita"
@@ -1946,10 +1948,6 @@ msgstr ""
 
 #, python-format
 msgid "Error: %s"
-msgstr ""
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
 msgstr ""
 
 msgid "Event"
@@ -2284,6 +2282,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2520,6 +2523,9 @@ msgid ""
 "in \"stun_server\" option, or the one given by the XMPP server."
 msgstr ""
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Convida _Contactes"
@@ -2696,18 +2702,6 @@ msgid "Issued to\n"
 msgstr ""
 
 msgid "Issues detected"
-msgstr ""
-
-msgid "I’m eating."
-msgstr ""
-
-msgid "I’m out enjoying life."
-msgstr ""
-
-msgid "I’m watching a movie."
-msgstr ""
-
-msgid "I’m working."
 msgstr ""
 
 msgid "JID"
@@ -3051,9 +3045,6 @@ msgstr "Fila del contacte"
 msgid "Move to Group"
 msgstr "Esborra"
 
-msgid "Movie"
-msgstr ""
-
 msgid "Must be a port number"
 msgstr ""
 
@@ -3148,6 +3139,9 @@ msgid "No Sync"
 msgstr ""
 
 msgid "No Threshold"
+msgstr ""
+
+msgid "No Timezone"
 msgstr ""
 
 msgid "No additional requirements"
@@ -3298,6 +3292,12 @@ msgstr ""
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3394,9 +3394,6 @@ msgid "Other devices connected with your account"
 msgstr ""
 
 msgid "Others"
-msgstr ""
-
-msgid "Out"
 msgstr ""
 
 msgid "Out of memory"
@@ -3825,6 +3822,18 @@ msgstr ""
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_Minimitza en tancar"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_Minimitza en tancar"
+
+#, fuzzy
+msgid "Reactions"
+msgstr "_Afegeix Contacte..."
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4668,9 +4677,6 @@ msgstr ""
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr ""
-
 #, fuzzy
 msgid "Software"
 msgstr "Servidor:"
@@ -5291,6 +5297,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr ""
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Personalització Temes Gajim"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5493,6 +5503,9 @@ msgstr "Esborra"
 msgid "Update Avatar"
 msgstr "Esborra"
 
+msgid "Update Timezone"
+msgstr ""
+
 #, fuzzy
 msgid "Update automatically"
 msgstr "Esborra"
@@ -5502,6 +5515,13 @@ msgid "Update available: Version %s"
 msgstr "Transferència de Fitxers"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Esborra"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5615,10 +5635,6 @@ msgid "Visitors"
 msgstr ""
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "Afegeix _Notificació Especial..."
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "Envia missatge"
 
@@ -5677,9 +5693,6 @@ msgid "Windows"
 msgstr ""
 
 msgid "Work"
-msgstr ""
-
-msgid "Working"
 msgstr ""
 
 #, fuzzy
@@ -5928,9 +5941,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Perfil"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -7152,6 +7162,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Video calls are not supported"
 #~ msgstr "Transferència de Fitxers"
+
+#, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "Afegeix _Notificació Especial..."
 
 #, fuzzy
 #~ msgid "Workspaces"

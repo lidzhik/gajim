@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,10 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "$Contact Вас је позвао на групни разговор у собу %(room_jid)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -946,12 +950,6 @@ msgstr "Одсутан"
 msgid "Back"
 msgstr "Враћам се брзо"
 
-msgid "Back in some minutes."
-msgstr "Враћам се за пар минута."
-
-msgid "Back soon"
-msgstr "Враћам се брзо"
-
 #, fuzzy
 msgid "Ban"
 msgstr "_Забрани"
@@ -1048,6 +1046,10 @@ msgstr "CRL није још валидан"
 
 msgid "CRL signature failure"
 msgstr "Грешка у CRL сертификата"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Пошаљи _датотеку"
 
 msgid "C_opy"
 msgstr ""
@@ -1540,6 +1542,10 @@ msgstr "Не могу учитати слику"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Не могу учитати слику"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "Не могу учитати слику"
@@ -1871,9 +1877,6 @@ msgstr "Статус: "
 msgid "Drop files here"
 msgstr "Шаље датотеку контакту"
 
-msgid "Eating"
-msgstr "Једем"
-
 #, fuzzy
 msgid "Edit"
 msgstr "_Измени"
@@ -2051,10 +2054,6 @@ msgstr "Грешка приликом додавања сервиса. %s"
 #, python-format
 msgid "Error: %s"
 msgstr "Грешка: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Порука грешке: %s"
 
 msgid "Event"
 msgstr "догађај"
@@ -2394,6 +2393,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2640,6 +2644,9 @@ msgid ""
 "in \"stun_server\" option, or the one given by the XMPP server."
 msgstr ""
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Позови контакте"
@@ -2817,22 +2824,6 @@ msgstr ""
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "Радим."
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "Напољу сам, уживам у животу."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "Гледам филм."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "Радим."
 
 msgid "JID"
 msgstr "ЏИД"
@@ -3188,9 +3179,6 @@ msgstr "Прикажи догађај у листи контаката"
 msgid "Move to Group"
 msgstr "Уклони групу"
 
-msgid "Movie"
-msgstr "Филм"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "Ваш порт мора бити број порта."
@@ -3289,6 +3277,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Време"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3438,6 +3430,12 @@ msgstr "Обавештења"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3539,9 +3537,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "Остали"
-
-msgid "Out"
-msgstr "Напољу"
 
 msgid "Out of memory"
 msgstr "Немам више меморије"
@@ -3986,6 +3981,18 @@ msgstr "Ре_гистрација"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_Акције за налог \"%s\""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_Акције за налог \"%s\""
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Обавештење"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4860,9 +4867,6 @@ msgstr "Карактер није дозвољен"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "Спавам"
-
 #, fuzzy
 msgid "Software"
 msgstr "Сервер је одговорио: %s"
@@ -5524,6 +5528,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Време"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Време"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5734,6 +5742,10 @@ msgid "Update Avatar"
 msgstr "Одаберите слику"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Време"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Одаберите слику"
 
@@ -5742,6 +5754,13 @@ msgid "Update available: Version %s"
 msgstr "Нема доступних налога"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Одаберите слику"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5863,10 +5882,6 @@ msgid "Visitors"
 msgstr "Posjetitelji"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>Визуална обавештења</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "Пошаљи поруку"
 
@@ -5931,9 +5946,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "Посао"
-
-msgid "Working"
-msgstr "Радим."
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -6193,9 +6205,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Све датотеке"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6994,6 +7003,12 @@ msgstr ""
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "Провера правописа састављених порука."
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Враћам се за пар минута."
+
+#~ msgid "Back soon"
+#~ msgstr "Враћам се брзо"
+
 #, fuzzy
 #~ msgid "Blocking List"
 #~ msgstr "Листа забрана"
@@ -7224,6 +7239,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "Шаље датотеку контакту"
 
+#~ msgid "Eating"
+#~ msgstr "Једем"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "Име:"
@@ -7247,6 +7265,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Error!"
 #~ msgstr "Грешка"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Порука грешке: %s"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7379,6 +7401,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Није могуће послати празну датотеку"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "Радим."
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Напољу сам, уживам у животу."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "Гледам филм."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "Радим."
+
 #, fuzzy, python-format
 #~ msgid "Last seen %s"
 #~ msgstr "Разлог"
@@ -7432,6 +7470,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "Преименуј контакт"
 
+#~ msgid "Movie"
+#~ msgstr "Филм"
+
 #, fuzzy
 #~ msgid "No Connection Available"
 #~ msgstr "Веза није доступна"
@@ -7484,6 +7525,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "На одмору"
+
+#~ msgid "Out"
+#~ msgstr "Напољу"
 
 #, fuzzy
 #~ msgid "Past as Code Block"
@@ -7708,6 +7752,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Гајим"
 
+#~ msgid "Sleeping"
+#~ msgstr "Спавам"
+
 #~ msgid "Sta_tus"
 #~ msgstr "Ста_тус"
 
@@ -7851,11 +7898,6 @@ msgstr ""
 #~ msgstr "_Корисничко име:"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Обавештење"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Приватни Разговори"
 
@@ -7872,8 +7914,15 @@ msgstr ""
 #~ msgstr "Веза није доступна"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>Визуална обавештења</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Да ли заиста желите да избришете означену поруку?"
+
+#~ msgid "Working"
+#~ msgstr "Радим."
 
 #, fuzzy
 #~ msgid "Workspaces"

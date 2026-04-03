@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2025-04-18 08:12+0000\n"
 "Last-Translator: lovetox <philipp@hoerist.com>\n"
 "Language-Team: Norwegian Bokmål <https://translate.gajim.org/projects/gajim/"
@@ -36,6 +36,10 @@ msgstr "%(jid)s avslo invitasjonen: %(reason)s"
 #, fuzzy, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "$Contact har invitert deg til gruppesamtalen %(room_jid)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -937,12 +941,6 @@ msgstr "Borte"
 msgid "Back"
 msgstr "Straks tilbake"
 
-msgid "Back in some minutes."
-msgstr "Tilbake om noen minutter."
-
-msgid "Back soon"
-msgstr "Straks tilbake"
-
 #, fuzzy
 msgid "Ban"
 msgstr "_Bannlys"
@@ -1038,6 +1036,10 @@ msgstr "CRL er ikke gyldig enda"
 
 msgid "CRL signature failure"
 msgstr "CRL-signaturfeil"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Send filer"
 
 msgid "C_opy"
 msgstr ""
@@ -1524,6 +1526,10 @@ msgstr "Kunne ikke åpne fil"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Kunne ikke åpne fil"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "Kunne ikke åpne fil"
@@ -1850,9 +1856,6 @@ msgstr "Status: "
 msgid "Drop files here"
 msgstr "Sender fil til en kontakt"
 
-msgid "Eating"
-msgstr "Spiser"
-
 #, fuzzy
 msgid "Edit"
 msgstr "_Rediger"
@@ -2029,10 +2032,6 @@ msgstr "Feil ved tilføying av transportkontakt"
 #, python-format
 msgid "Error: %s"
 msgstr "Feil: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Feilmelding: %s"
 
 msgid "Event"
 msgstr "Hendelse"
@@ -2375,6 +2374,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2630,6 +2634,9 @@ msgstr ""
 "Gajim vil forsøke å bruke STUN-tjener ved bruk av Jingle. Valget er i "
 "\"stun_server\", eller det gitt av XMPP-tjeneren."
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Inviter _kontakter"
@@ -2807,22 +2814,6 @@ msgstr ""
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "Jeg jobber."
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "Ute og lever livet."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "Ser på en film."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "Jeg jobber."
 
 msgid "JID"
 msgstr "JID"
@@ -3180,9 +3171,6 @@ msgstr "Merknadsfarge for kontaktavlogging"
 msgid "Move to Group"
 msgstr "Fjern gruppe"
 
-msgid "Movie"
-msgstr "Film"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "Egendefinert port må være et portnummer"
@@ -3277,6 +3265,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Tid"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3426,6 +3418,12 @@ msgstr "Merknader"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3526,9 +3524,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "Andre"
-
-msgid "Out"
-msgstr "Ute"
 
 msgid "Out of memory"
 msgstr "Tom for minne"
@@ -3967,6 +3962,18 @@ msgstr "Re_gistrer"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_Handlinger for \"%s\""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_Handlinger for \"%s\""
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Plassering:"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4841,9 +4848,6 @@ msgstr "Ulovlig tegn"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "Sover"
-
 #, fuzzy
 msgid "Software"
 msgstr "Tjenerprogramvare"
@@ -5511,6 +5515,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Tid"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Tid"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5723,6 +5731,10 @@ msgid "Update Avatar"
 msgstr "Velg arkiv"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Tid"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Velg arkiv"
 
@@ -5731,6 +5743,13 @@ msgid "Update available: Version %s"
 msgstr "Ingen konto tilgjengelig"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Velg arkiv"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5853,10 +5872,6 @@ msgid "Visitors"
 msgstr "Besøkende"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>Visuelle merknader</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "Send melding"
 
@@ -5921,9 +5936,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "Jobb"
-
-msgid "Working"
-msgstr "Jobber"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -6182,9 +6194,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Zip-filer"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6987,6 +6996,12 @@ msgstr ""
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "Stavekontroll av skrevne meldinger."
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Tilbake om noen minutter."
+
+#~ msgid "Back soon"
+#~ msgstr "Straks tilbake"
+
 #, fuzzy
 #~ msgid "Blocking List"
 #~ msgstr "Liste over bannlyste"
@@ -7212,6 +7227,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "Sender fil til en kontakt"
 
+#~ msgid "Eating"
+#~ msgstr "Spiser"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "Fornavn"
@@ -7246,6 +7264,10 @@ msgstr ""
 
 #~ msgid "Error!"
 #~ msgstr "Feil!"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Feilmelding: %s"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7395,6 +7417,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Det er ikke mulig å sende tomme filer"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "Jeg jobber."
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Ute og lever livet."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "Ser på en film."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "Jeg jobber."
+
 #~ msgid "Last but not least"
 #~ msgstr "Sist men ikke minst"
 
@@ -7449,6 +7487,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "Gi kontakt nytt navn"
 
+#~ msgid "Movie"
+#~ msgstr "Film"
+
 #, fuzzy
 #~ msgid "No Connection Available"
 #~ msgstr "Tilkobling ikke tilgjengelig"
@@ -7500,6 +7541,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "På ferie"
+
+#~ msgid "Out"
+#~ msgstr "Ute"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PCKS12-filer"
@@ -7739,6 +7783,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "Sover"
+
 #~ msgid "Sta_tus"
 #~ msgstr "Sta_tus"
 
@@ -7899,11 +7946,6 @@ msgstr ""
 #~ msgstr "_Brukernavn:"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Plassering:"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Bildetakt for video"
 
@@ -7920,8 +7962,15 @@ msgstr ""
 #~ msgstr "Videoøkter er ikke tilgjengelige"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>Visuelle merknader</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Ønsker du å slette valgt melding?"
+
+#~ msgid "Working"
+#~ msgstr "Jobber"
 
 #, fuzzy
 #~ msgid "Workspaces"

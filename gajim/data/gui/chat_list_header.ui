@@ -20,7 +20,6 @@
         </child>
         <child>
           <object class="GtkButton">
-            <property name="visible">0</property>
             <property name="tooltip-text" translatable="yes">Workspace settings…</property>
             <property name="valign">center</property>
             <property name="action-name">win.edit-workspace</property>
@@ -54,17 +53,15 @@
         <child>
           <object class="GtkSearchEntry" id="_search_entry">
             <property name="hexpand">true</property>
-            <property name="placeholder-text"></property>
+            <property name="placeholder-text">Search…</property>
           </object>
         </child>
         <child>
-          <object class="ChatFilter" id="_chat_filter">
-            <property name="visible">0</property>
-          </object>
+          <object class="ChatFilter" id="_chat_filter" />
         </child>
         <child>
           <object class="GtkMenuButton" id="_start_chat_menu_button">
-            <property name="tooltip-text"></property>
+            <property name="tooltip-text">Start Chat…</property>
             <child>
               <object class="GtkImage">
                 <property name="icon-name">lucide-plus-symbolic</property>

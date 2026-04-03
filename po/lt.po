@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2009-08-19 23:55+0200\n"
 "Last-Translator: Mantas Zimnickas <sirexas@yahoo.com>\n"
 "Language-Team: Lithuanian <>\n"
@@ -30,6 +30,10 @@ msgstr ""
 
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
+msgstr ""
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
 msgstr ""
 
 #, fuzzy, python-format
@@ -923,12 +927,6 @@ msgstr "Manęs nėra"
 msgid "Back"
 msgstr "Back soon"
 
-msgid "Back in some minutes."
-msgstr "Back in some minutes."
-
-msgid "Back soon"
-msgstr "Back soon"
-
 #, fuzzy
 msgid "Ban"
 msgstr "_Banas"
@@ -1024,6 +1022,10 @@ msgstr ""
 
 msgid "CRL signature failure"
 msgstr ""
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Siųsti _Failą"
 
 msgid "C_opy"
 msgstr ""
@@ -1512,6 +1514,10 @@ msgstr "Could not load image"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Could not load image"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "Could not load image"
@@ -1838,9 +1844,6 @@ msgstr "Status: "
 msgid "Drop files here"
 msgstr "Sends file to a contact"
 
-msgid "Eating"
-msgstr "Eating"
-
 #, fuzzy
 msgid "Edit"
 msgstr "_Redaguoti"
@@ -2013,10 +2016,6 @@ msgstr "Error while adding service. %s"
 #, python-format
 msgid "Error: %s"
 msgstr ""
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Error message: %s"
 
 msgid "Event"
 msgstr "Event"
@@ -2356,6 +2355,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2600,6 +2604,9 @@ msgid ""
 "in \"stun_server\" option, or the one given by the XMPP server."
 msgstr ""
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Kviesti Kontaktus"
@@ -2777,22 +2784,6 @@ msgstr ""
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "I'm working."
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "I'm out enjoying life."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "I'm watching a movie."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "I'm working."
 
 msgid "JID"
 msgstr "JID"
@@ -3147,9 +3138,6 @@ msgstr "_Rodyti įvykį kontaktų sąraše"
 msgid "Move to Group"
 msgstr "_Trinti"
 
-msgid "Movie"
-msgstr "Movie"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "Custom port must be a port number."
@@ -3249,6 +3237,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Time"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3398,6 +3390,12 @@ msgstr "Pranešimai"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3499,9 +3497,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "Others"
-
-msgid "Out"
-msgstr "Out"
 
 msgid "Out of memory"
 msgstr ""
@@ -3942,6 +3937,18 @@ msgstr "Re_gister"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_Actions for \"%s\""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_Actions for \"%s\""
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Padėtis:"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4809,9 +4816,6 @@ msgstr "Nickname not allowed: %s"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "Sleeping"
-
 #, fuzzy
 msgid "Software"
 msgstr "Serverio teikiamos paslaugos"
@@ -5458,6 +5462,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Time"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Time"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5665,6 +5673,10 @@ msgid "Update Avatar"
 msgstr "Choose Image"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Time"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Choose Image"
 
@@ -5673,6 +5685,13 @@ msgid "Update available: Version %s"
 msgstr "No such account available"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Choose Image"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5793,10 +5812,6 @@ msgid "Visitors"
 msgstr "Visitors"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>Vizualinis informavimas</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "Siųsti žinutę"
 
@@ -5860,9 +5875,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "Darbas"
-
-msgid "Working"
-msgstr "Working"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -6118,9 +6130,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "All files"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6885,6 +6894,12 @@ msgstr ""
 #~ msgid "Autojoin"
 #~ msgstr "Automatinis prsijungimas"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Back in some minutes."
+
+#~ msgid "Back soon"
+#~ msgstr "Back soon"
+
 #, fuzzy
 #~ msgid "Blocking List"
 #~ msgstr "Ban List"
@@ -7110,6 +7125,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "Sends file to a contact"
 
+#~ msgid "Eating"
+#~ msgstr "Eating"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "Vardas:"
@@ -7133,6 +7151,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Error!"
 #~ msgstr "Avahi error"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Error message: %s"
 
 #, fuzzy
 #~ msgid "Feature not available on Windows"
@@ -7260,6 +7282,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "It is not possible to send empty files"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "I'm working."
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "I'm out enjoying life."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "I'm watching a movie."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "I'm working."
+
 #, fuzzy, python-format
 #~ msgid "Last seen %s"
 #~ msgstr "Reason"
@@ -7304,6 +7342,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Move Contact"
 #~ msgstr "Removes contact from roster"
+
+#~ msgid "Movie"
+#~ msgstr "Movie"
 
 #, fuzzy
 #~ msgid "No Connection Available"
@@ -7357,6 +7398,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "Administrator"
+
+#~ msgid "Out"
+#~ msgstr "Out"
 
 #, fuzzy
 #~ msgid "Past as Code Block"
@@ -7565,6 +7609,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "Sleeping"
+
 #~ msgid "Sta_tus"
 #~ msgstr "_Būklė"
 
@@ -7693,11 +7740,6 @@ msgstr ""
 #~ msgstr "_Naudotojo vardas:"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Padėtis:"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Private Chat"
 
@@ -7714,8 +7756,15 @@ msgstr ""
 #~ msgstr "Connection not available"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>Vizualinis informavimas</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Do you accept this request?"
+
+#~ msgid "Working"
+#~ msgstr "Working"
 
 #, fuzzy
 #~ msgid "Workspaces"

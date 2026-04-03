@@ -23,6 +23,7 @@ from gajim.common.i18n import p_
 from gajim.common.modules.contacts import BareContact
 from gajim.common.modules.contacts import can_add_to_roster
 from gajim.common.modules.contacts import GroupchatContact
+from gajim.common.modules.contacts import GroupchatOfflineParticipant
 from gajim.common.modules.contacts import GroupchatParticipant
 from gajim.common.storage.archive.const import ChatDirection
 from gajim.common.storage.archive.models import Message
@@ -101,15 +102,15 @@ def get_self_contact_menu(contact: types.BareContact) -> GajimMenu:
 
     menu = GajimMenu()
 
-#    menu.add_item(_("Profile"), f"app.{account}-profile", account)
+    menu.add_item(_("Profile"), f"app.{account}-profile", account)
     submenu = get_send_file_submenu()
     menu.append_submenu(_("Send File"), submenu)
 
-#    params = ExportHistoryParam(account=account, jid=jid)
-#    menu.add_item(_("Export History…"), "app.export-history", params)
+    params = ExportHistoryParam(account=account, jid=jid)
+    menu.add_item(_("Export History…"), "app.export-history", params)
 
-#    params = AccountJidParam(account=account, jid=jid)
-#    menu.add_item(_("Remove History…"), "app.remove-history", params)
+    params = AccountJidParam(account=account, jid=jid)
+    menu.add_item(_("Remove History…"), "app.remove-history", params)
     return menu
 
 
@@ -123,7 +124,7 @@ def get_singlechat_menu(contact: types.BareContact) -> GajimMenu:
 
     submenu = get_send_file_submenu()
     menu.append_submenu(_("Send File"), submenu)
-#    menu.add_item(_("Block Contact…"), f"app.{account}-block-contact", params)
+    menu.add_item(_("Block Contact…"), f"app.{account}-block-contact", params)
 
     # Disable because not maintained
     # menu.add_item(_("Start Voice Call…"), "win.start-voice-call")
@@ -142,14 +143,14 @@ def get_singlechat_menu(contact: types.BareContact) -> GajimMenu:
     if not jids:
         jids = [str(contact.jid)]
 
-#    menu.add_item(
-#        _("Execute Command…"),
-#        f"app.{account}-execute-command",
-#        GLib.Variant("(sas)", (account, jids)),
-#    )
+    menu.add_item(
+        _("Execute Command…"),
+        f"app.{account}-execute-command",
+        GLib.Variant("(sas)", (account, jids)),
+    )
 
-#    menu.add_item(_("Export History…"), "app.export-history", export_params)
-#    menu.add_item(_("Remove History…"), "app.remove-history", params)
+    menu.add_item(_("Export History…"), "app.export-history", export_params)
+    menu.add_item(_("Remove History…"), "app.remove-history", params)
 
     return menu
 
@@ -161,22 +162,22 @@ def get_private_chat_menu(contact: types.GroupchatParticipant) -> GajimMenu:
 
     menu.add_item(_("Upload File…"), "win.send-file-httpupload", value)
 
-#    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
-#    menu.add_item(_("Export History…"), "app.export-history", params)
+    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
+    menu.add_item(_("Export History…"), "app.export-history", params)
 
-#    params = AccountJidParam(account=contact.account, jid=contact.jid)
-#    menu.add_item(_("Remove History…"), "app.remove-history", params)
+    params = AccountJidParam(account=contact.account, jid=contact.jid)
+    menu.add_item(_("Remove History…"), "app.remove-history", params)
 
     occupant_param = None
     if contact.occupant_id is not None:
         occupant_param = OccupantParam(
-            contact.account, contact.room.jid, contact.resource, contact.occupant_id
+            contact.account, contact.room.jid, contact.name, contact.occupant_id
         )
 
-#    if contact.is_blocked:
-#        menu.add_item(_("Unblock"), "win.muc-user-unblock", occupant_param)
-#    else:
-#        menu.add_item(_("Block…"), "win.muc-user-block", occupant_param)
+    if contact.is_blocked:
+        menu.add_item(_("Unblock"), "win.muc-user-unblock", occupant_param)
+    else:
+        menu.add_item(_("Block…"), "win.muc-user-block", occupant_param)
 
     real_contact = contact.get_real_contact()
     if real_contact is not None and can_add_to_roster(real_contact):
@@ -199,15 +200,15 @@ def get_send_file_submenu() -> GajimMenu:
 def get_groupchat_menu(contact: GroupchatContact) -> GajimMenu:
     menu = GajimMenu()
 
-#    menu.add_item(_("Change Nickname…"), "win.muc-change-nickname", None)
-#    menu.add_item(_("Request Voice"), "win.muc-request-voice", None)
-#    menu.add_item(_("Execute Command…"), "win.muc-execute-command", "")
+    menu.add_item(_("Change Nickname…"), "win.muc-change-nickname", None)
+    menu.add_item(_("Request Voice"), "win.muc-request-voice", None)
+    menu.add_item(_("Execute Command…"), "win.muc-execute-command", "")
 
-#    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
-#    menu.add_item(_("Export History…"), "app.export-history", params)
+    params = ExportHistoryParam(account=contact.account, jid=contact.jid)
+    menu.add_item(_("Export History…"), "app.export-history", params)
 
-#    params = AccountJidParam(account=contact.account, jid=contact.jid)
-#    menu.add_item(_("Remove History…"), "app.remove-history", params)
+    params = AccountJidParam(account=contact.account, jid=contact.jid)
+    menu.add_item(_("Remove History…"), "app.remove-history", params)
 
     return menu
 
@@ -408,8 +409,8 @@ def get_subscription_menu(account: str, jid: JID) -> GajimMenu:
     account_jid_params = AccountJidParam(account=account, jid=jid)
     menuitems: MenuItemListT = [
         (_("Start Chat"), "win.add-chat", add_chat_params),
-#        (_("Details"), "win.chat-contact-info", account_jid_params),
-#        (_("Block"), f"app.{account}-block-contact", account_jid_params),
+        (_("Details"), "win.chat-contact-info", account_jid_params),
+        (_("Block"), f"app.{account}-block-contact", account_jid_params),
     ]
 
     return GajimMenu.from_list(menuitems)
@@ -421,7 +422,7 @@ def get_start_chat_button_menu() -> GajimMenu:
     menuitems: MenuItemListT = [
         (_("Start Chat…"), "app.start-chat", value),
         (_("Create Group Chat…"), "app.create-groupchat", ""),
-#       (_("Add Contact…"), "app.add-contact", ""),
+        (_("Add Contact…"), "app.add-contact", ""),
     ]
 
     return GajimMenu.from_list(menuitems)
@@ -530,7 +531,8 @@ def get_workspace_params(
 
 
 def get_groupchat_admin_menu(
-    self_contact: types.GroupchatParticipant, contact: types.GroupchatParticipant
+    self_contact: GroupchatParticipant,
+    contact: GroupchatParticipant | GroupchatOfflineParticipant,
 ) -> GajimMenu:
     menu = GajimMenu()
 
@@ -541,33 +543,34 @@ def get_groupchat_admin_menu(
     action = "win.muc-change-affiliation"
     real_jid = str(contact.real_jid)
 
-#    if is_affiliation_change_allowed(self_contact, contact, "owner"):
-#        value = GLib.Variant("as", [real_jid, "owner"])
-#        menu.add_item(_("Make Owner"), action, value)
+    if is_affiliation_change_allowed(self_contact, contact, "owner"):
+        value = GLib.Variant("as", [real_jid, "owner"])
+        menu.add_item(_("Make Owner"), action, value)
 
-#    if is_affiliation_change_allowed(self_contact, contact, "admin"):
-#        value = GLib.Variant("as", [real_jid, "admin"])
-#        menu.add_item(_("Make Admin"), action, value)
+    if is_affiliation_change_allowed(self_contact, contact, "admin"):
+        value = GLib.Variant("as", [real_jid, "admin"])
+        menu.add_item(_("Make Admin"), action, value)
 
-#    if is_affiliation_change_allowed(self_contact, contact, "member"):
-#        value = GLib.Variant("as", [real_jid, "member"])
-#        menu.add_item(_("Make Member"), action, value)
+    if is_affiliation_change_allowed(self_contact, contact, "member"):
+        value = GLib.Variant("as", [real_jid, "member"])
+        menu.add_item(_("Make Member"), action, value)
 
-#    if is_affiliation_change_allowed(self_contact, contact, "none"):
-#        value = GLib.Variant("as", [real_jid, "none"])
-#        menu.add_item(_("Revoke Member"), action, value)
+    if is_affiliation_change_allowed(self_contact, contact, "none"):
+        value = GLib.Variant("as", [real_jid, "none"])
+        menu.add_item(_("Revoke Member"), action, value)
 
-#    if is_affiliation_change_allowed(self_contact, contact, "outcast"):
-#        menu.add_item(_("Ban…"), "win.muc-ban", real_jid)
+    if is_affiliation_change_allowed(self_contact, contact, "outcast"):
+        menu.add_item(_("Ban…"), "win.muc-ban", real_jid)
 
-#    if not menu.get_n_items():
-#        menu.add_item(_("Not Available"), "dummy", None)
+    if not menu.get_n_items():
+        menu.add_item(_("Not Available"), "dummy", None)
 
     return menu
 
 
 def get_groupchat_mod_menu(
-    self_contact: types.GroupchatParticipant, contact: types.GroupchatParticipant
+    self_contact: GroupchatParticipant,
+    contact: GroupchatParticipant | GroupchatOfflineParticipant,
 ) -> GajimMenu:
     menu = GajimMenu()
 
@@ -575,36 +578,40 @@ def get_groupchat_mod_menu(
         menu.add_item(_("Not Available"), "dummy", None)
         return menu
 
+    assert isinstance(contact, GroupchatParticipant)
+
     contact_name = str(contact.name)
 
-#    if is_role_change_allowed(self_contact, contact):
-#        menu.add_item(_("Kick…"), "win.muc-kick", contact_name)
+    if is_role_change_allowed(self_contact, contact):
+        menu.add_item(_("Kick…"), "win.muc-kick", contact_name)
 
     action = "win.muc-change-role"
 
-#    if is_role_change_allowed(self_contact, contact):
-#        if contact.role.is_visitor:
-#            value = GLib.Variant("as", [contact_name, "participant"])
-#            menu.add_item(_("Grant Voice"), action, value)
-#        else:
-#            value = GLib.Variant("as", [contact_name, "visitor"])
-#            menu.add_item(_("Revoke Voice"), action, value)
+    if is_role_change_allowed(self_contact, contact):
+        if contact.role.is_visitor:
+            value = GLib.Variant("as", [contact_name, "participant"])
+            menu.add_item(_("Grant Voice"), action, value)
+        else:
+            value = GLib.Variant("as", [contact_name, "visitor"])
+            menu.add_item(_("Revoke Voice"), action, value)
 
-#    if not menu.get_n_items():
-#        menu.add_item(_("Not Available"), "dummy", None)
+    if not menu.get_n_items():
+        menu.add_item(_("Not Available"), "dummy", None)
 
     return menu
 
 
 def get_groupchat_participant_menu(
     account: str,
-    self_contact: types.GroupchatParticipant,
-    contact: types.GroupchatParticipant,
+    self_contact: GroupchatParticipant,
+    contact: GroupchatParticipant | GroupchatOfflineParticipant,
 ) -> GajimMenu:
     group_chat = self_contact.room
     disco = group_chat.get_disco()
     assert disco is not None
     muc_prefer_direct_msg = app.settings.get("muc_prefer_direct_msg")
+
+    dm_params = None
     if (
         disco.muc_is_nonanonymous
         and muc_prefer_direct_msg
@@ -613,7 +620,8 @@ def get_groupchat_participant_menu(
         dm_params = AddChatActionParams(
             account=account, jid=contact.real_jid, type="chat", select=True
         )
-    else:
+
+    elif isinstance(contact, GroupchatParticipant):
         dm_params = AddChatActionParams(
             account=account, jid=contact.jid, type="pm", select=True
         )
@@ -621,21 +629,26 @@ def get_groupchat_participant_menu(
     value = str(contact.name)
 
     general_items: MenuItemListT = [
-        (_("Direct Message…"), "win.add-chat", dm_params),
-#        (_("Details"), "win.muc-contact-info", value),
-#        (_("Execute Command…"), "win.muc-execute-command", value),
+        (_("Details"), "win.muc-contact-info", value),
+        (_("Execute Command…"), "win.muc-execute-command", value),
     ]
+
+    if dm_params is not None:
+        general_items.insert(
+            0,
+            (_("Direct Message…"), "win.add-chat", dm_params),
+        )
 
     occupant_param = None
     if contact.occupant_id is not None:
         occupant_param = OccupantParam(
-            account, contact.room.jid, contact.resource, contact.occupant_id
+            account, contact.room.jid, contact.name, contact.occupant_id
         )
 
-#    if contact.is_blocked:
-#        general_items.append((_("Unblock"), "win.muc-user-unblock", occupant_param))
-#    else:
-#        general_items.append((_("Block…"), "win.muc-user-block", occupant_param))
+    if contact.is_blocked:
+        general_items.append((_("Unblock"), "win.muc-user-unblock", occupant_param))
+    else:
+        general_items.append((_("Block…"), "win.muc-user-block", occupant_param))
 
     real_contact = contact.get_real_contact()
     if real_contact is not None and can_add_to_roster(real_contact):

@@ -32,7 +32,7 @@ from gajim.common.modules.message_util import get_chat_type_and_direction
 from gajim.common.modules.message_util import get_eme_message
 from gajim.common.modules.message_util import get_message_timestamp
 from gajim.common.modules.message_util import get_occupant_info
-from gajim.common.modules.message_util import get_open_graph_data
+from gajim.common.modules.message_util import get_open_graph
 from gajim.common.modules.message_util import get_reply
 from gajim.common.modules.message_util import get_security_label
 from gajim.common.modules.misc import parse_oob
@@ -228,7 +228,7 @@ class Message(BaseModule):
         if properties.correction is not None:
             correction_id = properties.correction.id
 
-        og_data = get_open_graph_data(properties.open_graph)
+        og_data = get_open_graph(properties.open_graph)
 
         message_data = mod.Message(
             account_=self._account,
@@ -429,7 +429,12 @@ class Message(BaseModule):
                 ReactionUpdated(
                     account=self._account,
                     jid=remote_jid,
-                    reaction_id=reactions_id,
+                    id=reactions_id,
+                    direction=direction,
+                    occupant=occupant,
+                    emojis=None,
+                    message=None,
+                    is_mam_message=False
                 )
             )
             return
@@ -470,6 +475,10 @@ class Message(BaseModule):
         if message.oob_url is not None:
             oob_data.append(mod.OOB(url=message.oob_url, description=None))
 
+        open_graph_data: list[mod.OpenGraph] = []
+        if message.open_graph_data:
+            open_graph_data = get_open_graph(message.open_graph_data)
+
         message_data = mod.Message(
             account_=self._account,
             remote_jid_=remote_jid,
@@ -486,6 +495,7 @@ class Message(BaseModule):
             correction_id=message.correct_id,
             encryption_=encryption_data,
             oob=oob_data,
+            og=open_graph_data,
             reply=reply,
             security_label_=securitylabel_data,
             occupant_=occupant,
@@ -547,6 +557,12 @@ def build_message_stanza(message: OutgoingMessage, own_jid: JID) -> nbxmpp.Messa
                         message.reply_data.fallback_start,
                         message.reply_data.fallback_end)
 
+    # OGP link previews
+    if message.open_graph_data is not None:
+        for about_url, open_graph_data in message.open_graph_data.items():
+            stanza.addOpenGraph(about_url, open_graph_data.to_nbxmpp())
+
+    # XEP-0258
     if message.sec_label:
         stanza.addChild(node=message.sec_label.to_node())
 

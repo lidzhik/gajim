@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
-"PO-Revision-Date: 2026-01-14 04:19+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
+"PO-Revision-Date: 2026-03-28 16:19+0000\n"
 "Last-Translator: Footboard3754 <Footboard3754@users.noreply.translate.gajim."
 "org>\n"
 "Language-Team: Chinese (Simplified) <https://translate.gajim.org/projects/"
@@ -42,6 +42,10 @@ msgstr "%(contact)s 拒绝了您的 %(chat)s 邀请"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s 邀请您加入 %(chat)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr "%(contact)s 使用 %(reaction)s 回应了您的消息“%(message)s”"
 
 #, python-format
 msgid "%(count)s Participant"
@@ -89,11 +93,11 @@ msgstr "%(name)s 取消了传输（%(reason)s）"
 
 #, python-format
 msgid "%(nick)s has been banned by %(actor)s"
-msgstr "%(actor)s 封禁了 %(nick)s"
+msgstr "%(nick)s 已被 %(actor)s 封禁"
 
 #, python-format
 msgid "%(nick)s has been kicked by %(actor)s"
-msgstr "%(actor)s 踢出了 %(nick)s"
+msgstr "%(nick)s 已被 %(actor)s 踢出"
 
 #, python-format
 msgid "%(nick)s is now %(affiliation)s of this group chat"
@@ -230,7 +234,7 @@ msgid "%sW"
 msgstr "西经 %s"
 
 msgid "'@' is missing in address. Are you sure this is correct?"
-msgstr "地址中缺少“@”。是否确定这是正确的？"
+msgstr "地址中缺少“@”。您确定这是正确的吗？"
 
 #, python-format
 msgid "(changed by %s)"
@@ -361,7 +365,7 @@ msgstr "功能齐全的 XMPP 聊天客户端"
 msgid ""
 "A list of words (semicolon separated) that will be highlighted in group "
 "chats."
-msgstr "将在群聊中突出显示的单词列表（以英文分号分隔）。"
+msgstr "将在群聊中突出显示的字词列表（以英文分号分隔）。"
 
 msgid "A new group chat has been created"
 msgstr "新群聊已创建"
@@ -795,7 +799,7 @@ msgid "Auto Away"
 msgstr "自动离开"
 
 msgid "Auto Not Available"
-msgstr "自动没空"
+msgstr "自动不在"
 
 msgid "Autodetect"
 msgstr "自动检测"
@@ -834,12 +838,6 @@ msgstr "离开"
 
 msgid "Back"
 msgstr "返回"
-
-msgid "Back in some minutes."
-msgstr "稍后回来。"
-
-msgid "Back soon"
-msgstr "马上回来"
 
 msgid "Ban"
 msgstr "封禁"
@@ -925,6 +923,9 @@ msgstr "CRL 尚未生效"
 
 msgid "CRL signature failure"
 msgstr "CRL 签名失败"
+
+msgid "CSV files"
+msgstr "CSV 文件"
 
 msgid "C_opy"
 msgstr "复制(_O)"
@@ -1013,7 +1014,7 @@ msgid "Change your status to \"Away\" after a certain amount of time"
 msgstr "将您的状态在一定时间后更改为“离开”"
 
 msgid "Change your status to \"Not Available\" after a certain amount of time"
-msgstr "将您的状态在一定时间后更改为“没空”"
+msgstr "将您的状态在一定时间后更改为“不在”"
 
 #, python-format
 msgid "Changed by %s"
@@ -1160,7 +1161,7 @@ msgid "Color"
 msgstr "颜色"
 
 msgid "Comma-separated list of emojis for quick reaction buttons"
-msgstr "用于快捷回应按钮的以逗号分隔的表情符号列表"
+msgstr "用于快捷回应按钮的以英文逗号分隔的表情符号列表"
 
 msgid "Command List"
 msgstr "命令列表"
@@ -1284,7 +1285,7 @@ msgid "Contact List – %(account)s"
 msgstr "联系人列表 - %(account)s"
 
 msgid "Contact Removed"
-msgstr "联系人已移除"
+msgstr "联系已移除"
 
 msgid "Contact Request"
 msgstr "联系人请求"
@@ -1352,6 +1353,9 @@ msgstr "无法访问文件"
 
 msgid "Could not find any messages for this participant."
 msgstr "无法找到此参与者的任何消息。"
+
+msgid "Could not generate link preview"
+msgstr "无法生成链接预览"
 
 #, python-format
 msgid "Could not open file (%s)"
@@ -1571,9 +1575,9 @@ msgid ""
 "Warning: This can’t be undone!\n"
 "Gajim will quit afterwards."
 msgstr ""
-"是否确定要从 Gajim 中移除所有聊天消息？\n"
+"确定要从 Gajim 中移除所有聊天消息吗？\n"
 "警告：此操作无法撤销！\n"
-"Gajim 之后会退出。"
+"Gajim 之后将退出。"
 
 #, python-format
 msgid "Do you want to block %(name)s?"
@@ -1634,9 +1638,6 @@ msgstr "草稿：%s"
 msgid "Drop files here"
 msgstr "将文件拖放到此处"
 
-msgid "Eating"
-msgstr "用餐中"
-
 msgid "Edit"
 msgstr "编辑"
 
@@ -1661,8 +1662,8 @@ msgid ""
 "Either a custom URL with %%s in it (where %%s is the word/phrase) or "
 "\"WIKTIONARY\" (which means use Wikitionary)."
 msgstr ""
-"使用包含 %%s 的自定义 URL（%%s 是单词/短语），或“WIKTIONARY”（即使用维基词"
-"典）。"
+"使用包含 %%s 的自定义 URL（%%s 是字词/短语），或“WIKTIONARY”（这意味着使用维"
+"基词典）。"
 
 msgid "Email"
 msgstr "电子邮件"
@@ -1788,10 +1789,6 @@ msgstr "上传头像时出错"
 #, python-format
 msgid "Error: %s"
 msgstr "错误：%s"
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "错误：%s（MIME 类型：%s）"
 
 msgid "Event"
 msgstr "事件"
@@ -1987,7 +1984,7 @@ msgid "Folder: %s"
 msgstr "文件夹：%s"
 
 msgid "For example: \"Julia is now online\""
-msgstr "例如：“Julia 现在是在线”"
+msgstr "例如：“Julia 现在在线”"
 
 msgid "Force Bookmark 2 usage"
 msgstr "强制 Bookmark 2 使用"
@@ -2087,6 +2084,13 @@ msgid ""
 msgstr ""
 "Gajim 旨在成为易于使用且功能齐全的 XMPP 客户端。尽情地与您的朋友或家人聊天，"
 "轻松分享图片和想法，或与您的群组讨论新闻。"
+
+msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+"Gajim 可自动使用您当前的时区更新您的个人资料。这有助于您的联系人判断最佳联系"
+"时间。"
 
 msgid ""
 "Gajim encountered an error.\n"
@@ -2213,7 +2217,7 @@ msgid "Hello, I am $name. %s"
 msgstr "您好，我是 $name。%s"
 
 msgid "Here you can add some feedback which helps reproducing this problem."
-msgstr ""
+msgstr "您可以在此处添加一些有助于重现此问题的反馈。"
 
 msgctxt "Group chat feature"
 msgid "Hidden"
@@ -2305,6 +2309,9 @@ msgid ""
 msgstr ""
 "启用后，Gajim 在使用 Jingle 时将尝试使用 STUN 服务器。“stun_server”选项中配置"
 "的服务器，或由 XMPP 服务器给出的服务器。"
+
+msgid "Ignore"
+msgstr "忽略"
 
 msgid "Ignore Unknown Contacts"
 msgstr "忽略未知联系人"
@@ -2458,18 +2465,6 @@ msgstr "颁发给\n"
 
 msgid "Issues detected"
 msgstr "检测到的问题"
-
-msgid "I’m eating."
-msgstr "我正在用餐。"
-
-msgid "I’m out enjoying life."
-msgstr "我正在享受户外生活。"
-
-msgid "I’m watching a movie."
-msgstr "我正在看电影。"
-
-msgid "I’m working."
-msgstr "我正在工作。"
 
 msgid "JID"
 msgstr "JID"
@@ -2770,9 +2765,6 @@ msgstr "将联系人移动到新分组？"
 msgid "Move to Group"
 msgstr "移动到分组"
 
-msgid "Movie"
-msgstr "电影"
-
 msgid "Must be a port number"
 msgstr "必须为端口号"
 
@@ -2854,6 +2846,9 @@ msgstr "不同步"
 
 msgid "No Threshold"
 msgstr "无阈值"
+
+msgid "No Timezone"
+msgstr "无时区"
 
 msgid "No additional requirements"
 msgstr "无额外要求"
@@ -2947,7 +2942,7 @@ msgstr "不可用"
 
 msgctxt "User status"
 msgid "Not Available"
-msgstr "没空"
+msgstr "不在"
 
 msgid "Not Decided"
 msgstr "尚未决定"
@@ -2992,6 +2987,12 @@ msgstr "通知"
 
 msgid "Notify after update"
 msgstr "更新后通知"
+
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr "当有人在聊天中回应我的消息时通知我"
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr "当有人在群聊中回应我的消息时通知我"
 
 msgid "Notify me when the automatic update was successful"
 msgstr "自动更新成功时通知我"
@@ -3079,9 +3080,6 @@ msgstr "与您的账号连接的其他设备"
 
 msgid "Others"
 msgstr "其他"
-
-msgid "Out"
-msgstr "外出"
 
 msgid "Out of memory"
 msgstr "内存不足"
@@ -3340,7 +3338,7 @@ msgid "Preview in Public Group Chats"
 msgstr "在公开群聊中预览"
 
 msgid "Preview new messages in notification popup?"
-msgstr "在通知弹窗中预览新消息？"
+msgstr "是否在通知弹窗中预览新消息？"
 
 msgid "Previous"
 msgstr "上个"
@@ -3467,6 +3465,17 @@ msgstr "注册(_G)"
 #, python-format
 msgid "React with %s"
 msgstr "使用 %s 回应"
+
+#, python-format
+msgid "Reaction from %s"
+msgstr "回应来自 %s"
+
+#, python-format
+msgid "Reaction from %s (%s)"
+msgstr "回应来自 %s（%s）"
+
+msgid "Reactions"
+msgstr "回应"
 
 msgid "Read Receipts"
 msgstr "已读回执"
@@ -3641,7 +3650,7 @@ msgid "Request Voice"
 msgstr "请求发言权"
 
 msgid "Request contact information (Tune, Location)"
-msgstr "请求联系人信息（音乐、位置信息）"
+msgstr "请求联系人信息（曲目、位置信息）"
 
 msgid "Request pending"
 msgstr "请求待处理"
@@ -4116,7 +4125,7 @@ msgstr "显示语音消息按钮"
 msgid ""
 "Show a confirmation dialog to block a contact? Empty string means never show "
 "the dialog."
-msgstr "是否显示确认屏蔽联系人对话框？空字符串意味着从不显示对话框。"
+msgstr "是否在屏蔽联系人时显示确认对话框？空字符串意味着从不显示对话框。"
 
 msgid "Show a list of emojis"
 msgstr "显示表情符号列表"
@@ -4196,9 +4205,6 @@ msgstr "不允许注册"
 
 msgid "Size of preview images in pixels"
 msgstr "预览图片的大小（像素）"
-
-msgid "Sleeping"
-msgstr "正在睡觉"
 
 msgid "Software"
 msgstr "软件"
@@ -4314,7 +4320,7 @@ msgstr ""
 "日常琐事或筹办重要活动，群组都能轻松胜任。"
 
 msgid "Steps to reproduce the problem…"
-msgstr ""
+msgstr "重现问题的步骤…"
 
 msgid "Stop Sharing Online Status?"
 msgstr "停止分享在线状态？"
@@ -4679,11 +4685,11 @@ msgstr ""
 "是否要删除此主题？"
 
 msgid "This message has been moderated"
-msgstr "此消息已审核撤回"
+msgstr "此消息已被审核撤回"
 
 #, python-format
 msgid "This message has been moderated by %s"
-msgstr "%s 审核撤回了此消息"
+msgstr "此消息已被 %s 审核撤回"
 
 #, python-brace-format
 msgid "This message has been retracted on {date}"
@@ -4767,7 +4773,7 @@ msgid "Time Until Away"
 msgstr "离开倒计时"
 
 msgid "Time Until Not Available"
-msgstr "没空倒计时"
+msgstr "不在倒计时"
 
 msgid "Time Zone"
 msgstr "时区"
@@ -4776,9 +4782,12 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "时区"
 
+msgid "Timezone Update"
+msgstr "时区更新"
+
 msgctxt "Profile"
 msgid "Title"
-msgstr "职称"
+msgstr "职位"
 
 msgctxt "Contact subscription"
 msgid "To"
@@ -4957,6 +4966,9 @@ msgstr "更新"
 msgid "Update Avatar"
 msgstr "更新头像"
 
+msgid "Update Timezone"
+msgstr "更新时区"
+
 msgid "Update automatically"
 msgstr "自动更新"
 
@@ -4966,6 +4978,12 @@ msgstr "有新版本可用：版本 %s"
 
 msgid "Update plugins automatically"
 msgstr "自动更新插件"
+
+msgid "Update your profile's timezone automatically"
+msgstr "自动更新您的个人资料的时区"
+
+msgid "Update your timezone?"
+msgstr "更新您的时区？"
 
 msgid "Updates"
 msgstr "更新"
@@ -5072,9 +5090,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr "参观者"
 
-msgid "Visual Notifications"
-msgstr "视觉通知"
-
 msgid "Voice Message"
 msgstr "语音消息"
 
@@ -5131,9 +5146,6 @@ msgstr "窗口"
 
 msgid "Work"
 msgstr "单位"
-
-msgid "Working"
-msgstr "工作中"
 
 msgid "Workspace Settings"
 msgstr "工作区设置"
@@ -5217,7 +5229,7 @@ msgstr "您现在的昵称为 %s"
 
 #, python-brace-format
 msgid "You are now {show}{status}"
-msgstr "您现在是{show}{status}"
+msgstr "您现在{show}{status}"
 
 msgid "You are offline"
 msgstr "您已离线"
@@ -5273,7 +5285,7 @@ msgstr "您已被移出此群聊"
 
 #, python-format
 msgid "You have been removed from this group chat by %s"
-msgstr "%s 已将您移出此群聊"
+msgstr "您已被 %s 移出此群聊"
 
 msgid "You have insufficient permissions"
 msgstr "您的权限不足"
@@ -5363,9 +5375,6 @@ msgstr "您的服务提供以下功能"
 
 msgid "ZIP files"
 msgstr "Zip 文件"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr "ZZZZzzzzzZZZZZ"
 
 msgid "[read more]"
 msgstr "[阅读更多]"
@@ -5495,7 +5504,7 @@ msgstr "否(_N)"
 
 msgctxt "User status"
 msgid "_Not Available"
-msgstr "没空(_N)"
+msgstr "不在(_N)"
 
 msgid "_OK"
 msgstr "确定(_O)"
@@ -5741,11 +5750,11 @@ msgstr "{nick} 现在的昵称为 {new_nick}"
 
 #, python-brace-format
 msgid "{nick} is now {show}"
-msgstr "{nick} 现在是{show}"
+msgstr "{nick} 现在{show}"
 
 #, python-brace-format
 msgid "{nick} is now {show}{status}"
-msgstr "{nick} 现在是{show}{status}"
+msgstr "{nick} 现在{show}{status}"
 
 msgid "…or drop it here"
 msgstr "…或将其拖放到此处"
@@ -6153,6 +6162,12 @@ msgstr "…或将其拖放到此处"
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "自动拼写检查您的消息"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "稍后回来。"
+
+#~ msgid "Back soon"
+#~ msgstr "马上回来"
+
 #~ msgid "Blocking List"
 #~ msgstr "屏蔽列表"
 
@@ -6402,6 +6417,9 @@ msgstr "…或将其拖放到此处"
 #~ msgid "Easily send pictures, videos or other files to friends and groups"
 #~ msgstr "轻松向朋友和群组发送图片、视频或其他文件"
 
+#~ msgid "Eating"
+#~ msgstr "用餐中"
+
 #~ msgid "Edit Name…"
 #~ msgstr "编辑名称…"
 
@@ -6435,6 +6453,10 @@ msgstr "…或将其拖放到此处"
 
 #~ msgid "Error!"
 #~ msgstr "错误！"
+
+#, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "错误：%s（MIME 类型：%s）"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -6607,12 +6629,24 @@ msgstr "…或将其拖放到此处"
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "无法发送空文件"
 
+#~ msgid "I’m eating."
+#~ msgstr "我正在用餐。"
+
+#~ msgid "I’m out enjoying life."
+#~ msgstr "我正在享受户外生活。"
+
 #, python-format
 #~ msgid ""
 #~ "I’m synchronizing my contacts from my account at \"%s\". Could you please "
 #~ "add this address to your contact list?"
 #~ msgstr ""
 #~ "我正在同步来自“%s”账号的联系人。可以请您将此地址添加到您的联系人列表吗？"
+
+#~ msgid "I’m watching a movie."
+#~ msgstr "我正在看电影。"
+
+#~ msgid "I’m working."
+#~ msgstr "我正在工作。"
 
 #~ msgid "Keep and manage all your chat history"
 #~ msgstr "保留和管理您的所有聊天记录"
@@ -6692,6 +6726,9 @@ msgstr "…或将其拖放到此处"
 #~ msgid "Move Contact"
 #~ msgstr "移动联系人"
 
+#~ msgid "Movie"
+#~ msgstr "电影"
+
 #~ msgid "Never miss a message, keep all your chat clients synchronized"
 #~ msgstr "绝不错过任何消息，与您的所有的聊天客户端保持同步"
 
@@ -6753,6 +6790,9 @@ msgstr "…或将其拖放到此处"
 
 #~ msgid "Organize your chats with workspaces"
 #~ msgstr "用工作区整理您的聊天"
+
+#~ msgid "Out"
+#~ msgstr "外出"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PKCS12 文件"
@@ -7014,6 +7054,9 @@ msgstr "…或将其拖放到此处"
 #~ msgid "Shutting down Gajim"
 #~ msgstr "正在关闭 Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "正在睡觉"
+
 #~ msgctxt "Group chat description"
 #~ msgid "Spring gathering"
 #~ msgstr "春聚"
@@ -7193,10 +7236,6 @@ msgstr "…或将其拖放到此处"
 #~ msgid "User name…"
 #~ msgstr "重命名…"
 
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "假期"
-
 #~ msgid "Video Framerate"
 #~ msgstr "视频帧速率"
 
@@ -7209,6 +7248,9 @@ msgstr "…或将其拖放到此处"
 #~ msgid "Video calls are not supported"
 #~ msgstr "不支持视频通话"
 
+#~ msgid "Visual Notifications"
+#~ msgstr "视觉通知"
+
 #~ msgid "WebSocket URL"
 #~ msgstr "WebSocket URL"
 
@@ -7217,6 +7259,9 @@ msgstr "…或将其拖放到此处"
 
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "为什么要撤回这些消息？"
+
+#~ msgid "Working"
+#~ msgstr "工作中"
 
 #~ msgid "Workspaces"
 #~ msgstr "工作区"
@@ -7263,6 +7308,9 @@ msgstr "…或将其拖放到此处"
 
 #~ msgid "Your archiving preferences have successfully been saved."
 #~ msgstr "您的归档首选项已成功保存。"
+
+#~ msgid "ZZZZzzzzzZZZZZ"
+#~ msgstr "ZZZZzzzzzZZZZZ"
 
 #~ msgid "_Account"
 #~ msgstr "账号(_A)"

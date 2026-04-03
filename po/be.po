@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2009-08-19 23:42+0200\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -32,6 +32,10 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "$Contact запрасіў Вас у групавую размову %(room_jid)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -936,12 +940,6 @@ msgstr "Сышоў"
 msgid "Back"
 msgstr "Хутка буду"
 
-msgid "Back in some minutes."
-msgstr "Хутка буду."
-
-msgid "Back soon"
-msgstr "Хутка буду"
-
 #, fuzzy
 msgid "Ban"
 msgstr "_Забараніць казанне"
@@ -1037,6 +1035,10 @@ msgstr ""
 
 msgid "CRL signature failure"
 msgstr ""
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Адправіць _файл"
 
 msgid "C_opy"
 msgstr ""
@@ -1526,6 +1528,10 @@ msgstr "Немагчыма загрузіць малюнак"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Немагчыма загрузіць малюнак"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "Немагчыма загрузіць малюнак"
@@ -1857,9 +1863,6 @@ msgstr "Стан: "
 msgid "Drop files here"
 msgstr "Адправіць файл чалавеку"
 
-msgid "Eating"
-msgstr "Ежа"
-
 #, fuzzy
 msgid "Edit"
 msgstr "_Змяніць"
@@ -2033,10 +2036,6 @@ msgstr "Памылка дадання сервіса. %s"
 
 #, fuzzy, python-format
 msgid "Error: %s"
-msgstr "Памылка: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
 msgstr "Памылка: %s"
 
 msgid "Event"
@@ -2379,6 +2378,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2625,6 +2629,9 @@ msgid ""
 "in \"stun_server\" option, or the one given by the XMPP server."
 msgstr ""
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Людзі"
@@ -2804,22 +2811,6 @@ msgstr ""
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "Працую."
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "Я цешуся з жыцця."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "Гляджу фільм."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "Працую."
 
 msgid "JID"
 msgstr "JID"
@@ -3177,9 +3168,6 @@ msgstr "_Паказваць падзею ў галоўным вакне"
 msgid "Move to Group"
 msgstr "Выдаліць групу"
 
-msgid "Movie"
-msgstr "Фільм"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "Адмысловы порт павінны быць нумарам порта."
@@ -3278,6 +3266,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Час"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3429,6 +3421,12 @@ msgstr "Змяненне рахунка"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3530,9 +3528,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "Іншыя"
-
-msgid "Out"
-msgstr "Сышоў"
 
 msgid "Out of memory"
 msgstr ""
@@ -3976,6 +3971,18 @@ msgstr "Зарэ_гістравацца"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_Дзеянні для \"%s\""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_Дзеянні для \"%s\""
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Змяненне рахунка"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4846,9 +4853,6 @@ msgstr "Такая мянушка не дазволеная: %s"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "Сон"
-
 #, fuzzy
 msgid "Software"
 msgstr "Здольнасці сервера"
@@ -5501,6 +5505,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Час"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Час"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5709,6 +5717,10 @@ msgid "Update Avatar"
 msgstr "Выберыце малюнак"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Час"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Выберыце малюнак"
 
@@ -5717,6 +5729,13 @@ msgid "Update available: Version %s"
 msgstr "Рахункаў няма"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Выберыце малюнак"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5838,10 +5857,6 @@ msgid "Visitors"
 msgstr "Наведвальнікі"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>Візуальныя нагадванні</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "Адправіць паведамленне"
 
@@ -5905,9 +5920,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "Праца"
-
-msgid "Working"
-msgstr "Працую"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -6164,9 +6176,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Усе файлы"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6954,6 +6963,12 @@ msgstr ""
 #~ msgid "Autojoin"
 #~ msgstr "Аўтаматычна далучацца"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Хутка буду."
+
+#~ msgid "Back soon"
+#~ msgstr "Хутка буду"
+
 #, fuzzy
 #~ msgid "Blocking List"
 #~ msgstr "Чорны спіс"
@@ -7185,6 +7200,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "Адправіць файл чалавеку"
 
+#~ msgid "Eating"
+#~ msgstr "Ежа"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "Імя:"
@@ -7208,6 +7226,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Error!"
 #~ msgstr "Памылка Avahi"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Памылка: %s"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7340,6 +7362,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Немагчыма адправіць пусты файл"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "Працую."
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Я цешуся з жыцця."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "Гляджу фільм."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "Працую."
+
 #, fuzzy, python-format
 #~ msgid "Last seen %s"
 #~ msgstr "Прычына"
@@ -7393,6 +7431,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "Змяніць імя чалавека"
 
+#~ msgid "Movie"
+#~ msgstr "Фільм"
+
 #, fuzzy
 #~ msgid "No Connection Available"
 #~ msgstr "Няма злучэння"
@@ -7445,6 +7486,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "Адміністратар"
+
+#~ msgid "Out"
+#~ msgstr "Сышоў"
 
 #, fuzzy
 #~ msgid "Past as Code Block"
@@ -7661,6 +7705,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "Сон"
+
 #~ msgid "Sta_tus"
 #~ msgstr "Ст_ан"
 
@@ -7802,11 +7849,6 @@ msgstr ""
 #~ msgstr "_Імя карыстальніка:"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Змяненне рахунка"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Прыватная размова"
 
@@ -7823,8 +7865,15 @@ msgstr ""
 #~ msgstr "Няма злучэння"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>Візуальныя нагадванні</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Вы сапраўды хочаце выдаліць выбранае паведамленне?"
+
+#~ msgid "Working"
+#~ msgstr "Працую"
 
 #, fuzzy
 #~ msgid "Workspaces"

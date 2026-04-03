@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2024-08-20 16:17+0000\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: Occidental <https://translate.gajim.org/projects/gajim/master/"
@@ -30,6 +30,10 @@ msgstr ""
 
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
+msgstr ""
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
 msgstr ""
 
 #, fuzzy, python-format
@@ -843,12 +847,6 @@ msgstr ""
 msgid "Back"
 msgstr "Retro"
 
-msgid "Back in some minutes."
-msgstr ""
-
-msgid "Back soon"
-msgstr ""
-
 msgid "Ban"
 msgstr ""
 
@@ -935,6 +933,9 @@ msgid "CRL is not yet valid"
 msgstr ""
 
 msgid "CRL signature failure"
+msgstr ""
+
+msgid "CSV files"
 msgstr ""
 
 msgid "C_opy"
@@ -1371,6 +1372,9 @@ msgstr ""
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+msgid "Could not generate link preview"
+msgstr ""
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr ""
@@ -1652,9 +1656,6 @@ msgstr ""
 msgid "Drop files here"
 msgstr ""
 
-msgid "Eating"
-msgstr ""
-
 msgid "Edit"
 msgstr ""
 
@@ -1804,10 +1805,6 @@ msgstr ""
 
 #, python-format
 msgid "Error: %s"
-msgstr ""
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
 msgstr ""
 
 msgid "Event"
@@ -2108,6 +2105,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2318,6 +2320,9 @@ msgid ""
 "in \"stun_server\" option, or the one given by the XMPP server."
 msgstr ""
 
+msgid "Ignore"
+msgstr ""
+
 msgid "Ignore Unknown Contacts"
 msgstr ""
 
@@ -2472,18 +2477,6 @@ msgid "Issued to\n"
 msgstr ""
 
 msgid "Issues detected"
-msgstr ""
-
-msgid "I’m eating."
-msgstr ""
-
-msgid "I’m out enjoying life."
-msgstr ""
-
-msgid "I’m watching a movie."
-msgstr ""
-
-msgid "I’m working."
 msgstr ""
 
 msgid "JID"
@@ -2788,9 +2781,6 @@ msgstr "Contacte"
 msgid "Move to Group"
 msgstr ""
 
-msgid "Movie"
-msgstr ""
-
 msgid "Must be a port number"
 msgstr ""
 
@@ -2874,6 +2864,9 @@ msgid "No Sync"
 msgstr ""
 
 msgid "No Threshold"
+msgstr ""
+
+msgid "No Timezone"
 msgstr ""
 
 msgid "No additional requirements"
@@ -3011,6 +3004,12 @@ msgstr ""
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3097,9 +3096,6 @@ msgid "Other devices connected with your account"
 msgstr ""
 
 msgid "Others"
-msgstr ""
-
-msgid "Out"
 msgstr ""
 
 msgid "Out of memory"
@@ -3485,6 +3481,18 @@ msgstr ""
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, python-format
+msgid "Reaction from %s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "Conexion"
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Conexion"
 
 msgid "Read Receipts"
 msgstr ""
@@ -4227,9 +4235,6 @@ msgstr ""
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr ""
-
 msgid "Software"
 msgstr ""
 
@@ -4807,6 +4812,9 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr ""
 
+msgid "Timezone Update"
+msgstr ""
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -4990,6 +4998,9 @@ msgstr ""
 msgid "Update Avatar"
 msgstr ""
 
+msgid "Update Timezone"
+msgstr ""
+
 msgid "Update automatically"
 msgstr ""
 
@@ -4998,6 +5009,12 @@ msgid "Update available: Version %s"
 msgstr ""
 
 msgid "Update plugins automatically"
+msgstr ""
+
+msgid "Update your profile's timezone automatically"
+msgstr ""
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5106,9 +5123,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr ""
 
-msgid "Visual Notifications"
-msgstr ""
-
 msgid "Voice Message"
 msgstr ""
 
@@ -5164,9 +5178,6 @@ msgid "Windows"
 msgstr ""
 
 msgid "Work"
-msgstr ""
-
-msgid "Working"
 msgstr ""
 
 msgid "Workspace Settings"
@@ -5393,9 +5404,6 @@ msgid "Your service offers the following features"
 msgstr ""
 
 msgid "ZIP files"
-msgstr ""
-
-msgid "ZZZZzzzzzZZZZZ"
 msgstr ""
 
 msgid "[read more]"

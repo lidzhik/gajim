@@ -165,7 +165,7 @@ END
 """
 
     def to_ver_list(v: str) -> str:
-        v = v.split("-")[0]
+        v = v.split("-", maxsplit=1)[0]
         return ",".join(map(str, (list(map(int, v.split("."))) + [0] * 4)[:4]))
 
     file_version_list = to_ver_list(file_version)
@@ -239,7 +239,7 @@ def main() -> None:
 
     build_launcher(
         os.path.join(target, "Gajim.exe"),
-        os.path.join(misc, "dgkbsv.ico"),
+        os.path.join(misc, "gajim.ico"),
         "Gajim",
         "Gajim",
         version,
@@ -248,16 +248,16 @@ def main() -> None:
         debug=False,
     )
 
-    # build_launcher(
-    #    os.path.join(target, "Gajim-Debug.exe"),
-    #    os.path.join(misc, "dgkbsv.ico"),
-    #    "Gajim",
-    #    "Gajim",
-    #    version,
-    #    company_name,
-    #    is_gui=False,
-    #    debug=True,
-    # )
+    build_launcher(
+        os.path.join(target, "Gajim-Debug.exe"),
+        os.path.join(misc, "gajim.ico"),
+        "Gajim",
+        "Gajim",
+        version,
+        company_name,
+        is_gui=False,
+        debug=True,
+    )
 
     # build_launcher(
     #     os.path.join(target, "history_manager.exe"),

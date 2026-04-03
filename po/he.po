@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2014-06-21 16:23+0200\n"
 "Last-Translator: Isratine Citizen <genghiskhan@gmx.ca>\n"
 "Language-Team: Rahut\n"
@@ -36,6 +36,10 @@ msgstr "%(jid)s סרב/ה את ההזמנה: %(reason)s"
 #, fuzzy, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "$Contact הזמינך לשיחת קבוצה %(room_jid)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -975,12 +979,6 @@ msgstr "נעדר"
 msgid "Back"
 msgstr "אשוב בקרוב"
 
-msgid "Back in some minutes."
-msgstr "אני אחזור בעוד כמה דקות."
-
-msgid "Back soon"
-msgstr "אשוב בקרוב"
-
 #, fuzzy
 msgid "Ban"
 msgstr "א_סור"
@@ -1079,6 +1077,10 @@ msgstr "‏CRL אינה תקפה עדיין"
 
 msgid "CRL signature failure"
 msgstr "כשל חתימת CRL"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "שליחת קבצים"
 
 msgid "C_opy"
 msgstr ""
@@ -1577,6 +1579,10 @@ msgstr "לא היתה אפשרות להטעין תמונה"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "לא היתה אפשרות להטעין תמונה"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "לא היתה אפשרות להטעין תמונה"
@@ -1910,9 +1916,6 @@ msgstr "מצב: "
 msgid "Drop files here"
 msgstr "cli"
 
-msgid "Eating"
-msgstr "אוכל"
-
 #, fuzzy
 msgid "Edit"
 msgstr "ע_ריכה"
@@ -2099,10 +2102,6 @@ msgstr "שגיאה בעת הוספת שירות. %s"
 #, python-format
 msgid "Error: %s"
 msgstr "שגיאה: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "הודעת שגיאה: %s"
 
 msgid "Event"
 msgstr "אירוע"
@@ -2452,6 +2451,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2710,6 +2714,9 @@ msgstr ""
 "זה אשר הוגדר בתוך אפשרות \"stun_server\", או בזה אשר ניתן על ידי שרת jabber "
 "נתון."
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "הזמן _אנשי קשר"
@@ -2890,22 +2897,6 @@ msgstr ""
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "אני בעבודה."
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "יצאתי החוצה ליהנות מן החיים."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "אני צופה בסרט."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "אני בעבודה."
 
 msgid "JID"
 msgstr "‏JID"
@@ -3270,9 +3261,6 @@ msgstr "צבע התראה של התנתקות איש קשר"
 msgid "Move to Group"
 msgstr "הסרת קבוצה"
 
-msgid "Movie"
-msgstr "סרט"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "פורט מותאם מוכרח להיות מספר פורט."
@@ -3369,6 +3357,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "זמן"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3518,6 +3510,12 @@ msgstr "התראות"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3619,9 +3617,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "אחרים"
-
-msgid "Out"
-msgstr "בחוץ"
 
 # זיכרון אזל
 msgid "Out of memory"
@@ -4074,6 +4069,18 @@ msgstr "ה_רשמה"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_פעולות עבור \"%s\""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_פעולות עבור \"%s\""
+
+#, fuzzy
+msgid "Reactions"
+msgstr "מיקום: "
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4965,10 +4972,6 @@ msgstr "תו לא מורשה"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-# יושן
-msgid "Sleeping"
-msgstr "ישן"
-
 #, fuzzy
 msgid "Software"
 msgstr "תגובת שרת: %s"
@@ -5634,6 +5637,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "זמן"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "זמן"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5847,6 +5854,10 @@ msgid "Update Avatar"
 msgstr "בחירת ארכיון"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "זמן"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "בחירת ארכיון"
 
@@ -5855,6 +5866,13 @@ msgid "Update available: Version %s"
 msgstr "אין חשבון זמין"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "בחירת ארכיון"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5978,10 +5996,6 @@ msgid "Visitors"
 msgstr "מבקרים"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>התראות חזותיות</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "מסירת הודעה"
 
@@ -6046,9 +6060,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "עבודה"
-
-msgid "Working"
-msgstr "עובד"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -6326,9 +6337,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "קבצי Zip"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -7147,6 +7155,12 @@ msgstr ""
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "בדיקת איות בעת הלחנת הודעות."
 
+#~ msgid "Back in some minutes."
+#~ msgstr "אני אחזור בעוד כמה דקות."
+
+#~ msgid "Back soon"
+#~ msgstr "אשוב בקרוב"
+
 #, fuzzy
 #~ msgid "Blocking List"
 #~ msgstr "רשימת אסירה"
@@ -7379,6 +7393,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "cli"
 
+#~ msgid "Eating"
+#~ msgstr "אוכל"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "שם פרטי:"
@@ -7418,6 +7435,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Error!"
 #~ msgstr "שגיאה"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "הודעת שגיאה: %s"
 
 # cli
 #, fuzzy, python-format
@@ -7571,6 +7592,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "אין זה אפשרי לשלוח קבצים ריקים"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "אני בעבודה."
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "יצאתי החוצה ליהנות מן החיים."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "אני צופה בסרט."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "אני בעבודה."
+
 #, fuzzy, python-format
 #~ msgid "Last seen %s"
 #~ msgstr "סיבה"
@@ -7627,6 +7664,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "שינוי שם איש קשר"
 
+#~ msgid "Movie"
+#~ msgstr "סרט"
+
 #, fuzzy
 #~ msgid "No Connection Available"
 #~ msgstr "חיבור לא זמין"
@@ -7678,6 +7718,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "בחופשה"
+
+#~ msgid "Out"
+#~ msgstr "בחוץ"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "קבצי PKCS12"
@@ -7917,6 +7960,10 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "‫Gajim"
 
+# יושן
+#~ msgid "Sleeping"
+#~ msgstr "ישן"
+
 #~ msgid "Sta_tus"
 #~ msgstr "_מצב"
 
@@ -8081,11 +8128,6 @@ msgstr ""
 #~ msgstr "שם _משתמש:"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "מיקום: "
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "תדר וידאו"
 
@@ -8102,8 +8144,15 @@ msgstr ""
 #~ msgstr "סשנים חזותיים אינם זמינים"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>התראות חזותיות</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "האם אתה בטוח כי ברצונך למחוק את ההודעה הנבחרת?"
+
+#~ msgid "Working"
+#~ msgstr "עובד"
 
 #, fuzzy
 #~ msgid "Workspaces"

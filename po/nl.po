@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2024-11-19 21:11+0000\n"
 "Last-Translator: Daniel Brötzmann <mailtrash@posteo.de>\n"
 "Language-Team: Dutch <https://translate.gajim.org/projects/gajim/master/nl/"
@@ -36,6 +36,10 @@ msgstr "%(jid)s heeft de uitnodiging geweigerd: %(reason)s"
 msgid "%(contact)s invited you to %(chat)s"
 msgstr ""
 "<b>%(contact)s</b> heeft u uitgenodigd in groepsgesprek <b>%(room_jid)s</b>"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -932,12 +936,6 @@ msgstr "Afwezig"
 msgid "Back"
 msgstr "Zo terug"
 
-msgid "Back in some minutes."
-msgstr "In een paar minuten terug."
-
-msgid "Back soon"
-msgstr "Zo terug"
-
 #, fuzzy
 msgid "Ban"
 msgstr "Ver_bannen"
@@ -1034,6 +1032,10 @@ msgstr "CRL is nog niet geldig"
 
 msgid "CRL signature failure"
 msgstr "CRL-handtekeningsfout"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "SVG-bestanden"
 
 msgid "C_opy"
 msgstr ""
@@ -1516,6 +1518,10 @@ msgstr "Kon bestand niet openen"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Kon bestand niet openen"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "Kon bestand niet openen"
@@ -1846,9 +1852,6 @@ msgstr "Status: "
 msgid "Drop files here"
 msgstr "Stuurt een bestand naar een contact"
 
-msgid "Eating"
-msgstr "Eten"
-
 #, fuzzy
 msgid "Edit"
 msgstr "B_ewerken"
@@ -2029,10 +2032,6 @@ msgstr "Fout bij toevoegen van transportcontact"
 #, python-format
 msgid "Error: %s"
 msgstr "Fout: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Foutbericht: %s"
 
 msgid "Event"
 msgstr "Gebeurtenis"
@@ -2377,6 +2376,11 @@ msgstr ""
 "praat over het nieuws met je groepen."
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2631,6 +2635,9 @@ msgstr ""
 "van Jingle, ofwel die in de optie ‘stun_server’, ofwel die gegeven door de "
 "XMPP-server."
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Contacten uitnodigen"
@@ -2810,22 +2817,6 @@ msgstr "Uitgegeven aan"
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "Ik ben aan het werk."
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "Ik ben buiten van het leven aan het genieten."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "Ik been een film aan het kijken."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "Ik ben aan het werk."
 
 msgid "JID"
 msgstr "JID"
@@ -3183,9 +3174,6 @@ msgstr "Contactrijlettertype"
 msgid "Move to Group"
 msgstr "Groep verwijderen"
 
-msgid "Movie"
-msgstr "Film"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "Aangepaste poort moet een geldig poortnummer zijn."
@@ -3280,6 +3268,10 @@ msgstr ""
 #, fuzzy
 msgid "No Threshold"
 msgstr "Geen drempelwaarde"
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Duur"
 
 msgid "No additional requirements"
 msgstr "Geen extra vereisten"
@@ -3428,6 +3420,12 @@ msgstr "Meldingen"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3531,9 +3529,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "Overigen"
-
-msgid "Out"
-msgstr "Uit"
 
 msgid "Out of memory"
 msgstr "Geheugentekort"
@@ -3965,6 +3960,18 @@ msgstr "Re_gistreren"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_Acties voor ‘%s’"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_Acties voor ‘%s’"
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Locatie:"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4839,9 +4846,6 @@ msgstr "Spaties zijn niet toegestaan"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "Slapen"
-
 #, fuzzy
 msgid "Software"
 msgstr "Serversoftware"
@@ -5502,6 +5506,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Duur"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Duur"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5711,6 +5719,10 @@ msgid "Update Avatar"
 msgstr "Avatar uploaden…"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Duur"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Avatar uploaden…"
 
@@ -5719,6 +5731,13 @@ msgid "Update available: Version %s"
 msgstr "Geen account beschikbaar"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Avatar uploaden…"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5837,9 +5856,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr "Bezoekers"
 
-msgid "Visual Notifications"
-msgstr "Visuele meldingen"
-
 #, fuzzy
 msgid "Voice Message"
 msgstr "Bericht verzenden"
@@ -5907,9 +5923,6 @@ msgstr "venster1"
 
 msgid "Work"
 msgstr "Werk"
-
-msgid "Working"
-msgstr "Werken"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -6174,9 +6187,6 @@ msgstr ""
 
 msgid "ZIP files"
 msgstr "ZIP-bestanden"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6992,6 +7002,12 @@ msgstr ""
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "Automatische spellingscontrole voor je berichten"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "In een paar minuten terug."
+
+#~ msgid "Back soon"
+#~ msgstr "Zo terug"
+
 #~ msgid "Blocking List"
 #~ msgstr "Blokkeringslijst"
 
@@ -7241,6 +7257,9 @@ msgstr ""
 #~ msgid "Easily send pictures, videos or other files to friends and groups"
 #~ msgstr "Stuur foto’s, video’s of andere bestanden naar vrienden en groepen"
 
+#~ msgid "Eating"
+#~ msgstr "Eten"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "Voornaam"
@@ -7276,6 +7295,10 @@ msgstr ""
 
 #~ msgid "Error!"
 #~ msgstr "Fout!"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Foutbericht: %s"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7443,6 +7466,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Het is onmogelijk lege bestanden te sturen"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "Ik ben aan het werk."
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Ik ben buiten van het leven aan het genieten."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "Ik been een film aan het kijken."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "Ik ben aan het werk."
+
 #~ msgid "Keep and manage all your chat history"
 #~ msgstr "Bewaar en beheer je gespreksgeschiedenis"
 
@@ -7511,6 +7550,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "Contact hernoemen"
 
+#~ msgid "Movie"
+#~ msgstr "Film"
+
 #~ msgid "Never miss a message, keep all your chat clients synchronized"
 #~ msgstr "Mis nooit een bericht, en hou al je chatcliënten gesynchroniseerd"
 
@@ -7574,6 +7616,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organize your chats with workspaces"
 #~ msgstr "Organiseer je gesprekken met tabbladen"
+
+#~ msgid "Out"
+#~ msgstr "Uit"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PKCS12-bestanden"
@@ -7822,6 +7867,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "Slapen"
+
 #~ msgid "Sta_tus"
 #~ msgstr "Sta_tus"
 
@@ -7997,11 +8045,6 @@ msgstr ""
 #~ msgstr "Gebr_uikersnaam"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Locatie:"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Video_framerate"
 
@@ -8017,9 +8060,15 @@ msgstr ""
 #~ msgid "Video calls are not supported"
 #~ msgstr "Videosessies zijn niet beschikbaar"
 
+#~ msgid "Visual Notifications"
+#~ msgstr "Visuele meldingen"
+
 #, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Wil je dit bericht voorgoed verwijderen"
+
+#~ msgid "Working"
+#~ msgstr "Werken"
 
 #, fuzzy
 #~ msgid "Workspaces"

@@ -41,7 +41,6 @@ class ChatListHeader(Gtk.Grid):
         is_chat = mode == "chat"
         self._start_chat_menu_button.set_visible(is_chat)
         self._chat_filter.set_visible(is_chat)
-        self._chat_filter.set_visible(False)
 
         if is_chat:
             self._search_entry.set_text("")

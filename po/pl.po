@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
-"PO-Revision-Date: 2026-01-14 10:19+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
+"PO-Revision-Date: 2026-03-29 11:19+0000\n"
 "Last-Translator: Grzegorz Szymaszek <gszymaszek@short.pl>\n"
-"Language-Team: Polish <https://translate.gajim.org/projects/gajim/master/pl/"
-">\n"
+"Language-Team: Polish <https://translate.gajim.org/projects/gajim/master/pl/>"
+"\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,6 +34,10 @@ msgstr "%(contact)s odrzucił Twoje zaproszenie do %(chat)s"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s zaprosił Cię do %(chat)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr "%(contact)s zareagował z %(reaction)s na Twoją wiadomość „%(message)s”"
 
 #, python-format
 msgid "%(count)s Participant"
@@ -849,12 +853,6 @@ msgstr "Zaraz wracam"
 msgid "Back"
 msgstr "Wstecz"
 
-msgid "Back in some minutes."
-msgstr "Wrócę za jakiś czas."
-
-msgid "Back soon"
-msgstr "Niedługo wrócę"
-
 msgid "Ban"
 msgstr "Zbanuj"
 
@@ -939,6 +937,9 @@ msgstr "CRL nie jest prawidłowy"
 
 msgid "CRL signature failure"
 msgstr "Błąd podpisu CRL"
+
+msgid "CSV files"
+msgstr "Pliki CSV"
 
 msgid "C_opy"
 msgstr "K_opiuj"
@@ -1375,6 +1376,9 @@ msgstr "Brak dostępu do pliku"
 msgid "Could not find any messages for this participant."
 msgstr "Nie udało się znaleźć żadnych wiadomości dla tego uczestnika."
 
+msgid "Could not generate link preview"
+msgstr "Nie udało się wygenerować podglądu linka"
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr "Nie udało się otworzyć pliku (%s)"
@@ -1660,9 +1664,6 @@ msgstr "Szkic: %s"
 msgid "Drop files here"
 msgstr "Upuść tutaj pliki"
 
-msgid "Eating"
-msgstr "Jem"
-
 msgid "Edit"
 msgstr "Edytuj"
 
@@ -1820,10 +1821,6 @@ msgstr "Błąd podczas wysyłania awataru"
 #, python-format
 msgid "Error: %s"
 msgstr "Błąd: %s"
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Błąd: %s (typy MIME: %s)"
 
 msgid "Event"
 msgstr "Zdarzenie"
@@ -2124,6 +2121,14 @@ msgstr ""
 "grupach."
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+"Gajim potrafi automatycznie aktualizować Twój profil z Twoją bieżącą strefą "
+"czasową. To może pomóc Twoim kontaktom gdy będą próbowali się z Tobą "
+"skontaktować."
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2251,6 +2256,7 @@ msgstr "Cześć, jestem $name. %s"
 
 msgid "Here you can add some feedback which helps reproducing this problem."
 msgstr ""
+"Tutaj możesz dodać informacje zwrotne, które pomogą odtworzyć ten problem."
 
 msgctxt "Group chat feature"
 msgid "Hidden"
@@ -2347,6 +2353,9 @@ msgstr ""
 "Jeśli włączone, Gajim będzie próbował użyć serwer STUN podczas korzystania "
 "z Jingle. Zostanie wybrany serwer skonfigurowany opcją „stun_server” lub "
 "podany przez serwer XMPP."
+
+msgid "Ignore"
+msgstr "Ignoruj"
 
 msgid "Ignore Unknown Contacts"
 msgstr "Ignoruj nieznane kontakty"
@@ -2501,18 +2510,6 @@ msgstr "Wystawiony do\n"
 
 msgid "Issues detected"
 msgstr "Wykryto problemy"
-
-msgid "I’m eating."
-msgstr "Jem."
-
-msgid "I’m out enjoying life."
-msgstr "Wyszedłem cieszyć się życiem."
-
-msgid "I’m watching a movie."
-msgstr "Oglądam film."
-
-msgid "I’m working."
-msgstr "Pracuję."
 
 msgid "JID"
 msgstr "JID"
@@ -2815,9 +2812,6 @@ msgstr "Przenieść kontakt do nowej grupy?"
 msgid "Move to Group"
 msgstr "Przenieś do grupy"
 
-msgid "Movie"
-msgstr "Film"
-
 msgid "Must be a port number"
 msgstr "Musi być numerem portu"
 
@@ -2899,6 +2893,9 @@ msgstr "Brak synchronizacji"
 
 msgid "No Threshold"
 msgstr "Brak progu"
+
+msgid "No Timezone"
+msgstr "Brak strefy czasowej"
 
 msgid "No additional requirements"
 msgstr "Brak dodatkowych wymagań"
@@ -3040,6 +3037,13 @@ msgstr "Powiadomienia"
 msgid "Notify after update"
 msgstr "Powiadom po aktualizacji"
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr "Powiadamiaj mnie gdy ktoś reaguje na moje wiadomości w rozmowie"
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+"Powiadamiaj mnie gdy ktoś reaguje na moje wiadomości w rozmowie grupowej"
+
 msgid "Notify me when the automatic update was successful"
 msgstr "Powiadom mnie gdy automatyczna aktualizacja się powiedzie"
 
@@ -3126,9 +3130,6 @@ msgstr "Inne urządzenia połączone z Twoim kontem"
 
 msgid "Others"
 msgstr "Inni"
-
-msgid "Out"
-msgstr "Wyszedłem"
 
 msgid "Out of memory"
 msgstr "Brak pamięci"
@@ -3521,6 +3522,17 @@ msgstr "Za_rejestruj"
 #, python-format
 msgid "React with %s"
 msgstr "Zareaguj z %s"
+
+#, python-format
+msgid "Reaction from %s"
+msgstr "Reakcja od %s"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "Działania dla „%s”"
+
+msgid "Reactions"
+msgstr "Reakcje"
 
 msgid "Read Receipts"
 msgstr "Potwierdzenia przeczytania"
@@ -4267,9 +4279,6 @@ msgstr "Rejestracja niedozwolona"
 msgid "Size of preview images in pixels"
 msgstr "Rozmiar podglądu obrazu w pikselach"
 
-msgid "Sleeping"
-msgstr "Śpię"
-
 msgid "Software"
 msgstr "Oprogramowanie"
 
@@ -4388,7 +4397,7 @@ msgstr ""
 "wydarzenia."
 
 msgid "Steps to reproduce the problem…"
-msgstr ""
+msgstr "Kroki do odtworzenia problemu…"
 
 msgid "Stop Sharing Online Status?"
 msgstr "Zatrzymać udostępnianie statusu online?"
@@ -4876,6 +4885,9 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Strefa czasowa"
 
+msgid "Timezone Update"
+msgstr "Aktualizacja strefy czasowej"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr "Tytuł"
@@ -5060,6 +5072,9 @@ msgstr "Uaktualnij"
 msgid "Update Avatar"
 msgstr "Uaktualnij awatar"
 
+msgid "Update Timezone"
+msgstr "Aktualizuj strefę czasową"
+
 msgid "Update automatically"
 msgstr "Aktualizuj automatycznie"
 
@@ -5069,6 +5084,12 @@ msgstr "Aktualizacja dostępna: wersja %s"
 
 msgid "Update plugins automatically"
 msgstr "Automatycznie aktualizuj wtyczki"
+
+msgid "Update your profile's timezone automatically"
+msgstr "Automatycznie aktualizuj strefę czasową Twojego profilu"
+
+msgid "Update your timezone?"
+msgstr "Aktualizować Twoją strefę czasową?"
 
 msgid "Updates"
 msgstr "Aktualizacje"
@@ -5175,9 +5196,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr "Goście"
 
-msgid "Visual Notifications"
-msgstr "Powiadomienia wizualne"
-
 msgid "Voice Message"
 msgstr "Wiadomość głosowa"
 
@@ -5236,9 +5254,6 @@ msgid "Windows"
 msgstr "Windows"
 
 msgid "Work"
-msgstr "Praca"
-
-msgid "Working"
 msgstr "Praca"
 
 msgid "Workspace Settings"
@@ -5480,9 +5495,6 @@ msgstr "Twoja usługa oferuje następujące funkcjonalności"
 
 msgid "ZIP files"
 msgstr "Pliki ZIP"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr "ZZZZzzzzzZZZZZ"
 
 msgid "[read more]"
 msgstr "[czytaj dalej]"
@@ -6274,6 +6286,12 @@ msgstr "…lub upuść tutaj"
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "Automatyczne sprawdzanie pisowni w twoich wiadomościach"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Wrócę za jakiś czas."
+
+#~ msgid "Back soon"
+#~ msgstr "Niedługo wrócę"
+
 #~ msgid "Blocking List"
 #~ msgstr "Lista zablokowanych"
 
@@ -6532,6 +6550,9 @@ msgstr "…lub upuść tutaj"
 #~ msgid "Easily send pictures, videos or other files to friends and groups"
 #~ msgstr "Łatwo wysyłaj obrazki, filmy i inne pliki do znajomych i grup"
 
+#~ msgid "Eating"
+#~ msgstr "Jem"
+
 #~ msgid "Edit Name…"
 #~ msgstr "Edytuj nazwę…"
 
@@ -6569,6 +6590,10 @@ msgstr "…lub upuść tutaj"
 
 #~ msgid "Error!"
 #~ msgstr "Błąd!"
+
+#, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Błąd: %s (typy MIME: %s)"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -6742,6 +6767,12 @@ msgstr "…lub upuść tutaj"
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Nie można wysłać pustego pliku"
 
+#~ msgid "I’m eating."
+#~ msgstr "Jem."
+
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Wyszedłem cieszyć się życiem."
+
 #, python-format
 #~ msgid ""
 #~ "I’m synchronizing my contacts from my account at \"%s\". Could you please "
@@ -6749,6 +6780,12 @@ msgstr "…lub upuść tutaj"
 #~ msgstr ""
 #~ "Synchronizuję moje kontakty z mojego konta „%s”. Czy mógłbyś dodać ten "
 #~ "adres do Twojej listy kontaktów?"
+
+#~ msgid "I’m watching a movie."
+#~ msgstr "Oglądam film."
+
+#~ msgid "I’m working."
+#~ msgstr "Pracuję."
 
 #~ msgid "Keep and manage all your chat history"
 #~ msgstr "Przechowuj i zarządzaj całą swoją historią rozmów"
@@ -6832,6 +6869,9 @@ msgstr "…lub upuść tutaj"
 #~ msgid "Move Contact"
 #~ msgstr "Przenieś kontakt"
 
+#~ msgid "Movie"
+#~ msgstr "Film"
+
 #~ msgid "Never miss a message, keep all your chat clients synchronized"
 #~ msgstr ""
 #~ "Nigdy nie przegap wiadomości, utrzymaj wszystkie swoje komunikatory "
@@ -6895,6 +6935,9 @@ msgstr "…lub upuść tutaj"
 
 #~ msgid "Organize your chats with workspaces"
 #~ msgstr "Organizuj swoje rozmowy w obszarach roboczych"
+
+#~ msgid "Out"
+#~ msgstr "Wyszedłem"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "Pliki PKCS12"
@@ -7165,6 +7208,9 @@ msgstr "…lub upuść tutaj"
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Zamykanie Gajima"
 
+#~ msgid "Sleeping"
+#~ msgstr "Śpię"
+
 #~ msgctxt "Group chat description"
 #~ msgid "Spring gathering"
 #~ msgstr "Zbiórka młodzieży"
@@ -7347,10 +7393,6 @@ msgstr "…lub upuść tutaj"
 #~ msgid "User name…"
 #~ msgstr "Zmień nazwę…"
 
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Wakacje"
-
 #~ msgid "Video Framerate"
 #~ msgstr "Klatki na sekundę wideo"
 
@@ -7363,6 +7405,9 @@ msgstr "…lub upuść tutaj"
 #~ msgid "Video calls are not supported"
 #~ msgstr "Rozmowy wideo nie są dostępne"
 
+#~ msgid "Visual Notifications"
+#~ msgstr "Powiadomienia wizualne"
+
 #~ msgid "WebSocket URL"
 #~ msgstr "URL WebSocket"
 
@@ -7371,6 +7416,9 @@ msgstr "…lub upuść tutaj"
 
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Dlaczego chcesz moderować te wiadomości?"
+
+#~ msgid "Working"
+#~ msgstr "Praca"
 
 #~ msgid "Workspaces"
 #~ msgstr "Obszary robocze"
@@ -7421,6 +7469,9 @@ msgstr "…lub upuść tutaj"
 
 #~ msgid "Your archiving preferences have successfully been saved."
 #~ msgstr "Twoje preferencje archiwizacji zostały pomyślnie zapisane."
+
+#~ msgid "ZZZZzzzzzZZZZZ"
+#~ msgstr "ZZZZzzzzzZZZZZ"
 
 #~ msgid "_Account"
 #~ msgstr "_Konto"

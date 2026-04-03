@@ -35,9 +35,7 @@ from gajim.gtk.dropdown import GajimDropDown
 from gajim.gtk.filechoosers import FileChooserButton
 from gajim.gtk.filechoosers import Filter
 from gajim.gtk.preference.widgets import CopyButton
-from gajim.gtk.sidebar_switcher import SideBarMenuItem
 from gajim.gtk.util.classes import SignalManager
-from gajim.gtk.util.misc import iterate_listbox_children
 from gajim.gtk.util.window import open_window
 from gajim.gtk.window import GajimAppWindow
 
@@ -52,7 +50,6 @@ class SettingsDialog(GajimAppWindow):
         flags: Gtk.DialogFlags,
         settings: list[Setting],
         account: str,
-        extend: dict[SettingKind, GenericSetting] | None = None,
     ) -> None:
         GajimAppWindow.__init__(
             self,
@@ -60,7 +57,6 @@ class SettingsDialog(GajimAppWindow):
             title=title,
             default_width=250,
             transient_for=parent,
-            header_bar=True,
         )
 
         self.account = account
@@ -70,23 +66,22 @@ class SettingsDialog(GajimAppWindow):
         elif flags == Gtk.DialogFlags.DESTROY_WITH_PARENT:
             self.set_destroy_with_parent(True)
 
-        self.listbox = SettingsBox(account, extend=extend)
-        self.listbox.set_hexpand(True)
-        self.listbox.set_selection_mode(Gtk.SelectionMode.NONE)
-        self.listbox.add_css_class("m-18")
+        self._nav = Adw.NavigationView()
+        self._group = GajimPreferencesGroup("main")
+        page = GajimPreferencePage(title, groups=[self._group])
+        self._nav.add(page)
 
         for setting in settings:
-            self.listbox.add_setting(setting)
-        self.listbox.update_states()
+            self._group.add_setting(setting)
 
-        self.set_child(self.listbox)
+        self.set_child(self._nav)
         self.show()
 
     def _cleanup(self) -> None:
-        del self.listbox
+        del self._group
 
     def get_setting(self, name: str):
-        return self.listbox.get_setting(name)
+        return self._group.get_setting(name)
 
 
 class GajimPreferencesGroup(Adw.PreferencesGroup, SignalManager, EventHelper):
@@ -169,28 +164,30 @@ class GajimPreferencesGroup(Adw.PreferencesGroup, SignalManager, EventHelper):
 
 
 class GajimPreferencePage(Adw.NavigationPage):
+    key: str = ""
+    icon_name: str = ""
+    label: str = ""
+
     def __init__(
         self,
-        key: str,
         title: str,
         groups: list[Any],
-        menu: SideBarMenuItem | None = None,
+        tag_prefix: str = "",
     ) -> None:
-        Adw.NavigationPage.__init__(self, tag=key, title=title)
+        Adw.NavigationPage.__init__(self, tag=f"{tag_prefix}{self.key}", title=title)
 
         self._pref_page = Adw.PreferencesPage()
         toolbar = Adw.ToolbarView(content=self._pref_page)
         toolbar.add_top_bar(Adw.HeaderBar())
         self.set_child(toolbar)
 
-        self.key = key
-        self.menu = menu
         self._groups: list[GajimPreferencesGroup] = []
 
         for group in groups:
-            preference_group = group()
-            self._groups.append(preference_group)
-            self._pref_page.add(preference_group)
+            if not isinstance(group, GajimPreferencesGroup):
+                group = group()
+            self._groups.append(group)
+            self._pref_page.add(group)
 
     def do_unroot(self) -> None:
         Adw.NavigationPage.do_unroot(self)
@@ -209,66 +206,6 @@ class GajimPreferencePage(Adw.NavigationPage):
     def set_content(self, widget: Gtk.Widget) -> None:
         toolbar = cast(Adw.ToolbarView, self.get_child())
         toolbar.set_content(widget)
-
-
-class SettingsBox(Gtk.ListBox):
-    def __init__(
-        self,
-        account: str | None = None,
-        jid: str | None = None,
-        extend: dict[SettingKind, GenericSetting] | None = None,
-    ) -> None:
-        Gtk.ListBox.__init__(self, valign=Gtk.Align.START)
-        self.add_css_class("boxed-list")
-        self.account = account
-        self.jid = jid
-        self.named_settings: dict[str, GenericSetting] = {}
-
-        self.settings_type_map: dict[SettingKind, GenericSetting] = {
-            SettingKind.SWITCH: SwitchSetting,
-            SettingKind.SPIN: SpinSetting,
-            SettingKind.DIALOG: DialogSetting,
-            SettingKind.ENTRY: EntrySetting,
-            SettingKind.COLOR: ColorSetting,
-            SettingKind.ACTION: ActionSetting,
-            SettingKind.FILECHOOSER: FileChooserSetting,
-            SettingKind.CALLBACK: CallbackSetting,
-            SettingKind.DROPDOWN: DropDownSetting,
-            SettingKind.GENERIC: GenericSetting,
-        }
-
-        if extend is not None:
-            for setting, callback in extend.items():
-                self.settings_type_map[setting] = callback
-
-    def do_unroot(self) -> None:
-        Gtk.ListBox.do_unroot(self)
-        self.named_settings.clear()
-        app.check_finalize(self)
-        while row := self.get_first_child():
-            app.check_finalize(row)
-            self.remove(row)
-
-    def add_setting(self, setting: Setting) -> None:
-        if setting.props is not None:
-            listitem = self.settings_type_map[setting.kind](
-                self.account, self.jid, *setting[1:-1], **setting.props
-            )
-        else:
-            listitem = self.settings_type_map[setting.kind](
-                self.account, self.jid, *setting[1:-1]
-            )
-
-        if setting.name is not None:
-            self.named_settings[setting.name] = listitem
-        self.append(listitem)
-
-    def get_setting(self, name: str) -> GenericSetting:
-        return self.named_settings[name]
-
-    def update_states(self) -> None:
-        for row in cast(list[GenericSetting], iterate_listbox_children(self)):
-            row.update_activatable()
 
 
 class GenericSetting(Adw.ActionRow, SignalManager):
@@ -604,7 +541,7 @@ class SpinRange:
     lower: float
     upper: float
     step: float
-    digits: int = 3
+    digits: int = 0
 
 
 class SpinSetting(GenericSetting):

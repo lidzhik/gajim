@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2025-11-18 17:19+0000\n"
 "Last-Translator: \"[1D*nxLf\\\"@373\" <correoxm@disroot.org>\n"
 "Language-Team: Galician <https://translate.gajim.org/projects/gajim/master/"
@@ -33,6 +33,10 @@ msgstr "%(contact)s rexeitou a túa invitación para %(chat)s"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s convidoute a %(chat)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, python-format
 msgid "%(count)s Participant"
@@ -847,12 +851,6 @@ msgstr "Ausente"
 msgid "Back"
 msgstr "Agora volvo"
 
-msgid "Back in some minutes."
-msgstr "Volvo nuns minutos."
-
-msgid "Back soon"
-msgstr "Volvo axiña"
-
 msgid "Ban"
 msgstr "Vetar"
 
@@ -937,6 +935,10 @@ msgstr "CRL aínda non é válido"
 
 msgid "CRL signature failure"
 msgstr "Fallo na sinatura de CRL"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Enviar ficheiro"
 
 msgid "C_opy"
 msgstr "Copiar"
@@ -1372,6 +1374,10 @@ msgstr "Non se puido acceder ao ficheiro"
 msgid "Could not find any messages for this participant."
 msgstr "Non se atopan mensaxes para esta conta participante."
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Non se actualizou a lista de provedores"
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr "Non se puido abrir o ficheiro (%s)"
@@ -1659,9 +1665,6 @@ msgstr "Borrador: %s"
 msgid "Drop files here"
 msgstr "Solta aquí os ficheiros"
 
-msgid "Eating"
-msgstr "A comer"
-
 msgid "Edit"
 msgstr "Editar"
 
@@ -1821,10 +1824,6 @@ msgstr "Erro ao subir o avatar"
 #, python-format
 msgid "Error: %s"
 msgstr "Erro: %s"
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Erro: %s (tipos mime: %s)"
 
 msgid "Event"
 msgstr "Evento"
@@ -2126,6 +2125,11 @@ msgstr ""
 "comparte facilmente imaxes ou comenta as novas nos teus grupos."
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2358,6 +2362,9 @@ msgstr ""
 "Se está activo, Gajim intentará usar o servidor STUN cando se usa Jingle. O "
 "que está na opción \"stun_server\", ou o que proporciona o servidor XMPP."
 
+msgid "Ignore"
+msgstr ""
+
 msgid "Ignore Unknown Contacts"
 msgstr "Ignorar contactos descoñecidos"
 
@@ -2511,18 +2518,6 @@ msgstr "Proporcionado para\n"
 
 msgid "Issues detected"
 msgstr "Incidencias detectadas"
-
-msgid "I’m eating."
-msgstr "Estou comendo."
-
-msgid "I’m out enjoying life."
-msgstr "Estou fóra a gozar da vida."
-
-msgid "I’m watching a movie."
-msgstr "Estou a ver un filme."
-
-msgid "I’m working."
-msgstr "Estou a traballar."
 
 msgid "JID"
 msgstr "JID"
@@ -2840,9 +2835,6 @@ msgstr "_Mostrar o evento na listaxe de contactos"
 msgid "Move to Group"
 msgstr "Eliminar o grupo"
 
-msgid "Movie"
-msgstr "Filme"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "O porto personalizado debe ser un número de porto"
@@ -2940,6 +2932,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Hora"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3091,6 +3087,12 @@ msgstr "Modificar a conta"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3192,9 +3194,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "Outros"
-
-msgid "Out"
-msgstr "Fóra"
 
 msgid "Out of memory"
 msgstr ""
@@ -3632,6 +3631,18 @@ msgstr "_Subscribir"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "Accións para \"%s\""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "Accións para \"%s\""
+
+#, fuzzy
+msgid "Reactions"
+msgstr "De vacacións"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4501,9 +4512,6 @@ msgstr "Alcume non permitido: %s"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "A durmir"
-
 #, fuzzy
 msgid "Software"
 msgstr "Características dos servidores"
@@ -5158,6 +5166,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Hora"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Hora"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5368,6 +5380,10 @@ msgid "Update Avatar"
 msgstr "Elixir unha imaxe"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Hora"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Elixir unha imaxe"
 
@@ -5376,6 +5392,13 @@ msgid "Update available: Version %s"
 msgstr "A conta non está dispoñíbel"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Elixir unha imaxe"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5491,9 +5514,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr "Visitantes"
 
-msgid "Visual Notifications"
-msgstr "Notificacións visuais"
-
 msgid "Voice Message"
 msgstr "Mensaxe de voz"
 
@@ -5556,9 +5576,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "Traballo"
-
-msgid "Working"
-msgstr "A traballar"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -5813,9 +5830,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Todos os ficheiros"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6608,6 +6622,12 @@ msgstr ""
 #~ msgid "Autojoin"
 #~ msgstr "Autoconectar"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Volvo nuns minutos."
+
+#~ msgid "Back soon"
+#~ msgstr "Volvo axiña"
+
 #, fuzzy
 #~ msgid "Blocking List"
 #~ msgstr "Listaxe de expulsión"
@@ -6847,6 +6867,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "Enviarlle un ficheiro a un contacto"
 
+#~ msgid "Eating"
+#~ msgstr "A comer"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "Nome:"
@@ -6870,6 +6893,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Error!"
 #~ msgstr "Erro de Avahi"
+
+#, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Erro: %s (tipos mime: %s)"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7009,6 +7036,18 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Non se pode enviar ficheiros baleiros"
 
+#~ msgid "I’m eating."
+#~ msgstr "Estou comendo."
+
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Estou fóra a gozar da vida."
+
+#~ msgid "I’m watching a movie."
+#~ msgstr "Estou a ver un filme."
+
+#~ msgid "I’m working."
+#~ msgstr "Estou a traballar."
+
 #, fuzzy, python-format
 #~ msgid "Last seen %s"
 #~ msgstr "Motivo"
@@ -7072,6 +7111,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "Renomear o contacto"
 
+#~ msgid "Movie"
+#~ msgstr "Filme"
+
 #, fuzzy
 #~ msgid "No Connection Available"
 #~ msgstr "Conexión non dispoñíbel"
@@ -7128,6 +7170,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "Administrador"
+
+#~ msgid "Out"
+#~ msgstr "Fóra"
 
 #, fuzzy
 #~ msgid "Past as Code Block"
@@ -7352,6 +7397,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "A durmir"
+
 #~ msgid "Sta_tus"
 #~ msgstr "Es_tado"
 
@@ -7492,10 +7540,6 @@ msgstr ""
 #~ msgid "User name…"
 #~ msgstr "_Nome de usuario:"
 
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "De vacacións"
-
 #, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Charla privada"
@@ -7512,9 +7556,15 @@ msgstr ""
 #~ msgid "Video calls are not supported"
 #~ msgstr "Conexión non dispoñíbel"
 
+#~ msgid "Visual Notifications"
+#~ msgstr "Notificacións visuais"
+
 #, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Está seguro de que quere eliminar a mensaxe que seleccionou?"
+
+#~ msgid "Working"
+#~ msgstr "A traballar"
 
 #, fuzzy
 #~ msgid "Workspaces"

@@ -56,6 +56,25 @@ from gajim.gtk.window import GajimAppWindow
 log = logging.getLogger("gajim.gtk.preferences")
 
 
+ACCOUNT_PAGES = [
+    AccountGeneralPage,
+    AccountPrivacyPage,
+    AccountOmemoPage,
+    AccountConnectionPage,
+    AccountProviderPage,
+    AccountManageRosterPage,
+    AccountBlockedContactsPage,
+    AccountArchivingPage,
+    AccountAdvancedPage,
+    # Subpages
+    LoginPage,
+    HostnamePage,
+    AccountConnectionDetailsPage,
+    AccountConnectionCertificatePage,
+    AccountProviderContactsPage,
+]
+
+
 class Preferences(GajimAppWindow, EventHelper):
     def __init__(self) -> None:
         GajimAppWindow.__init__(
@@ -71,6 +90,7 @@ class Preferences(GajimAppWindow, EventHelper):
         self._account_menu_items: dict[str, SideBarMenuItem] = {}
 
         self._side_bar_switcher = SideBarSwitcher()
+        self._connect(self._side_bar_switcher, "prepare", self._on_prepare)
 
         menu: list[SideBarMenuItem] = []
         self._nav_view = Adw.NavigationView()
@@ -91,8 +111,8 @@ class Preferences(GajimAppWindow, EventHelper):
         ]
 
         for page in preferences:
-            if page.menu is not None:
-                menu.append(page.menu)
+            if page.label:
+                menu.append(SideBarMenuItem.from_pref_page(page=page))
             self._nav_view.add(page)
 
         menu.append(
@@ -161,28 +181,13 @@ class Preferences(GajimAppWindow, EventHelper):
         label = app.get_account_label(account)
         account_menu = SideBarMenuItem(account, label, group=_("Accounts"))
 
-        pages = [
-            AccountGeneralPage(account),
-            AccountPrivacyPage(account),
-            AccountOmemoPage(account),
-            AccountConnectionPage(account),
-            AccountProviderPage(account),
-            AccountManageRosterPage(account),
-            AccountBlockedContactsPage(account),
-            AccountArchivingPage(account),
-            AccountAdvancedPage(account),
-            # Subpages
-            LoginPage(account),
-            HostnamePage(account),
-            AccountConnectionDetailsPage(account),
-            AccountConnectionCertificatePage(account),
-            AccountProviderContactsPage(account),
-        ]
-
-        for page in pages:
-            if page.menu is not None:
-                account_menu.append_menu(page.menu)
-            self._nav_view.add(page)
+        for page_cls in ACCOUNT_PAGES:
+            if page_cls.label:
+                account_menu.append_menu(
+                    SideBarMenuItem.from_pref_page(
+                        page=page_cls, tag_prefix=f"{account}-", user_data=account
+                    )
+                )
 
         self._side_bar_switcher.append_menu(account_menu)
         self._account_menu_items[account] = account_menu
@@ -198,19 +203,23 @@ class Preferences(GajimAppWindow, EventHelper):
         menu = self._account_menu_items.pop(account)
         self._side_bar_switcher.remove_menu(menu.key)
 
-        tags = [
-            "general",
-            "privacy",
-            "encryption-omemo",
-            "connection",
-            "advanced",
-            "connection-priority",
-        ]
-
-        for tag in tags:
-            page = self._nav_view.find_page(f"{account}-{tag}")
+        for page_cls in ACCOUNT_PAGES:
+            page = self._nav_view.find_page(f"{account}-{page_cls.key}")
             assert page is not None
             self._nav_view.remove(page)
+
+    def _on_prepare(self, switcher: SideBarSwitcher, item: SideBarMenuItem) -> None:
+        if not item.user_data:
+            return
+
+        account = item.user_data
+
+        if self._nav_view.find_page(f"{account}-general"):
+            # Pages where already added
+            return
+
+        for page_cls in ACCOUNT_PAGES:
+            self._nav_view.add(page_cls(account))
 
     def _check_relogin(self) -> bool:
         for account, r_settings in self._need_relogin.items():

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2009-08-19 23:50+0200\n"
 "Last-Translator: Urtzi  <>\n"
 "Language-Team: Basque <urtzi@altza.net>\n"
@@ -32,6 +32,10 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact_jid)s -ek %(room_jid)s gelara gonbidatu zaitu"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -936,12 +940,6 @@ msgstr "Kanpoan"
 msgid "Back"
 msgstr "Laster etorriko naiz"
 
-msgid "Back in some minutes."
-msgstr "Minutu batzuk barru berriro hemen."
-
-msgid "Back soon"
-msgstr "Laster etorriko naiz"
-
 #, fuzzy
 msgid "Ban"
 msgstr "_Debekatu"
@@ -1037,6 +1035,10 @@ msgstr ""
 
 msgid "CRL signature failure"
 msgstr ""
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Bidali _Fitxeroa"
 
 msgid "C_opy"
 msgstr ""
@@ -1528,6 +1530,10 @@ msgstr "Ezin izan da irudia kargatu"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Ezin izan da irudia kargatu"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "Ezin izan da irudia kargatu"
@@ -1856,9 +1862,6 @@ msgstr "Egoera: "
 msgid "Drop files here"
 msgstr "Fitxero bat bidali kontaktu bati"
 
-msgid "Eating"
-msgstr "Jaten"
-
 #, fuzzy
 msgid "Edit"
 msgstr "_Editatu"
@@ -2032,10 +2035,6 @@ msgstr "Errorea zerbitzarian sartzean.%s"
 
 #, fuzzy, python-format
 msgid "Error: %s"
-msgstr "Errore mezua: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
 msgstr "Errore mezua: %s"
 
 msgid "Event"
@@ -2378,6 +2377,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2624,6 +2628,9 @@ msgid ""
 "in \"stun_server\" option, or the one given by the XMPP server."
 msgstr ""
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Kontaktua"
@@ -2803,22 +2810,6 @@ msgstr ""
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "Lanean ari naiz."
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "Kanpoan naiz bizitza disfrutatzen."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "Filma bat ikustean ari naiz."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "Lanean ari naiz."
 
 msgid "JID"
 msgstr "JID"
@@ -3176,9 +3167,6 @@ msgstr "_Ikusarazi gertaera zerrendan"
 msgid "Move to Group"
 msgstr "Ezabatu Taldea"
 
-msgid "Movie"
-msgstr "Filmea"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "Bezeroaren portua portu zenbaki bat izan behar da."
@@ -3277,6 +3265,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Denbora"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3428,6 +3420,12 @@ msgstr "Kontu Eraldaketa"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3529,9 +3527,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "Besteak"
-
-msgid "Out"
-msgstr "kanpoan"
 
 msgid "Out of memory"
 msgstr ""
@@ -3974,6 +3969,18 @@ msgstr "Erre_gistratu"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr " \"%s\" -rako _aukerak"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr " \"%s\" -rako _aukerak"
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Kontu Eraldaketa"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4847,9 +4854,6 @@ msgstr "Baimenik gabeko izengoitia: %s"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "Lotan"
-
 #, fuzzy
 msgid "Software"
 msgstr "Zerbitzariaren Ezaugarriak:"
@@ -5504,6 +5508,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Denbora"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Denbora"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5713,6 +5721,10 @@ msgid "Update Avatar"
 msgstr "Aukeratu Irudia"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Denbora"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Aukeratu Irudia"
 
@@ -5721,6 +5733,13 @@ msgid "Update available: Version %s"
 msgstr "Ez dago konturik erabilgarri"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Aukeratu Irudia"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5842,10 +5861,6 @@ msgid "Visitors"
 msgstr "Bisitariak"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>Ikusizko Jakinarazketa</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "Bidali mezua"
 
@@ -5909,9 +5924,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "Lana"
-
-msgid "Working"
-msgstr "Lanean"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -6166,9 +6178,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Fitxategi guztiak"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6955,6 +6964,12 @@ msgstr ""
 #~ msgid "Autojoin"
 #~ msgstr "Automatikoki sartu"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Minutu batzuk barru berriro hemen."
+
+#~ msgid "Back soon"
+#~ msgstr "Laster etorriko naiz"
+
 #, fuzzy
 #~ msgid "Blocking List"
 #~ msgstr "Debekatutako Zerrenda"
@@ -7188,6 +7203,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "Fitxero bat bidali kontaktu bati"
 
+#~ msgid "Eating"
+#~ msgstr "Jaten"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "Lehen Izena:"
@@ -7211,6 +7229,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Error!"
 #~ msgstr "Avahi error"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Errore mezua: %s"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7343,6 +7365,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Ez da posible hutsik dauden artxiboak bidaltzea"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "Lanean ari naiz."
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Kanpoan naiz bizitza disfrutatzen."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "Filma bat ikustean ari naiz."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "Lanean ari naiz."
+
 #, fuzzy, python-format
 #~ msgid "Last seen %s"
 #~ msgstr "Arrazoia"
@@ -7393,6 +7431,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Move Contact"
 #~ msgstr "Berridatzi Kontaktua"
+
+#~ msgid "Movie"
+#~ msgstr "Filmea"
 
 #, fuzzy
 #~ msgid "No Connection Available"
@@ -7446,6 +7487,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "Administratzailea"
+
+#~ msgid "Out"
+#~ msgstr "kanpoan"
 
 #, fuzzy
 #~ msgid "Past as Code Block"
@@ -7663,6 +7707,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "Lotan"
+
 #~ msgid "Sta_tus"
 #~ msgstr "E_goera"
 
@@ -7804,11 +7851,6 @@ msgstr ""
 #~ msgstr "_Izena"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Kontu Eraldaketa"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Txat Pribatua"
 
@@ -7825,8 +7867,15 @@ msgstr ""
 #~ msgstr "Konexioa ez erablgarri"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>Ikusizko Jakinarazketa</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Ziur al zaude hautaturiko mezua ezabatu nahi duzula?"
+
+#~ msgid "Working"
+#~ msgstr "Lanean"
 
 #, fuzzy
 #~ msgid "Workspaces"

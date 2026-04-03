@@ -62,6 +62,12 @@ from gajim.common.util.muc import get_group_chat_nick
 log = logging.getLogger('gajim.c.m.muc')
 
 
+REJOIN_STATUS_CODES = {
+    StatusCode.REMOVED_SERVICE_SHUTDOWN,
+    StatusCode.REMOVED_ERROR
+}
+
+
 class MUC(BaseModule):
 
     _nbxmpp_extends = 'MUC'
@@ -538,8 +544,12 @@ class MUC(BaseModule):
             room_jid, include_outcast=include_outcast)
 
     def update_presence(self) -> None:
-        mucs = self._get_mucs_with_state([MUCJoinedState.JOINED,
-                                          MUCJoinedState.JOINING])
+        # Only update joined MUCs, ejabberd seems to have a bug
+        # that when we send a presence after the initial join presence
+        # it will overwrite our join presence with it.
+        # This can lead to receiving MUC history because only the join
+        # presence has <history maxchars="0" />
+        mucs = self._get_mucs_with_state([MUCJoinedState.JOINED])
 
         status, message, idle = self._con.get_presence_state()
         for muc_data in mucs:
@@ -735,8 +745,8 @@ class MUC(BaseModule):
             app.storage.events.store(room, event)
             room.notify('room-kicked', event)
 
-            status_codes = properties.muc_status_codes or []
-            if StatusCode.REMOVED_SERVICE_SHUTDOWN in status_codes:
+            status_codes = properties.muc_status_codes or set()
+            if REJOIN_STATUS_CODES & status_codes:
                 self._start_rejoin_timeout(room_jid)
             return
 
@@ -903,6 +913,7 @@ class MUC(BaseModule):
             timestamp=utc_now(),
             nick=nick,
             affiliation=properties.muc_user.affiliation,
+            jid=properties.muc_user.jid
         )
         app.storage.events.store(room, event)
         self._muc_affiliations.change_user_affiliation(

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2024-09-22 06:13+0000\n"
 "Last-Translator: John Doe <imsv@linuxkompis.se>\n"
 "Language-Team: Swedish <https://translate.gajim.org/projects/gajim/master/sv/"
@@ -34,6 +34,10 @@ msgstr "%(contact)s avböjde din inbjudan till %(chat)s"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s bjöd in dig till %(chat)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -880,12 +884,6 @@ msgstr "Borta"
 msgid "Back"
 msgstr "Tillbaka"
 
-msgid "Back in some minutes."
-msgstr "Tillbaka om några minuter."
-
-msgid "Back soon"
-msgstr "Snart tillbaka"
-
 msgid "Ban"
 msgstr "Bannlys"
 
@@ -975,6 +973,10 @@ msgstr "Spärrlistan är ännu inte giltig"
 
 msgid "CRL signature failure"
 msgstr "Fel i spärrlistans signatur"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "Skicka fil"
 
 msgid "C_opy"
 msgstr "K_opiera"
@@ -1449,6 +1451,10 @@ msgstr "Kunde inte komma åt filen"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "Kunde inte öppna filen (%s)"
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr "Kunde inte öppna filen (%s)"
@@ -1760,9 +1766,6 @@ msgstr "Utkast: %s"
 msgid "Drop files here"
 msgstr "Släpp filer här"
 
-msgid "Eating"
-msgstr "Äter"
-
 #, fuzzy
 msgid "Edit"
 msgstr "R_edigera"
@@ -1927,10 +1930,6 @@ msgstr "Fel vid uppladdning av visningsbild"
 #, python-format
 msgid "Error: %s"
 msgstr "Fel: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Felmeddelande: %s"
 
 msgid "Event"
 msgstr "Händelse"
@@ -2245,6 +2244,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2491,6 +2495,9 @@ msgid ""
 "in \"stun_server\" option, or the one given by the XMPP server."
 msgstr ""
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "Bjud in _kontakter"
@@ -2668,20 +2675,6 @@ msgstr "Utfärdat till\n"
 
 msgid "Issues detected"
 msgstr ""
-
-msgid "I’m eating."
-msgstr "Jag äter."
-
-msgid "I’m out enjoying life."
-msgstr "Jag är ute och njuter av livet."
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "Jag tittar på film."
-
-#, fuzzy
-msgid "I’m working."
-msgstr "Jag arbetar."
 
 msgid "JID"
 msgstr "JID"
@@ -3002,9 +2995,6 @@ msgstr "_Visa händelse i kontaktlista"
 msgid "Move to Group"
 msgstr "Ta bort grupp"
 
-msgid "Movie"
-msgstr "Film"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "Inställd port måste vara ett portnummer."
@@ -3104,6 +3094,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "Tid"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3248,6 +3242,12 @@ msgstr "Notifieringar"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3340,9 +3340,6 @@ msgstr "Andra enheter anslutna till ditt konto"
 
 msgid "Others"
 msgstr "Andra"
-
-msgid "Out"
-msgstr "Ute"
 
 msgid "Out of memory"
 msgstr "Slut på minne"
@@ -3770,6 +3767,18 @@ msgstr "Re_gistrera"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "_Åtgärder för \"%s\""
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "_Åtgärder för \"%s\""
+
+#, fuzzy
+msgid "Reactions"
+msgstr "Notifiering"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4624,9 +4633,6 @@ msgstr "Tecknet tillåts inte"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "Sover"
-
 #, fuzzy
 msgid "Software"
 msgstr "Serverfunktioner"
@@ -5286,6 +5292,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Tid"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "Tid"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5495,6 +5505,10 @@ msgid "Update Avatar"
 msgstr "Välj Bild"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "Tid"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "Välj Bild"
 
@@ -5503,6 +5517,13 @@ msgid "Update available: Version %s"
 msgstr "Inget konto tillgängligt"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "Välj Bild"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5624,10 +5645,6 @@ msgid "Visitors"
 msgstr "Besökare"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>Visuella notifieringar</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "Skicka meddelande"
 
@@ -5692,9 +5709,6 @@ msgstr ""
 
 msgid "Work"
 msgstr "Jobb"
-
-msgid "Working"
-msgstr "Arbetar"
 
 #, fuzzy
 msgid "Workspace Settings"
@@ -5953,9 +5967,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Alla filer"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6783,6 +6794,12 @@ msgstr ""
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "Stavningskontrollerar meddelanden."
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Tillbaka om några minuter."
+
+#~ msgid "Back soon"
+#~ msgstr "Snart tillbaka"
+
 #~ msgid "Blocking List"
 #~ msgstr "Blockeringslista"
 
@@ -7009,6 +7026,9 @@ msgstr ""
 #~ msgstr ""
 #~ "Skicka enkelt bilder, videoklipp eller andra filer till vänner och grupper"
 
+#~ msgid "Eating"
+#~ msgstr "Äter"
+
 #~ msgid "Edit Name…"
 #~ msgstr "Redigera namn…"
 
@@ -7029,6 +7049,10 @@ msgstr ""
 
 #~ msgid "Error!"
 #~ msgstr "Fel!"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Felmeddelande: %s"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7170,6 +7194,20 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Det är inte möjligt att skicka tomma filer"
 
+#~ msgid "I’m eating."
+#~ msgstr "Jag äter."
+
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Jag är ute och njuter av livet."
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "Jag tittar på film."
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "Jag arbetar."
+
 #~ msgid "Keep and manage all your chat history"
 #~ msgstr "Behåll och hantera all din chatthistorik"
 
@@ -7253,6 +7291,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "Byt namn på kontakt"
 
+#~ msgid "Movie"
+#~ msgstr "Film"
+
 #, fuzzy
 #~ msgid "No Connection Available"
 #~ msgstr "Anslutningen är inte tillgänglig"
@@ -7303,6 +7344,9 @@ msgstr ""
 
 #~ msgid "Organize your chats with workspaces"
 #~ msgstr "Organisera dina chattar med arbetsytor"
+
+#~ msgid "Out"
+#~ msgstr "Ute"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PKCS12-filer"
@@ -7547,6 +7591,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "Sover"
+
 #~ msgid "Sta_tus"
 #~ msgstr "Sta_tus"
 
@@ -7690,11 +7737,6 @@ msgstr ""
 #~ msgstr "_Användarnamn:"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Notifiering"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "Privat Chatt"
 
@@ -7711,8 +7753,15 @@ msgstr ""
 #~ msgstr "Sessionsbus inte tillgänglig"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>Visuella notifieringar</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Vill du verkligen ta bort det valda meddelandet?"
+
+#~ msgid "Working"
+#~ msgstr "Arbetar"
 
 #, fuzzy
 #~ msgid "Workspaces"

@@ -29,7 +29,7 @@ dependencies = [
   "emoji>=2.6.0",
   "httpx[http2,socks]",
   "keyring",
-  "nbxmpp>=7.0.0,<8.0.0",
+  "nbxmpp>=7.1.0,<8.0.0",
   "omemo-dr>=1.2.0,<2.0.0",
   "packaging",
   "pillow>=9.1.0",
@@ -60,19 +60,24 @@ gajim = "gajim.main:run"
 
 [dependency-groups]
 dev = [
-    "codespell==2.4.1",
+    "pygobject>=3.56.1",
+    "codespell==2.4.2",
     "cryptography@git+https://github.com/pyca/cryptography.git",
-    "isort==7.0.0",
+    "isort==8.0.1",
     "nbxmpp@git+https://dev.gajim.org/gajim/python-nbxmpp.git",
     "omemo-dr@git+https://dev.gajim.org/gajim/omemo-dr.git",
     "pre-commit",
-    "pygobject-stubs@git+https://github.com/pygobject/pygobject-stubs.git",
+    "pygobject-stubs==2.17.0",
     "pytest>=9.0.2",
     "python-gitlab",
     "ruamel.yaml",
-    "ruff==0.14.8",
+    "ruff==0.15.7",
     "sentry-sdk",
 ]
+
+# [tool.uv.sources]
+# pygobject-stubs = { path = "../pygobject-stubs" }
+# nbxmpp = { path = "../python-nbxmpp" }
 
 [tool.setuptools.packages.find]
 include = ["gajim*"]
@@ -85,8 +90,8 @@ gajim = ["py.typed"]
 version = {attr = "gajim.__version__"}
 
 [tool.codespell]
-skip = "*__pycache__*,_build_root,build,debian_build,dist,shared-modules,test,*.egg-info,.git,*.po,*.po~,*.pot,*.nsi,*.spec"
-ignore-words-list = "claus,pres,ser,trough,THIRDPARTY,addin,selectin"
+skip = "*__pycache__*,_build_root,build,debian_build,dist,shared-modules,test,*.egg-info,.git,*.po,*.po~,*.pot,*.nsi,*.spec,./gajim/common/iana"
+ignore-words-list = "claus,pres,ser,trough,THIRDPARTY,addin,selectin,FLE"
 
 [tool.pyright]
 pythonVersion = "3.11"
@@ -139,6 +144,7 @@ exclude = [
   "gajim/gtk/settings.py",
   "gajim/gtk/start_chat.py",
   "gajim/gtk/types.py",
+  "gajim/gtk/shortcut_manager.py",
   "scripts/update_flatpak_manifest.py",
   "test/common/test_uri_util.py",
   "test/gui/test_menus.py",

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
-"PO-Revision-Date: 2026-01-14 06:19+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
+"PO-Revision-Date: 2026-03-28 23:19+0000\n"
 "Last-Translator: cr04ch <cr04ch@disroot.org>\n"
 "Language-Team: Hungarian <https://translate.gajim.org/projects/gajim/master/"
 "hu/>\n"
@@ -32,6 +32,11 @@ msgstr "%(contact)s elutasította a társalgóba (%(chat)s) szóló meghívást"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s egy %(chat)s nevű társalgóba szóló meghívót küldött"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
+"%(contact)s %(reaction)s visszajelzést küldött az üzenetre: „%(message)s”"
 
 #, python-format
 msgid "%(count)s Participant"
@@ -836,12 +841,6 @@ msgstr "Távol"
 msgid "Back"
 msgstr "Vissza"
 
-msgid "Back in some minutes."
-msgstr "Pár perc múlva itt vagyok."
-
-msgid "Back soon"
-msgstr "Közeli visszatérés"
-
 msgid "Ban"
 msgstr "Kitiltás"
 
@@ -926,6 +925,9 @@ msgstr "A CRL még nem érvényes"
 
 msgid "CRL signature failure"
 msgstr "CRL-aláírási hiba"
+
+msgid "CSV files"
+msgstr "CSV-fájlok"
 
 msgid "C_opy"
 msgstr "Más_olás"
@@ -1364,6 +1366,9 @@ msgstr "A fájl nem nyitható meg"
 msgid "Could not find any messages for this participant."
 msgstr "Ettől a résztvevőtől nem található egy üzenet sem."
 
+msgid "Could not generate link preview"
+msgstr "Nem sikerült létrehozni a hivatkozás előnézetét"
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr "Nem sikerült megnyitni a fájlt (%s)"
@@ -1650,9 +1655,6 @@ msgstr "Piszkozat: %s"
 msgid "Drop files here"
 msgstr "Ide ejthetők a fájlok"
 
-msgid "Eating"
-msgstr "Étkezés"
-
 msgid "Edit"
 msgstr "Szerkesztés"
 
@@ -1807,10 +1809,6 @@ msgstr "A profilkép feltöltése nem sikerült"
 #, python-format
 msgid "Error: %s"
 msgstr "Hiba: %s"
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Hiba: %s (MIME-típusok: %s)"
 
 msgid "Event"
 msgstr "Esemény"
@@ -2110,6 +2108,13 @@ msgstr ""
 "megvitatására."
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+"Lehetőség van a profil időzónájának automatikus beállítására. Ez segítheti "
+"az ismerősöket a kapcsolatfelvételben."
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2235,7 +2240,7 @@ msgid "Hello, I am $name. %s"
 msgstr "Szia! $name vagyok. %s"
 
 msgid "Here you can add some feedback which helps reproducing this problem."
-msgstr ""
+msgstr "Itt lehet a hiba reprodukálását segítő visszajelzést adni."
 
 msgctxt "Group chat feature"
 msgid "Hidden"
@@ -2330,6 +2335,9 @@ msgstr ""
 "A Jingle használata STUN-kiszolgáló segítségével. Vagy a „stun_server” "
 "beállításban megadott, vagy az XMPP-kiszolgáló által felajánlott lesz "
 "használva."
+
+msgid "Ignore"
+msgstr "Mellőzés"
 
 msgid "Ignore Unknown Contacts"
 msgstr "Idegenek mellőzése"
@@ -2484,18 +2492,6 @@ msgstr "Tulajdonos\n"
 
 msgid "Issues detected"
 msgstr "Probléma észlelhető"
-
-msgid "I’m eating."
-msgstr "Eszek."
-
-msgid "I’m out enjoying life."
-msgstr "Kint vagyok a szabadban, élvezem az életet."
-
-msgid "I’m watching a movie."
-msgstr "Filmet nézek."
-
-msgid "I’m working."
-msgstr "Dolgozom."
 
 msgid "JID"
 msgstr "JID"
@@ -2796,9 +2792,6 @@ msgstr "Névjegy áthelyezése új csoportba"
 msgid "Move to Group"
 msgstr "Áthelyezés csoportba"
 
-msgid "Movie"
-msgstr "Filmnézés"
-
 msgid "Must be a port number"
 msgstr "A port számát kell megadni"
 
@@ -2880,6 +2873,9 @@ msgstr "Nincs szinkronizálás"
 
 msgid "No Threshold"
 msgstr "Korlátlan"
+
+msgid "No Timezone"
+msgstr "Nincs időzóna"
 
 msgid "No additional requirements"
 msgstr "Nincs további követelmény"
@@ -3020,6 +3016,12 @@ msgstr "Értesítések"
 msgid "Notify after update"
 msgstr "Értesítés frissítés után"
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr "Értesítés az üzeneteimre küldött visszajelzésekről a beszélgetésekben"
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr "Értesítés az üzeneteimre küldött visszajelzésekről a társalgókban"
+
 msgid "Notify me when the automatic update was successful"
 msgstr "Üzenet megjelenítése az automatikus frissítés végeztével"
 
@@ -3107,9 +3109,6 @@ msgstr "A jelenlegi fiókhoz tartozó további eszközök"
 
 msgid "Others"
 msgstr "Egyéb"
-
-msgid "Out"
-msgstr "Szabadban"
 
 msgid "Out of memory"
 msgstr "Elfogyott a memória"
@@ -3498,6 +3497,17 @@ msgstr "Re_gisztrálás"
 #, python-format
 msgid "React with %s"
 msgstr "Visszajelzés így: %s"
+
+#, python-format
+msgid "Reaction from %s"
+msgstr "%s visszajelzése"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "Műveletek ehhez: „%s”"
+
+msgid "Reactions"
+msgstr "Visszajelzések"
 
 msgid "Read Receipts"
 msgstr "Olvasásnyugták"
@@ -4241,9 +4251,6 @@ msgstr "A regisztráció tiltott"
 msgid "Size of preview images in pixels"
 msgstr "Az előnézeti képek pixelben megadott mérete"
 
-msgid "Sleeping"
-msgstr "Alvás"
-
 msgid "Software"
 msgstr "Szoftver"
 
@@ -4362,7 +4369,7 @@ msgstr ""
 "megoldható."
 
 msgid "Steps to reproduce the problem…"
-msgstr ""
+msgstr "A hiba reprodukálásának lépései…"
 
 msgid "Stop Sharing Online Status?"
 msgstr "Jelenléti állapot közlésének tiltása"
@@ -4839,6 +4846,9 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "Időzóna"
 
+msgid "Timezone Update"
+msgstr "Időzóna frissítése"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr "Beosztás"
@@ -5023,6 +5033,9 @@ msgstr "Frissítés"
 msgid "Update Avatar"
 msgstr "Profilkép cseréje"
 
+msgid "Update Timezone"
+msgstr "Időzóna frissítése"
+
 msgid "Update automatically"
 msgstr "Automatikus frissítés"
 
@@ -5032,6 +5045,12 @@ msgstr "Frissítés érhető el: %s verzió"
 
 msgid "Update plugins automatically"
 msgstr "A bővítmények automatikus frissítése"
+
+msgid "Update your profile's timezone automatically"
+msgstr "A profil időzónájának automatikus beállítása"
+
+msgid "Update your timezone?"
+msgstr "Frissíthető az időzóna?"
 
 msgid "Updates"
 msgstr "Frissítések"
@@ -5138,9 +5157,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr "Látogatók"
 
-msgid "Visual Notifications"
-msgstr "Vizuális értesítések"
-
 msgid "Voice Message"
 msgstr "Hangüzenet"
 
@@ -5199,9 +5215,6 @@ msgstr "Windows"
 
 msgid "Work"
 msgstr "Munkahelyi"
-
-msgid "Working"
-msgstr "Munkavégzés"
 
 msgid "Workspace Settings"
 msgstr "Munkaterület beállításai"
@@ -5441,9 +5454,6 @@ msgstr "A kiszolgáló az alábbi funkciókat biztosítja"
 
 msgid "ZIP files"
 msgstr "ZIP-fájlok"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr "ZZZZzzzzzZZZZZ"
 
 msgid "[read more]"
 msgstr "[bővebben]"
@@ -6233,6 +6243,12 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "Az üzenetek automatikus helyesírás-ellenőrzése"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Pár perc múlva itt vagyok."
+
+#~ msgid "Back soon"
+#~ msgstr "Közeli visszatérés"
+
 #~ msgid "Blocking List"
 #~ msgstr "Tiltólista"
 
@@ -6493,6 +6509,9 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ "Könnyen küldhetők képek, videók vagy más fájlok a barátoknak vagy "
 #~ "csoportoknak"
 
+#~ msgid "Eating"
+#~ msgstr "Étkezés"
+
 #~ msgid "Edit Name…"
 #~ msgstr "Név módosítása…"
 
@@ -6528,6 +6547,10 @@ msgstr "…vagy ide is ejthető egy kép"
 
 #~ msgid "Error!"
 #~ msgstr "Hiba!"
+
+#, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Hiba: %s (MIME-típusok: %s)"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -6708,6 +6731,12 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Üres fájlokat nem lehet küldeni"
 
+#~ msgid "I’m eating."
+#~ msgstr "Eszek."
+
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Kint vagyok a szabadban, élvezem az életet."
+
 #, python-format
 #~ msgid ""
 #~ "I’m synchronizing my contacts from my account at \"%s\". Could you please "
@@ -6715,6 +6744,12 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ msgstr ""
 #~ "Szinkronizálom a(z) „%s” kiszolgálón lévő fiókom névjegyeit. Hozzáadnád "
 #~ "ezt a címet a névjegyeidhez?"
+
+#~ msgid "I’m watching a movie."
+#~ msgstr "Filmet nézek."
+
+#~ msgid "I’m working."
+#~ msgstr "Dolgozom."
 
 #~ msgid "Keep and manage all your chat history"
 #~ msgstr "A beszélgetési előzmények tárolása és kezelése"
@@ -6797,6 +6832,9 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ msgid "Move Contact"
 #~ msgstr "Névjegy áthelyezése"
 
+#~ msgid "Movie"
+#~ msgstr "Filmnézés"
+
 #~ msgid "Never miss a message, keep all your chat clients synchronized"
 #~ msgstr "A csevegőklienseket szinkronban tartva egy üzenet sem vész el"
 
@@ -6855,6 +6893,9 @@ msgstr "…vagy ide is ejthető egy kép"
 
 #~ msgid "Organize your chats with workspaces"
 #~ msgstr "A beszélgetések munkaterületekre rendszerezhetőek"
+
+#~ msgid "Out"
+#~ msgstr "Szabadban"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PKCS12-fájlok"
@@ -7116,6 +7157,9 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ msgid "Shutting down Gajim"
 #~ msgstr "A Gajim bezárása"
 
+#~ msgid "Sleeping"
+#~ msgstr "Alvás"
+
 #~ msgctxt "Group chat description"
 #~ msgid "Spring gathering"
 #~ msgstr "Tavaszi találkozó"
@@ -7296,10 +7340,6 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ msgid "User name…"
 #~ msgstr "Átnevezés…"
 
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Szünidő"
-
 #~ msgid "Video Framerate"
 #~ msgstr "Képkockasebesség"
 
@@ -7312,6 +7352,9 @@ msgstr "…vagy ide is ejthető egy kép"
 #~ msgid "Video calls are not supported"
 #~ msgstr "A videóhívás nem támogatott"
 
+#~ msgid "Visual Notifications"
+#~ msgstr "Vizuális értesítések"
+
 #~ msgid "WebSocket URL"
 #~ msgstr "WebSocket URL"
 
@@ -7320,6 +7363,9 @@ msgstr "…vagy ide is ejthető egy kép"
 
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Mi az oka az üzenetek moderálásának?"
+
+#~ msgid "Working"
+#~ msgstr "Munkavégzés"
 
 #~ msgid "Workspaces"
 #~ msgstr "Munkaterületek"
@@ -7368,6 +7414,9 @@ msgstr "…vagy ide is ejthető egy kép"
 
 #~ msgid "Your archiving preferences have successfully been saved."
 #~ msgstr "Az archiválási beállítások mentése sikerült."
+
+#~ msgid "ZZZZzzzzzZZZZZ"
+#~ msgstr "ZZZZzzzzzZZZZZ"
 
 #~ msgid "_Account"
 #~ msgstr "_Fiók"

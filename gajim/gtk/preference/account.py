@@ -38,7 +38,7 @@ from gajim.gtk.preference.widgets import PlaceholderBox
 from gajim.gtk.settings import GajimPreferencePage
 from gajim.gtk.settings import GajimPreferencesGroup
 from gajim.gtk.settings import SignalManager
-from gajim.gtk.sidebar_switcher import SideBarMenuItem
+from gajim.gtk.settings import SpinRange
 from gajim.gtk.structs import ExportHistoryParam
 from gajim.gtk.util.misc import get_ui_string
 from gajim.gtk.util.window import open_window
@@ -295,6 +295,13 @@ class AccountPrivacyGroup(GajimPreferencesGroup):
                     "button-style": "destructive-action",
                     "button-callback": self._reset_send_read_marker,
                 },
+            ),
+            Setting(
+                SettingKind.SWITCH,
+                _("Update Timezone"),
+                SettingType.ACCOUNT_CONFIG,
+                "update_timezone",
+                desc=_("Update your profile's timezone automatically"),
             ),
             Setting(
                 SettingKind.SWITCH,
@@ -703,8 +710,10 @@ class LoginGroup(GajimPreferencesGroup):
                 SettingType.ACCOUNT_CONFIG,
                 "savepass",
                 enabled_func=(
-                    lambda: not app.settings.get("use_keyring")
-                    or passwords.is_keyring_available()
+                    lambda: (
+                        not app.settings.get("use_keyring")
+                        or passwords.is_keyring_available()
+                    )
                 ),
                 callback=self._on_save_password,
             ),
@@ -760,7 +769,7 @@ class HostnameGroup(GajimPreferencesGroup):
                 SettingType.ACCOUNT_CONFIG,
                 "custom_port",
                 bind="account::use_custom_host",
-                props={"range_": (0, 65535, 1)},
+                props={"range_": SpinRange(0, 65535, 1, 0)},
             ),
             Setting(
                 SettingKind.DROPDOWN,
@@ -777,17 +786,16 @@ class HostnameGroup(GajimPreferencesGroup):
 
 
 class AccountGeneralPage(GajimPreferencePage):
+    key = "general"
+    icon_name = "lucide-user-symbolic"
+    label = _("General")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-general",
             title=_("General – %(account)s") % {"account": account},
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-general",
-                _("General"),
-                icon_name="lucide-user-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         self.add(AccountGeneralGroup(account))
@@ -795,34 +803,32 @@ class AccountGeneralPage(GajimPreferencePage):
 
 
 class AccountPrivacyPage(GajimPreferencePage):
+    key = "privacy"
+    icon_name = "lucide-eye-symbolic"
+    label = _("Privacy")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-privacy",
             title=_("Privacy – %(account)s") % {"account": account},
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-privacy",
-                _("Privacy"),
-                icon_name="lucide-eye-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         self.add(AccountPrivacyGroup(account))
 
 
 class AccountOmemoPage(GajimPreferencePage):
+    key = "encryption-omemo"
+    icon_name = "lucide-lock-symbolic"
+    label = _("Encryption (OMEMO)")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-encryption-omemo",
             title=_("Encryption (OMEMO) – %(account)s") % {"account": account},
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-encryption-omemo",
-                _("Encryption (OMEMO)"),
-                icon_name="lucide-lock-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         self.add(AccountOmemoSettingsGroup(account))
@@ -830,12 +836,14 @@ class AccountOmemoPage(GajimPreferencePage):
 
 
 class AccountConnectionDetailsPage(GajimPreferencePage):
+    key = "connection-details"
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-connection-details",
             title=_("Details - %(account)s") % {"account": account},
             groups=[],
+            tag_prefix=f"{account}-",
         )
 
         if not app.account_is_available(account):
@@ -846,12 +854,14 @@ class AccountConnectionDetailsPage(GajimPreferencePage):
 
 
 class AccountConnectionCertificatePage(GajimPreferencePage):
+    key = "connection-certificate"
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-connection-certificate",
             title=_("Certificate - %(account)s") % {"account": account},
             groups=[],
+            tag_prefix=f"{account}-",
         )
 
         if not app.account_is_available(account):
@@ -869,34 +879,32 @@ class AccountConnectionCertificatePage(GajimPreferencePage):
 
 
 class AccountConnectionPage(GajimPreferencePage):
+    key = "connection"
+    icon_name = "lucide-globe-symbolic"
+    label = _("Connection")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-connection",
             title=_("Connection – %(account)s") % {"account": account},
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-connection",
-                _("Connection"),
-                icon_name="lucide-globe-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         self.add(AccountConnectionGroup(account))
 
 
 class AccountManageRosterPage(GajimPreferencePage):
+    key = "manage-roster"
+    icon_name = "lucide-users-symbolic"
+    label = _("Contact List")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-manage-roster",
             title=_("Contact List – %(account)s") % {"account": account},
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-manage-roster",
-                _("Contact List"),
-                icon_name="lucide-users-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         if not app.account_is_available(account):
@@ -907,17 +915,16 @@ class AccountManageRosterPage(GajimPreferencePage):
 
 
 class AccountBlockedContactsPage(GajimPreferencePage):
+    key = "blocked-contacts"
+    icon_name = "lucide-user-round-x-symbolic"
+    label = _("Blocked Contacts")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-blocked-contacts",
             title=_("Blocked Contacts – %(account)s") % {"account": account},
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-blocked-contacts",
-                _("Blocked Contacts"),
-                icon_name="lucide-user-round-x-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         if not app.account_is_available(account):
@@ -928,17 +935,16 @@ class AccountBlockedContactsPage(GajimPreferencePage):
 
 
 class AccountArchivingPage(GajimPreferencePage):
+    key = "archiving"
+    icon_name = "lucide-database-backup-symbolic"
+    label = _("Archiving")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
-            key=f"{account}-archiving",
             title=_("Archiving – %(account)s") % {"account": account},
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-archiving",
-                _("Archiving"),
-                icon_name="lucide-database-backup-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         if not app.account_is_available(account):
@@ -950,41 +956,44 @@ class AccountArchivingPage(GajimPreferencePage):
 
 
 class LoginPage(GajimPreferencePage):
+    key = "general-login"
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
             title=_("Login – %(account)s") % {"account": account},
-            key=f"{account}-general-login",
             groups=[],
+            tag_prefix=f"{account}-",
         )
 
         self.add(LoginGroup(account))
 
 
 class HostnamePage(GajimPreferencePage):
+    key = "connection-hostname"
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
             title=_("Hostname – %(account)s") % {"account": account},
-            key=f"{account}-connection-hostname",
             groups=[],
+            tag_prefix=f"{account}-",
         )
 
         self.add(HostnameGroup(account))
 
 
 class AccountAdvancedPage(GajimPreferencePage):
+    key = "advanced"
+    icon_name = "lucide-settings-symbolic"
+    label = _("Advanced")
+
     def __init__(self, account: str) -> None:
         GajimPreferencePage.__init__(
             self,
             title=_("Advanced – %(account)s") % {"account": account},
-            key=f"{account}-advanced",
             groups=[],
-            menu=SideBarMenuItem(
-                f"{account}-advanced",
-                _("Advanced"),
-                icon_name="lucide-settings-symbolic",
-            ),
+            tag_prefix=f"{account}-",
         )
 
         self.add(AccountAdvancedGroup(account))

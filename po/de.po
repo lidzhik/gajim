@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
-"PO-Revision-Date: 2026-01-20 21:29+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
+"PO-Revision-Date: 2026-03-28 16:19+0000\n"
 "Last-Translator: Daniel Brötzmann <mailtrash@posteo.de>\n"
 "Language-Team: German <https://translate.gajim.org/projects/gajim/master/de/>"
 "\n"
@@ -41,6 +41,11 @@ msgstr "%(contact)s hat die Einladung zu %(chat)s abgelehnt"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s hat dich zu %(chat)s eingeladen"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
+"%(contact)s hat mit %(reaction)s auf deine Nachricht \"%(message)s\" reagiert"
 
 #, python-format
 msgid "%(count)s Participant"
@@ -862,12 +867,6 @@ msgstr "Abwesend"
 msgid "Back"
 msgstr "Zurück"
 
-msgid "Back in some minutes."
-msgstr "Bin in ein paar Minuten zurück."
-
-msgid "Back soon"
-msgstr "Bin gleich wieder da"
-
 msgid "Ban"
 msgstr "Sperren"
 
@@ -952,6 +951,9 @@ msgstr "CRL ist nocht nicht gültig"
 
 msgid "CRL signature failure"
 msgstr "Fehler bei der CRL-Unterschrift"
+
+msgid "CSV files"
+msgstr "CSV-Dateien"
 
 msgid "C_opy"
 msgstr "K_opieren"
@@ -1389,6 +1391,9 @@ msgstr "Zugriff auf Datei nicht möglich"
 msgid "Could not find any messages for this participant."
 msgstr "Konnte keine Nachrichten für diesen Teilnehmer finden."
 
+msgid "Could not generate link preview"
+msgstr "Link-Vorschau konnte nicht erstellt werden"
+
 #, python-format
 msgid "Could not open file (%s)"
 msgstr "Datei konnte nicht geöffnet werden (%s)"
@@ -1679,9 +1684,6 @@ msgstr "Entwurf: %s"
 msgid "Drop files here"
 msgstr "Dateien hier ablegen"
 
-msgid "Eating"
-msgstr "Essen"
-
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -1844,10 +1846,6 @@ msgstr "Fehler beim Hochladen des Profilbilds"
 #, python-format
 msgid "Error: %s"
 msgstr "Fehler: %s"
-
-#, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "Fehler: %s (Mime Types: %s)"
 
 msgid "Event"
 msgstr "Ereignis"
@@ -2147,6 +2145,13 @@ msgstr ""
 "oder diskutiere die neuesten Nachrichten mit deinen Gruppen."
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+"Gajim kann dein Zeitzone automatisch in deinem Profil aktualisieren. Damit "
+"hilfst du eventuell Kontakten, wenn sie dich erreichen wollen."
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2376,6 +2381,9 @@ msgstr ""
 "verwenden. Entweder jenen in der \"stun_server\"-Option oder einen vom XMPP-"
 "Server vorgegebenen Server."
 
+msgid "Ignore"
+msgstr "Ignorieren"
+
 msgid "Ignore Unknown Contacts"
 msgstr "Unbekannte Kontakte blockieren"
 
@@ -2533,18 +2541,6 @@ msgstr "Ausgestellt für\n"
 
 msgid "Issues detected"
 msgstr "Fehler festgestellt"
-
-msgid "I’m eating."
-msgstr "Ich esse gerade."
-
-msgid "I’m out enjoying life."
-msgstr "Ich bin draußen und genieße das Leben."
-
-msgid "I’m watching a movie."
-msgstr "Ich sehe mir einen Film an."
-
-msgid "I’m working."
-msgstr "Ich arbeite."
 
 msgid "JID"
 msgstr "JID"
@@ -2848,9 +2844,6 @@ msgstr "Kontakt in neue Gruppe verschieben?"
 msgid "Move to Group"
 msgstr "In Gruppe verschieben"
 
-msgid "Movie"
-msgstr "Film"
-
 msgid "Must be a port number"
 msgstr "Muss eine gültige Portnummer sein"
 
@@ -2932,6 +2925,9 @@ msgstr "Keine Synchronisation"
 
 msgid "No Threshold"
 msgstr "Keine Begrenzung"
+
+msgid "No Timezone"
+msgstr "Keine Zeitzone"
 
 msgid "No additional requirements"
 msgstr "Keine weiteren Anforderungen"
@@ -3073,6 +3069,15 @@ msgstr "Benachrichtigungen"
 msgid "Notify after update"
 msgstr "Nach Update benachrichtigen"
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+"Benachrichtige mich, wenn jemand auf meine Nachricht in einem Chat reagiert"
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+"Benachrichtige mich, wenn jemand auf meine Nachricht in einem Gruppenchat "
+"reagiert"
+
 msgid "Notify me when the automatic update was successful"
 msgstr "Benachrichtige mich, wenn das automatische Update erfolgreich war"
 
@@ -3160,9 +3165,6 @@ msgstr "Andere Geräte, die mit deinem Konto verbunden sind"
 
 msgid "Others"
 msgstr "Andere"
-
-msgid "Out"
-msgstr "Draußen"
 
 msgid "Out of memory"
 msgstr "Zu wenig Speicher"
@@ -3554,6 +3556,17 @@ msgstr "Re_gistrieren"
 #, python-format
 msgid "React with %s"
 msgstr "Mit %s reagieren"
+
+#, python-format
+msgid "Reaction from %s"
+msgstr "Reaktion von %s"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "Aktionen für \"%s\""
+
+msgid "Reactions"
+msgstr "Reaktionen"
 
 msgid "Read Receipts"
 msgstr "Lesebestätigungen"
@@ -4299,9 +4312,6 @@ msgstr "Registrierung nicht erlaubt"
 msgid "Size of preview images in pixels"
 msgstr "Größe des Vorschaubildes in Pixel"
 
-msgid "Sleeping"
-msgstr "Schlafen"
-
 msgid "Software"
 msgstr "Software"
 
@@ -4741,7 +4751,7 @@ msgid "This address does not seem to offer any gateway service."
 msgstr "Diese Adresse scheint keinen Gateway-Dienst anzubieten."
 
 msgid "This address is not reachable."
-msgstr "Dieses Adresse ist nicht erreichbar."
+msgstr "Diese Adresse ist nicht erreichbar."
 
 msgid ""
 "This chat’s configuration is unsuitable for encryption with OMEMO. To use "
@@ -4917,6 +4927,9 @@ msgstr "Zeitzone"
 msgctxt "Profile"
 msgid "Timezone"
 msgstr "Zeitzone"
+
+msgid "Timezone Update"
+msgstr "Aktualisierung der Zeitzone"
 
 msgctxt "Profile"
 msgid "Title"
@@ -5106,6 +5119,9 @@ msgstr "Update"
 msgid "Update Avatar"
 msgstr "Profilbild aktualisieren"
 
+msgid "Update Timezone"
+msgstr "Zeitzone aktualisieren"
+
 msgid "Update automatically"
 msgstr "Automatisch aktualisieren"
 
@@ -5115,6 +5131,12 @@ msgstr "Update verfügbar: Version %s"
 
 msgid "Update plugins automatically"
 msgstr "Plugins automatisch aktualisieren"
+
+msgid "Update your profile's timezone automatically"
+msgstr "Zeitzone in meinem Profil automatisch aktualisieren"
+
+msgid "Update your timezone?"
+msgstr "Zeitzone aktualisieren?"
 
 msgid "Updates"
 msgstr "Updates"
@@ -5223,9 +5245,6 @@ msgctxt "Group chat contact role"
 msgid "Visitors"
 msgstr "Besucher"
 
-msgid "Visual Notifications"
-msgstr "Visuelle Benachrichtigungen"
-
 msgid "Voice Message"
 msgstr "Sprachnachricht"
 
@@ -5285,9 +5304,6 @@ msgstr "Windows"
 
 msgid "Work"
 msgstr "Arbeit"
-
-msgid "Working"
-msgstr "Arbeiten"
 
 msgid "Workspace Settings"
 msgstr "Einstellungen des Arbeitsbereichs"
@@ -5533,9 +5549,6 @@ msgstr "Dein Dienst bietet die folgenden Features"
 
 msgid "ZIP files"
 msgstr "ZIP-Dateien"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr "ZZZZzzzzzZZZZZ"
 
 msgid "[read more]"
 msgstr "[mehr lesen]"
@@ -6331,6 +6344,12 @@ msgstr "… oder hierher ziehen"
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "Automatische Rechtschreibprüfung für deine Nachrichten"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "Bin in ein paar Minuten zurück."
+
+#~ msgid "Back soon"
+#~ msgstr "Bin gleich wieder da"
+
 #~ msgid "Blocking List"
 #~ msgstr "Blockierliste"
 
@@ -6589,6 +6608,9 @@ msgstr "… oder hierher ziehen"
 #~ "Versende ganz einfach Fotos, Videos oder andere Dateien an Freunde und "
 #~ "Gruppen"
 
+#~ msgid "Eating"
+#~ msgstr "Essen"
+
 #~ msgid "Edit Name…"
 #~ msgstr "Namen ändern…"
 
@@ -6627,6 +6649,10 @@ msgstr "… oder hierher ziehen"
 
 #~ msgid "Error!"
 #~ msgstr "Fehler!"
+
+#, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "Fehler: %s (Mime Types: %s)"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -6808,6 +6834,12 @@ msgstr "… oder hierher ziehen"
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "Es nicht möglich, leere Dateien zu versenden"
 
+#~ msgid "I’m eating."
+#~ msgstr "Ich esse gerade."
+
+#~ msgid "I’m out enjoying life."
+#~ msgstr "Ich bin draußen und genieße das Leben."
+
 #, python-format
 #~ msgid ""
 #~ "I’m synchronizing my contacts from my account at \"%s\". Could you please "
@@ -6815,6 +6847,12 @@ msgstr "… oder hierher ziehen"
 #~ msgstr ""
 #~ "Ich synchronisiere Kontakte von meinem Konto bei \"%s\". Könntest du "
 #~ "diese Adresse bitte deiner Kontaktliste hinzufügen?"
+
+#~ msgid "I’m watching a movie."
+#~ msgstr "Ich sehe mir einen Film an."
+
+#~ msgid "I’m working."
+#~ msgstr "Ich arbeite."
 
 #~ msgid "Keep and manage all your chat history"
 #~ msgstr "Behalte und verwalte deinen Nachrichtenverlauf"
@@ -6898,6 +6936,9 @@ msgstr "… oder hierher ziehen"
 #~ msgid "Move Contact"
 #~ msgstr "Kontakt verschieben"
 
+#~ msgid "Movie"
+#~ msgstr "Film"
+
 #~ msgid "Never miss a message, keep all your chat clients synchronized"
 #~ msgstr "Verpasse keine Nachrichten, halte alle deine Chat-Clients synchron"
 
@@ -6956,6 +6997,9 @@ msgstr "… oder hierher ziehen"
 
 #~ msgid "Organize your chats with workspaces"
 #~ msgstr "Ordne deine Chats mit Arbeitsbereichen"
+
+#~ msgid "Out"
+#~ msgstr "Draußen"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PKCS12-Dateien"
@@ -7224,6 +7268,9 @@ msgstr "… oder hierher ziehen"
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim wird beendet"
 
+#~ msgid "Sleeping"
+#~ msgstr "Schlafen"
+
 #~ msgctxt "Group chat description"
 #~ msgid "Spring gathering"
 #~ msgstr "Frühlingstreffen"
@@ -7404,10 +7451,6 @@ msgstr "… oder hierher ziehen"
 #~ msgid "User name…"
 #~ msgstr "Umbenennen…"
 
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "Urlaub"
-
 #~ msgid "Video Framerate"
 #~ msgstr "Bildwiederholrate"
 
@@ -7420,6 +7463,9 @@ msgstr "… oder hierher ziehen"
 #~ msgid "Video calls are not supported"
 #~ msgstr "Videoanrufe werden nicht unterstützt"
 
+#~ msgid "Visual Notifications"
+#~ msgstr "Visuelle Benachrichtigungen"
+
 #~ msgid "WebSocket URL"
 #~ msgstr "WebSocket URL"
 
@@ -7428,6 +7474,9 @@ msgstr "… oder hierher ziehen"
 
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "Warum willst du diese Nachrichten moderieren?"
+
+#~ msgid "Working"
+#~ msgstr "Arbeiten"
 
 #~ msgid "Workspaces"
 #~ msgstr "Arbeitsbereiche"
@@ -7480,6 +7529,9 @@ msgstr "… oder hierher ziehen"
 
 #~ msgid "Your archiving preferences have successfully been saved."
 #~ msgstr "Deine Einstellungen für das Nachrichtenarchiv wurden gespeichert."
+
+#~ msgid "ZZZZzzzzzZZZZZ"
+#~ msgstr "ZZZZzzzzzZZZZZ"
 
 #~ msgid "_Account"
 #~ msgstr "K_onto"

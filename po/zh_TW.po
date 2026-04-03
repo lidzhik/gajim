@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gajim\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 20:43+0000\n"
+"POT-Creation-Date: 2026-03-28 13:34+0000\n"
 "PO-Revision-Date: 2025-07-07 16:12+0000\n"
 "Last-Translator: hsfg6 <hsfg6@proton.me>\n"
 "Language-Team: Chinese (Traditional) <https://translate.gajim.org/projects/"
@@ -36,6 +36,10 @@ msgstr "%(contact)s拒絕了您對 %(chat)s的邀請"
 #, python-format
 msgid "%(contact)s invited you to %(chat)s"
 msgstr "%(contact)s 邀請您參加聊天室 %(chat)s"
+
+#, python-format
+msgid "%(contact)s reacted with %(reaction)s to your message '%(message)s'"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "%(count)s Participant"
@@ -837,12 +841,6 @@ msgstr "離開"
 msgid "Back"
 msgstr "回來"
 
-msgid "Back in some minutes."
-msgstr "幾分鐘就回來。"
-
-msgid "Back soon"
-msgstr "馬上回來"
-
 msgid "Ban"
 msgstr "封鎖"
 
@@ -928,6 +926,10 @@ msgstr "CRL 尚未生效"
 
 msgid "CRL signature failure"
 msgstr "CRL 簽署失敗"
+
+#, fuzzy
+msgid "CSV files"
+msgstr "傳送檔案(_F)"
 
 msgid "C_opy"
 msgstr "複製"
@@ -1402,6 +1404,10 @@ msgstr "無法讀取圖片"
 msgid "Could not find any messages for this participant."
 msgstr ""
 
+#, fuzzy
+msgid "Could not generate link preview"
+msgstr "無法讀取圖片"
+
 #, fuzzy, python-format
 msgid "Could not open file (%s)"
 msgstr "無法讀取圖片"
@@ -1729,9 +1735,6 @@ msgstr "狀態: "
 msgid "Drop files here"
 msgstr "向聯絡人傳送檔案"
 
-msgid "Eating"
-msgstr "吃東西"
-
 #, fuzzy
 msgid "Edit"
 msgstr "編輯(_E)"
@@ -1908,10 +1911,6 @@ msgstr "加入服務錯誤。 %s"
 #, python-format
 msgid "Error: %s"
 msgstr "錯誤: %s"
-
-#, fuzzy, python-format
-msgid "Error: %s (mime types: %s)"
-msgstr "錯誤訊息: %s"
 
 msgid "Event"
 msgstr "事件"
@@ -2252,6 +2251,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Gajim can automatically update your profile with your current timezone. This "
+"may help your contacts when they try to reach you."
+msgstr ""
+
+msgid ""
 "Gajim encountered an error.\n"
 "Please help us fixing this issue by sending this report."
 msgstr ""
@@ -2500,6 +2504,9 @@ msgstr ""
 "如果為真，Gajim 在使用 jingle 時會嘗試使用 STUN 伺服器。伺服器可以由"
 "\"stun_server\"選項給出，或由 jabber 伺服器給出。"
 
+msgid "Ignore"
+msgstr ""
+
 #, fuzzy
 msgid "Ignore Unknown Contacts"
 msgstr "邀請聯絡人(_C)"
@@ -2680,22 +2687,6 @@ msgstr ""
 
 msgid "Issues detected"
 msgstr ""
-
-#, fuzzy
-msgid "I’m eating."
-msgstr "我正在工作。"
-
-#, fuzzy
-msgid "I’m out enjoying life."
-msgstr "我正在享受戶外生活。"
-
-#, fuzzy
-msgid "I’m watching a movie."
-msgstr "我正在看電影。"
-
-#, fuzzy
-msgid "I’m working."
-msgstr "我正在工作。"
 
 msgid "JID"
 msgstr "JID"
@@ -3052,9 +3043,6 @@ msgstr "聯絡人"
 msgid "Move to Group"
 msgstr "移除群組"
 
-msgid "Movie"
-msgstr "電影"
-
 #, fuzzy
 msgid "Must be a port number"
 msgstr "自訂連接埠必須為連接埠號碼。"
@@ -3151,6 +3139,10 @@ msgstr ""
 
 msgid "No Threshold"
 msgstr ""
+
+#, fuzzy
+msgid "No Timezone"
+msgstr "時間"
 
 msgid "No additional requirements"
 msgstr ""
@@ -3300,6 +3292,12 @@ msgstr "通知"
 msgid "Notify after update"
 msgstr ""
 
+msgid "Notify me when someone reacts to my message in a chat"
+msgstr ""
+
+msgid "Notify me when someone reacts to my message in a group chat"
+msgstr ""
+
 msgid "Notify me when the automatic update was successful"
 msgstr ""
 
@@ -3401,9 +3399,6 @@ msgstr ""
 
 msgid "Others"
 msgstr "其他"
-
-msgid "Out"
-msgstr "外出"
 
 msgid "Out of memory"
 msgstr "記憶體耗盡"
@@ -3848,6 +3843,18 @@ msgstr "註冊(_G)"
 #, python-format
 msgid "React with %s"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Reaction from %s"
+msgstr "“%s” 的操作"
+
+#, fuzzy, python-format
+msgid "Reaction from %s (%s)"
+msgstr "“%s” 的操作"
+
+#, fuzzy
+msgid "Reactions"
+msgstr "位置: %s"
 
 #, fuzzy
 msgid "Read Receipts"
@@ -4716,9 +4723,6 @@ msgstr "不允許的字元"
 msgid "Size of preview images in pixels"
 msgstr ""
 
-msgid "Sleeping"
-msgstr "正在睡覺"
-
 #, fuzzy
 msgid "Software"
 msgstr "伺服器回應: %s"
@@ -5376,6 +5380,10 @@ msgctxt "Profile"
 msgid "Timezone"
 msgstr "時間"
 
+#, fuzzy
+msgid "Timezone Update"
+msgstr "時間"
+
 msgctxt "Profile"
 msgid "Title"
 msgstr ""
@@ -5585,6 +5593,10 @@ msgid "Update Avatar"
 msgstr "選擇歸檔檔案"
 
 #, fuzzy
+msgid "Update Timezone"
+msgstr "時間"
+
+#, fuzzy
 msgid "Update automatically"
 msgstr "選擇歸檔檔案"
 
@@ -5593,6 +5605,13 @@ msgid "Update available: Version %s"
 msgstr "沒有有效帳號"
 
 msgid "Update plugins automatically"
+msgstr ""
+
+#, fuzzy
+msgid "Update your profile's timezone automatically"
+msgstr "選擇歸檔檔案"
+
+msgid "Update your timezone?"
 msgstr ""
 
 msgid "Updates"
@@ -5715,10 +5734,6 @@ msgid "Visitors"
 msgstr "訪客"
 
 #, fuzzy
-msgid "Visual Notifications"
-msgstr "<b>可視化提示</b>"
-
-#, fuzzy
 msgid "Voice Message"
 msgstr "傳送訊息"
 
@@ -5782,9 +5797,6 @@ msgid "Windows"
 msgstr ""
 
 msgid "Work"
-msgstr "工作"
-
-msgid "Working"
 msgstr "工作"
 
 #, fuzzy
@@ -6042,9 +6054,6 @@ msgstr ""
 #, fuzzy
 msgid "ZIP files"
 msgstr "Zip 檔案"
-
-msgid "ZZZZzzzzzZZZZZ"
-msgstr ""
 
 msgid "[read more]"
 msgstr ""
@@ -6863,6 +6872,12 @@ msgstr ""
 #~ msgid "Automatic spell-checking for your messages"
 #~ msgstr "自動檢查您的訊息的拼寫"
 
+#~ msgid "Back in some minutes."
+#~ msgstr "幾分鐘就回來。"
+
+#~ msgid "Back soon"
+#~ msgstr "馬上回來"
+
 #~ msgid "Blocking List"
 #~ msgstr "封鎖名單"
 
@@ -7087,6 +7102,9 @@ msgstr ""
 #~ msgid "Drop files or contacts"
 #~ msgstr "向聯絡人傳送檔案"
 
+#~ msgid "Eating"
+#~ msgstr "吃東西"
+
 #, fuzzy
 #~ msgid "Edit Name…"
 #~ msgstr "名稱:"
@@ -7123,6 +7141,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Error!"
 #~ msgstr "錯誤"
+
+#, fuzzy, python-format
+#~ msgid "Error: %s (mime types: %s)"
+#~ msgstr "錯誤訊息: %s"
 
 #, python-format
 #~ msgid "Error: cannot open %s for reading"
@@ -7269,6 +7291,22 @@ msgstr ""
 #~ msgid "It is not possible to send empty files"
 #~ msgstr "無法傳送空檔案"
 
+#, fuzzy
+#~ msgid "I’m eating."
+#~ msgstr "我正在工作。"
+
+#, fuzzy
+#~ msgid "I’m out enjoying life."
+#~ msgstr "我正在享受戶外生活。"
+
+#, fuzzy
+#~ msgid "I’m watching a movie."
+#~ msgstr "我正在看電影。"
+
+#, fuzzy
+#~ msgid "I’m working."
+#~ msgstr "我正在工作。"
+
 #, fuzzy, python-format
 #~ msgid "Last seen %s"
 #~ msgstr "原因"
@@ -7327,6 +7365,9 @@ msgstr ""
 #~ msgid "Move Contact"
 #~ msgstr "重新命名聯絡人"
 
+#~ msgid "Movie"
+#~ msgstr "電影"
+
 #, fuzzy
 #~ msgid "No Connection Available"
 #~ msgstr "連線無法使用"
@@ -7378,6 +7419,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "Organization (O)"
 #~ msgstr "渡假"
+
+#~ msgid "Out"
+#~ msgstr "外出"
 
 #~ msgid "PKCS12 Files"
 #~ msgstr "PKCS12 檔案"
@@ -7611,6 +7655,9 @@ msgstr ""
 #~ msgid "Shutting down Gajim"
 #~ msgstr "Gajim"
 
+#~ msgid "Sleeping"
+#~ msgstr "正在睡覺"
+
 #~ msgid "Sta_tus"
 #~ msgstr "狀態(_T)"
 
@@ -7758,11 +7805,6 @@ msgstr ""
 #~ msgstr "使用者名稱(_U):"
 
 #, fuzzy
-#~ msgctxt "Group chat name"
-#~ msgid "Vacation"
-#~ msgstr "位置: %s"
-
-#, fuzzy
 #~ msgid "Video Framerate"
 #~ msgstr "視訊圖框速率"
 
@@ -7779,8 +7821,15 @@ msgstr ""
 #~ msgstr "連線無法使用"
 
 #, fuzzy
+#~ msgid "Visual Notifications"
+#~ msgstr "<b>可視化提示</b>"
+
+#, fuzzy
 #~ msgid "Why do you want to moderate these messages?"
 #~ msgstr "您確定要刪除所選取的訊息?"
+
+#~ msgid "Working"
+#~ msgstr "工作"
 
 #, fuzzy
 #~ msgid "Workspaces"
