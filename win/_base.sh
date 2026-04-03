@@ -10,7 +10,7 @@ DIR="$( cd "$( dirname "$0" )" && pwd )"
 cd "${DIR}"
 
 MAJOR_PY_VERSION="3"
-MINOR_PY_VERSION="11"
+MINOR_PY_VERSION="14"
 PYTHON_VERSION="${MAJOR_PY_VERSION}.${MINOR_PY_VERSION}"
 BUILD_VERSION="0"
 
@@ -19,6 +19,62 @@ PYTHON_ID="python${MAJOR_PY_VERSION}"
 
 QL_VERSION="0.0.0"
 QL_VERSION_DESC="UNKNOWN"
+
+MINGW_DEPS="\
+${MINGW_PACKAGE_PREFIX}-adwaita-icon-theme \
+${MINGW_PACKAGE_PREFIX}-gst-plugins-base \
+${MINGW_PACKAGE_PREFIX}-gst-plugins-good \
+${MINGW_PACKAGE_PREFIX}-gst-plugins-bad \
+${MINGW_PACKAGE_PREFIX}-gst-plugins-rs \
+${MINGW_PACKAGE_PREFIX}-gst-libav \
+${MINGW_PACKAGE_PREFIX}-gst-python \
+${MINGW_PACKAGE_PREFIX}-gstreamer \
+${MINGW_PACKAGE_PREFIX}-gtk4 \
+${MINGW_PACKAGE_PREFIX}-gtksourceview5 \
+${MINGW_PACKAGE_PREFIX}-hunspell \
+${MINGW_PACKAGE_PREFIX}-libadwaita \
+${MINGW_PACKAGE_PREFIX}-libavif \
+${MINGW_PACKAGE_PREFIX}-libheif \
+${MINGW_PACKAGE_PREFIX}-libnice \
+${MINGW_PACKAGE_PREFIX}-libspelling \
+${MINGW_PACKAGE_PREFIX}-libsoup3 \
+${MINGW_PACKAGE_PREFIX}-libwebp \
+${MINGW_PACKAGE_PREFIX}-python-certifi \
+${MINGW_PACKAGE_PREFIX}-python-cryptography \
+${MINGW_PACKAGE_PREFIX}-python-gobject \
+${MINGW_PACKAGE_PREFIX}-python-gssapi \
+${MINGW_PACKAGE_PREFIX}-python-idna \
+${MINGW_PACKAGE_PREFIX}-python-keyring \
+${MINGW_PACKAGE_PREFIX}-python-packaging \
+${MINGW_PACKAGE_PREFIX}-python-pillow \
+${MINGW_PACKAGE_PREFIX}-python-pip \
+${MINGW_PACKAGE_PREFIX}-python-protobuf \
+${MINGW_PACKAGE_PREFIX}-python-pygments \
+${MINGW_PACKAGE_PREFIX}-python-setuptools \
+${MINGW_PACKAGE_PREFIX}-python-setuptools-scm \
+${MINGW_PACKAGE_PREFIX}-python-six \
+${MINGW_PACKAGE_PREFIX}-python-sqlalchemy \
+${MINGW_PACKAGE_PREFIX}-sqlite3 \
+${MINGW_PACKAGE_PREFIX}-webp-pixbuf-loader \
+"
+
+PYTHON_REQUIREMENTS="\
+git+https://github.com/lidzhik/omemo-dr.git
+git+https://github.com/lidzhik/python-nbxmpp.git
+css_parser
+httpx[http2,socks]
+truststore
+emoji
+pystray
+python-gnupg
+qrcode
+sentry-sdk
+windows-toasts
+winrt-Windows.ApplicationModel~=3.0
+winrt-Windows.Foundation~=3.0
+winrt-Windows.UI~=3.0
+winrt-Windows.UI.ViewManagement~=3.0
+"
 
 function set_build_root {
     BUILD_ROOT="${DIR}/_build_root"
@@ -43,6 +99,17 @@ function build_compileall {
     build_python -m compileall -b "$@"
 }
 
+function install_pre_deps {
+    pacman -S --needed --noconfirm \
+        intltool \
+        p7zip \
+        wget \
+        mingw-w64-x86_64-nsis \
+        ${MINGW_PACKAGE_PREFIX}-librsvg \
+        ${MINGW_PACKAGE_PREFIX}-python \
+        ${MINGW_PACKAGE_PREFIX}-toolchain
+}
+
 function create_root {
     mkdir -p "${BUILD_ROOT}"
 
@@ -50,6 +117,17 @@ function create_root {
     mkdir -p "${BUILD_ROOT}"/var/lib/pacman
     mkdir -p "${BUILD_ROOT}"/var/log
 
+    build_pacman -Syu
+    build_pacman --noconfirm -S base
+}
+
+function install_mingw_deps {
+    build_pacman --noconfirm -S ${MINGW_DEPS}
+}
+
+function install_python_deps {
+    build_pip install --no-index --find-links=/var/pip precis-i18n
+    build_pip install --no-index --find-links=/var/pip $(echo "$PYTHON_REQUIREMENTS" | tr ["\\n"] [" "])
 }
 
 function post_install_deps {
@@ -72,7 +150,7 @@ function install_gajim {
     cd ..
 
     build_python make.py build --dist=win
-    build_pip install .
+    build_pip install --break-system-packages .
 
     QL_VERSION=$(MSYSTEM= build_python -c \
         "import gajim; import sys; sys.stdout.write(gajim.__version__.split('+')[0])")
