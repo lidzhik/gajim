@@ -122,7 +122,7 @@ class ContactInfo(GajimAppWindow, EventHelper):
 
         self._fill_information_page()
         self._fill_settings_page()
-        self._fill_encryption_page()
+#        self._fill_encryption_page()
         self._fill_device_info()
         self._fill_groups_page()
         self._fill_note_page()

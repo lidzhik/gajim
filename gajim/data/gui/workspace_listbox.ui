@@ -6,6 +6,7 @@
     <signal name="row-activated" handler="_on_row_activated" />
     <child>
       <object class="SideBarListBoxRow">
+        <property name="visible">0</property>
         <property name="item-id">add-workspace</property>
         <property name="index">999</property>
         <property name="icon-name">lucide-plus-symbolic</property>

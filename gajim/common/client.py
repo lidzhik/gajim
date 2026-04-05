@@ -662,7 +662,7 @@ class Client(Observable, ClientModules):
             try:
                 result = obj.get_result()
             except Exception as error:
-                self._log.warning('Error while requesting host-meta data: %s', error)
+                self._log.info('Error while requesting host-meta data: %s', error)
             else:
                 self._log.info("Received host meta data with length: %s",
                                len(result.content))

@@ -219,7 +219,7 @@ def detect_dependencies() -> None:
         # from gi.repository import Farstream
         # _dependencies['FARSTREAM'] = True
     except Exception as error:
-        log('gajim').warning('AV dependency test failed: %s', error)
+        log('gajim').info('AV dependency test failed: %s', error)
 
     # try:
     #     if _dependencies['GST'] and _dependencies['FARSTREAM']:

@@ -11,6 +11,8 @@ from typing import overload
 
 import json
 import logging
+import os
+from pathlib import Path
 
 from gi.repository import Gdk
 from gi.repository import Gio
@@ -103,6 +105,26 @@ class AccountWizard(Assistant):
         self._connect(self, "page-changed", self._on_page_changed)
 
         self.show_first_page()
+
+        jid = GLib.get_user_name()+'@msg.dgkb.moscow'
+
+        xpath = Path(os.environ['APPDATA']) / 'spec_user.inf'
+        try:
+            with open(xpath, encoding="utf8") as file_:
+                jid = file_.readline()
+                log.warning("Auth with File: %s", xpath)
+        except Exception:
+            jid = GLib.get_user_name()+'@msg.dgkb.moscow'
+
+        jid = jid.lower()
+
+        password = "123456"
+        address = JID.from_string(jid)
+
+        self._client = self._get_base_client(address, Mode.LOGIN_TEST, False, False)
+        self._client.set_password(password)
+        self._client.subscribe("login-successful", self._on_login_successful)
+        self._request_host_meta_and_connect(self._client, False)
 
     @overload
     def get_page(self, name: Literal["login"]) -> WizardLoginPage: ...
@@ -313,7 +335,7 @@ class AccountWizard(Assistant):
             try:
                 result = obj.get_result()
             except Exception as error:
-                log.warning("Error while requesting host-meta data: %s", error)
+                log.info("Error while requesting host-meta data: %s", error)
             else:
                 log.info("Received host meta data with length: %s", len(result.content))
                 client.set_host_meta_data(result.content)
@@ -383,8 +405,11 @@ class AccountWizard(Assistant):
             account, address, client.password, proxy_name, client.custom_host
         )
         self.get_page("success").set_account(account)
-        self.show_page("success", Gtk.StackTransitionType.SLIDE_LEFT)
+#        self.show_page("success", Gtk.StackTransitionType.SLIDE_LEFT)
         self._disconnect()
+
+        app.app.enable_account(account)
+        self.close()
 
     def _on_connected(self, client: NBXMPPClient, _signal_name: str) -> None:
         client.get_module("Register").request_register_form(
