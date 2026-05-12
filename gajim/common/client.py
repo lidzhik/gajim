@@ -670,13 +670,14 @@ class Client(Observable, ClientModules):
 
             self._client.connect()
 
-        app.ftm.http_request(
-            'GET',
-            f'https://{self._address.domain}/.well-known/host-meta',
-            proxy=determine_proxy(self._account),
-            timeout=3,
-            callback=_on_host_meta_response,
-        )
+#        app.ftm.http_request(
+#            'GET',
+#            f'https://{self._address.domain}/.well-known/host-meta',
+#            proxy=determine_proxy(self._account),
+#            timeout=3,
+#            callback=_on_host_meta_response,
+#        )
+        self._client.connect()
 
     def _schedule_reconnect(self) -> None:
         self._set_state(ClientState.RECONNECT_SCHEDULED)

@@ -342,12 +342,13 @@ class AccountWizard(Assistant):
 
             client.connect()
 
-        app.ftm.http_request(
-            "GET",
-            f"https://{client.domain}/.well-known/host-meta",
-            proxy=self._get_proxy_data(advanced),
-            callback=_on_host_meta_response,
-        )
+#        app.ftm.http_request(
+#            "GET",
+#            f"https://{client.domain}/.well-known/host-meta",
+#            proxy=self._get_proxy_data(advanced),
+#            callback=_on_host_meta_response,
+#        )
+        client.connect()
 
     def _test_credentials(self, ignore_all_errors: bool = False) -> None:
         self._show_progress_page(_("Connecting..."), _("Connecting to server..."))
